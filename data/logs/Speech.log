@@ -1,0 +1,456 @@
+16:55:20,467 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+16:55:20,467 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:55:20,467 werkzeug INFO  * Restarting with stat
+16:55:26,370 werkzeug WARNING  * Debugger is active!
+16:55:26,385 werkzeug INFO  * Debugger PIN: 117-058-107
+16:58:28,593 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+16:58:29,774 werkzeug INFO  * Restarting with stat
+16:58:46,481 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+16:58:46,688 werkzeug INFO [33mPress CTRL+C to quit[0m
+16:58:46,703 werkzeug INFO  * Restarting with stat
+16:59:02,29 werkzeug WARNING  * Debugger is active!
+16:59:02,45 werkzeug INFO  * Debugger PIN: 117-058-107
+17:00:29,75 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:00:29] "[31m[1mGET /upload_audio_files HTTP/1.1[0m" 405 -
+17:00:53,836 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:00:53] "POST /upload_audio_files HTTP/1.1" 200 -
+17:01:30,689 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:01:31,121 werkzeug INFO  * Restarting with stat
+17:01:46,599 werkzeug WARNING  * Debugger is active!
+17:01:46,637 werkzeug INFO  * Debugger PIN: 117-058-107
+17:01:48,641 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:01:48] "POST /upload_audio_files HTTP/1.1" 200 -
+17:03:12,773 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:03:13,648 werkzeug INFO  * Restarting with stat
+17:03:32,391 werkzeug WARNING  * Debugger is active!
+17:03:32,422 werkzeug INFO  * Debugger PIN: 117-058-107
+17:03:39,211 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:03:39] "GET /list_audio_files HTTP/1.1" 200 -
+17:10:14,432 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\main.py', reloading
+17:10:15,152 werkzeug INFO  * Restarting with stat
+17:10:31,959 werkzeug WARNING  * Debugger is active!
+17:10:31,981 werkzeug INFO  * Debugger PIN: 117-058-107
+17:13:07,605 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:13:08,344 werkzeug INFO  * Restarting with stat
+17:13:26,144 werkzeug WARNING  * Debugger is active!
+17:13:26,170 werkzeug INFO  * Debugger PIN: 117-058-107
+17:13:35,778 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:13:35] "[31m[1mGET /get_analytics HTTP/1.1[0m" 405 -
+17:13:51,493 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:13:52,65 werkzeug INFO  * Restarting with stat
+17:14:04,6 werkzeug WARNING  * Debugger is active!
+17:14:04,37 werkzeug INFO  * Debugger PIN: 117-058-107
+17:16:30,87 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:16:30] "POST /upload_audio_files HTTP/1.1" 200 -
+17:17:09,581 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:17:09] "GET /list_audio_files HTTP/1.1" 200 -
+17:17:33,176 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:17:34,842 werkzeug INFO  * Restarting with stat
+17:18:28,47 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:18:28,47 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:18:28,62 werkzeug INFO  * Restarting with stat
+17:19:04,712 werkzeug WARNING  * Debugger is active!
+17:19:04,742 werkzeug INFO  * Debugger PIN: 117-058-107
+17:19:05,928 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:19:05] "GET /list_audio_files HTTP/1.1" 200 -
+17:21:02,48 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:21:03,18 werkzeug INFO  * Restarting with stat
+17:21:31,946 werkzeug WARNING  * Debugger is active!
+17:21:31,987 werkzeug INFO  * Debugger PIN: 117-058-107
+17:21:44,43 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:21:44] "GET /get_analytics HTTP/1.1" 200 -
+17:25:11,321 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:25:11,322 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:25:11,356 werkzeug INFO  * Restarting with stat
+17:25:36,303 werkzeug WARNING  * Debugger is active!
+17:25:36,328 werkzeug INFO  * Debugger PIN: 117-058-107
+17:25:52,272 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:25:52] "GET /get_analytics HTTP/1.1" 200 -
+17:41:12,73 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-DEV-AI-CS-STT-TTS-REPO (1)\\PROJ-DEV-AI-CS-STT-TTS-REPO\\app.py', reloading
+17:41:12,716 werkzeug INFO  * Restarting with stat
+17:55:08,272 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:55:08,272 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:55:08,281 werkzeug INFO  * Restarting with stat
+17:55:24,635 werkzeug WARNING  * Debugger is active!
+17:55:24,665 werkzeug INFO  * Debugger PIN: 117-058-107
+17:55:45,9 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:55:45] "POST /upload_audio_files HTTP/1.1" 200 -
+17:57:11,929 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+17:57:12,427 werkzeug INFO  * Restarting with stat
+17:57:35,20 werkzeug WARNING  * Debugger is active!
+17:57:35,78 werkzeug INFO  * Debugger PIN: 117-058-107
+17:57:40,210 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:57:40,210 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:57:40,217 werkzeug INFO  * Restarting with stat
+17:57:59,449 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:57:59] "POST /upload_audio_files HTTP/1.1" 200 -
+17:58:16,775 werkzeug WARNING  * Debugger is active!
+17:58:16,805 werkzeug INFO  * Debugger PIN: 117-058-107
+17:58:27,322 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+17:58:28,320 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+17:58:28,795 werkzeug INFO  * Restarting with stat
+17:58:43,904 werkzeug WARNING  * Debugger is active!
+17:58:43,936 werkzeug INFO  * Debugger PIN: 117-058-107
+17:59:10,49 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+17:59:10,659 werkzeug INFO  * Restarting with stat
+17:59:24,261 werkzeug WARNING  * Debugger is active!
+17:59:24,291 werkzeug INFO  * Debugger PIN: 117-058-107
+17:59:26,985 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:59:26] "POST /upload_audio_files HTTP/1.1" 200 -
+17:59:39,392 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 17:59:39] "[35m[1mGET /get_audio HTTP/1.1[0m" 500 -
+17:59:59,298 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+17:59:59,758 werkzeug INFO  * Restarting with stat
+18:00:16,314 werkzeug WARNING  * Debugger is active!
+18:00:16,363 werkzeug INFO  * Debugger PIN: 117-058-107
+18:00:17,934 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 18:00:17] "GET /get_audio HTTP/1.1" 200 -
+18:03:04,534 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+18:03:05,197 werkzeug INFO  * Restarting with stat
+18:03:20,28 werkzeug WARNING  * Debugger is active!
+18:03:20,63 werkzeug INFO  * Debugger PIN: 117-058-107
+18:05:18,115 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+18:05:19,47 werkzeug INFO  * Restarting with stat
+18:05:39,536 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+18:05:39,538 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:05:39,547 werkzeug INFO  * Restarting with stat
+18:05:59,448 werkzeug WARNING  * Debugger is active!
+18:05:59,485 werkzeug INFO  * Debugger PIN: 117-058-107
+18:06:31,380 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 18:06:31] "[35m[1mGET /get_audio HTTP/1.1[0m" 500 -
+18:07:30,303 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+18:07:31,342 werkzeug INFO  * Restarting with stat
+18:07:49,443 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+18:07:49,444 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:07:49,457 werkzeug INFO  * Restarting with stat
+18:08:17,858 werkzeug WARNING  * Debugger is active!
+18:08:17,905 werkzeug INFO  * Debugger PIN: 117-058-107
+18:08:20,330 werkzeug INFO 127.0.0.1 - - [13/Feb/2024 18:08:20] "GET /get_audio HTTP/1.1" 200 -
+18:13:09,0 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:13:09,0 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:16:27,241 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:16:27,241 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:38:36,403 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:38:36,403 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:54:45,76 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:54:45,76 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:59:21,319 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:59:21,320 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:08:47,185 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:08:47,186 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:11:32,199 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:11:32,199 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:13:01,919 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:13:01,920 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:14:47,990 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:14:48,15 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:21:36,684 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+11:21:36,684 werkzeug INFO [33mPress CTRL+C to quit[0m
+11:22:40,87 ngrok.session INFO Session created with auth token
+11:22:40,174 ngrok.listener INFO Created listener "19f34f6b7b023add9cc270c90ac5b1c4" with url "https://792b-45-248-25-3.ngrok-free.app"
+11:22:40,184 ngrok.listener INFO Listener "19f34f6b7b023add9cc270c90ac5b1c4" forwarding to "tcp://localhost:51065"
+11:22:40,185 ngrok.tunnel_ext INFO forward_tunnel; tunnel_id="19f34f6b7b023add9cc270c90ac5b1c4" url=tcp://localhost:51065
+11:24:29,990 ngrok.session INFO Session created with auth token
+11:24:30,92 ngrok.listener INFO Created listener "50206affa81c3629a44cd7f0ead6834f" with url "https://d1d1-45-248-25-2.ngrok-free.app"
+11:24:30,97 ngrok.listener INFO Listener "50206affa81c3629a44cd7f0ead6834f" forwarding to "tcp://localhost:51086"
+11:24:30,98 ngrok.tunnel_ext INFO forward_tunnel; tunnel_id="50206affa81c3629a44cd7f0ead6834f" url=tcp://localhost:51086
+11:28:45,998 ngrok.session INFO Session created with auth token
+11:28:46,99 ngrok.listener INFO Created listener "fbcbc661b6885ad78fd608842d421e97" with url "https://903c-45-248-25-1.ngrok-free.app"
+11:28:46,103 ngrok.listener INFO Listener "fbcbc661b6885ad78fd608842d421e97" forwarding to "tcp://localhost:51120"
+11:28:46,106 ngrok.tunnel_ext INFO forward_tunnel; tunnel_id="fbcbc661b6885ad78fd608842d421e97" url=tcp://localhost:51120
+14:39:06,26 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+14:39:06,26 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:40:09,0 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+14:40:09,0 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:40:09,59 werkzeug INFO  * Restarting with stat
+14:40:22,647 werkzeug WARNING  * Debugger is active!
+14:40:22,670 werkzeug INFO  * Debugger PIN: 117-058-107
+14:40:25,797 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 14:40:25] "GET /get_analytics HTTP/1.1" 200 -
+14:40:50,252 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+14:40:50,587 werkzeug INFO  * Restarting with stat
+14:41:08,999 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+14:41:08,999 werkzeug INFO [33mPress CTRL+C to quit[0m
+14:41:09,7 werkzeug INFO  * Restarting with stat
+14:41:23,598 werkzeug WARNING  * Debugger is active!
+14:41:23,621 werkzeug INFO  * Debugger PIN: 117-058-107
+14:41:25,183 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 14:41:25] "GET /get_analytics HTTP/1.1" 200 -
+14:50:04,23 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 14:50:04] "GET /list_audio_files HTTP/1.1" 200 -
+14:50:07,766 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 14:50:07] "POST /get_audio HTTP/1.1" 200 -
+16:51:48,278 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 16:51:48] "POST /get_audio HTTP/1.1" 200 -
+17:51:26,527 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 17:51:26] "POST /upload_audio_files HTTP/1.1" 200 -
+17:51:45,46 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 17:51:45] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+17:51:56,710 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 17:51:56] "POST /upload_audio_files HTTP/1.1" 200 -
+17:52:15,310 werkzeug INFO 127.0.0.1 - - [19/Feb/2024 17:52:15] "GET /list_audio_files HTTP/1.1" 200 -
+10:05:06,672 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:05:08,771 werkzeug INFO  * Restarting with stat
+10:06:47,774 werkzeug WARNING  * Debugger is active!
+10:06:47,795 werkzeug INFO  * Debugger PIN: 117-058-107
+10:06:59,37 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\adapters\\keyPhrase.py', reloading
+10:06:59,500 werkzeug INFO  * Restarting with stat
+10:07:09,944 werkzeug WARNING  * Debugger is active!
+10:07:09,966 werkzeug INFO  * Debugger PIN: 117-058-107
+10:07:33,99 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:07:33,472 werkzeug INFO  * Restarting with stat
+10:07:43,886 werkzeug WARNING  * Debugger is active!
+10:07:43,895 werkzeug INFO  * Debugger PIN: 117-058-107
+10:07:57,853 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:07:58,171 werkzeug INFO  * Restarting with stat
+10:08:08,814 werkzeug WARNING  * Debugger is active!
+10:08:08,832 werkzeug INFO  * Debugger PIN: 117-058-107
+10:10:24,889 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:10:25,271 werkzeug INFO  * Restarting with stat
+10:10:34,947 werkzeug WARNING  * Debugger is active!
+10:10:34,960 werkzeug INFO  * Debugger PIN: 117-058-107
+10:12:19,281 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:12:19,743 werkzeug INFO  * Restarting with stat
+21:04:35,951 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+21:04:35,952 werkzeug INFO [33mPress CTRL+C to quit[0m
+21:04:36,21 werkzeug INFO  * Restarting with stat
+21:04:46,432 werkzeug WARNING  * Debugger is active!
+21:04:46,453 werkzeug INFO  * Debugger PIN: 117-058-107
+21:06:55,238 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:06:55] "POST /upload_audio_files HTTP/1.1" 200 -
+21:07:50,743 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:07:50] "POST /upload_audio_files HTTP/1.1" 200 -
+21:08:18,124 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+21:08:18,548 werkzeug INFO  * Restarting with stat
+21:08:36,335 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+21:08:36,336 werkzeug INFO [33mPress CTRL+C to quit[0m
+21:08:36,341 werkzeug INFO  * Restarting with stat
+21:08:48,107 werkzeug WARNING  * Debugger is active!
+21:08:48,131 werkzeug INFO  * Debugger PIN: 117-058-107
+21:08:48,494 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:08:48] "POST /upload_audio_files HTTP/1.1" 200 -
+21:09:50,997 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:09:50] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+21:10:42,528 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+21:10:42,864 werkzeug INFO  * Restarting with stat
+21:10:53,524 werkzeug WARNING  * Debugger is active!
+21:10:53,551 werkzeug INFO  * Debugger PIN: 117-058-107
+21:11:11,183 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+21:11:11,487 werkzeug INFO  * Restarting with stat
+21:11:28,904 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+21:11:28,904 werkzeug INFO [33mPress CTRL+C to quit[0m
+21:11:28,911 werkzeug INFO  * Restarting with stat
+21:11:41,723 werkzeug WARNING  * Debugger is active!
+21:11:41,735 werkzeug INFO  * Debugger PIN: 117-058-107
+21:11:44,901 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:11:44] "POST /upload_audio_files HTTP/1.1" 200 -
+21:17:19,561 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+21:17:19,906 werkzeug INFO  * Restarting with stat
+21:17:33,283 werkzeug WARNING  * Debugger is active!
+21:17:33,297 werkzeug INFO  * Debugger PIN: 117-058-107
+21:17:35,215 werkzeug INFO 127.0.0.1 - - [20/Feb/2024 21:17:35] "POST /upload_audio_files HTTP/1.1" 200 -
+21:20:15,875 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+21:20:16,318 werkzeug INFO  * Restarting with stat
+21:20:28,64 werkzeug WARNING  * Debugger is active!
+21:20:28,86 werkzeug INFO  * Debugger PIN: 117-058-107
+17:29:30,83 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:29:30,84 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:29:30,103 werkzeug INFO  * Restarting with stat
+17:29:40,501 werkzeug WARNING  * Debugger is active!
+17:29:40,514 werkzeug INFO  * Debugger PIN: 117-058-107
+17:30:14,555 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:30:14] "POST /upload_audio_files HTTP/1.1" 200 -
+17:36:09,210 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+17:36:09,592 werkzeug INFO  * Restarting with stat
+17:36:19,721 werkzeug WARNING  * Debugger is active!
+17:36:19,733 werkzeug INFO  * Debugger PIN: 117-058-107
+17:40:50,342 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:40:50,679 werkzeug INFO  * Restarting with stat
+17:41:02,968 werkzeug WARNING  * Debugger is active!
+17:41:02,997 werkzeug INFO  * Debugger PIN: 117-058-107
+17:41:50,903 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:41:50,903 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:41:50,912 werkzeug INFO  * Restarting with stat
+17:42:01,413 werkzeug WARNING  * Debugger is active!
+17:42:01,429 werkzeug INFO  * Debugger PIN: 117-058-107
+17:42:03,957 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:42:03] "POST /upload_audio_files HTTP/1.1" 200 -
+17:43:29,437 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:43:29,730 werkzeug INFO  * Restarting with stat
+17:43:39,798 werkzeug WARNING  * Debugger is active!
+17:43:39,819 werkzeug INFO  * Debugger PIN: 117-058-107
+17:44:27,89 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:44:27,461 werkzeug INFO  * Restarting with stat
+17:44:37,384 werkzeug WARNING  * Debugger is active!
+17:44:37,403 werkzeug INFO  * Debugger PIN: 117-058-107
+17:45:32,875 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:45:33,292 werkzeug INFO  * Restarting with stat
+17:45:44,700 werkzeug WARNING  * Debugger is active!
+17:45:44,709 werkzeug INFO  * Debugger PIN: 117-058-107
+17:47:09,620 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:47:09,985 werkzeug INFO  * Restarting with stat
+17:47:20,180 werkzeug WARNING  * Debugger is active!
+17:47:20,202 werkzeug INFO  * Debugger PIN: 117-058-107
+17:47:41,701 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:47:42,10 werkzeug INFO  * Restarting with stat
+17:47:53,6 werkzeug WARNING  * Debugger is active!
+17:47:53,19 werkzeug INFO  * Debugger PIN: 117-058-107
+17:51:17,686 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+17:51:17,686 werkzeug INFO [33mPress CTRL+C to quit[0m
+17:51:17,689 werkzeug INFO  * Restarting with stat
+17:51:27,662 werkzeug WARNING  * Debugger is active!
+17:51:27,674 werkzeug INFO  * Debugger PIN: 117-058-107
+17:51:33,677 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:51:33] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+17:52:29,238 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:52:29,545 werkzeug INFO  * Restarting with stat
+17:52:41,785 werkzeug WARNING  * Debugger is active!
+17:52:41,797 werkzeug INFO  * Debugger PIN: 117-058-107
+17:53:06,469 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:53:06] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+17:54:17,307 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:54:17,646 werkzeug INFO  * Restarting with stat
+17:54:28,249 werkzeug WARNING  * Debugger is active!
+17:54:28,260 werkzeug INFO  * Debugger PIN: 117-058-107
+17:54:50,841 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:54:50] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+17:55:15,956 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+17:55:16,318 werkzeug INFO  * Restarting with stat
+17:55:28,393 werkzeug WARNING  * Debugger is active!
+17:55:28,412 werkzeug INFO  * Debugger PIN: 117-058-107
+17:55:29,382 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:55:29] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+17:56:48,153 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+17:56:48,586 werkzeug INFO  * Restarting with stat
+17:57:02,750 werkzeug WARNING  * Debugger is active!
+17:57:02,777 werkzeug INFO  * Debugger PIN: 117-058-107
+17:57:05,201 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 17:57:05] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+18:04:23,830 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+18:04:24,138 werkzeug INFO  * Restarting with stat
+18:04:34,135 werkzeug WARNING  * Debugger is active!
+18:04:34,152 werkzeug INFO  * Debugger PIN: 117-058-107
+18:04:43,794 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+18:04:44,86 werkzeug INFO  * Restarting with stat
+18:05:00,375 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+18:05:00,375 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:05:00,381 werkzeug INFO  * Restarting with stat
+18:05:16,60 werkzeug WARNING  * Debugger is active!
+18:05:16,85 werkzeug INFO  * Debugger PIN: 117-058-107
+18:06:18,427 werkzeug INFO 127.0.0.1 - - [21/Feb/2024 18:06:18] "[35m[1mPOST /upload_audio_files HTTP/1.1[0m" 500 -
+10:40:13,841 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+10:40:13,882 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:40:13,892 werkzeug INFO  * Restarting with stat
+10:40:21,121 werkzeug WARNING  * Debugger is active!
+10:40:21,132 werkzeug INFO  * Debugger PIN: 117-058-107
+10:40:33,490 werkzeug INFO 127.0.0.1 - - [22/Feb/2024 10:40:33] "POST /upload_audio_files HTTP/1.1" 200 -
+10:47:25,367 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+10:47:25,686 werkzeug INFO  * Restarting with stat
+10:50:14,200 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+10:50:14,200 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:50:14,206 werkzeug INFO  * Restarting with stat
+10:50:22,92 werkzeug WARNING  * Debugger is active!
+10:50:22,105 werkzeug INFO  * Debugger PIN: 117-058-107
+10:50:31,859 werkzeug INFO 127.0.0.1 - - [22/Feb/2024 10:50:31] "POST /upload_audio_files HTTP/1.1" 200 -
+10:55:55,512 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:55:55,841 werkzeug INFO  * Restarting with stat
+10:56:03,824 werkzeug WARNING  * Debugger is active!
+10:56:03,835 werkzeug INFO  * Debugger PIN: 117-058-107
+10:56:09,191 werkzeug INFO 127.0.0.1 - - [22/Feb/2024 10:56:09] "POST /upload_audio_files HTTP/1.1" 200 -
+10:56:52,485 werkzeug INFO 127.0.0.1 - - [22/Feb/2024 10:56:52] "POST /upload_audio_files HTTP/1.1" 200 -
+11:11:29,73 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:11:29,675 werkzeug INFO  * Restarting with stat
+11:11:36,27 werkzeug WARNING  * Debugger is active!
+11:11:36,39 werkzeug INFO  * Debugger PIN: 117-058-107
+11:12:18,995 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:12:19,288 werkzeug INFO  * Restarting with stat
+11:12:27,769 werkzeug WARNING  * Debugger is active!
+11:12:27,783 werkzeug INFO  * Debugger PIN: 117-058-107
+11:12:43,714 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:12:44,29 werkzeug INFO  * Restarting with stat
+11:12:51,246 werkzeug WARNING  * Debugger is active!
+11:12:51,281 werkzeug INFO  * Debugger PIN: 117-058-107
+11:12:55,626 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:12:55,896 werkzeug INFO  * Restarting with stat
+11:13:04,316 werkzeug WARNING  * Debugger is active!
+11:13:04,328 werkzeug INFO  * Debugger PIN: 117-058-107
+11:14:51,263 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:14:51,534 werkzeug INFO  * Restarting with stat
+11:14:58,254 werkzeug WARNING  * Debugger is active!
+11:14:58,266 werkzeug INFO  * Debugger PIN: 117-058-107
+11:19:39,841 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:19:40,161 werkzeug INFO  * Restarting with stat
+11:19:48,429 werkzeug WARNING  * Debugger is active!
+11:19:48,448 werkzeug INFO  * Debugger PIN: 117-058-107
+11:21:47,532 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:21:47,934 werkzeug INFO  * Restarting with stat
+11:21:55,172 werkzeug WARNING  * Debugger is active!
+11:21:55,184 werkzeug INFO  * Debugger PIN: 117-058-107
+11:23:18,50 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+11:23:18,333 werkzeug INFO  * Restarting with stat
+12:49:01,12 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+12:49:01,12 werkzeug INFO [33mPress CTRL+C to quit[0m
+12:49:01,19 werkzeug INFO  * Restarting with stat
+12:49:12,942 werkzeug WARNING  * Debugger is active!
+12:49:12,969 werkzeug INFO  * Debugger PIN: 117-058-107
+12:49:19,987 werkzeug INFO 127.0.0.1 - - [23/Feb/2024 12:49:19] "POST /upload_audio_files HTTP/1.1" 200 -
+12:51:10,586 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+12:51:11,153 werkzeug INFO  * Restarting with stat
+12:51:22,377 werkzeug WARNING  * Debugger is active!
+12:51:22,400 werkzeug INFO  * Debugger PIN: 117-058-107
+12:58:05,363 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\app.py', reloading
+12:58:05,845 werkzeug INFO  * Restarting with stat
+12:58:16,445 werkzeug WARNING  * Debugger is active!
+12:58:16,469 werkzeug INFO  * Debugger PIN: 117-058-107
+13:05:28,113 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+13:05:28,632 werkzeug INFO  * Restarting with stat
+13:05:41,692 werkzeug WARNING  * Debugger is active!
+13:05:41,709 werkzeug INFO  * Debugger PIN: 117-058-107
+13:05:59,245 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+13:05:59,556 werkzeug INFO  * Restarting with stat
+13:06:09,193 werkzeug WARNING  * Debugger is active!
+13:06:09,209 werkzeug INFO  * Debugger PIN: 117-058-107
+13:07:04,952 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+13:07:05,320 werkzeug INFO  * Restarting with stat
+13:07:16,572 werkzeug WARNING  * Debugger is active!
+13:07:16,585 werkzeug INFO  * Debugger PIN: 117-058-107
+10:27:12,619 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+10:27:12,620 werkzeug INFO [33mPress CTRL+C to quit[0m
+10:27:12,685 werkzeug INFO  * Restarting with stat
+10:27:23,839 werkzeug WARNING  * Debugger is active!
+10:27:23,879 werkzeug INFO  * Debugger PIN: 117-058-107
+10:27:31,695 werkzeug INFO 127.0.0.1 - - [11/Mar/2024 10:27:31] "POST /upload_audio_files HTTP/1.1" 200 -
+10:31:15,501 werkzeug INFO 127.0.0.1 - - [11/Mar/2024 10:31:15] "POST /upload_audio_files HTTP/1.1" 200 -
+10:33:01,899 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:33:02,994 werkzeug INFO  * Restarting with stat
+10:33:51,225 werkzeug WARNING  * Debugger is active!
+10:33:51,283 werkzeug INFO  * Debugger PIN: 117-058-107
+10:35:09,321 werkzeug INFO  * Detected change in 'C:\\Users\\GagandeepSingh\\Desktop\\PROJ-EGYPT\\PROJ-EGYPT\\main.py', reloading
+10:35:09,633 werkzeug INFO  * Restarting with stat
+10:35:19,954 werkzeug WARNING  * Debugger is active!
+10:35:19,972 werkzeug INFO  * Debugger PIN: 117-058-107
+17:56:20,419 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+17:56:20,419 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:02:07,99 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:02:07,99 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:08:11,449 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+18:08:11,449 werkzeug INFO [33mPress CTRL+C to quit[0m
+18:09:08,31 werkzeug INFO 127.0.0.1 - - [14/Mar/2024 18:09:08] "GET / HTTP/1.1" 200 -
+18:09:08,179 werkzeug INFO 127.0.0.1 - - [14/Mar/2024 18:09:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+18:09:59,268 werkzeug INFO 127.0.0.1 - - [14/Mar/2024 18:09:59] "[33mGET /sfa HTTP/1.1[0m" 404 -
+18:10:06,80 werkzeug INFO 127.0.0.1 - - [14/Mar/2024 18:10:06] "[33mGET /api HTTP/1.1[0m" 404 -
+18:10:24,807 werkzeug INFO 127.0.0.1 - - [14/Mar/2024 18:10:24] "GET / HTTP/1.1" 200 -
+10:56:16,475 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+10:56:16,476 werkzeug INFO [33mPress CTRL+C to quit[0m
+12:01:24,145 werkzeug INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8080
+12:01:24,145 werkzeug INFO [33mPress CTRL+C to quit[0m
+12:01:24,156 werkzeug INFO  * Restarting with stat
+12:01:28,74 werkzeug WARNING  * Debugger is active!
+12:01:28,171 werkzeug INFO  * Debugger PIN: 841-502-866
+18:48:48,745 werkzeug INFO  * Detected change in 'C:\\Celebal data\\Telecom Egypt\\PROJ-EGYPT 1\\PROJ-EGYPT\\main.py', reloading
+18:48:49,284 werkzeug INFO  * Restarting with stat
+18:49:04,494 werkzeug WARNING  * Debugger is active!
+18:49:04,503 werkzeug INFO  * Debugger PIN: 841-502-866
+18:52:27,200 werkzeug INFO  * Detected change in 'C:\\Celebal data\\Telecom Egypt\\PROJ-EGYPT 1\\PROJ-EGYPT\\src\\audio\\audio.py', reloading
+18:52:27,406 werkzeug INFO  * Restarting with stat

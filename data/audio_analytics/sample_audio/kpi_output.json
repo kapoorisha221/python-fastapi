@@ -1,0 +1,242 @@
+{
+    "summary": null,
+    "sentiment_ls": [
+        "positive",
+        "neutral",
+        "negative",
+        "neutral",
+        "positive",
+        "negative",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "negative",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "positive",
+        "positive",
+        "negative",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative",
+        "positive",
+        "negative",
+        "positive",
+        "neutral",
+        "positive",
+        "neutral",
+        "positive",
+        "negative",
+        "negative",
+        "positive",
+        "negative",
+        "negative",
+        "negative",
+        "positive",
+        "negative"
+    ],
+    "keyPhrases_ls": [
+        [
+            "key phrase3",
+            "key phrase4"
+        ],
+        [
+            "key phrase6",
+            "key phrase7"
+        ],
+        [
+            "key phrase6",
+            "key phrase1"
+        ],
+        [
+            "key phrase3",
+            "key phrase4"
+        ],
+        [
+            "key phrase2",
+            "key phrase1"
+        ],
+        [
+            "key phrase5",
+            "key phrase4"
+        ],
+        [
+            "key phrase5",
+            "key phrase3"
+        ],
+        [
+            "key phrase5",
+            "key phrase4"
+        ],
+        [
+            "key phrase2",
+            "key phrase3"
+        ],
+        [
+            "key phrase6",
+            "key phrase7"
+        ],
+        [
+            "key phrase3",
+            "key phrase6"
+        ],
+        [
+            "key phrase6",
+            "key phrase4"
+        ],
+        [
+            "key phrase7",
+            "key phrase1"
+        ],
+        [
+            "key phrase7",
+            "key phrase6"
+        ],
+        [
+            "key phrase1",
+            "key phrase6"
+        ],
+        [
+            "key phrase4",
+            "key phrase2"
+        ],
+        [
+            "key phrase2",
+            "key phrase3"
+        ],
+        [
+            "key phrase4",
+            "key phrase7"
+        ],
+        [
+            "key phrase3",
+            "key phrase6"
+        ],
+        [
+            "key phrase5",
+            "key phrase1"
+        ],
+        [
+            "key phrase3",
+            "key phrase6"
+        ],
+        [
+            "key phrase3",
+            "key phrase7"
+        ],
+        [
+            "key phrase5",
+            "key phrase3"
+        ],
+        [
+            "key phrase4",
+            "key phrase2"
+        ],
+        [
+            "key phrase5",
+            "key phrase1"
+        ],
+        [
+            "key phrase2",
+            "key phrase3"
+        ],
+        [
+            "key phrase7",
+            "key phrase4"
+        ],
+        [
+            "key phrase5",
+            "key phrase4"
+        ],
+        [
+            "key phrase7",
+            "key phrase5"
+        ],
+        [
+            "key phrase2",
+            "key phrase6"
+        ],
+        [
+            "key phrase1",
+            "key phrase5"
+        ],
+        [
+            "key phrase1",
+            "key phrase4"
+        ],
+        [
+            "key phrase7",
+            "key phrase5"
+        ],
+        [
+            "key phrase5",
+            "key phrase4"
+        ],
+        [
+            "key phrase3",
+            "key phrase4"
+        ],
+        [
+            "key phrase1",
+            "key phrase2"
+        ],
+        [
+            "key phrase3",
+            "key phrase5"
+        ],
+        [
+            "key phrase5",
+            "key phrase3"
+        ],
+        [
+            "key phrase3",
+            "key phrase6"
+        ],
+        [
+            "key phrase2",
+            "key phrase4"
+        ],
+        [
+            "key phrase7",
+            "key phrase5"
+        ],
+        [
+            "key phrase4",
+            "key phrase2"
+        ],
+        [
+            "key phrase1",
+            "key phrase5"
+        ],
+        [
+            "key phrase7",
+            "key phrase3"
+        ],
+        [
+            "key phrase1",
+            "key phrase7"
+        ],
+        [
+            "key phrase6",
+            "key phrase7"
+        ],
+        [
+            "key phrase7",
+            "key phrase1"
+        ]
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "transcript": [
+        {
+            "dialogue": "صباح الخير. اتصالات سلمى مع حضرتك. صباح النور يا فندم، أهلا بيك يا فندم، أستاذ وليد معايا؟",
+            "speaker": "Agent",
+            "duration_to_play": "2.09",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أه يا فندم. وليد معروف.",
+            "speaker": "Agent",
+            "duration_to_play": "7.77",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أهلا بيك يا استاذ وليد، اتفضل اسعارك على نفس الرقم، كلمني منه ولا رقم تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "9.41",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أه نفس الرقم آه؟",
+            "speaker": "Agent",
+            "duration_to_play": "13.83",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اتفضلي طبعا أساعدك إزاي؟",
+            "speaker": "Agent",
+            "duration_to_play": "15.22",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بس ما يكون بستخدم نقط فرع المحلة في الجنس استكشن.",
+            "speaker": "Customer",
+            "duration_to_play": "17.73",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام.",
+            "speaker": "Agent",
+            "duration_to_play": "23.75",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كل مرة بيقول إن في خطأ.",
+            "speaker": "Customer",
+            "duration_to_play": "26.80",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "في مشكلة في استبدال النقط يعني أه بالظبط أه أه هو أنا ظاهر عندي مع حضرتك 8942 نقطة.",
+            "speaker": "Agent",
+            "duration_to_play": "33.02",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يا فندم. آه تمام.",
+            "speaker": "Customer",
+            "duration_to_play": "41.18",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، هو النقط ظاهرة عندي الخط بتاع حضرتك مفهوش أي مشكلة خاصة بالفدان، لو في مشكلة في الماكينة عندهم ممكن تخلي جرب ماكينة تانية في المكان، أو جرب مكان تاني فرع تاني، لكن النقط موجودة على الخط هو الإستبدال بيتم عن طريق الماكينة إللي في المكان نفسه.",
+            "speaker": "Agent",
+            "duration_to_play": "43.42",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام بتبقى عن طريق استبدال نقاط ولا خصام شرعية ولا يا فندم؟",
+            "speaker": "Customer",
+            "duration_to_play": "61.01",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بقى استخدام نقاط قسائم الشرقية دي إللي هو. لكن انت هتستبدل نقط الي هما 8942 نقطة تستبدل منهم. فبتختار بالنقاط مش قصة يعني.",
+            "speaker": "Agent",
+            "duration_to_play": "65.56",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب خلاص بس مش أكتر. فحاول تجرب. ممكن يكون في مشكلة مثلا فنية في المكينة، خلي جرب ماكينة تانية، أو جرب فرع تاني بس مش أكتر.",
+            "speaker": "Agent",
+            "duration_to_play": "78.88",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب إنت. أنا في خدمة حضرتك وبعتذر لأي مشكلة حاصلة مع حضرتك، طبعا يا فندم تحت أمرك، طبعا أي استفسار آخر تحت بعد الخدمة حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "87.41",
+            "locale": "ar-EG"
+        }
+    ]
+}

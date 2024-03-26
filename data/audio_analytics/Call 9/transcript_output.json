@@ -1,0 +1,118 @@
+{
+    "transcript": [
+        {
+            "dialogue": "5 دقايق صباح الخير. اتصالات سارة مع حضرتك. صباح الخير أستاذ علاء معايا؟ أيوة؟ أهلا بحضرتك يا استاذ علاء. أخبار حضرتك إيه؟",
+            "speaker": "Agent",
+            "duration_to_play": "1.43",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كله تمام. كنت عايز. كنت عايز أحول. نت من. من. من رقم تاني، عندي الرقم إللي أنا بكلمك منه.",
+            "speaker": "Customer",
+            "duration_to_play": "11.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، تحت امر حضرتك لحظة معايا الرقم إلي أخره 82 ولا رقم آخره ستة؟",
+            "speaker": "Agent",
+            "duration_to_play": "20.44",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "و80 إلي أخره؟ 82؟",
+            "speaker": "Customer",
+            "duration_to_play": "25.37",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك عايز تحول قد ايه؟ من هو معايا؟ 5425 ميجا؟",
+            "speaker": "Agent",
+            "duration_to_play": "27.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نت؟",
+            "speaker": "Customer",
+            "duration_to_play": "32.38",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أه.",
+            "speaker": "Customer",
+            "duration_to_play": "33.46",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب عايزة أحول 2 ميجا ونص، يعني النص بالنص يعني خمسة يبقى نص؟",
+            "speaker": "Customer",
+            "duration_to_play": "34.72",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "إيه؟ يعني؟ أحاول حضرتك 2500 مظبوط؟ تمام تمام؟",
+            "speaker": "Agent",
+            "duration_to_play": "41.33",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لحظة معايا أنا باخد لحضرتك الإجراء حالا، برضه حضرتك لو حبيت إن إنت تغير أي حاجة في التوزيع دي بتكون من خلال تطبيق مية الصالات أو من نجم 800 شباك، أو طبعا حضرتك تشرفنا بالإتصال وإحنا في خدمة حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "49.12",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تسلمي لي.",
+            "speaker": "Agent",
+            "duration_to_play": "62.22",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام كده؟ أنا حولتهم لحضرتك حضرتك دلوقتي الخط الي حضرتك بتكلمني منه معاه 2500 ميجا والخط الي هو اخره 82 معاه 2925 والى آخره 85 معاه 2457",
+            "speaker": "Agent",
+            "duration_to_play": "64.30",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طب عايزة أسأل حضرتك على الدقايق إللي عندي أنا و عنده عنده دقايق قد إيه؟ وأنا عندي أنا؟",
+            "speaker": "Customer",
+            "duration_to_play": "77.71",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "دقايق أد إيه الدقايق إللي عنده 1355، أما الدقايق مع حضرتك في 591؟",
+            "speaker": "Agent",
+            "duration_to_play": "84.52",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب تمام، ماشي، شكرا.",
+            "speaker": "Customer",
+            "duration_to_play": "92.14",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "شكرا يا أستاذ علاء كده.",
+            "speaker": "Agent",
+            "duration_to_play": "93.82",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لأ، شكرا، ماشي، طيب أقدر أساعد حضرتك بأي حاجة تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "96.00",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كثر خيرك. شكرا.",
+            "speaker": "Customer",
+            "duration_to_play": "99.45",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تسلمي يا رب. أتمنى لك يوم سعيد إن شاء الله. سعداء بخدمة حضرتك في اتصالات مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "100.52",
+            "locale": "ar-EG"
+        }
+    ]
+}

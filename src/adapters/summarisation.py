@@ -1,13 +1,13 @@
 import json, os, requests, time
 # from config import *
 
-# from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import (
     TextAnalyticsClient,
     ExtractiveSummaryAction,
     AbstractiveSummaryAction
 ) 
 from azure.ai.textanalytics import TextAnalyticsClient
+from azure.ai.language.conversations import ConversationAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 
 class Summarization():
@@ -141,6 +141,92 @@ class Summarization():
 
 
 
+#######################    Under development      ############################################
+    def get_conversational_text(transcription_jsonPath):
+        with open(transcription_jsonPath) as fp:
+            transcriptions = json.load(fp)
+
+        text_to_summarise_ls = []
+        for item in transcriptions['transcript']:
+            text_to_summarise_ls.append(item)
+
+        return text_to_summarise_ls
+    
+    def conversational_summarisation_helper(self,key, endpoint, transcription_jsonPath):
+        text_to_summarise_ls = self.get_conversational_text(transcription_jsonPath)
+
+        if self.text_to_summarise == None:
+            return {"status": "fail", "error": "no text to summarise"}
+        
+        credential = AzureKeyCredential(key)
+        client = ConversationAnalysisClient(endpoint, credential)
+        #data parameters are needed to be fixed
+        poller = client.begin_conversation_analysis(
+            task={
+                "displayName": "Analyze conversations from xxx",
+                "analysisInput": {
+                    "conversations": [
+                        {
+                            "conversationItems": text_to_summarise_ls,
+                            "modality": "text",
+                            "id": "conversation1",
+                            "language": "en",
+                        },
+                    ]
+                },
+                "tasks": [
+                    {
+                        "taskName": "Issue task",
+                        "kind": "ConversationalSummarizationTask",
+                        "parameters": {"summaryAspects": ["issue"]},
+                    },
+                    {
+                        "taskName": "Resolution task",
+                        "kind": "ConversationalSummarizationTask",
+                        "parameters": {"summaryAspects": ["resolution"]},
+                    },
+                ],
+            }
+        )
+
+        # headers = {
+        #             "Content-Type": "application/json",
+        #             "Ocp-Apim-Subscription-Key": self.key
+        #         }
+        
+        # res = poller.result()
+        # if res.status_code in  [202]:
+        #     print(f"#1 : {res.text}")
+
+        #     operation_location = res.headers["operation-location"]
+        #     job_id = operation_location.split("/")[-1].split("?")[0]
+
+        #     url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-text/jobs/{job_id}?api-version=2023-04-01"
+
+        start_time = time.time()
+        max_time = 10
+        passed_time = 0
+        flag = True
+        # result
+        while flag and (passed_time < max_time):
+            conversational_summary_response = poller.result()
+            response1 = conversational_summary_response
+            extractive_summary_response = json.loads(extractive_summary_response.text)
+            if extractive_summary_response["status"].lower() == "succeeded":
+                flag = False
+                result = self.get_extractive_summary(extractive_summary_response)
+            else:
+                error_msg =  f"status code : {response1.status_code}. Response : {response1.text}"
+                result = {"status": "fail", "error":error_msg}
+                
+            end_time = time.time()
+            passed_time = end_time - start_time
+
+        return result
+    # else:
+    #     error_msg = res.text
+    #     result = {"status": "fail", "error": error_msg}
+    #     return result
 
 
 

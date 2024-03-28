@@ -168,6 +168,16 @@ def get_current_tts_result_count():
     with open("/cognitive/projects/speech/PROJ-DEV-AI-CS-STT-TTS-REPO/data/tts_settings/tts.json") as fh:
         res = json.load(fh)
         return res['current_tts_result_count']
+    
+
+
+def transcription_language_checker(json_file_path):
+    with open(json_file_path,'r', encoding='utf-8') as json_file:
+        json_data = json.load(json_file)
+
+    locale_values = [item['locale'] for item in json_data['transcript']]
+
+    return locale_values
 
 ######################### POWER BI ####################################
 def get_audio_duration(path):

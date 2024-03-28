@@ -6,10 +6,6 @@ import mutagen
 from mutagen.wave import WAVE 
 
 
-#Changes to do in audio.py:
-#1.
-
-
 def mp3_to_wav(mp3_file, wav_file):
 
     mp3_file = mp3_file

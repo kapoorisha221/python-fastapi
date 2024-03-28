@@ -2,11 +2,19 @@
     "Call 1.wav": {
         "id": "Call_1.wav",
         "audio_duration": 82,
-        "audio_file_size": 2563.91796875
+        "audio_file_size": 2563.91796875,
+        "language": "hindi",
+        "overall_sentiment": "neutral",
+        "call_opening_score": 0.5,
+        "call_closing_score": 0.0
     },
     "Call 2.wav": {
         "id": "Call_2.wav",
         "audio_duration": 107,
-        "audio_file_size": 2563.91796875
+        "audio_file_size": 2563.91796875,
+        "language": "hindi",
+        "overall_sentiment": "neutral",
+        "call_opening_score": 0.5,
+        "call_closing_score": 0.0
     }
 }

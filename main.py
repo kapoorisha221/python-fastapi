@@ -90,7 +90,7 @@ class Main():
         
 ################################## POST Transcription ##################################################
             
-    def get_kpis(self, transcription_jsonPath):
+    def get_kpis(self, audio_name, transcription_jsonPath):
         # additional to transcription
         result = {}
         with open(transcription_jsonPath) as fp:
@@ -112,7 +112,7 @@ class Main():
         keyPhrases = keyPhrase_obj.keyPhrase_pipeline()
         result["keyPhrases_ls"] = keyPhrases
 
-        audio_name = "sample_audio"
+        #audio_name = "sample_audio"
         self.file_path = f"data/audio_analytics/{audio_name}/"
     
 
@@ -122,16 +122,53 @@ class Main():
 
         return result
 
-    def get_translated_transcriptions(self, transcription_jsonPath):
-        pass
-        
-    def pipeline_after_transcription(self, transcription_jsonPath):
+    def get_translated_transcriptions(self, audio_name, transcription_jsonPath):
+        # Load the original transcript JSON file
+        with open(transcription_jsonPath, 'r', encoding='utf-8') as file:
+            original_transcript_data = json.load(file)
+
+        transcript_output_english = {'transcript': [], 'audio_id': original_transcript_data['audio_id']}
+
         ## Translator ###
         translator_obj = AzureTranslator()
-        translator_result = self.get_translated_transcriptions_pipeline()
+
+        #transcript_language = transcription_language_checker(transcription_jsonPath)
+        
+        for dialogue_info in original_transcript_data['transcript']:
+            if dialogue_info['locale'] != 'en':
+                print("\n____________________________________the locale value is not english________________________________________________\n")
+                translated_dialogue = translator_obj.get_translations(dialogue_info['dialogue'], dialogue_info['locale'], 'en')
+                # transcript_output_english['transcript'].append({
+                #     'dialogue': translated_dialogue,
+                #     'speaker': dialogue_info['speaker'],
+                #     'duration_to_play': dialogue_info['duration_to_play'],
+                #     'locale': 'en'
+                # })
+                print(f"\n the response from translator is: {translated_dialogue}\n")
+                transcript_output_english['transcript'].append(dialogue_info)
+            else:
+                # Dialogue is already in English, append it directly
+                transcript_output_english['transcript'].append(dialogue_info)
+        
+        #audio_name = "sample_audio"
+        self.english_transcript_output_path = f"data/audio_analytics/{audio_name}/"
+       
+        with open(self.english_transcript_output_path +'transcript_output_english.json','w', encoding='utf-8') as file:
+            json.dump(transcript_output_english, file, indent=4)
+
+        print("________the modified excel is created___________")
+
+        english_transcription_jsonpath = self.english_transcript_output_path +'transcript_output_english.json'
+        return english_transcription_jsonpath
+        
+
+    def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
+        
+        english_transcription_jsonpath = self.get_translated_transcriptions(audio_name, transcription_jsonPath)
+        # translator_result = self.get_translated_transcriptions_pipeline()
         # additional to transcription
         # result = {}
-        result = self.get_kpis(transcription_jsonPath)
+        result = self.get_kpis(audio_name, english_transcription_jsonpath)
         
         # save wordcloud
         # text = get_text_from_keyphrases(result["keyPhrases_ls"])
@@ -228,6 +265,8 @@ class Main():
       
         with open(merged_output_jsonPath) as fh:
             data1 = json.load(fh)
+        if data1.values() != 0:
+            print("any value is picked")
 
         sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0}
         overall_sentiment = 0
@@ -236,7 +275,7 @@ class Main():
         call_opening_count = 0
         call_closing_sentiment = 0
 
-        transcriptions = data1["result"]["transcripts"]["transcript"]
+        transcriptions = data1['result']['transcripts']['transcript']
 
         locale = transcriptions[0]["locale"]
         if "en" in locale:
@@ -312,8 +351,7 @@ class Main():
 
 
 
-if __name__ == "__main__":
-    obj = Main()
+
     # path = "./data/transcript/transcript_output.json"
     # try:
     #     obj.pipeline_after_transcription(transcription_jsonPath= path)
@@ -330,16 +368,29 @@ if __name__ == "__main__":
 
 
     ## @@@@@@@@@@@@@@@@@@@@@ ###############
-    audio = "sample_audio"
-    merged_output_jsonPath = f"data/audio_analytics/{audio}/merged_output.json"
-    obj.power_bi_report_main_helper(audio_file= "Call 1.wav")
-    obj.power_bi_report_main_helper(audio_file= "Call 2.wav")
-    obj.power_bi_main_report()
+    # audio = "sample_audio"
+    # merged_output_jsonPath = f"data/audio_analytics/{audio}/merged_output.json"
+    # obj.power_bi_report_main_helper(audio_file= "Call 1.wav")
+    # obj.power_bi_report_main_helper(audio_file= "Call 2.wav")
+    # obj.power_bi_main_report()
     ############## @@@@@@@@@@@@@@@@@@@@@@ ###################################
     
 
+################################################################# Testing ###################################################################################
+if __name__ == "__main__":
+    obj = Main()
+
+    ####### PowerBI mapping.json #########
+    audio_file = "Call 2.wav"
+    obj.power_bi_report_main_helper(audio_file, merged_output_jsonPath = "data/audio_analytics/sample_audio/merged_output.json")
+    #power_bi_report_main_helper(self, audio_file, merged_output_jsonPath = "data/audio_analytics/sample_audio/merged_output.json" )
 
 
+    ######### Azure Translator ############
+    # audio_name = "Call 1"
+    # transcription_jsonPath = f"data/audio_analytics/sample_audio/transcript_output.json"
+    # temp_result = obj.get_translated_transcriptions(audio_name, transcription_jsonPath)
+    # print(f"The final path of the created json file is: {temp_result}")
 
 
         

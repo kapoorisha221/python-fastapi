@@ -6,44 +6,45 @@ import uuid
 import traceback
 
 class AzureTranslator(AzureConfig):
-    def __init__(self, transcripts) -> None:
+    def __init__(self) -> None:
         super().__init__()
-        self.transcripts = transcripts
-        self.transcriptions = self.transcripts["transcript"]
+        # self.transcripts = transcripts
+        # self.transcriptions = self.transcripts["transcript"]
 
     def get_translations(self, text, from_lang, to_lang):
+        print(f"_________________the values being passed in azure translator is:  \n text = {text}\n  from_lang = {from_lang} \n  to_lang = {to_lang}")
         response = "Translator service not working"
-        for delay_secs in (3**x for x in range(0,3)):
-            try:
-                path = '/translate'
-                constructed_url = self.ENDPOINT + path
-                params = {
-                    'api-version': '3.0',
-                    'from': from_lang,
-                    'to': [to_lang]
-                }
-                headers = {
-                    'Ocp-Apim-Subscription-Key': self.TRANS_KEY,
-                    'Ocp-Apim-Subscription-Region': self.SERVICE_REGION,
-                    'Content-type': 'application/json',
-                    'X-ClientTraceId': str(uuid.uuid4())
-                }
-                body = [
-                    {
-                        'text': f'{text}'
-                    }
-                ]
-                request = requests.post(constructed_url, params=params, headers=headers, json=body)
-                response = request.json()
-                response = response[0]['translations'][0]['text']
-                break
-            except Exception as e:
-                randomness_collision_avoidance = random.randint(0, 1000) / 1000.0
-                sleep_dur = delay_secs + randomness_collision_avoidance
-                print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
-                print(traceback.format_exc())
-                time.sleep(sleep_dur)
-                continue 
+        # for delay_secs in (3**x for x in range(0,3)):
+        #     try:
+        #         path = '/translate'
+        #         constructed_url = self.ENDPOINT + path
+        #         params = {
+        #             'api-version': '3.0',
+        #             'from': from_lang,
+        #             'to': [to_lang]
+        #         }
+        #         headers = {
+        #             'Ocp-Apim-Subscription-Key': self.TRANS_KEY,
+        #             'Ocp-Apim-Subscription-Region': self.SERVICE_REGION,
+        #             'Content-type': 'application/json',
+        #             'X-ClientTraceId': str(uuid.uuid4())
+        #         }
+        #         body = [
+        #             {
+        #                 'text': f'{text}'
+        #             }
+        #         ]
+        #         request = requests.post(constructed_url, params=params, headers=headers, json=body)
+        #         response = request.json()
+        #         response = response[0]['translations'][0]['text']
+        #         break
+        #     except Exception as e:
+        #         randomness_collision_avoidance = random.randint(0, 1000) / 1000.0
+        #         sleep_dur = delay_secs + randomness_collision_avoidance
+        #         print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
+        #         print(traceback.format_exc())
+        #         time.sleep(sleep_dur)
+        #         continue 
         return response
     
     def get_translated_transcriptions_pipeline(self):
@@ -51,6 +52,7 @@ class AzureTranslator(AzureConfig):
         for item in self.transcriptions:
             result = self.get_translations(item["dialogue"])
             if result["status"] == "success":
+                ########________________________Pickout all the necessary data from the result once confirmed results from it_________
                 output.append(result["keyPhrases"])
             else:
                 ## for testing pipeline

@@ -1,157 +1,151 @@
 {
     "transcript": [
         {
-            "dialogue": "صباح الخير. اتصالات سوء مع حضرتك؟",
+            "dialogue": "صباح الخير، اتصالات فوق مع حضرتك.",
             "speaker": "Agent",
-            "duration_to_play": "4.09",
+            "duration_to_play": "4.07",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "صباح النور. ازيك يا فندم؟",
+            "dialogue": "تغيير يا فندم؟",
             "speaker": "Agent",
-            "duration_to_play": "6.65",
+            "duration_to_play": "6.76",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "صباح الخير. إزاي حضرتك يا سيد؟",
+            "dialogue": "صباح الخير. إزاي حضرتك يا أستاذ سيد؟",
             "speaker": "Agent",
             "duration_to_play": "8.48",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "الحمد لله تمام والله.",
+            "dialogue": "الحمد لله تمام والله بخير.",
             "speaker": "Agent",
-            "duration_to_play": "10.00",
+            "duration_to_play": "10.04",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "بخير يا رب. دايما بخير يا فندم. اتفضل تحت أمرك. استفسار حضرتك بخصوص نفس الرقم ولا رقم تاني؟",
+            "dialogue": "كل سنة يا رب. دايما بخير يا فندم. اتفضل تحت أمرك. استفسار حضرتك بخصوص نفس الرقم ولا رقم تاني؟",
             "speaker": "Agent",
-            "duration_to_play": "11.83",
+            "duration_to_play": "12.09",
             "locale": "ar-EG"
         },
         {
             "dialogue": "على نفس الرقم؟ بس؟ تفضل؟",
-            "speaker": "Agent",
-            "duration_to_play": "17.05",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "كنت طالبا نقل خط بيتقل على خط تاني.",
             "speaker": "Customer",
-            "duration_to_play": "19.26",
+            "duration_to_play": "17.06",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "إيه ممكن توضحلي أكتر؟ يعني حضرتك عايز تنقل ملكيات الخط الإيد؟ إسأل الرقم تاني غير اسم حضرتك؟",
+            "dialogue": "كنت تاني بنقل خط بيتقل على خط تاني.",
+            "speaker": "Customer",
+            "duration_to_play": "19.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ممكن توضحلي أكتر؟ يعني؟ حضرتك عايز تنقل ملكية الخط الأيدي؟ اسأل الرقم تاني غير اسم حضرتك؟",
             "speaker": "Agent",
-            "duration_to_play": "26.03",
+            "duration_to_play": "26.10",
             "locale": "ar-EG"
         },
         {
             "dialogue": "أخد الخطوة بتاعت دي؟ اسأل؟",
             "speaker": "Customer",
-            "duration_to_play": "31.51",
+            "duration_to_play": "31.50",
             "locale": "ar-EG"
         },
         {
             "dialogue": "أه حضرتك عايز تاخد الخط على إيه؟",
             "speaker": "Agent",
-            "duration_to_play": "33.69",
+            "duration_to_play": "33.70",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "على هو محطوط على الخط ده، فأنا طلبت أضيف على رقم تاني بدل الرقم ده.",
+            "dialogue": "على هو محطوط على الخط ده؟",
             "speaker": "Customer",
-            "duration_to_play": "36.18",
+            "duration_to_play": "36.21",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "فأنا طلبت وأضيف على رقم تاني بدل الرقم ده.",
+            "speaker": "Customer",
+            "duration_to_play": "38.35",
             "locale": "ar-EG"
         },
         {
             "dialogue": "حضرتك عامل الطلب يعني؟",
             "speaker": "Agent",
-            "duration_to_play": "43.92",
+            "duration_to_play": "43.95",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "آه عامل من بدري؟",
-            "speaker": "Customer",
-            "duration_to_play": "45.43",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "على حاجة معايا؟",
+            "dialogue": "آه عاملة من بدري لحظة معايا؟",
             "speaker": "Agent",
-            "duration_to_play": "47.11",
+            "duration_to_play": "46.04",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "",
-            "speaker": "Customer",
-            "duration_to_play": "51.63",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "أه لحظات معايا بعد إذنك؟",
+            "dialogue": "لحظات معايا بعد إذنك؟",
             "speaker": "Agent",
-            "duration_to_play": "57.96",
+            "duration_to_play": "59.22",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "",
-            "speaker": "Customer",
-            "duration_to_play": "62.26",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "أه ده بالنسبة لي إللي هو أخره إللي هو 616 هو على نفس.",
+            "dialogue": "ده بالنسبة لي ديت إللي هو أخره إللي هو 616 إللي هو على نفس.",
             "speaker": "Agent",
-            "duration_to_play": "68.75",
+            "duration_to_play": "72.65",
             "locale": "ar-EG"
         },
         {
             "dialogue": "الأكل صح بالظبط؟",
             "speaker": "Agent",
-            "duration_to_play": "76.08",
+            "duration_to_play": "76.07",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "أه تمام مفيش مشكلة؟ طب أنا ممكن عشان وقت حضرتك هراجع بس ال على الخط عند حضرتك، و هرجع أكلم حضرتك تاني عالرقم ده؟",
+            "dialogue": "آه.",
             "speaker": "Agent",
-            "duration_to_play": "78.18",
+            "duration_to_play": "78.32",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "مفيش مشكلة تحت أمرك، هكلم حضرتك على نفس الرقم، طيب حضرتك تحب ولا رقم تاني؟",
+            "dialogue": "تمام مفيش مشكلة؟ طب أنا ممكن عشان وقت حضرتك هراجع بس ال على الخط عند حضرتك و هرجع أكلم حضرتك تاني عالرقم ده؟",
             "speaker": "Agent",
-            "duration_to_play": "90.79",
+            "duration_to_play": "81.46",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "ماشي؟ نفس الرقم؟",
+            "dialogue": "مفيش مشكلة تحت أمرك؟ هكلم حضرتك على نفس الرقم. طيب حضرتك تحب ولا رقم تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "90.78",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ماشي نفس الرقم؟",
             "speaker": "Customer",
-            "duration_to_play": "95.33",
+            "duration_to_play": "95.34",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "خلاص تمام تحت أمرك. هراجع الخط. هرجع أكلم حضرتك ولا لحضرتك إللي حصل عندك؟",
+            "dialogue": "خلاص تمام تحت أمرك. هراجع الخط. هرجع أكلم حضرتك أقول لحضرتك إللي حصل عندك.",
             "speaker": "Agent",
-            "duration_to_play": "96.77",
+            "duration_to_play": "96.80",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "أوكي؟ ماشي تحت أمرك شرفتنا.",
-            "speaker": "Agent",
-            "duration_to_play": "102.67",
+            "dialogue": "أوكي ماشي تحت أمرك، شرفتنا.",
+            "speaker": "Customer",
+            "duration_to_play": "102.63",
             "locale": "ar-EG"
         },
         {
             "dialogue": "سعداء بخدمة حضرتك. مع السلامة.",
             "speaker": "Agent",
-            "duration_to_play": "105.34",
+            "duration_to_play": "105.31",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "مع.",
+            "dialogue": "لأ.",
             "speaker": "Agent",
             "duration_to_play": "109.12",
             "locale": "ar-EG"

@@ -1,0 +1,98 @@
+{
+    "sentiment_ls": [
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "mixed",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral"
+    ],
+    "keyPhrases_ls": [
+        [
+            "halls"
+        ],
+        [
+            "Alo"
+        ],
+        [
+            "Alo"
+        ],
+        [
+            "Mrs. Rafida",
+            "voice"
+        ],
+        [
+            "same number",
+            "necessary ta",
+            "inquiry",
+            "train",
+            "line",
+            "bill",
+            "road",
+            "work",
+            "phone"
+        ],
+        [
+            "first length",
+            "moments",
+            "call"
+        ],
+        [
+            "mother",
+            "saying",
+            "Holiness"
+        ],
+        [],
+        [
+            "Cash calls",
+            "money",
+            "Egypt",
+            "heads"
+        ],
+        [
+            "Internet"
+        ],
+        [
+            "Internet",
+            "moments"
+        ],
+        [
+            "mobile phone",
+            "iPhone"
+        ],
+        [
+            "moments"
+        ],
+        [
+            "booster"
+        ],
+        [
+            "fourth flight",
+            "flight mode",
+            "mobile",
+            "5 minutes"
+        ],
+        [
+            "question",
+            "point"
+        ],
+        [],
+        [
+            "good day"
+        ],
+        []
+    ]
+}

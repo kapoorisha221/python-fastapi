@@ -1,123 +1,117 @@
 {
     "transcript": [
         {
-            "dialogue": "آه في سيارات بس مع حضرتك؟",
+            "dialogue": "آه في صالات بس مع حضرتك.",
             "speaker": "Agent",
             "duration_to_play": "1.88",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "ألو ألو أستاذة فايدة، أيوة صوتك بس بعيد معلش يا فندم.",
+            "dialogue": "ألو.",
             "speaker": "Agent",
             "duration_to_play": "4.62",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "سامعاني كده؟ أه كده تمام؟",
+            "dialogue": "ألو.",
             "speaker": "Agent",
-            "duration_to_play": "11.20",
+            "duration_to_play": "5.62",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "اتفضلي يا فندم. استفسارك عن نفس الرقم بيكلمني.",
+            "dialogue": "أستاذة رفيدة، أيوة صوتك بس بعيد، معلش يا فندم.",
             "speaker": "Agent",
-            "duration_to_play": "13.51",
+            "duration_to_play": "6.63",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "منه. أه اتفضلي.",
+            "dialogue": "سامعاني كده؟ أه كده تمام. اتفضلي يا فندم استفسارك عن نفس الرقم بتكلميني منه. أه اتفضلي. طيب أنا دلوقتي ال. القطار يعني قطعت الخط عليا عشان الفاتورة وأنا برا في الشغل ومحتاجة التلفون وبتاع تا ضروري جدا.",
             "speaker": "Agent",
-            "duration_to_play": "16.02",
+            "duration_to_play": "11.19",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "طيب أنا دلوقتي آه ال الاطار يعني قطعت الخط عليا عشان الفاتورة، وأنا برا في الشغل ومحتاجة التلفون وتبعتها ضروري جدا.",
+            "dialogue": "آه ممكن تشغليهم لحد، بس ما أوصل البيت؟ واو، بجد دا لأ شحن لحظات معايا، طول أول اننا غير أمنه، وشغال بشكل طبيعي، جربي كده في انتظار وتعملي مكالمة، اعمل ايه؟ معلش تحطيني انتظار وجربي اعملي مكالمة، أنا شايف ان هو شغال.",
             "speaker": "Agent",
-            "duration_to_play": "18.34",
+            "duration_to_play": "28.80",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "آه ممكن تشغليهم لحد، بس ما وصل البيت وا وأجدد ال أشحن لحظات معايا، طول أول إننا غير أمنه، وشغال بشكل طبيعي، جربي كده في انتظار وتعملي مكالمة",
+            "dialogue": "والداتا شغالة، إللي هو كان، أخذنا بقول لحضرتك جربت أنا جربت وأنا معاك.",
             "speaker": "Agent",
-            "duration_to_play": "28.83",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "اعمل ايه معلش؟",
-            "speaker": "Agent",
-            "duration_to_play": "40.32",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "حطيلي انتظار وجربي اعملي مكالمة. أنا شايف ان هو شغال",
-            "speaker": "Agent",
-            "duration_to_play": "41.57",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "والداتا شغالة إللي هو كان قبل ما أنا بقول لحضرتك.",
-            "speaker": "Agent",
-            "duration_to_play": "45.20",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "جربت أنا جربت وأنا معاك.",
-            "speaker": "Agent",
-            "duration_to_play": "48.63",
+            "duration_to_play": "45.19",
             "locale": "ar-EG"
         },
         {
             "dialogue": "ثانيه واحدة؟",
             "speaker": "Agent",
-            "duration_to_play": "51.43",
+            "duration_to_play": "51.44",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "اتصالات كاش تقدر تحول وتستقبل فلوس من أي حد في مصر وتشحن راسه.",
+            "dialogue": "إتصالات كاش تقدر تحول وتستقبل فلوس من اي حد في مصر وتشحن راس.",
             "speaker": "Agent",
-            "duration_to_play": "57.75",
+            "duration_to_play": "57.77",
             "locale": "ar-EG"
         },
         {
             "dialogue": "آه تمام. مش طب جربي النت كده؟",
             "speaker": "Agent",
-            "duration_to_play": "63.69",
+            "duration_to_play": "63.68",
             "locale": "ar-EG"
         },
         {
             "dialogue": "النت مش شغال. مش شغال لحظات معايا؟",
             "speaker": "Agent",
-            "duration_to_play": "68.49",
+            "duration_to_play": "68.50",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "موبايلك أيفون تمام؟ ايه موبايلك أيفون تمام؟",
+            "dialogue": "موبايلك أيفون. تمام؟ إي موبايلك أيفون تمام؟ لأ خمسة؟",
             "speaker": "Agent",
-            "duration_to_play": "73.38",
+            "duration_to_play": "73.39",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "لحظات معايا؟",
+            "dialogue": "لحظات معايا",
             "speaker": "Agent",
-            "duration_to_play": "79.93",
+            "duration_to_play": "79.91",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "طب أنا بستعمل كخطوة تنشيطية.",
-            "speaker": "Agent",
+            "dialogue": "طب أنا بس أعمل كخطوة تنشيطية.",
+            "speaker": "Customer",
             "duration_to_play": "90.35",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "محتاجة إن إنتي بعد ما تقفلي معايا هنفع الرابع الطيران تمام؟ تمام، بعديها نلغي وضع الطيران بمجرد الن تشتغل تمام، مشتغلش هنقفل الموبايل وهنفتح، وبعد 5 دقائق تمام؟",
+            "dialogue": "محتاج ان إنتي بعد ما تقفلي معايا هندفع الرابع الطيران تمام؟ تمام، بعديها نلغي وضع الطيران ومجرب الن تشتغل تمام، ماشتغلش هنقفل الموبايل وهنفتح وبعد 5 دقائق تمام؟",
             "speaker": "Agent",
-            "duration_to_play": "92.98",
+            "duration_to_play": "92.96",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "في أي سؤال عند حضرتك أو أي نقطة غير واضحة. شكرا يومك سعيد إن شاء الله شهداء بخدمة حضرتك في انتظارك. مع السلامة.",
+            "dialogue": "في أي سؤال عند حضرتك أو أي نقطة.",
             "speaker": "Agent",
-            "duration_to_play": "104.74",
+            "duration_to_play": "104.75",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "غير واضحة، شكرا.",
+            "speaker": "Agent",
+            "duration_to_play": "106.22",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يومك سعيد إن شاء الله. سعداء بخدمة حضرتك في انتظارك، مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "108.20",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام.",
+            "speaker": "Agent",
+            "duration_to_play": "113.60",
             "locale": "ar-EG"
         }
     ]

@@ -1,0 +1,17 @@
+{
+    "sentiment_ls": [
+        "positive",
+        "positive",
+        "mixed",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "mixed"
+    ]
+}

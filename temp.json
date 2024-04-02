@@ -1,0 +1,26 @@
+{'jobId': 'ea241a8e-3a99-4588-9dba-837d2b74d6f9', 'lastUpdatedDateTime': '2024-04-02T11: 52: 41Z', 'createdDateTime': '2024-04-02T11: 52: 39Z', 'expirationDateTime': '2024-04-03T11: 52: 39Z', 'status': 'succeeded', 'errors': [], 'displayName': 'Conversation Task Example', 'tasks': {'completed': 2, 'failed': 0, 'inProgress': 0, 'total': 2, 'items': [
+            {'kind': 'conversationalSummarizationResults', 'taskName': 'Conversation Task 1', 'lastUpdateDateTime': '2024-04-02T11: 52: 40.8347724Z', 'status': 'succeeded', 'results': {'conversations': [
+                        {'summaries': [], 'id': 'conversation1', 'warnings': [
+                                {'code': 'GenerationFailure', 'message': 'Insufficient content to generate summary.'
+                                },
+                                {'code': 'GenerationFailure', 'message': 'No relevant summary could be generated.'
+                                }
+                            ]
+                        }
+                    ], 'errors': [], 'modelVersion': 'latest'
+                }
+            },
+            {'kind': 'conversationalSummarizationResults', 'taskName': 'Conversation Task 2', 'lastUpdateDateTime': '2024-04-02T11: 52: 41.6565601Z', 'status': 'succeeded', 'results': {'conversations': [
+                        {'summaries': [], 'id': 'conversation1', 'warnings': [
+                                {'code': 'GenerationFailure', 'message': 'Insufficient content to generate summary.'
+                                },
+                                {'code': 'GenerationFailure', 'message': 'No relevant summary could be generated.'
+                                }
+                            ]
+                        }
+                    ], 'errors': [], 'modelVersion': 'latest'
+                }
+            }
+        ]
+    }
+}

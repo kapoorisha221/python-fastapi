@@ -1,0 +1,74 @@
+{
+    "summary": null,
+    "sentiment_ls": [
+        "positive",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "negative",
+        "mixed"
+    ],
+    "keyPhrases_ls": [
+        [
+            "O Fendem",
+            "O Vendem",
+            "first month",
+            "morning",
+            "contacts",
+            "Aywa",
+            "news",
+            "Holiness",
+            "Professor",
+            "God",
+            "number",
+            "job",
+            "bill",
+            "part",
+            "installments"
+        ],
+        [
+            "next month",
+            "example",
+            "beginning"
+        ],
+        [
+            "last part",
+            "second part",
+            "next month",
+            "installments",
+            "beginning"
+        ],
+        [],
+        [
+            "fifth day",
+            "Eli Jay",
+            "next month",
+            "validity",
+            "need"
+        ],
+        [
+            "Oh Tani",
+            "Elly Jay",
+            "56th day",
+            "bill"
+        ],
+        [
+            "first date",
+            "second date",
+            "credit department",
+            "other inquiries",
+            "Mercy Leckie",
+            "new need",
+            "installments",
+            "problem",
+            "Oki",
+            "command",
+            "love",
+            "service",
+            "Vendem",
+            "Etisalat",
+            "safety"
+        ]
+    ]
+}

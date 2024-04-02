@@ -1,39 +1,33 @@
 {
     "transcript": [
         {
-            "dialogue": "صباح الخير، السلطة مع حضرتك.",
+            "dialogue": "صباح الخير، الطلبية مع حضرتك. صباح الخير يا فندم. صباح النور يا فندم، أهلا بيك كده معايا.",
             "speaker": "Agent",
             "duration_to_play": "1.00",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "أيوة. صباح الخير يا فندم.",
+            "dialogue": "إزاي حضرتك يا فندم؟ عاملة الحمد لله تمام؟",
             "speaker": "Agent",
-            "duration_to_play": "2.50",
+            "duration_to_play": "8.58",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "صباح النور يا فندم. أهلا بك معايا.",
-            "speaker": "Agent",
-            "duration_to_play": "4.05",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "آه معاكي إزاي حضرتك يا فندم؟ عاملة الحمد لله تمام، ماشي الحمد لله حضرتك معلش كنت مقدم طلب من أجل الفاتورة ل20 ستة عايز أعرف في عليها ولا لأ؟ كان معايا برد عليها النهاردة 120.",
+            "dialogue": "الحمد لله. معلش معلش كنت مقدم طلب مقدم الفاتورة ال20 ستة بصرف عليها ولا لأ؟ النهاردة رد عليه النهاردة 28",
             "speaker": "Customer",
-            "duration_to_play": "6.50",
+            "duration_to_play": "10.87",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "حضرتك كنت مقدم طلب؟",
+            "dialogue": "كنت مقدم طلب.",
             "speaker": "Agent",
-            "duration_to_play": "20.64",
+            "duration_to_play": "20.65",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "آه، أجل، فاتورة ال20 ستة.",
+            "dialogue": "هو الأجل الفاتورة ال20 ستة.",
             "speaker": "Customer",
-            "duration_to_play": "21.70",
+            "duration_to_play": "21.71",
             "locale": "ar-EG"
         },
         {
@@ -43,87 +37,45 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "يا فندم هو طلب زي عندي إن هو يعني هو اترفض مطبقش عليه، بس كاتبين آخر ميعاد لحضرتك هيبقى يوم 12 ستة.",
+            "dialogue": "يا فندم هو طلب من عندي إن هو يعني هو اترفض متفق عليه، بس كاتبين آخر ميعاد لحضرتك هيبقى يوم 12 ستة.",
             "speaker": "Agent",
-            "duration_to_play": "35.12",
+            "duration_to_play": "35.10",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "هو معنى كده؟ هو موافقوش على المعاد، لكن وافق على التأجيل.",
+            "dialogue": "ومعنى إتنين ومفهوش على المايك فلوس على التقدير.",
             "speaker": "Customer",
             "duration_to_play": "42.34",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "موافقة، وافق على التأجيل لحد 12 تلاتة.",
+            "dialogue": "وافق على تأجيل لحد.",
             "speaker": "Agent",
-            "duration_to_play": "46.93",
+            "duration_to_play": "47.79",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "ل11266 تمام.",
+            "dialogue": "12 ستة لحد 16 ستة. تمام يا فندم. تمام كده. خلاص. أنا بسلسلتين. واحدة تقولي حاجة ستة بس أنا بتقولي مينفعش إن ما بالنسبة طلب مشترك كبير.",
             "speaker": "Customer",
-            "duration_to_play": "49.90",
+            "duration_to_play": "49.20",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "يا فندم تمام كده، خلاص، ماشي، أنا جتلك فيلتين، واحدة تقول إن حد 12 ستة، بس أنا بتقول إن مينفعش إنه ما بالنسبة طلب بتأجيل، أنا عايز أستفسر بالظبط.",
-            "speaker": "Customer",
-            "duration_to_play": "53.35",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "بس بتقدم على طلب الأداء على. يعني. على الرقم.",
+            "dialogue": "ممكن بس بتقدم على طلب على يعني على الرقم الأساسي، مفيش اهتمام، فهوا يعني ماتوفقش بس تأجل لحد يوم 12 ستة.",
             "speaker": "Agent",
-            "duration_to_play": "64.08",
+            "duration_to_play": "64.07",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "الأساسي نفسه تمام، آه.",
+            "dialogue": "12. ستة أنا الخط متاح 15، ستة، طيب.",
             "speaker": "Customer",
-            "duration_to_play": "66.26",
+            "duration_to_play": "71.92",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "فهو يعني ماتوفقش. بس تأجل لحد يوم 12 ستة.",
-            "speaker": "Agent",
-            "duration_to_play": "67.90",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "ما 12 ستة هما الخط متاح 15، ستة، طيب؟",
-            "speaker": "Customer",
-            "duration_to_play": "71.90",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "بالظبط كده يا فندم؟",
+            "dialogue": "بالظبط كده يا فندم. ماشي. شكرا يا فندم. تحت أمرك يا فندم. أي حاجة تاني؟ لا شكرا. شكرا تحت أمر حضرتك. شرفتني باتصالك، وسعداء حضرتك مع السلامة يا فندم موجود.",
             "speaker": "Agent",
             "duration_to_play": "75.02",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "ماشي؟ شكرا يا فندم.",
-            "speaker": "Customer",
-            "duration_to_play": "76.55",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "تحت أمرك يا فندم. أي.",
-            "speaker": "Agent",
-            "duration_to_play": "77.59",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "حاجة تاني؟ لا شكرا. متشكر",
-            "speaker": "Customer",
-            "duration_to_play": "79.12",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "تحت أمر حضرتك، شرفتني بإتصالك، وسعداء حضرتك مع السلامة يا فندم.",
-            "speaker": "Agent",
-            "duration_to_play": "80.80",
             "locale": "ar-EG"
         }
     ]

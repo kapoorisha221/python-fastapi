@@ -4,11 +4,6 @@
         "audio_duration": 82,
         "audio_file_size": 2563.91796875
     },
-    "Call 10.wav": {
-        "id": "Call_2.wav",
-        "audio_duration": 97,
-        "audio_file_size": 3062.29296875
-    },
     "Call 2.wav": {
         "id": "Call_3.wav",
         "audio_duration": 107,
@@ -17,36 +12,26 @@
     "Call 3.wav": {
         "id": "Call_4.wav",
         "audio_duration": 86,
-        "audio_file_size": 2701.16796875
+        "audio_file_size": 5402.29296875
     },
     "Call 4.wav": {
-        "id": "Call_5.wav",
+        "id": "Call_4.wav",
         "audio_duration": 101,
-        "audio_file_size": 3179.29296875
+        "audio_file_size": 6358.54296875
     },
     "Call 5.wav": {
-        "id": "Call_6.wav",
+        "id": "Call_5.wav",
         "audio_duration": 114,
-        "audio_file_size": 3564.04296875
+        "audio_file_size": 7128.04296875
     },
     "Call 6.wav": {
         "id": "Call_7.wav",
         "audio_duration": 104,
-        "audio_file_size": 3276.04296875
+        "audio_file_size": 6552.04296875
     },
     "Call 7.wav": {
         "id": "Call_8.wav",
         "audio_duration": 109,
-        "audio_file_size": 3420.04296875
-    },
-    "Call 8.wav": {
-        "id": "Call_9.wav",
-        "audio_duration": 92,
-        "audio_file_size": 2892.41796875
-    },
-    "Call 9.wav": {
-        "id": "Call_10.wav",
-        "audio_duration": 106,
-        "audio_file_size": 3332.29296875
+        "audio_file_size": 6840.04296875
     }
 }

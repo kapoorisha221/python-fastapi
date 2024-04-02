@@ -11,7 +11,6 @@ from src.adapters.summarisation import Summarization
 from src.adapters.azure_translator import AzureTranslator
 
 from src.audio.audio import *
-
 from config.config import *
 
 import pandas as pd
@@ -43,7 +42,6 @@ class Main():
         audio_atrs = get_audio_attrs_for_report(audio_path= audio_file_path)
         call_dict[audio_file]["audio_duration"] = audio_atrs["audio_duration"]
         call_dict[audio_file]["audio_file_size"] = audio_atrs["audio_file_size"]
-        #______________________________new parameters to add 
 
         with open(path, "w") as json_file:
             json.dump(call_dict, json_file, indent=4 )
@@ -73,10 +71,6 @@ class Main():
             print(f"channels : {attrs.channels}")
 
             path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
-            
-            # if extension == "mp3":
-            #     # convert to wav
-            #     mp3_to_wav(mp3_file= path1, wav_file= path2)
 
             # processing
             audio_processing(input_path= path1, output_path= path2)
@@ -137,13 +131,13 @@ class Main():
         for dialogue_info in original_transcript_data['transcript']:
             if dialogue_info['locale'] != 'en':
                 print("\n____________________________________the locale value is not english________________________________________________\n")
-                translated_dialogue = translator_obj.get_translations(dialogue_info['dialogue'], dialogue_info['locale'], 'en')
-                # transcript_output_english['transcript'].append({
-                #     'dialogue': translated_dialogue,
-                #     'speaker': dialogue_info['speaker'],
-                #     'duration_to_play': dialogue_info['duration_to_play'],
-                #     'locale': 'en'
-                # })
+                translated_dialogue = translator_obj.get_translated_transcriptions_pipeline(dialogue_info['dialogue'], dialogue_info['locale'], 'en')
+                transcript_output_english['transcript'].append({
+                    'dialogue': translated_dialogue,
+                    'speaker': dialogue_info['speaker'],
+                    'duration_to_play': dialogue_info['duration_to_play'],
+                    'locale': 'en'
+                })
                 print(f"\n the response from translator is: {translated_dialogue}\n")
                 transcript_output_english['transcript'].append(dialogue_info)
             else:
@@ -165,9 +159,7 @@ class Main():
     def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
         
         english_transcription_jsonpath = self.get_translated_transcriptions(audio_name, transcription_jsonPath)
-        # translator_result = self.get_translated_transcriptions_pipeline()
-        # additional to transcription
-        # result = {}
+        
         result = self.get_kpis(audio_name, english_transcription_jsonpath)
         
         # save wordcloud
@@ -258,7 +250,7 @@ class Main():
         dic_pandas = {"duration": duration_ls, "keywords": keywords_ls, 
                       "sentiment": sentiment_ls, "dialouge": dialouges_ls}
         df = pd.DataFrame(dic_pandas)
-        df.to_excel("PowerBi_1.xlsx")
+        df.to_excel("Powerbi_reports/PowerBi_1.xlsx")
 
     def power_bi_report_main_helper(self, audio_file, merged_output_jsonPath = "data/audio_analytics/sample_audio/merged_output.json" ):
         # Use merged_output.json & audios_info/mappings.json
@@ -346,7 +338,7 @@ class Main():
             output.append(res)
 
         dff = pd.DataFrame.from_dict(output)
-        dff.to_excel("PowerBi_main.xlsx")
+        dff.to_excel("Powerbi_reports/PowerBi_main.xlsx")
         # Save excel
 
 

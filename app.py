@@ -1,5 +1,4 @@
 from flask import Flask, request,jsonify, send_file, make_response
-# from flask_ngrok import run_with_ngrok 
 from config.config import *
 from flask_cors import CORS, cross_origin
 from main import Main

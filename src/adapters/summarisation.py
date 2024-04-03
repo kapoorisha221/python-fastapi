@@ -11,6 +11,7 @@ from azure.ai.language.conversations import ConversationAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 
 from config.config import LocalConfig
+from logs.logger import get_Error_Logger, get_Info_Logger
 
 class Summarization():
 
@@ -32,7 +33,10 @@ class Summarization():
         ###### CREDS #######
         self.endpoint = "https://proj-rnd-uae-et-language-001.cognitiveservices.azure.com/"
         
-
+    info_logger = get_Info_Logger()
+    error_logger = get_Error_Logger()
+    
+    
     # def get_text(self):
     #     # with open(self.transcription_jsonPath) as fp:
     #     #     transcriptions = json.load(fp)
@@ -151,82 +155,82 @@ class Summarization():
         return text_to_summarise_ls
     
     def conversational_summarisation_helper(self,audio_name,transcription_jsonPath):
-        json_path = create_conversatioanl_summ_input(audio_name,transcription_jsonPath)
-        # print("______________________ json_path_________________________",json_path)
-        text_to_summarise_ls = self.get_conversational_text(json_path)
-        if text_to_summarise_ls == None:
-            return {"status": "fail", "error": "no text to summarise"}
-        
-        url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs?api-version={self.api_version}"
-        headers = {
-                "Content-Type": "application/json",
-                "Ocp-Apim-Subscription-Key": self.key
-                }
-        data = {
-            "displayName": "Conversation Task Example",
-            "analysisInput": {
-                "conversations": [{
-                    "conversationItems": text_to_summarise_ls, 
-                    "modality": "text",
-                    "id": "conversation1",
-                    "language": "en"
-                }]
-            },
-            "tasks": [
-                {
-                    "taskName": "Conversation Task 1",
-                    "kind": "ConversationalSummarizationTask",
-                    "parameters": {
-                        "summaryAspects": ["issue"]
-                    }
-                },
-                {
-                    "taskName": "Conversation Task 2",
-                    "kind": "ConversationalSummarizationTask",
-                    "parameters": {
-                        "summaryAspects": ["resolution"],
-                        "sentenceCount": 1
-                    }
-                }
-            ]
-        }
-    
-    
-        # print("the data sent to the service is____________________: /n", text_to_summarise_ls)
-        res = requests.post(url = url, headers= headers, json=data)
-          
-        if res.status_code in  [202]:
-            # print(f"#1 : {res.text}")
-
-            operation_location = res.headers["operation-location"]
-            job_id = operation_location.split("/")[-1].split("?")[0]
-
-            url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs/{job_id}?api-version=2023-04-01"
-            res = requests.post(url = url, headers= headers, json= data)        
+        try:
+            self.info_logger.info(msg=F"creating json for summarization desired input",extra={"location":"summarisation.py - conversational_summarisation_helper"})
+            json_path = create_conversatioanl_summ_input(audio_name,transcription_jsonPath)
+            self.info_logger.info(msg=F"getting the all transcription in a single list to summarize",extra={"location":"summarisation.py - conversational_summarisation_helper"})
+            text_to_summarise_ls = self.get_conversational_text(json_path)
+            if text_to_summarise_ls == None:
+                return {"status": "fail", "error": "no text to summarise"}
             
-            start_time = time.time()
-            max_time = 10
-            passed_time = 0
-            flag = True
-            while flag and (passed_time < max_time):
-                conversatioanl_summary_response = requests.get(url = url, headers= headers)
-                conversatioanl_summary_response = json.loads(conversatioanl_summary_response.text)
-                # print("response is______________:  ", conversatioanl_summary_response)
-                if conversatioanl_summary_response["status"].lower() == "succeeded":
-                    flag = False
-                    result = self.get_conversational_summary(conversatioanl_summary_response)
-                else:
-                    error_msg =  f"status code : {conversatioanl_summary_response.status_code}. Response : {conversatioanl_summary_response.text}"
-                    result = {"status": "fail", "error":error_msg}
-                    
-                end_time = time.time()
-                passed_time = end_time - start_time
-            # print("_______________ result ___________________________________",result)
-            return result
-        else:
-            error_msg = res.text
-            result = {"status": "fail", "error": error_msg}
-            return result
+            url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs?api-version={self.api_version}"
+            headers = {
+                    "Content-Type": "application/json",
+                    "Ocp-Apim-Subscription-Key": self.key
+                    }
+            data = {
+                "displayName": "Conversation Task Example",
+                "analysisInput": {
+                    "conversations": [{
+                        "conversationItems": text_to_summarise_ls, 
+                        "modality": "text",
+                        "id": "conversation1",
+                        "language": "en"
+                    }]
+                },
+                "tasks": [
+                    {
+                        "taskName": "Conversation Task 1",
+                        "kind": "ConversationalSummarizationTask",
+                        "parameters": {
+                            "summaryAspects": ["issue"]
+                        }
+                    },
+                    {
+                        "taskName": "Conversation Task 2",
+                        "kind": "ConversationalSummarizationTask",
+                        "parameters": {
+                            "summaryAspects": ["resolution"],
+                            "sentenceCount": 1
+                        }
+                    }
+                ]
+            }
+
+            self.info_logger.info(msg=F"Sending request for summarization",extra={"location":"summarisation.py - conversational_summarisation_helper"})
+            res = requests.post(url = url, headers= headers, json=data)
+            
+            if res.status_code in  [202]:
+
+                operation_location = res.headers["operation-location"]
+                job_id = operation_location.split("/")[-1].split("?")[0]
+
+                url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs/{job_id}?api-version=2023-04-01"
+                res = requests.post(url = url, headers= headers, json= data)        
+                
+                start_time = time.time()
+                max_time = 10
+                passed_time = 0
+                flag = True
+                while flag and (passed_time < max_time):
+                    conversatioanl_summary_response = requests.get(url = url, headers= headers)
+                    conversatioanl_summary_response = json.loads(conversatioanl_summary_response.text)
+                    if conversatioanl_summary_response["status"].lower() == "succeeded":
+                        flag = False
+                        result = self.get_conversational_summary(conversatioanl_summary_response)
+                    else:
+                        error_msg =  f"status code : {conversatioanl_summary_response.status_code}. Response : {conversatioanl_summary_response.text}"
+                        result = {"status": "fail", "error":error_msg}
+                        
+                    end_time = time.time()
+                    passed_time = end_time - start_time
+                return result
+            else:
+                error_msg = res.text
+                result = {"status": "fail", "error": error_msg}
+                return result
+        except Exception as e:
+            print(e)
 
     def get_conversational_summary(self,conversational_summary_response):
         status = False

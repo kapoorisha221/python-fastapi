@@ -109,8 +109,11 @@ class Main():
             LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
             
             obj = Summarization(key, LANGUAGE_ENDPOINT)
+            
+            self.info_logger.info(msg=F"getting Conversational Summarization",extra={"location":"main.py - get_kpis"})
+
             summarisation_result = obj.conversational_summarisation_helper(audio_name,transcription_jsonPath)
-            print("_____________ summary ___________________________",summarisation_result["aspects_texts"])
+            # print("_____________ summary ___________________________",summarisation_result["aspects_texts"])
 
             # summarisation_obj = Summarization(transcripts= transcriptions)
             # summarisation_result = summarisation_obj.extractive_summarisation_helper()
@@ -129,24 +132,22 @@ class Main():
             keyPhrases = keyPhrase_obj.keyPhrase_pipeline()
             result["keyPhrases_ls"] = keyPhrases
 
-            #audio_name = "sample_audio"
             self.file_path = f"data/audio_analytics/{audio_name}/"
         
-
+            self.info_logger.info(msg=F"Saving kpi_output.json at location '{self.file_path}'",extra={"location":"main.py - get_kpis"})
             # save KPI's output
             with open(file= self.file_path + "kpi_output.json", mode= "w") as fh:
                 json.dump(result, fp= fh, indent= 4)
 
             return result
         except Exception as e:
-            print(e)
+            # print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"main.py - pipeline_after_transcription"})
 
 
     
     
     def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
-
         try:
             translator_obj = AzureTranslator()
             self.info_logger.info(msg=F"Calling get_translated_transcriptions for '{transcription_jsonPath}'",extra={"location":"main.py - pipeline_after_transcription"})
@@ -166,56 +167,74 @@ class Main():
                     for kp in ls:
                         unique_keyphrases.append(kp)
             unique_keyphrases = list(set(unique_keyphrases))
+            self.info_logger.info(msg=F"Adding unique key phrases as topics to merged output",extra={"location":"main.py - pipeline_after_transcription"})
+
             merged_output["result"]["topics"] = unique_keyphrases
 
-            print("____________ merged output____________",merged_output)
+           
             # # with open(file_path + "wordcloud.png", 'rb') as image_file:
             # #     encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
             # #     merged_output["result"]["wordcloud"] = encoded_image
-
+            self.info_logger.info(msg=F"getting text count from keyphrases and saving in merged output as wordcloud",extra={"location":"main.py - pipeline_after_transcription"})
             merged_output["result"]["wordcloud"] = get_text_count_from_keyphrases(result["keyPhrases_ls"])
-
+            
+            self.info_logger.info(msg=F"merging sentiments with transcriptions and saving in merged output as transcription",extra={"location":"main.py - pipeline_after_transcription"})
             merged_output["result"]["transcripts"] = self.merge_sentiment_with_transcription(result["sentiment_ls"], 
                                                                                              self.transcriptions)
             
             merged_output["result"]["language"] = self.transcriptions["transcript"][0]["locale"].split("-")[0]
-
+            
+            self.info_logger.info(msg=F"Saving merged_output.json as path '{self.file_path}'",extra={"location":"main.py - pipeline_after_transcription"})
             with open(self.file_path + "merged_output.json", "w") as fh:
                 json.dump(merged_output, fh, indent= 4)
 
+            self.info_logger.info(msg=F"merging keyphrases with transcription for power_bi_merged_output.json",extra={"location":"main.py - pipeline_after_transcription"})
             merged_output["result"]["transcripts"]  = self.merge_keyphrases_with_transcription(result["keyPhrases_ls"],
                                                                                                merged_output["result"]["transcripts"])
-            print("____________ merged output____________",merged_output["result"]["transcripts"])
+
+            self.info_logger.info(msg=F"Saving power_bi_merged_output.json as path '{self.file_path}'",extra={"location":"main.py - pipeline_after_transcription"})           
             with open(self.file_path + "power_bi_merged_output.json", "w") as fh:
                 json.dump(merged_output, fh, indent= 4)
 
             
         except Exception as e:
-            print(e)
+            # print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"main.py - pipeline_after_transcription"})
 
 
     def merge_sentiment_with_transcription(self, sentiment_ls, transcriptions):
-        modified_transcriptions = []
-        #iterating over list where each item is a dialouge
-        for item, sentiment in zip(transcriptions["transcript"], sentiment_ls):
-            res = item.copy()
-            res["sentiment"] = sentiment
-            modified_transcriptions.append(res)
+        try:
+            modified_transcriptions = []
+            #iterating over list where each item is a dialouge
+            for item, sentiment in zip(transcriptions["transcript"], sentiment_ls):
+                res = item.copy()
+                res["sentiment"] = sentiment
+                modified_transcriptions.append(res)
+            
+            self.info_logger.info(msg=F"sentiments added with the transcription based on the both list indexing",extra={"location":"main.py - pipeline_after_transcription"})
+            output = {"transcript": modified_transcriptions}
+            return output
+        except Exception as e:
+            # print(e)
+            self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"main.py - merge_sentiment_with_transcription"})
 
-        output = {"transcript": modified_transcriptions}
-        return output
     
     
     def merge_keyphrases_with_transcription(self, keyPhrases_ls, transcriptions):
-        modified_transcriptions = []
-        for item, keyPhrases_ls in zip(transcriptions["transcript"], keyPhrases_ls):
-            res = item.copy()
-            res["keyPhrases"] = keyPhrases_ls
-            modified_transcriptions.append(res)
-        print("____________________ adding transcript with powerbi json _____________",modified_transcriptions)
-        output = {"transcript": modified_transcriptions}
-        return output
+        try:
+            modified_transcriptions = []
+            for item, keyPhrases_ls in zip(transcriptions["transcript"], keyPhrases_ls):
+                res = item.copy()
+                res["keyPhrases"] = keyPhrases_ls
+                modified_transcriptions.append(res)
+                
+            self.info_logger.info(msg=F"KeyPhrases added with the transcription based on the both list indexing",extra={"location":"main.py - pipeline_after_transcription"})
+            output = {"transcript": modified_transcriptions}
+            return output
+        except Exception as e:
+            # print(e)
+            self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"main.py - merge_sentiment_with_transcription"})
+
 
 
     

@@ -42,6 +42,7 @@ class AzureTranslator():
                         'text': f'{text}'
                     }
                 ]
+                self.info_logger.info(msg=F"Sending request to the API to translate",extra={"location":"translator.py - get_translated_transcriptions"})
                 request = requests.post(constructed_url, params=params, headers=headers, json=body)
                 response = request.json()
                 response = response[0]['translations'][0]['text']
@@ -82,7 +83,10 @@ class AzureTranslator():
             self.info_logger.info(msg=F"Starting to Iterate over the dialogue to translate of '{transcription_jsonPath}'",extra={"location":"translator.py - get_translated_transcriptions"})
             for dialogue_info in original_transcript_data['transcript']:
                 if dialogue_info['locale'] != 'en':
+                    self.info_logger.info(msg=F"calling get_translation for the dialogues in'{dialogue_info['locale']}'",extra={"location":"translator.py - get_translated_transcriptions"})
                     translated_dialogue = self.get_translations(text=dialogue_info['dialogue'], from_lang=dialogue_info['locale'], to_lang="en")
+                    self.info_logger.info(msg=F"got the translated value, now appending it to transcription list",extra={"location":"translator.py - get_translated_transcriptions"})
+
                     transcript_output_english['transcript'].append({
                         'dialogue': translated_dialogue,
                         'speaker': dialogue_info['speaker'],
@@ -90,7 +94,7 @@ class AzureTranslator():
                         'locale': 'en' 
                     })
                     # print(f"\n the response from translator is: {translated_dialogue}\n")
-                    self.info_logger.info(msg=F"the response from translator is: {translated_dialogue}",extra={"location":"translator.py - get_translated_transcriptions"})
+                    # self.info_logger.info(msg=F"the response from translator is: {translated_dialogue}",extra={"location":"translator.py - get_translated_transcriptions"})
                 else:
                     # Dialogue is already in English, append it directly
                     transcript_output_english['transcript'].append(dialogue_info)
@@ -102,7 +106,7 @@ class AzureTranslator():
 
             # print("________the modified json is created___________") #???????????
             english_transcription_jsonpath = self.english_transcript_output_path +'transcript_output_english.json'
-            self.info_logger.info(msg=F"saved translated output to transcript_output_english.json at locaton '{english_transcription_jsonpath}'",extra={"location":"translator.py - get_translated_transcriptions"})
+            self.info_logger.info(msg=F"saved translated output list to transcript_output_english.json at locaton '{english_transcription_jsonpath}'",extra={"location":"translator.py - get_translated_transcriptions"})
             return english_transcription_jsonpath
         except Exception as e:
             print(e)

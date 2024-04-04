@@ -1,29 +1,26 @@
 import json, os, requests, time
-# from config import *
 
-from azure.ai.textanalytics import (
-    TextAnalyticsClient,
-    ExtractiveSummaryAction,
-    AbstractiveSummaryAction
-) 
-from azure.ai.textanalytics import TextAnalyticsClient
-from azure.ai.language.conversations import ConversationAnalysisClient
-from azure.core.credentials import AzureKeyCredential
+# from azure.ai.textanalytics import TextAnalyticsClient, ExtractiveSummaryAction, AbstractiveSummaryAction 
+# from azure.ai.textanalytics import TextAnalyticsClient
+# from azure.ai.language.conversations import ConversationAnalysisClient
+# from azure.core.credentials import AzureKeyCredential
 
-from config.config import LocalConfig
+from config.config import LocalConfig, AzureConfig
 from logs.logger import get_Error_Logger, get_Info_Logger
 
 class Summarization():
-
-    def __init__(self,  key, LANGUAGE_ENDPOINT):       
+    info_logger = get_Info_Logger()
+    error_logger = get_Error_Logger()
+    cred = AzureConfig()
+    def __init__(self):       
         self.with_diarisation_flag = False
         self.document = []
         self.text_to_append = ""
 
         ########################## REST ######################
-        self.LANGUAGE_ENDPOINT = LANGUAGE_ENDPOINT
+        self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
         self.url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-text/jobs?api-version=2023-04-01"
-        self.key = key
+        self.key = self.cred.LANGUAGE_KEY
         self.api_version = "2023-04-01"
         # self.transcription_jsonPath = transcription_jsonPath
         self.text_to_summarise = None
@@ -33,10 +30,8 @@ class Summarization():
         ###### CREDS #######
         self.endpoint = "https://proj-rnd-uae-et-language-001.cognitiveservices.azure.com/"
         
-    info_logger = get_Info_Logger()
-    error_logger = get_Error_Logger()
     
-    
+##################################### Extractive Summarization ####################################
     # def get_text(self):
     #     # with open(self.transcription_jsonPath) as fp:
     #     #     transcriptions = json.load(fp)
@@ -141,18 +136,38 @@ class Summarization():
 
 
 
-#######################    Under development      ############################################
+#######################    Conversational Summarization      ############################################
     def get_conversational_text(self,transcription_jsonPath):
-        # print("______________________________ get_conversational_text start____________________________________")
-        with open(transcription_jsonPath,'r',encoding='utf-8') as fp:
-            transcriptions = json.load(fp)
 
-        text_to_summarise_ls = []
-        for item in transcriptions:
-            text_to_summarise_ls.append(item)
+        try:
 
-        # print("______________________________ get_conversational_text stop____________________________________",text_to_summarise_ls)
-        return text_to_summarise_ls
+            # print("______________________________ get_conversational_text start____________________________________")
+
+            self.info_logger.info(msg=F"opening conversational_input.json",extra={"location":"summarisation.py - get_conversational_text"})
+
+            with open(transcription_jsonPath,'r',encoding='utf-8') as fp:
+
+                transcriptions = json.load(fp)
+
+
+
+            text_to_summarise_ls = []
+
+            for item in transcriptions:
+
+                text_to_summarise_ls.append(item)
+
+
+
+            self.info_logger.info(msg=F"appended and returned in a list successfully",extra={"location":"summarisation.py - get_conversational_text"})
+
+            return text_to_summarise_ls
+
+        except Exception as e:
+
+            # print(e)
+
+            self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"summarisation.py - get_conversational_text"})
     
     def conversational_summarisation_helper(self,audio_name,transcription_jsonPath):
         try:
@@ -204,7 +219,8 @@ class Summarization():
 
                 operation_location = res.headers["operation-location"]
                 job_id = operation_location.split("/")[-1].split("?")[0]
-
+                self.info_logger.info(msg=F"Extracted job id from the response '{job_id}'",extra={"location":"summarisation.py - conversational_summarisation_helper"})
+                
                 url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs/{job_id}?api-version=2023-04-01"
                 res = requests.post(url = url, headers= headers, json= data)        
                 
@@ -213,9 +229,12 @@ class Summarization():
                 passed_time = 0
                 flag = True
                 while flag and (passed_time < max_time):
+                    self.info_logger.info(msg=F"calling get in loop for 10 min and passed time is {passed_time} min, to have summarization using jobid '{job_id}'",extra={"location":"summarisation.py - conversational_summarisation_helper"})
                     conversatioanl_summary_response = requests.get(url = url, headers= headers)
                     conversatioanl_summary_response = json.loads(conversatioanl_summary_response.text)
+                    print("________________conversatioanl_summary_response___________: ", conversatioanl_summary_response)
                     if conversatioanl_summary_response["status"].lower() == "succeeded":
+                        self.info_logger.info(msg=F"got the response successfully of conversation from the API,now will format it to desired format",extra={"location":"summarisation.py - conversational_summarisation_helper"})
                         flag = False
                         result = self.get_conversational_summary(conversatioanl_summary_response)
                     else:
@@ -230,7 +249,7 @@ class Summarization():
                 result = {"status": "fail", "error": error_msg}
                 return result
         except Exception as e:
-            print(e)
+            self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"summarisation.py - conversational_summarisation_helper"})
 
     def get_conversational_summary(self,conversational_summary_response):
         status = False
@@ -248,9 +267,11 @@ class Summarization():
                             text = summary.get("text")
                             if aspect is not None and text is not None:
                                 aspects_texts.append({"aspect": aspect, "text": text})
-                status = True
+                                self.info_logger.info(msg=F"formatting status is successfull",extra={"location":"summarisation.py - get_conversational_summary"})
+                status = True               
             except Exception as e:
                 errors = str(e)
+                self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"summarisation.py - get_conversational_summary"})
         else:
             errors = ", ".join(conversational_summary_response.get("errors", []))
 
@@ -292,6 +313,7 @@ def create_conversatioanl_summ_input(audio_name,transcription_jsonpath):
     with open(conversatioanl_summ_input_path, 'w', encoding='utf-8') as eop:
         json.dump(output, eop, indent=4)
     return conversatioanl_summ_input_path
+
 
 if __name__ == "__main__":
     # with open("analytics_output.json") as fp:

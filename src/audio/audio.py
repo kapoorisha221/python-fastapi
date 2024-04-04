@@ -1,15 +1,16 @@
 # import librosa
+#import uuid
+import os
 import soundfile as sf
-import uuid
-from config.config import *
-import mutagen 
-from mutagen.wave import WAVE 
-from logs.logger import *
-
-
 from pydub import AudioSegment
 
+from config.config import FileConfig, AzureConfig
+from mutagen.wave import WAVE 
+from logs.logger import get_Error_Logger, get_Info_Logger
 
+
+
+cred = AzureConfig()
 info_logger = get_Info_Logger()
 error_logger = get_Error_Logger()
 

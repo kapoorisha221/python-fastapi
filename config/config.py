@@ -3,9 +3,13 @@ import os
 class AzureConfig():
     def __init__(self) -> None:
 
-        ####### LANGUAGE #######
-        self.LANGUAGE_KEY = ""
-        self.LANGUAGE_ENDPOINT = ""
+        ####### CREDENTIALS #######
+        self.LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
+        self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
+        self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
+        self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
+        self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         
         # STT
         self.STT_HOST_URL = "ws://127.0.0.1:<port>"

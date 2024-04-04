@@ -2,9 +2,10 @@ import json
 import os
 import time
 import azure.cognitiveservices.speech as speechsdk
-from logs.logger import *
+from logs.logger import get_Error_Logger, get_Info_Logger
+from config.config import AzureConfig
 
-
+cred = AzureConfig()
 info_logger = get_Info_Logger()
 error_logger = get_Error_Logger()
 

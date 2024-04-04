@@ -5,19 +5,19 @@ import time
 import uuid
 import traceback
 
-from config.config import LocalConfig
+from config.config import LocalConfig, AzureConfig
 from logs.logger import get_Error_Logger, get_Info_Logger
 
 class AzureTranslator():
-    def __init__(self) -> None:
-        super().__init__()
-        self.TRANS_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        self.SERVICE_REGION = "eastus"
-        self.ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
-        
-
+    cred = AzureConfig()
     info_logger = get_Info_Logger()
     error_logger = get_Error_Logger()
+    def __init__(self) -> None:
+        super().__init__()
+        self.TRANS_KEY = self.cred.TRANSLATOR_KEY
+        self.SERVICE_REGION = "eastus"
+        self.ENDPOINT = self.cred.TRANSLATOR_ENDPOINT
+        
 
     def get_translations(self, text, from_lang, to_lang):
         # print(f"_________________the values being passed in azure translator is:  \n text = {text}\n  from_lang = {from_lang} \n  to_lang = {to_lang}")

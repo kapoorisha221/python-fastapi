@@ -44,6 +44,16 @@ async def create_upload_file(files: List[UploadFile], background_tasks: Backgrou
          error_logger.error(msg="An Error Occured at post request..",exc_info=e,extra={"location":"App.py-create_upload_file"})
          return {"message": "An Error Occured while collecting the files!!"}
 
+@app.get("/createreport")
+async def create_powerbi_reports():
+    try:
+        
+          pass
+    except Exception as e:
+        error_logger.error(msg="An Error Occured at get request..",exc_info=e,extra={"location":"App.py-create_upload_file"})
+        return {"message": "An Error Occured while collecting the files!!"}
+          
+
 if __name__ == "__main__":
     host = "127.0.0.1"
     uvicorn.run(app,host=host, port=8000)

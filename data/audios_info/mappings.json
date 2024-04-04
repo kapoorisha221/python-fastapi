@@ -1,37 +1,3 @@
 {
-    "Call 1.wav": {
-        "id": "Call_1.wav",
-        "audio_duration": 82,
-        "audio_file_size": 2563.91796875
-    },
-    "Call 2.wav": {
-        "id": "Call_3.wav",
-        "audio_duration": 107,
-        "audio_file_size": 3350.29296875
-    },
-    "Call 3.wav": {
-        "id": "Call_4.wav",
-        "audio_duration": 86,
-        "audio_file_size": 5402.29296875
-    },
-    "Call 4.wav": {
-        "id": "Call_4.wav",
-        "audio_duration": 101,
-        "audio_file_size": 6358.54296875
-    },
-    "Call 5.wav": {
-        "id": "Call_5.wav",
-        "audio_duration": 114,
-        "audio_file_size": 7128.04296875
-    },
-    "Call 6.wav": {
-        "id": "Call_7.wav",
-        "audio_duration": 104,
-        "audio_file_size": 6552.04296875
-    },
-    "Call 7.wav": {
-        "id": "Call_8.wav",
-        "audio_duration": 109,
-        "audio_file_size": 6840.04296875
-    }
+    
 }

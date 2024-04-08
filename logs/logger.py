@@ -12,7 +12,7 @@ InfoLogger.setLevel(logging.INFO)
 
 InfoFileHandler = logging.FileHandler(info_log_path)
 
-InfoLogFormatter = jsonlogger.JsonFormatter('format=%(asctime)s %(name)s %(levelname)s %(message)s',datefmt="%Y-%m-%d T%H:%M:%S%z")
+InfoLogFormatter = jsonlogger.JsonFormatter('format=%(asctime)s  %(message)s',datefmt="%Y-%m-%d T%H:%M:%S%z")
 
 InfoFileHandler.setFormatter(InfoLogFormatter)
 InfoLogger.addHandler(InfoFileHandler)
@@ -23,7 +23,7 @@ ErrorLogger.setLevel(logging.ERROR)
 
 ErrorFileHandler = logging.FileHandler(error_log_path)
 
-ErrorLogFormatter = jsonlogger.JsonFormatter('format=%(asctime)s %(name)s %(levelname)s %(message)s',datefmt="%Y-%m-%d T%H:%M:%S%z")
+ErrorLogFormatter = jsonlogger.JsonFormatter('format=%(asctime)s %(message)s',datefmt="%Y-%m-%d T%H:%M:%S%z")
 
 ErrorFileHandler.setFormatter(ErrorLogFormatter)
 ErrorLogger.addHandler(ErrorFileHandler)
@@ -38,7 +38,7 @@ def log_Garbage_Collector():
     current_time = datetime.datetime.now(datetime.timezone.utc)
     
     #one_week_ago = current_time - datetime.timedelta(days=7)
-    one_week_ago = current_time - datetime.timedelta(seconds=10)
+    one_week_ago = current_time - datetime.timedelta(seconds=1000)
     
     def is_log_old(log_line):
         log_data = json.loads(log_line)

@@ -353,31 +353,66 @@ class Main:
                 information = json.load(fp)
                 
             audio_file_ls , duration_ls, dialouges_ls, keywords_ls, sentiment_ls,sort_sentiment_ls =  [],[], [],[], [],[]
+            translator_obj = AzureTranslator()
+            native_lang='en'
+            output_lang='ar-EG'
+            arabic_audio_file_ls , arabic_duration_ls, arabic_dialouges_ls, arabic_keywords_ls, arabic_sentiment_ls, arabic_sort_sentiment_ls =  [],[], [],[], [],[]
 
             for dialouge in information["result"]["transcripts"]["transcript"]:
                 if dialouge["keyPhrases"]:
                     sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
                     for kp in dialouge["keyPhrases"]:
-                        audio_file_ls.append(audio_file + ".wav")
-                        duration_ls.append(dialouge["duration_to_play"])
-                        dialouges_ls.append(dialouge["dialogue"])
-                        keywords_ls.append(kp)
-                        sentiment_ls.append(dialouge["sentiment"]) 
-                        sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
+                        audio_file_ls.append(audio_file)
+                        arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file,from_lang=native_lang,to_lang=output_lang))
                         
+                        duration_ls.append(dialouge["duration_to_play"])
+                        arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"],from_lang=native_lang,to_lang=output_lang))
+                        
+                        dialouges_ls.append(dialouge["dialogue"])
+                        arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"],from_lang=native_lang,to_lang=output_lang))
+                        
+                        keywords_ls.append(kp)
+                        arabic_keywords_ls.append(translator_obj.get_translations(text=kp,from_lang=native_lang,to_lang=output_lang))
+                        
+                        sentiment_ls.append(dialouge["sentiment"])
+                        arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"],from_lang=native_lang,to_lang=output_lang))
+                        
+                        
+                        sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
+                        arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=sentiment_mapping[dialouge["sentiment"]],from_lang=native_lang,to_lang=output_lang))
+                                                
                 else:
                     duration_ls.append(dialouge["duration_to_play"])
+                    arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"],from_lang=native_lang,to_lang=output_lang))
+
                     audio_file_ls.append(audio_file)
+                    arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file,from_lang=native_lang,to_lang=output_lang))
+                    
                     dialouges_ls.append(dialouge["dialogue"])
+                    arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"],from_lang=native_lang,to_lang=output_lang))
+
                     keywords_ls.append(None)
+                    arabic_keywords_ls.append(None)
+
                     sentiment_ls.append(dialouge["sentiment"])
+                    arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"],from_lang=native_lang,to_lang=output_lang))
+
                     sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
+                    arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=sentiment_mapping[dialouge["sentiment"]],from_lang=native_lang,to_lang=output_lang))
+
 
             # final result for an audio
             dic_pandas = {"Audio file_1":audio_file_ls, "duration_1": duration_ls, "keywords_1": keywords_ls, 
                         "sentiment_1": sentiment_ls, "dialouge_1": dialouges_ls,"sort sentiment_1":sort_sentiment_ls}
+            
+            
+            arabic_dic_pandas = {"Audio file_1":arabic_audio_file_ls, "duration_1": arabic_duration_ls, "keywords_1": arabic_keywords_ls, 
+                        "sentiment_1": arabic_sentiment_ls, "dialouge_1": arabic_dialouges_ls,"sort sentiment_1":arabic_sort_sentiment_ls}
+            
             df1 = pd.DataFrame(dic_pandas)
-            return df1
+            arabic_df1 = pd.DataFrame(arabic_dic_pandas)
+
+            return df1, arabic_df1
         except Exception as e :
             self.error_logger.error(
                 msg="An Error Occured ..",
@@ -471,16 +506,30 @@ class Main:
                 data = json.load(fh)
 
             output = []
+            arabic_output = []
+            
+            translator_obj = AzureTranslator()
+            
+            native_lang='en'
+            output_lang='ar-EG'
 
             for k,v in data.items():
-                res = {}
-                res["audio_filename"] = k
+                eng_res = {}
+                arabic_res = {}
+                eng_res["audio_filename"] = k
+                arabic_k = translator_obj.get_translations(text=k,from_lang=native_lang,to_lang=output_lang)
+                arabic_res["audio_filename_2"] = "wav."+ arabic_k[:-4]
                 for attr, value in v.items():
-                    res[attr] = value
-                output.append(res)
+                    eng_res[attr] = value
+                    
+                    arabic_res[f"{attr}_2"] = translator_obj.get_translations(text=value,from_lang=native_lang,to_lang=output_lang)
+                output.append(eng_res)
+                arabic_output.append(arabic_res)
 
             dff = pd.DataFrame.from_dict(output)
-            dff.to_excel("Powerbi_reports/PowerBi_main.xlsx", index=False)
+            arabic_dff = pd.DataFrame.from_dict(arabic_output)
+            dff.to_excel("Powerbi_reports/PowerBi_main.xlsx",index=False)
+            arabic_dff.to_excel("Powerbi_reports/arabic_PowerBi_main.xlsx",index=False)
         # Save excel
         except Exception as e:
             self.error_logger.error(
@@ -500,6 +549,7 @@ class Main:
                 )
             
             All_audio_result = pd.DataFrame()
+            arabic_All_audio_result = pd.DataFrame()
             calls_list = os.listdir(path)
             for calls in calls_list:
                 powerbi_merged_path = f"{path}\{calls}\power_bi_merged_output.json"
@@ -508,15 +558,20 @@ class Main:
                     self.info_logger.info(msg=f"getting dataframe from power_bi_keyword for {calls} and appending it to to all_audio_result dataframe",
                     extra={"location": "main.py-create_excel_for_powerbi"})
                     
-                    result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path, audio_file=calls)
+                    result_for_one_audio, arabic_result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path, audio_file=calls)
                     All_audio_result = All_audio_result._append(result_for_one_audio, ignore_index=True)
+                    arabic_All_audio_result = arabic_All_audio_result._append(arabic_result_for_one_audio, ignore_index=True)
+
                     
-            self.info_logger.info(msg=f"creating PowerBi_1 keyword excel using the data of All_audio_result dataframe",
+            self.info_logger.info(msg=f"creating PowerBi_keywords_{calls_list[0]}-{calls_list[-1]} excel using the data of All_audio_result dataframe",
                     extra={"location": "main.py-create_excel_for_powerbi"})
             
             All_audio_result.to_excel(f"Powerbi_reports/PowerBi_keywords_{calls_list[0]}-{calls_list[-1]}.xlsx", index=False)
+            arabic_All_audio_result.to_excel("Powerbi_reports/arabic_PowerBi_1.xlsx",index=False)
+
             
-            self.info_logger.info(msg=f"creating power_bi_main report using the mapping.json",
+            self.info_logger.info(
+                    msg=f"creating power_bi_main report using the mapping.json",
                     extra={"location": "main.py-create_excel_for_powerbi"},
                 )
             self.power_bi_main_report(mapping_json_path=LocalConfig().DATA_FOLDER + "/audios_info\mappings.json")

@@ -1,0 +1,324 @@
+{
+    "result": {
+        "summary": [
+            {
+                "aspect": "issue",
+                "text": "The customer is inquiring about the availability of minutes to guide the village on the line."
+            },
+            {
+                "aspect": "resolution",
+                "text": "The agent suggests the customer focus on the tools they are looking for and mentions that they will follow up with the customer if there is any need."
+            }
+        ],
+        "topics": [
+            "Mashi",
+            "Merciful contacts",
+            "inquiry",
+            "pure need",
+            "mercy",
+            "other inquiry",
+            "mind",
+            "trowels",
+            "Btaa",
+            "reason",
+            "God",
+            "morning",
+            "command",
+            "line",
+            "Internet",
+            "offer",
+            "pardon",
+            "Jat",
+            "message",
+            "service",
+            "years",
+            "minutes",
+            "pure people",
+            "village",
+            "lines",
+            "need",
+            "house",
+            "side",
+            "Minutes",
+            "Tab",
+            "diet",
+            "example",
+            "Mr. Mohammed",
+            "offers",
+            "Salvation"
+        ],
+        "wordcloud": [
+            {
+                "text": "Merciful contacts",
+                "value": 1
+            },
+            {
+                "text": "morning",
+                "value": 2
+            },
+            {
+                "text": "mercy",
+                "value": 1
+            },
+            {
+                "text": "Mr. Mohammed",
+                "value": 1
+            },
+            {
+                "text": "inquiry",
+                "value": 1
+            },
+            {
+                "text": "example",
+                "value": 1
+            },
+            {
+                "text": "minutes",
+                "value": 1
+            },
+            {
+                "text": "village",
+                "value": 1
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "Minutes",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 2
+            },
+            {
+                "text": "offers",
+                "value": 1
+            },
+            {
+                "text": "message",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 1
+            },
+            {
+                "text": "pure people",
+                "value": 1
+            },
+            {
+                "text": "pure need",
+                "value": 1
+            },
+            {
+                "text": "Salvation",
+                "value": 1
+            },
+            {
+                "text": "mind",
+                "value": 1
+            },
+            {
+                "text": "years",
+                "value": 1
+            },
+            {
+                "text": "lines",
+                "value": 1
+            },
+            {
+                "text": "Jat",
+                "value": 1
+            },
+            {
+                "text": "Btaa",
+                "value": 1
+            },
+            {
+                "text": "reason",
+                "value": 2
+            },
+            {
+                "text": "trowels",
+                "value": 1
+            },
+            {
+                "text": "offer",
+                "value": 1
+            },
+            {
+                "text": "need",
+                "value": 5
+            },
+            {
+                "text": "command",
+                "value": 1
+            },
+            {
+                "text": "diet",
+                "value": 1
+            },
+            {
+                "text": "house",
+                "value": 1
+            },
+            {
+                "text": "side",
+                "value": 1
+            },
+            {
+                "text": "Tab",
+                "value": 1
+            },
+            {
+                "text": "Mashi",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            },
+            {
+                "text": "pardon",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning. Merciful contacts with you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.90",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Good morning, mercy.",
+                    "speaker": "Agent",
+                    "duration_to_play": "5.01",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Good morning, Mr. Mohammed. What's up?",
+                    "speaker": "Agent",
+                    "duration_to_play": "6.35",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay. Fine thank you. Fine thank you. Would you like an inquiry about?",
+                    "speaker": "Agent",
+                    "duration_to_play": "8.91",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "For example? He is not there. There are no minutes to guide the village on this line or what?",
+                    "speaker": "Customer",
+                    "duration_to_play": "11.54",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Minutes Net?",
+                    "speaker": "Agent",
+                    "duration_to_play": "16.16",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Why do you mean why should we shout at her?",
+                    "speaker": "Customer",
+                    "duration_to_play": "17.99",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Unfortunately, by God, if there are offers that will bring you a message about it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.86",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Ah, is the Internet finished with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.34",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Salvation is not needed, I. I am inquiring that I have taken my mind for years, there is no need like this, I mean pure people with lines that bring them to them Jat and Btaa, there is no pure need, the reason means.",
+                    "speaker": "Customer",
+                    "duration_to_play": "28.71",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "No, there is no reason, but if it means it can be, but you focus on the trowels that we are looking for, because these trowels remain in them, if there is an offer or a need, you can benefit from it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "39.61",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Oh, okay.",
+                    "speaker": "Customer",
+                    "duration_to_play": "50.73",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I am not at your command, any need for help you again?",
+                    "speaker": "Agent",
+                    "duration_to_play": "53.95",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "In general, we went on a diet in it, but there is no need for us, or what?",
+                    "speaker": "Customer",
+                    "duration_to_play": "57.86",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Yes, there is no house or need.",
+                    "speaker": "Customer",
+                    "duration_to_play": "61.95",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "If I swear to God, don't worry about that.",
+                    "speaker": "Agent",
+                    "duration_to_play": "65.84",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "What is the side of the Tab, there is no need like this, thank you, Mashi.",
+                    "speaker": "Customer",
+                    "duration_to_play": "68.31",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Pardon, I also try to follow up with you, and if there is anything in need, I will talk to you again, walk, thank you, pardon me, eh? At your service, any other inquiry, thank you pardon.",
+                    "speaker": "Agent",
+                    "duration_to_play": "73.08",
+                    "locale": "en",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

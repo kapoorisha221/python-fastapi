@@ -7,15 +7,17 @@ from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
 from logs.logger import get_Error_Logger, get_Info_Logger
-from utils import is_file_present, get_audio_attributes, get_text_count_from_keyphrases
-from config.config import LocalConfig, AzureConfig
+from utils import convert_to_minutes, is_file_present, get_audio_attributes, get_text_count_from_keyphrases
+from config.config import LocalConfig
 
 
 class Main:
     info_logger = get_Info_Logger()
     error_logger = get_Error_Logger()
 
-    # #################################### Pre Processing and transcription ##################################################
+###################################################################################################################
+##################################### Pre Processing and transcription ############################################
+###################################################################################################################
 
     def add_to_mapping(self, audio_file_path):
         try:
@@ -33,12 +35,15 @@ class Main:
             next_call_name = "Call_{}".format(next_call_number) + ".wav"
 
             audio_file = audio_file_path.split("/")[-1]
-
-            call_dict[audio_file] = {"id": next_call_name}
-
             audio_atrs = get_audio_attrs_for_report(audio_path=audio_file_path)
-            call_dict[audio_file]["audio_duration"] = audio_atrs["audio_duration"]
-            call_dict[audio_file]["audio_file_size"] = audio_atrs["audio_file_size"]
+            minutes = convert_to_minutes(audio_atrs["audio_duration"])
+
+            
+            call_dict[audio_file] = {"id": next_call_name}
+            call_dict[audio_file]["recordingID"] = next_call_number            
+            call_dict[audio_file]["CallDuration"] = minutes
+            call_dict[audio_file]["Audio_Size"] = audio_atrs["audio_file_size"]
+            
 
             with open(path, "w") as json_file:
                 json.dump(call_dict, json_file, indent=4)
@@ -72,7 +77,6 @@ class Main:
                     folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
                     filename=file_to_check,
                 ):
-                    # print(f"check : {audio_file}")
                     self.info_logger.info(
                         msg=f"file {file_to_check} already found",
                         extra={"location": "main.py-audios_main"},
@@ -88,9 +92,6 @@ class Main:
                     extra={"location": "main.py-audios_main"},
                 )
                 attrs = get_audio_attributes(path=path1)
-                # print(f"sample rate  {attrs.samplerate}")
-                # print(f"subtype : {attrs.subtype}")
-                # print(f"channels : {attrs.channels}")
 
                 path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
                 # processing
@@ -115,20 +116,30 @@ class Main:
                     audio_name=filename,
                     transcription_jsonPath=transcripted_json_file_path,
                 )
+                
+            self.info_logger.info(
+                    msg=f"Starts Creating the excel for",
+                    extra={"location": "main.py-audios_main"},
+                )
             self.create_excel_for_powerbi()
+            self.info_logger.info(
+                    msg=f" ################## Successfully: Done with the Prcessing of audio files ################## ",
+                    extra={"location": "main.py-audios_main"},
+                )
+            print("done with call processing")
         except Exception as e:
-            # print(e)
             self.error_logger.error(
                 msg="An Error Occured ..",
                 exc_info=e,
                 extra={"location": "main.py-audios_main"},
             )
 
-    # #################################### Post Transcription Process ##################################################
+###################################################################################################################
+##################################### Post Transcription Process ##################################################
+###################################################################################################################
 
     def get_kpis(self, audio_name, transcription_jsonPath):
         try:
-            # additional to transcription
             result = {}
             with open(transcription_jsonPath, "r", encoding="utf-8") as fp:
                 transcriptions = json.load(fp)
@@ -144,11 +155,7 @@ class Main:
                     audio_name, transcription_jsonPath
                 )
             )
-            # summarisation_result = summarisation_obj.extractive_summarisation_helper()
-            print(
-                "_____________ summary ___________________________",
-                summarisation_result["aspects_texts"],
-            )
+           
             if summarisation_result:
                 result["summary"] = summarisation_result["aspects_texts"]
             else:
@@ -233,9 +240,6 @@ class Main:
 
             merged_output["result"]["topics"] = unique_keyphrases
 
-            # # with open(file_path + "wordcloud.png", 'rb') as image_file:
-            # #     encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
-            # #     merged_output["result"]["wordcloud"] = encoded_image
             self.info_logger.info(
                 msg=f"getting text count from keyphrases and saving in merged output as wordcloud",
                 extra={"location": "main.py - pipeline_after_transcription"},
@@ -278,8 +282,7 @@ class Main:
                 )
             )
 
-            self.info_logger.info(
-                msg=f"Saving power_bi_merged_output.json as path '{self.file_path}'",
+            self.info_logger.info(msg=f"Saving power_bi_merged_output.json as path '{self.file_path}'",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
             with open(power_bi_merged_path, "w") as fh:
@@ -292,7 +295,6 @@ class Main:
             )
 
         except Exception as e:
-            # print(e)
             self.error_logger.error(
                 msg=f"An Error Occured: {e}",
                 exc_info=e,
@@ -315,7 +317,6 @@ class Main:
             output = {"transcript": modified_transcriptions}
             return output
         except Exception as e:
-            # print(e)
             self.error_logger.error(
                 msg=f"An Error Occured: {e}",
                 exc_info=e,
@@ -330,52 +331,59 @@ class Main:
                 res["keyPhrases"] = keyPhrases_ls
                 modified_transcriptions.append(res)
 
-            self.info_logger.info(
-                msg=f"KeyPhrases added with the transcription based on the both list indexing",
+            self.info_logger.info(msg=f"KeyPhrases added with the transcription based on the both list indexing",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
             output = {"transcript": modified_transcriptions}
             return output
         except Exception as e:
-            # print(e)
             self.error_logger.error(
                 msg="An Error Occured: {e}",
                 exc_info=e,
                 extra={"location": "main.py - merge_sentiment_with_transcription"},
             )
 
-    ###################################################################################################################
-    #################################### Power BI report creation process #############################################
-    ###################################################################################################################
+###################################################################################################################
+#################################### Power BI report creation process #############################################
+###################################################################################################################
 
-    def powerbi_report_keyword(self, powerbi_merged_jsonPath):
+    def powerbi_report_keyword(self, powerbi_merged_jsonPath,audio_file):
+        try:
             with open(powerbi_merged_jsonPath) as fp:
                 information = json.load(fp)
                 
-            duration_ls, dialouges_ls, keywords_ls, sentiment_ls =  [],[], [],[]
+            audio_file_ls , duration_ls, dialouges_ls, keywords_ls, sentiment_ls,sort_sentiment_ls =  [],[], [],[], [],[]
 
             for dialouge in information["result"]["transcripts"]["transcript"]:
-                print(f"dialouge :\n {dialouge}")
                 if dialouge["keyPhrases"]:
-                
+                    sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
                     for kp in dialouge["keyPhrases"]:
-                    
+                        audio_file_ls.append(audio_file + ".wav")
                         duration_ls.append(dialouge["duration_to_play"])
                         dialouges_ls.append(dialouge["dialogue"])
                         keywords_ls.append(kp)
-                        sentiment_ls.append(dialouge["sentiment"])
+                        sentiment_ls.append(dialouge["sentiment"]) 
+                        sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
+                        
                 else:
                     duration_ls.append(dialouge["duration_to_play"])
-                    dialouges_ls.append(None)
+                    audio_file_ls.append(audio_file)
+                    dialouges_ls.append(dialouge["dialogue"])
                     keywords_ls.append(None)
-                    sentiment_ls.append(None)
+                    sentiment_ls.append(dialouge["sentiment"])
+                    sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
 
             # final result for an audio
-            dic_pandas = {"duration": duration_ls, "keywords": keywords_ls, 
-                        "sentiment": sentiment_ls, "dialouge": dialouges_ls}
+            dic_pandas = {"Audio file_1":audio_file_ls, "duration_1": duration_ls, "keywords_1": keywords_ls, 
+                        "sentiment_1": sentiment_ls, "dialouge_1": dialouges_ls,"sort sentiment_1":sort_sentiment_ls}
             df1 = pd.DataFrame(dic_pandas)
             return df1
-            
+        except Exception as e :
+            self.error_logger.error(
+                msg="An Error Occured ..",
+                exc_info=e,
+                extra={"location": "main.py-powerbi_report_keyword"},
+            )
 
     def power_bi_report_main_helper(self, audio_file,powerbi_merged_jsonPath, merged_output_jsonPath):
             # Use merged_output.json & audios_info/mappings.json
@@ -383,7 +391,8 @@ class Main:
             with open(merged_output_jsonPath) as fh:
                 data1 = json.load(fh)
             if data1.values() != 0:
-                print("any value is picked")
+                val = "any value is picked"
+                
 
             sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
             overall_sentiment = 0
@@ -446,59 +455,79 @@ class Main:
             elif(overall_sentiment <= -1):
                 overall_sentiment = -1
                 
-            print(overall_sentiment)
-            print([k for k,v in sentiment_mapping.items() if v == overall_sentiment])
             audio_file = audio_file + ".wav"
             call_dict[audio_file]["language"] = language
-            call_dict[audio_file]["overall_sentiment"] = [k for k,v in sentiment_mapping.items() if v == overall_sentiment][0]
-            call_dict[audio_file]["call_opening_score"] = call_opening_score
-            call_dict[audio_file]["call_closing_score"] = call_closing_score
+            call_dict[audio_file]["Sentiment"] = [k for k,v in sentiment_mapping.items() if v == overall_sentiment][0]
+            call_dict[audio_file]["CallOpeningScore"] = call_opening_score
+            call_dict[audio_file]["CallClosingScore"] = call_closing_score
 
             with open(path, "w") as json_file:
                 json.dump(call_dict, json_file, indent=4)
                 
-            # self.powerbi_report_keyword(powerbi_merged_jsonPath)
             
-
-
     def power_bi_main_report(self,mapping_json_path):
+        try:
+            with open(mapping_json_path,'r') as fh:
+                data = json.load(fh)
 
-        with open(mapping_json_path,'r') as fh:
-            data = json.load(fh)
+            output = []
 
-        output = []
-        print(data)
-        print(data.items())
-        for k,v in data.items():
-            res = {}
-            res["audio_filename"] = k
-            for attr, value in v.items():
-                res[attr] = value
-            output.append(res)
+            for k,v in data.items():
+                res = {}
+                res["audio_filename"] = k
+                for attr, value in v.items():
+                    res[attr] = value
+                output.append(res)
 
-        dff = pd.DataFrame.from_dict(output)
-        dff.to_excel("Powerbi_reports/PowerBi_main.xlsx")
+            dff = pd.DataFrame.from_dict(output)
+            dff.to_excel("Powerbi_reports/PowerBi_main.xlsx", index=False)
         # Save excel
+        except Exception as e:
+            self.error_logger.error(
+                msg="An Error Occured ..",
+                exc_info=e,
+                extra={"location": "main.py-audios_main"},
+            )
         
     def create_excel_for_powerbi(self):
-        path =LocalConfig()
-        path = path.DATA_FOLDER + r"/audio_analytics"
- 
-        for calls in os.listdir(path):
-            powerbi_merged_path = f"{path}\{calls}\power_bi_merged_output.json"
-            # path2 = f"{path}\{calls}\merged_output.json"
+        try:
+            path =LocalConfig()
+            path = path.DATA_FOLDER + r"/audio_analytics"
+
+            self.info_logger.info(
+                    msg=f"starts iterating over audio_analytic for power_bi and merged_output .json",
+                    extra={"location": "main.py-audios_main"},
+                )
             
             All_audio_result = pd.DataFrame()
-            for file in calls:
+            calls_list = os.listdir(path)
+            for calls in calls_list:
+                powerbi_merged_path = f"{path}\{calls}\power_bi_merged_output.json"
+
                 if ((is_file_present(folder_path= f"{path}\{calls}", filename= "merged_output.json")) and (is_file_present(folder_path= f"{path}\{calls}", filename= "power_bi_merged_output.json"))):
-                    result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path)
+                    self.info_logger.info(msg=f"getting dataframe from power_bi_keyword for {calls} and appending it to to all_audio_result dataframe",
+                    extra={"location": "main.py-create_excel_for_powerbi"})
+                    
+                    result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path, audio_file=calls)
                     All_audio_result = All_audio_result._append(result_for_one_audio, ignore_index=True)
+                    
+            self.info_logger.info(msg=f"creating PowerBi_1 keyword excel using the data of All_audio_result dataframe",
+                    extra={"location": "main.py-create_excel_for_powerbi"})
             
-            print(All_audio_result)
+            All_audio_result.to_excel(f"Powerbi_reports/PowerBi_keywords_{calls_list[0]}-{calls_list[-1]}.xlsx", index=False)
+            
+            self.info_logger.info(msg=f"creating power_bi_main report using the mapping.json",
+                    extra={"location": "main.py-create_excel_for_powerbi"},
+                )
             self.power_bi_main_report(mapping_json_path=LocalConfig().DATA_FOLDER + "/audios_info\mappings.json")
-            All_audio_result.to_excel("Powerbi_reports/PowerBi_1.xlsx")
-        
+            
+        except Exception as e:
+            self.error_logger.error(
+                msg="An Error Occured ..",
+                exc_info=e,
+                extra={"location": "main.py-create_excel_for_powerbi"},
+            )
+            
 if __name__ == "__main__":
     obj = Main()
-    obj.call_all_files()
-
+    obj.create_excel_for_powerbi()

@@ -1,0 +1,110 @@
+{
+    "summary": [
+        {
+            "aspect": "issue",
+            "text": "The customer is inquiring about the availability of minutes to guide the village on the line."
+        },
+        {
+            "aspect": "resolution",
+            "text": "The agent suggests the customer focus on the tools they are looking for and mentions that they will follow up with the customer if there is any need."
+        }
+    ],
+    "sentiment_ls": [
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "Merciful contacts"
+        ],
+        [
+            "morning",
+            "mercy"
+        ],
+        [
+            "Mr. Mohammed",
+            "morning"
+        ],
+        [
+            "inquiry"
+        ],
+        [
+            "example",
+            "minutes",
+            "village",
+            "line"
+        ],
+        [
+            "Minutes"
+        ],
+        [],
+        [
+            "God",
+            "offers",
+            "message"
+        ],
+        [
+            "Internet"
+        ],
+        [
+            "pure people",
+            "pure need",
+            "Salvation",
+            "mind",
+            "years",
+            "lines",
+            "Jat",
+            "Btaa",
+            "reason"
+        ],
+        [
+            "reason",
+            "trowels",
+            "offer",
+            "need"
+        ],
+        [],
+        [
+            "command"
+        ],
+        [
+            "diet",
+            "need"
+        ],
+        [
+            "house",
+            "need"
+        ],
+        [
+            "God"
+        ],
+        [
+            "side",
+            "Tab",
+            "need",
+            "Mashi"
+        ],
+        [
+            "other inquiry",
+            "need",
+            "service",
+            "pardon"
+        ]
+    ]
+}

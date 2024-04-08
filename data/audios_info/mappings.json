@@ -1,3 +1,12 @@
 {
-    
+    "Call 1.wav": {
+        "id": "Call_1.wav",
+        "recordingID": 1,
+        "CallDuration": 82,
+        "Audio_Size": 5127.79296875,
+        "language": "english",
+        "Sentiment": "positive",
+        "CallOpeningScore": 0.5,
+        "CallClosingScore": 1.0
+    }
 }

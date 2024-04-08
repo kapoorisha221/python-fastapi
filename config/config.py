@@ -8,6 +8,7 @@ class AzureConfig():
         self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
         self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
         self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
+        self.SPEECH_REGION = "eastus"
         self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         

@@ -1,0 +1,110 @@
+[
+    {
+        "text": "Good morning. Merciful contacts with you.",
+        "id": "1",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Good morning, mercy.",
+        "id": "2",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Good morning, Mr. Mohammed. What's up?",
+        "id": "3",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Okay. Fine thank you. Fine thank you. Would you like an inquiry about?",
+        "id": "4",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "For example? He is not there. There are no minutes to guide the village on this line or what?",
+        "id": "5",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "Minutes Net?",
+        "id": "6",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Why do you mean why should we shout at her?",
+        "id": "7",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "Unfortunately, by God, if there are offers that will bring you a message about it.",
+        "id": "8",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Ah, is the Internet finished with you?",
+        "id": "9",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Salvation is not needed, I. I am inquiring that I have taken my mind for years, there is no need like this, I mean pure people with lines that bring them to them Jat and Btaa, there is no pure need, the reason means.",
+        "id": "10",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "No, there is no reason, but if it means it can be, but you focus on the trowels that we are looking for, because these trowels remain in them, if there is an offer or a need, you can benefit from it.",
+        "id": "11",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "Oh, okay.",
+        "id": "12",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "I am not at your command, any need for help you again?",
+        "id": "13",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "In general, we went on a diet in it, but there is no need for us, or what?",
+        "id": "14",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "Yes, there is no house or need.",
+        "id": "15",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "If I swear to God, don't worry about that.",
+        "id": "16",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    },
+    {
+        "text": "What is the side of the Tab, there is no need like this, thank you, Mashi.",
+        "id": "17",
+        "role": "Customer",
+        "participantId": "Customer_1"
+    },
+    {
+        "text": "Pardon, I also try to follow up with you, and if there is anything in need, I will talk to you again, walk, thank you, pardon me, eh? At your service, any other inquiry, thank you pardon.",
+        "id": "18",
+        "role": "Agent",
+        "participantId": "Agent_1"
+    }
+]

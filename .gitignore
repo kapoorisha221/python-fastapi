@@ -1,5 +1,6 @@
 __pycache__/
 
 venv/
-telvenv
+tel_venv
 temp.json
+.gitignore

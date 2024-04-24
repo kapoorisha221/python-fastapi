@@ -1,12 +1,10 @@
-import os
-import time
+import os, uvicorn, time
 from fastapi import FastAPI, UploadFile,BackgroundTasks
 from typing import List
-
 from fastapi.responses import RedirectResponse
-from config.config import *
-import uvicorn
-from logs.logger import *
+
+from config.config import LocalConfig
+from logs.logger import get_Error_Logger, get_Info_Logger, log_Garbage_Collector
 
 from main import Main  
 
@@ -44,14 +42,14 @@ async def create_upload_file(files: List[UploadFile], background_tasks: Backgrou
          error_logger.error(msg="An Error Occured at post request..",exc_info=e,extra={"location":"App.py-create_upload_file"})
          return {"message": "An Error Occured while collecting the files!!"}
 
-@app.get("/createreport")
-async def create_powerbi_reports():
-    try:
+# @app.get("/createreport")
+# async def create_powerbi_reports():
+#     try:
         
-          pass
-    except Exception as e:
-        error_logger.error(msg="An Error Occured at get request..",exc_info=e,extra={"location":"App.py-create_upload_file"})
-        return {"message": "An Error Occured while collecting the files!!"}
+#           pass
+#     except Exception as e:
+#         error_logger.error(msg="An Error Occured at get request..",exc_info=e,extra={"location":"App.py-create_upload_file"})
+#         return {"message": "An Error Occured while collecting the files!!"}
           
 
 if __name__ == "__main__":

@@ -1,0 +1,77 @@
+{
+    "summary": [
+        {
+            "aspect": "issue",
+            "text": "The customer inquired about a reduction in selling lines and whether there was a Hidayat net."
+        },
+        {
+            "aspect": "resolution",
+            "text": "The agent informed the customer that they would receive a message with any offers and to focus on them. The agent also promised to follow up with the customer if there were any offers."
+        }
+    ],
+    "sentiment_ls": [
+        "positive",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "negative",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "good morning mercy calls",
+            "mr mohammad",
+            "same number",
+            "god",
+            "inquiry"
+        ],
+        [
+            "line"
+        ],
+        [
+            "Internet minutes"
+        ],
+        [
+            "God",
+            "offers",
+            "message"
+        ],
+        [
+            "Internet"
+        ],
+        [
+            "thing",
+            "lines",
+            "reason"
+        ],
+        [
+            "reason",
+            "guns",
+            "offer",
+            "something"
+        ],
+        [],
+        [
+            "service"
+        ],
+        [
+            "Hidayat net",
+            "something"
+        ],
+        [],
+        [],
+        [],
+        [
+            "other inquiry",
+            "service"
+        ]
+    ]
+}

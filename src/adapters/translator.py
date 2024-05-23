@@ -20,7 +20,6 @@ class AzureTranslator():
         
 
     def get_translations(self, text, from_lang, to_lang):
-        # print(f"_________________the values being passed in azure translator is:  \n text = {text}\n  from_lang = {from_lang} \n  to_lang = {to_lang}")
         response = "Translator service not working"
         for delay_secs in (3**x for x in range(0,3)):
             try:

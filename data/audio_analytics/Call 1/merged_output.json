@@ -1,0 +1,221 @@
+{
+    "result": {
+        "summary": [
+            {
+                "aspect": "issue",
+                "text": "The customer inquired about a reduction in selling lines and whether there was a Hidayat net."
+            },
+            {
+                "aspect": "resolution",
+                "text": "The agent informed the customer that they would receive a message with any offers and to focus on them. The agent also promised to follow up with the customer if there were any offers."
+            }
+        ],
+        "topics": [
+            "service",
+            "message",
+            "offers",
+            "lines",
+            "same number",
+            "Internet minutes",
+            "god",
+            "mr mohammad",
+            "other inquiry",
+            "God",
+            "guns",
+            "Internet",
+            "Hidayat net",
+            "thing",
+            "good morning mercy calls",
+            "reason",
+            "something",
+            "line",
+            "inquiry",
+            "offer"
+        ],
+        "wordcloud": [
+            {
+                "text": "good morning mercy calls",
+                "value": 1
+            },
+            {
+                "text": "mr mohammad",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "god",
+                "value": 1
+            },
+            {
+                "text": "inquiry",
+                "value": 1
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "Internet minutes",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 1
+            },
+            {
+                "text": "offers",
+                "value": 1
+            },
+            {
+                "text": "message",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 1
+            },
+            {
+                "text": "thing",
+                "value": 1
+            },
+            {
+                "text": "lines",
+                "value": 1
+            },
+            {
+                "text": "reason",
+                "value": 2
+            },
+            {
+                "text": "guns",
+                "value": 1
+            },
+            {
+                "text": "offer",
+                "value": 1
+            },
+            {
+                "text": "something",
+                "value": 2
+            },
+            {
+                "text": "service",
+                "value": 2
+            },
+            {
+                "text": "Hidayat net",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "good morning mercy calls with you good morning mercy good morning mr mohammad how are you doing fine thank god thank god go ahead your inquiry regarding the same number",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.90",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "is this on this line or what",
+                    "speaker": "Agent",
+                    "duration_to_play": "13.80",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Internet minutes I mean",
+                    "speaker": "Agent",
+                    "duration_to_play": "16.15",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "No, unfortunately, by God, if there are offers, a message will come to you with them",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.87",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Is the Internet with you",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.55",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Ok not a thing I am asking I don't reduce something like selling lines i mean there is nothing at all what is the reason",
+                    "speaker": "Customer",
+                    "duration_to_play": "29.00",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "No there is no reason but if it could be but you focus on the guns that come to us because these guns have if there is an offer or something you can benefit from",
+                    "speaker": "Agent",
+                    "duration_to_play": "39.32",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay",
+                    "speaker": "Customer",
+                    "duration_to_play": "51.35",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "At your service, anything I can help you with again.",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.21",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Did they say there is Hidayat net or something",
+                    "speaker": "Customer",
+                    "duration_to_play": "57.57",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "We said nothing about it",
+                    "speaker": "Customer",
+                    "duration_to_play": "62.76",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "If he comes to you, don't worry.",
+                    "speaker": "Agent",
+                    "duration_to_play": "65.87",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "it's not coming expired there's nothing in it",
+                    "speaker": "Customer",
+                    "duration_to_play": "68.11",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Thank you. Ok. You're welcome. I'll also try to follow up with you. If there is anything, I'll talk to you again. Thank you. You're welcome. At your service. Any other inquiry. You're welcome.",
+                    "speaker": "Agent",
+                    "duration_to_play": "72.92",
+                    "locale": "en",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

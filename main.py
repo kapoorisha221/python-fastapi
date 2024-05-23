@@ -19,7 +19,7 @@ class Main:
 ##################################### Pre Processing and transcription ############################################
 ###################################################################################################################
 
-    def add_to_mapping(self, audio_file_path):
+    def add_to_mapping(self, audio_file_path, agent_name, call_date):
         try:
             self.info_logger.info(
                 msg=f"Started function add_to_mapping to create mapping.json data",
@@ -43,6 +43,8 @@ class Main:
             call_dict[audio_file]["recordingID"] = next_call_number            
             call_dict[audio_file]["CallDuration"] = minutes
             call_dict[audio_file]["Audio_Size"] = audio_atrs["audio_file_size"]
+            call_dict[audio_file]["Agent Name"] = agent_name
+            call_dict[audio_file]["Call Date"] = call_date
             
 
             with open(path, "w") as json_file:
@@ -59,7 +61,7 @@ class Main:
                 extra={"location": "main.py - add_to_mapping"},
             )
 
-    def audios_main(self):
+    def audios_main(self, agent_name, call_date):
         try:
             """This function checks for all the files present inside RAW DATA folder and process & stores information for the
             audio files which are not present in PROCESSED data folder"""
@@ -97,7 +99,7 @@ class Main:
                 # processing
                 audio_processing(input_path=path1, output_path=path2)
                 # get & store informations
-                self.add_to_mapping(audio_file_path=path2)
+                self.add_to_mapping(audio_file_path=path2, agent_name=agent_name, call_date=call_date)
 
                 # make folders for the audios where corresponding analytics will get stored
                 folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename

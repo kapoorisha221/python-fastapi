@@ -4,19 +4,11 @@
         "recordingID": 1,
         "CallDuration": "0:01:22",
         "Audio_Size": 5127.79296875,
+        "Agent Name": "maharshi",
+        "Call Date": "12-11-2011",
         "language": "english",
         "Sentiment": "neutral",
         "CallOpeningScore": 0.0,
         "CallClosingScore": 1.0
-    },
-    "Call 2.wav": {
-        "id": "Call_2.wav",
-        "recordingID": 2,
-        "CallDuration": "0:01:47",
-        "Audio_Size": 6700.54296875,
-        "language": "english",
-        "Sentiment": "positive",
-        "CallOpeningScore": 0.5,
-        "CallClosingScore": 0.2
     }
 }

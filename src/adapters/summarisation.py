@@ -140,33 +140,18 @@ class Summarization():
     def get_conversational_text(self,transcription_jsonPath):
 
         try:
-
-            # print("______________________________ get_conversational_text start____________________________________")
-
             self.info_logger.info(msg=F"opening conversational_input.json",extra={"location":"summarisation.py - get_conversational_text"})
-
             with open(transcription_jsonPath,'r',encoding='utf-8') as fp:
-
                 transcriptions = json.load(fp)
 
-
-
             text_to_summarise_ls = []
-
             for item in transcriptions:
-
                 text_to_summarise_ls.append(item)
 
-
-
             self.info_logger.info(msg=F"appended and returned in a list successfully",extra={"location":"summarisation.py - get_conversational_text"})
-
             return text_to_summarise_ls
 
         except Exception as e:
-
-            # print(e)
-
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"summarisation.py - get_conversational_text"})
     
     def conversational_summarisation_helper(self,audio_name,transcription_jsonPath):
@@ -232,7 +217,6 @@ class Summarization():
                     self.info_logger.info(msg=F"calling get in loop for 10 min and passed time is {passed_time} min, to have summarization using jobid '{job_id}'",extra={"location":"summarisation.py - conversational_summarisation_helper"})
                     conversatioanl_summary_response = requests.get(url = url, headers= headers)
                     conversatioanl_summary_response = json.loads(conversatioanl_summary_response.text)
-                    print("________________conversatioanl_summary_response___________: ", conversatioanl_summary_response)
                     if conversatioanl_summary_response["status"].lower() == "succeeded":
                         self.info_logger.info(msg=F"got the response successfully of conversation from the API,now will format it to desired format",extra={"location":"summarisation.py - conversational_summarisation_helper"})
                         flag = False
@@ -276,18 +260,14 @@ class Summarization():
             errors = ", ".join(conversational_summary_response.get("errors", []))
 
         if status:
-            # print("___________________ aspect ________________________",aspects_texts)
             return {"status": "success", "aspects_texts": aspects_texts}
         else:
             return {"status": "fail", "error": errors}
 
 
-    
-
 def create_conversatioanl_summ_input(audio_name,transcription_jsonpath):
     with open(transcription_jsonpath, 'r', encoding='utf-8') as file:
         english_transcriptions = json.load(file)
-    # print("______________________________creating new____________________________________")
     output = []
     cnt =0
     for item in english_transcriptions["transcript"]:

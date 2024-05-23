@@ -23,7 +23,7 @@ class Summarization():
         self.url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-text/jobs?api-version=2023-04-01"
         self.key = self.cred.LANGUAGE_KEY
         self.api_version = "2023-04-01"
-        self.transcription_jsonPath = r"data\audio_analytics\Call 1\transcript_output_english.json"
+        #self.transcription_jsonPath = r"data\audio_analytics\Call 1\transcript_output_english.json"
         self.text_to_summarise = None
         self.language = "en"
         #######################################################
@@ -33,8 +33,9 @@ class Summarization():
    
 
 
-    def get_text(self):
-        with open(self.transcription_jsonPath,'r',encoding='utf-8') as fp:
+    def get_text(self, call):
+        transcription_jsonPath =  f"data/audio_analytics/{call}/transcript_output_english.json"
+        with open(transcription_jsonPath,'r',encoding='utf-8') as fp:
             transcriptions = json.load(fp)
         text_to_summarise = ""
         text_to_summarise_ls = []
@@ -69,8 +70,8 @@ class Summarization():
         else:
             return {"status": "fail", "error": errors}
 
-    def abstractive_summarisation_helper(self):
-        self.get_text()
+    def abstractive_summarisation_helper(self, call):
+        self.get_text(call)
         if self.text_to_summarise == None:
             return {"status": "fail", "error": "no text to summarise"}
 
@@ -90,7 +91,7 @@ class Summarization():
                             "kind": "AbstractiveSummarization",
                             "taskName": "Text Abstractive Summarization Task 1",
                             "parameters": {
-                                            "summaryLength": "medium"
+                                            "summaryLength": "short"
                                             }
                         }
                     ]
@@ -140,5 +141,3 @@ class Summarization():
     
 
 
-summ = Summarization()
-res = summ.abstractive_summarisation_helper()

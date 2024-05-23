@@ -2,7 +2,8 @@ import json, os
 import pandas as pd
 from src.adapters.keyPhrase import keyPhrase
 from src.adapters.sentiment_analysis import Sentiment
-from src.adapters.summarisation import Summarization
+#from src.adapters.summarisation import Summarization
+from test_abstractive import Summarization
 from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
@@ -84,7 +85,7 @@ class Main:
                         extra={"location": "main.py-audios_main"},
                     )
                     continue
-                print(f"audio file: {audio_file}")
+                #print(f"audio file: {audio_file}")
                 extension = audio_file.split(".")[-1]
                 filename = audio_file.split(".")[:-1][0]
 
@@ -128,7 +129,7 @@ class Main:
                     msg=f" ################## Successfully: Done with the Prcessing of audio files ################## ",
                     extra={"location": "main.py-audios_main"},
                 )
-            print("done with call processing")
+            #print("done with call processing")
         except Exception as e:
             self.error_logger.error(
                 msg="An Error Occured ..",
@@ -151,15 +152,16 @@ class Main:
                 msg=f"getting Conversational Summarization",
                 extra={"location": "main.py - get_kpis"},
             )
+            # summarisation_obj = Summarization()
+            # summarisation_result = (
+            #     summarisation_obj.conversational_summarisation_helper(audio_name, transcription_jsonPath)
+            # )
+            call = audio_name
             summarisation_obj = Summarization()
-            summarisation_result = (
-                summarisation_obj.conversational_summarisation_helper(
-                    audio_name, transcription_jsonPath
-                )
-            )
+            summarisation_result = summarisation_obj.abstractive_summarisation_helper(call)
            
             if summarisation_result:
-                result["summary"] = summarisation_result["aspects_texts"]
+                result["summary"] = summarisation_result["summary"]
             else:
                 self.info_logger.info(
                     msg=f"getting no results for summary",
@@ -404,11 +406,11 @@ class Main:
 
 
             # final result for an audio
-            dic_pandas = {"Audio file_1":audio_file_ls, "duration_1": duration_ls, "keywords_1": keywords_ls, 
+            dic_pandas = {"audio_filename":audio_file_ls, "duration_1": duration_ls, "keywords_1": keywords_ls, 
                         "sentiment_1": sentiment_ls, "dialouge_1": dialouges_ls,"sort sentiment_1":sort_sentiment_ls}
             
             
-            arabic_dic_pandas = {"Audio file_1":arabic_audio_file_ls, "duration_1": arabic_duration_ls, "keywords_1": arabic_keywords_ls, 
+            arabic_dic_pandas = {"audio_filename":arabic_audio_file_ls, "duration_1": arabic_duration_ls, "keywords_1": arabic_keywords_ls, 
                         "sentiment_1": arabic_sentiment_ls, "dialouge_1": arabic_dialouges_ls,"sort sentiment_1":arabic_sort_sentiment_ls}
             
             df1 = pd.DataFrame(dic_pandas)
@@ -530,8 +532,8 @@ class Main:
 
             dff = pd.DataFrame.from_dict(output)
             arabic_dff = pd.DataFrame.from_dict(arabic_output)
-            dff.to_excel("Powerbi_reports/PowerBi_main.xlsx",index=False)
-            arabic_dff.to_excel("Powerbi_reports/arabic_PowerBi_main.xlsx",index=False)
+            dff.to_excel("Powerbi_reports/eng_main_dataset.xlsx",index=False)
+            arabic_dff.to_excel("Powerbi_reports/arb_main_dataset.xlsx",index=False)
         # Save excel
         except Exception as e:
             self.error_logger.error(
@@ -565,11 +567,11 @@ class Main:
                     arabic_All_audio_result = arabic_All_audio_result._append(arabic_result_for_one_audio, ignore_index=True)
 
                     
-            self.info_logger.info(msg=f"creating PowerBi_keywords_{calls_list[0]}-{calls_list[-1]} excel using the data of All_audio_result dataframe",
+            self.info_logger.info(msg=f"creating eng_dim_dataset excel using the data of All_audio_result dataframe",
                     extra={"location": "main.py-create_excel_for_powerbi"})
             
-            All_audio_result.to_excel(f"Powerbi_reports/PowerBi_keywords_{calls_list[0]}-{calls_list[-1]}.xlsx", index=False)
-            arabic_All_audio_result.to_excel("Powerbi_reports/arabic_PowerBi_1.xlsx",index=False)
+            All_audio_result.to_excel(f"Powerbi_reports/eng_dim_dataset.xlsx", index=False)
+            arabic_All_audio_result.to_excel("Powerbi_reports/arb_dim_dataset.xlsx",index=False)
 
             
             self.info_logger.info(

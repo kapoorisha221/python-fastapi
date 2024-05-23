@@ -1,402 +1,288 @@
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Sterted Processing from audios_main", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Calling get_audio_attributes", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:26:31+0530", "message": "Audio loded to Python SOundFile Successfully", "location": "utils.py - get_audio_attributes"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": ".wav file is created sucesfully at 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 1.wav'", "location": "audio.py - audio_processing"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "getting audio atributes for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 1.wav'"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "got total duration for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 1.wav'"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "got total Size for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 1.wav'"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "attributes added sucesfully to mapping.json for  'Call 1.wav'", "location": "main.py - add_to_mapping"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "Created folder for audio to save transcriptions at'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1'", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "Initializing Creds for AI Speech Services ", "location": "transcription.py - recognize_from_file"}
-{"asctime": "2024-05-21 T14:26:32+0530", "message": "Connecting to the AI Speech Services and start Transcribing for audio'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 1.wav'", "location": "transcription.py - recognize_from_file"}
-{"asctime": "2024-05-21 T14:26:38+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:38+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:41+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:43+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:45+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:55+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:56+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:56+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:26:59+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:01+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:03+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:06+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:06+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:11+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Saved Transcript.json at ' C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1\\transcript_output.json'"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Stopping Session to AI Speech Service SessionEventArgs(session_id=293397e6930f4f80904adc5ea2f9a1fb)", "location": "transcription.py - stop_cb"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Calling Post Transcription for audio 'Call 1' and file 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1/transcript_output.json'", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Starting to Iterate over the dialogue to translate of 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1/transcript_output.json'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:12+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:13+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:13+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:13+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:14+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:14+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:14+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:15+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:15+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:15+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:16+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:16+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:16+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:17+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:17+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:17+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:18+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:18+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:18+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:19+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:19+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:19+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:20+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "saved translated output list to transcript_output_english.json at locaton 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1/transcript_output_english.json'", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "Calling get_kpis for 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 1/transcript_output_english.json'", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "getting Conversational Summarization", "location": "main.py - get_kpis"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "creating json for summarization desired input", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "getting the all transcription in a single list to summarize", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "opening conversational_input.json", "location": "summarisation.py - get_conversational_text"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "appended and returned in a list successfully", "location": "summarisation.py - get_conversational_text"}
-{"asctime": "2024-05-21 T14:27:22+0530", "message": "Sending request for summarization", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:23+0530", "message": "Extracted job id from the response '2332f232-eabf-4e03-9c42-20ecc55e3871'", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:24+0530", "message": "calling get in loop for 10 min and passed time is 0 min, to have summarization using jobid '2332f232-eabf-4e03-9c42-20ecc55e3871'", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:25+0530", "message": "got the response successfully of conversation from the API,now will format it to desired format", "location": "summarisation.py - conversational_summarisation_helper"}
-{"asctime": "2024-05-21 T14:27:25+0530", "message": "formatting status is successfull", "location": "summarisation.py - get_conversational_summary"}
-{"asctime": "2024-05-21 T14:27:25+0530", "message": "formatting status is successfull", "location": "summarisation.py - get_conversational_summary"}
-{"asctime": "2024-05-21 T14:27:25+0530", "message": "getting sentiments for the dialogue", "location": "main.py - get_kpis"}
-{"asctime": "2024-05-21 T14:27:25+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:26+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:26+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:26+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:27+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:27+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:27+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:29+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:29+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:29+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:30+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:30+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:30+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:31+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:31+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:31+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:32+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:32+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:32+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:33+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:33+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:33+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:34+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:34+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:34+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:35+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:35+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:35+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:36+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:36+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:36+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:37+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:37+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:37+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:38+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:38+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:38+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:39+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:39+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:39+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "getting Keyphrases for the dialogue and conversation in list", "location": "main.py - get_kpis"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:40+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:41+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:42+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:43+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:44+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:46+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:47+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:48+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:49+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:50+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:51+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:52+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:53+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:54+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Saving kpi_output.json at location 'data/audio_analytics/Call 1/'", "location": "main.py - get_kpis"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Adding unique key phrases as topics to merged output", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "getting text count from keyphrases and saving in merged output as wordcloud", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "merging sentiments with transcriptions and saving in merged output as transcription", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "sentiments added with the transcription based on the both list indexing", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Saving merged_output.json as path 'data/audio_analytics/Call 1/'", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "merging keyphrases with transcription for power_bi_merged_output.json", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "KeyPhrases added with the transcription based on the both list indexing", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Saving power_bi_merged_output.json as path 'data/audio_analytics/Call 1/'", "location": "main.py - pipeline_after_transcription"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Starts Creating the excel for", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "starts iterating over audio_analytic for power_bi and merged_output .json", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "getting dataframe from power_bi_keyword for Call 1 and appending it to to all_audio_result dataframe", "location": "main.py-create_excel_for_powerbi"}
-{"asctime": "2024-05-21 T14:27:55+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:56+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:56+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:57+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:57+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:58+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:27:59+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:01+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:01+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:01+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:02+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:02+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:02+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:03+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:03+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:04+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:04+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:04+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:04+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:05+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:05+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:05+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:06+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:06+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:06+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:07+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:07+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:07+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:08+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:08+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:08+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:09+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:09+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:09+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:09+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:10+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:10+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:10+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:11+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:11+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:11+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:12+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:12+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:12+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:13+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:13+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:13+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:14+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:14+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:14+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:14+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:15+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:15+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:15+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:15+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:16+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:16+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:16+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:17+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:17+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:17+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:17+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:18+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:18+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:18+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:19+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:19+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:19+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:19+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:20+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:20+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:20+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:21+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:22+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:22+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:22+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:23+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:23+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:23+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:23+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:25+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:25+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:26+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:26+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:26+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:27+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:27+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:27+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:27+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:28+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:28+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:28+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:29+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:29+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:29+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:30+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:30+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:30+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:30+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:31+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:31+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:31+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:32+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:32+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:32+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:33+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:33+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:33+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:34+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:34+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:35+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:35+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:35+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:36+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:36+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:36+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:37+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:37+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:37+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:37+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:38+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:38+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:38+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:39+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:40+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:40+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:42+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:42+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:42+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:43+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:43+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:43+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:46+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:46+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:46+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:47+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:47+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:47+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:47+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:48+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:48+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:48+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:50+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:50+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:50+0530", "message": "creating PowerBi_keywords_Call 1-Call 1 excel using the data of All_audio_result dataframe", "location": "main.py-create_excel_for_powerbi"}
-{"asctime": "2024-05-21 T14:28:52+0530", "message": "creating power_bi_main report using the mapping.json", "location": "main.py-create_excel_for_powerbi"}
-{"asctime": "2024-05-21 T14:28:52+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:52+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:53+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:53+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:53+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:54+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:54+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:54+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:55+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:55+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:55+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
-{"asctime": "2024-05-21 T14:28:56+0530", "message": " ################## Successfully: Done with the Prcessing of audio files ################## ", "location": "main.py-audios_main"}
-{"asctime": "2024-05-21 T14:28:56+0530", "message": "got the files and scheduled Background Task", "location": "app.py-create_upload_file"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Sterted Processing from audios_main", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "file Call 1.wav already found", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Calling get_audio_attributes", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T16:59:31+0530", "message": "Audio loded to Python SOundFile Successfully", "location": "utils.py - get_audio_attributes"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": ".wav file is created sucesfully at 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 2.wav'", "location": "audio.py - audio_processing"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "getting audio atributes for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 2.wav'"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "got total duration for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 2.wav'"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "got total Size for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 2.wav'"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "attributes added sucesfully to mapping.json for  'Call 2.wav'", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "Created folder for audio to save transcriptions at'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2'", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "Initializing Creds for AI Speech Services ", "location": "transcription.py - recognize_from_file"}
+{"asctime": "2024-05-23 T16:59:32+0530", "message": "Connecting to the AI Speech Services and start Transcribing for audio'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 2.wav'", "location": "transcription.py - recognize_from_file"}
+{"asctime": "2024-05-23 T16:59:46+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:51+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:55+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:55+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T16:59:57+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:00+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:04+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:05+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:15+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:20+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:22+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:26+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:27+0530", "message": "Got the transcription", "location": "transcription.py - conversation_transcriber_transcribed_cb"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Saved Transcript.json at ' C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2\\transcript_output.json'"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Stopping Session to AI Speech Service SessionEventArgs(session_id=dddb6bdd04cf4714bdeaaa7851d812ae)", "location": "transcription.py - stop_cb"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Calling Post Transcription for audio 'Call 2' and file 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2/transcript_output.json'", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Starting to Iterate over the dialogue to translate of 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2/transcript_output.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:28+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:30+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:30+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:30+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:32+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:34+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:34+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:34+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:35+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:35+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:35+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:36+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:36+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:36+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:37+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:37+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:37+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:40+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:41+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:41+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:42+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:42+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:42+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:43+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:44+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:44+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:46+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:46+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:46+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:47+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:47+0530", "message": "saved translated output list to transcript_output_english.json at locaton 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2/transcript_output_english.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T17:00:47+0530", "message": "Calling get_kpis for 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 2/transcript_output_english.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:00:47+0530", "message": "getting Conversational Summarization", "location": "main.py - get_kpis"}
+{"asctime": "2024-05-23 T17:00:51+0530", "message": "getting sentiments for the dialogue", "location": "main.py - get_kpis"}
+{"asctime": "2024-05-23 T17:00:51+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:52+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:52+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:52+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:53+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:53+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:53+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:54+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:54+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:54+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:55+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:55+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:55+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:56+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:56+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:56+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:57+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:57+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:57+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:58+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:58+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:58+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:00:59+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:00:59+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:00:59+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:00+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:00+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:00+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:01+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:01+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:01+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:02+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:02+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:02+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:03+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:03+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:03+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:04+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:04+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:04+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:05+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:05+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:05+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:06+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:06+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:06+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:07+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:07+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:07+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:08+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:08+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:08+0530", "message": "Sending request to the API for Sentiment Analysis", "location": "sentiment_analysis.py - send_request"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "getting max and overall sentiment", "location": "sentiment_analysis.py - get_sentiment_analysis"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "returning the final value to the main.py", "location": "sentiment_analysis.py - sentiment_helper"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "getting Keyphrases for the dialogue and conversation in list", "location": "main.py - get_kpis"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:09+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:10+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:11+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:12+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:13+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:14+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:15+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:16+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:17+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:18+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:19+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:20+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:21+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:22+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:23+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:24+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "calling keyphrase helper ", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "calling function to send request", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:25+0530", "message": "Sending Post request to the API for keyPhrase", "location": "KeyPhrase.py - send_request"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "loading API response to json.", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "creating output format with the fetched keyphrases", "location": "KeyPhrase.py - keyPhrase_helper"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "appending result of keyphrase helper to the output", "location": "KeyPhrase.py - keyPhrase_pipeline"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Saving kpi_output.json at location 'data/audio_analytics/Call 2/'", "location": "main.py - get_kpis"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Adding unique key phrases as topics to merged output", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "getting text count from keyphrases and saving in merged output as wordcloud", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "merging sentiments with transcriptions and saving in merged output as transcription", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "sentiments added with the transcription based on the both list indexing", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Saving merged_output.json as path 'data/audio_analytics/Call 2/'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "merging keyphrases with transcription for power_bi_merged_output.json", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "KeyPhrases added with the transcription based on the both list indexing", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Saving power_bi_merged_output.json as path 'data/audio_analytics/Call 2/'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Calling get_audio_attributes", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T17:01:26+0530", "message": "Audio loded to Python SOundFile Successfully", "location": "utils.py - get_audio_attributes"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "getting audio atributes for  'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/processed_data/Call 3.wav'"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Created folder for audio to save transcriptions at'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 3'", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Initializing Creds for AI Speech Services ", "location": "transcription.py - recognize_from_file"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Calling Post Transcription for audio 'Call 3' and file 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 3/transcript_output.json'", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Telecom Egypt\\fastapi\\Telecom%20Egypt%20Internal/data/audio_analytics/Call 3/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Calling get_kpis for 'None'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Starts Creating the excel for", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "starts iterating over audio_analytic for power_bi and merged_output .json", "location": "main.py-audios_main"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "getting dataframe from power_bi_keyword for Call 1 and appending it to to all_audio_result dataframe", "location": "main.py-create_excel_for_powerbi"}
+{"asctime": "2024-05-23 T18:26:40+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:41+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:42+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:44+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:45+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:46+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-05-23 T18:26:48+0530", "message": "Sending request to the API to translate", "location": "translator.py - get_translated_transcriptions"}

@@ -90,7 +90,7 @@ class Summarization():
                             "kind": "ExtractiveSummarization",
                             "taskName": "Document Extractive Summarization Task 1",
                             "parameters": {
-                                            "sentenceCount": 2
+                                            "sentenceCount": 1
                                             }
                         }
                     ]
@@ -139,6 +139,3 @@ class Summarization():
             return result
     
 
-
-summ = Summarization()
-res = summ.extractive_summarisation_helper()

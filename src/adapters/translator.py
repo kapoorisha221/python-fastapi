@@ -108,7 +108,7 @@ class AzureTranslator():
             self.info_logger.info(msg=F"saved translated output list to transcript_output_english.json at locaton '{english_transcription_jsonpath}'",extra={"location":"translator.py - get_translated_transcriptions"})
             return english_transcription_jsonpath
         except Exception as e:
-            print(e)
+            #print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"main.py - get_translated_transcriptions"})
 
 

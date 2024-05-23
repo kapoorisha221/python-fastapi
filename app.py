@@ -64,12 +64,12 @@ async def create_upload_file(
 
         # Schedule background task
         s_time = time.time()
-        print("start time__________________________",s_time)
+        #print("start time__________________________",s_time)
         Process_Audio_files(agent_name, date_str)
         e_time = time.time()
-        print("End time__________________________",e_time)
+        #print("End time__________________________",e_time)
         Time_taken = e_time - s_time
-        print("time__________________________",Time_taken)
+        #print("time__________________________",Time_taken)
         #background_tasks.add_task(Process_Audio_files, agent_name, date_str)
         info_logger.info(msg="got the files and scheduled Background Task", extra={"location": "app.py-create_upload_file"})
         return {"message": "Got the files, will start Processing them Now!!!!"}

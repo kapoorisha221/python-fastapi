@@ -1,0 +1,136 @@
+{
+    "transcript": [
+        {
+            "dialogue": "مساء الخير، إتصالات فاطمة مع حضرتك، أبو بكر منصور، أهلا بيك يا أستاذ أبو بكر على الرقم ده ولا رقم تاني؟ لا نفس الرقم، تفضل أساعد حضرتك، إزاي عاوز أجدد الباقة؟ تجدد الباقة؟ تمام؟ لحظة معايا.",
+            "speaker": "Agent",
+            "duration_to_play": "2.50",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "باقة إيه يا فندم اللي حضرتك محتاجة تجددها؟ ممكن تبلغني؟",
+            "speaker": "Agent",
+            "duration_to_play": "18.20",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نفس نفس البرنامج، نفس الباقة؟",
+            "speaker": "Customer",
+            "duration_to_play": "20.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نفس نفس البرنامج، نفس الباقة.",
+            "speaker": "Agent",
+            "duration_to_play": "20.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نفس الباقة تمام، نفس الباقة.",
+            "speaker": "Agent",
+            "duration_to_play": "22.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "هي الباقة اللي موجودة عند حضرتك في الوقت الحالي؟ هي باقة 25؟",
+            "speaker": "Agent",
+            "duration_to_play": "34.91",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام؟ لحظة معايا وهجددها لحضرتك حالا، وبعد كده لو حضرتك حبيت تجددها ممكن عن طريق *566#.",
+            "speaker": "Agent",
+            "duration_to_play": "41.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مية صالات ونديك تلغيلي، خصم الرصيد بتاعي من بعد تخلص الباقة.",
+            "speaker": "Customer",
+            "duration_to_play": "48.95",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب تمام، نعمل يعني إيقاف الرصيد.",
+            "speaker": "Agent",
+            "duration_to_play": "54.95",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "خارج الباقة.",
+            "speaker": "Agent",
+            "duration_to_play": "60.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "صارت خارج الباقي. ما نبيش، يعني ما تاخدش من رصيد التلفون.",
+            "speaker": "Customer",
+            "duration_to_play": "63.47",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، لما الباقة تخلص؟ ما يخصمش من الرصيد ده اللي حضرتك محتاجه مزبوط؟",
+            "speaker": "Agent",
+            "duration_to_play": "66.59",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام؟ لما الباقة تخلص ما يخصمش من الرصيد ده اللي حضرتك محتاجه مزبوط؟",
+            "speaker": "Customer",
+            "duration_to_play": "66.59",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ايوا.",
+            "speaker": "Customer",
+            "duration_to_play": "70.19",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، لما الباقة تخلص؟ ما يخصمش من الرصيد ده اللي حضرتك محتاجه مزبوط؟",
+            "speaker": "Agent",
+            "duration_to_play": "66.59",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ايوا",
+            "speaker": "Agent",
+            "duration_to_play": "70.19",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام. نفعله لحضرتك دلوقتي.",
+            "speaker": "Agent",
+            "duration_to_play": "71.11",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "خلاص أنا كده برضه. فعلت لحضرتك أستاذ أبو بكر.",
+            "speaker": "Agent",
+            "duration_to_play": "75.78",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ولغيت لغيت الشكر. بارك الله فيك. مشتاق من النت عادي؟",
+            "speaker": "Customer",
+            "duration_to_play": "80.04",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نعم. نستخدم النت هذه.",
+            "speaker": "Customer",
+            "duration_to_play": "87.55",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تستخدم اه دلوقتي عادي مع حضرتك؟",
+            "speaker": "Agent",
+            "duration_to_play": "89.43",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "93.12",
+            "locale": "ar-EG"
+        }
+    ]
+}

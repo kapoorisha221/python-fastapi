@@ -1,0 +1,70 @@
+{
+    "transcript": [
+        {
+            "dialogue": "صباح الخير. السلام عليكم.",
+            "speaker": "Agent",
+            "duration_to_play": "2.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لو سمحت كنت أتشرف بسم حضرتك.",
+            "speaker": "Customer",
+            "duration_to_play": "6.36",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "الصوت بعيد جدا يا فندم. إسراء محمد. أهلا بيكي يا أستاذة إسراء، تفضلي.",
+            "speaker": "Customer",
+            "duration_to_play": "11.04",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كنت عاوزة كود بس وانا آكلة الخط. ااه يجيلي المسجات بالرقم او الارقام اللي حاولت تكلميني.",
+            "speaker": "Customer",
+            "duration_to_play": "16.95",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام هي الخدمة دي بتكون اسمها الكول كيبر؟ أو يا أستاذة إسراء بس دي بيبقى إشتراك عند حضرتك بتخصم 70 قرش كل 14 يوم بمعدل خمس دروش يومين، لو حضرتك حابة تشيكلك حضرتك في الخدمة ما فيش مشكلة.",
+            "speaker": "Agent",
+            "duration_to_play": "26.03",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، بس أنا مش عاوزة أشترك في خط، أنا عايزة أسأل عشان خط جوزي، فلو في كود هو يدخله ويشترك في دماير.",
+            "speaker": "Customer",
+            "duration_to_play": "40.91",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ما فيش مشكلة، حبعته لحضرتك دلوقتي في رسالة، ولو حضرتك حبيتي تلغيها في أي وقت، تمام؟",
+            "speaker": "Agent",
+            "duration_to_play": "47.67",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ما فيش مشكلة حبعته لحضرتك دلوقتي في رسالة، ولو حضرتك حبيتي تلغيها في أي وقت تمام؟",
+            "speaker": "Customer",
+            "duration_to_play": "47.67",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "شكرا جدا لذوق حضرتك.",
+            "speaker": "Customer",
+            "duration_to_play": "52.75",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "شكرا.",
+            "speaker": "Customer",
+            "duration_to_play": "56.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مع السلامة.",
+            "speaker": "Customer",
+            "duration_to_play": "58.64",
+            "locale": "ar-EG"
+        }
+    ]
+}

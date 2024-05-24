@@ -164,7 +164,7 @@ class Summarization():
 ################################################################################################################################################
 ################################################# Abstractive Summarization ####################################################################
 ################################################################################################################################################
-    def get_text(self, call):
+    def get_abstractive_text(self, call):
         transcription_jsonPath =  f"data/audio_analytics/{call}/transcript_output_english.json"
         with open(transcription_jsonPath,'r',encoding='utf-8') as fp:
             transcriptions = json.load(fp)
@@ -202,7 +202,7 @@ class Summarization():
             return {"status": "fail", "error": errors}
 
     def abstractive_summarisation_helper(self, call):
-        self.get_text(call)
+        self.get_abstractive_text(call)
         if self.text_to_summarise == None:
             return {"status": "fail", "error": "no text to summarise"}
 
@@ -222,7 +222,7 @@ class Summarization():
                             "kind": "AbstractiveSummarization",
                             "taskName": "Text Abstractive Summarization Task 1",
                             "parameters": {
-                                            "summaryLength": "short"
+                                            "summaryLength": "oneline"
                                             }
                         }
                     ]
@@ -246,17 +246,13 @@ class Summarization():
             max_time = 10
             passed_time = 0
             flag = True
-            # result
             while flag and (passed_time < max_time):
                 extractive_summary_response = requests.get(url = url, headers= headers)
                 response1 = extractive_summary_response
-                print("response _____________________________________:", response1)
                 extractive_summary_response = json.loads(extractive_summary_response.text)
-                print("____________________________test result______________________:", extractive_summary_response)
                 if extractive_summary_response["status"].lower() == "succeeded":
                     flag = False
                     result = self.get_abstractive_summary(extractive_summary_response)
-                    print("__________127_result__________________________", result)
                 else:
                     error_msg =  f"status code : {response1.status_code}. Response : {response1.text}"
                     result = {"status": "fail", "error":error_msg}

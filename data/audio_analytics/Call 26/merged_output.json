@@ -1,0 +1,278 @@
+{
+    "result": {
+        "summary": "Fatima initiates a conversation with Professor Abu Bakr Mansour, asking for assistance in renewing his package. The package in question is the 25 package, which he is currently using. The agent assures him that they can renew it immediately and also provide instructions on how to do so in the future. However, Abu Bakr expresses concern about the deduction of his balance after the package is finished. The agent assures his concern and successfully renews the package. The conversation ends with Abu Bakr expressing his longing for the internet and confirming that it is now normal for him to use it.",
+        "topics": [
+            "balance",
+            "Fatima",
+            "moment",
+            "credit",
+            "other number",
+            "One hundred halls",
+            "internet",
+            "Same program",
+            "phone balance",
+            "package",
+            "Iowa",
+            "Internet",
+            "bundle",
+            "evening",
+            "same number",
+            "calls",
+            "Abu Bakr Mansour",
+            "same package",
+            "Salvation",
+            "Same package",
+            "rest",
+            "Professor Abu Bakr"
+        ],
+        "wordcloud": [
+            {
+                "text": "Abu Bakr Mansour",
+                "value": 1
+            },
+            {
+                "text": "Professor Abu Bakr",
+                "value": 2
+            },
+            {
+                "text": "other number",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "evening",
+                "value": 1
+            },
+            {
+                "text": "Fatima",
+                "value": 1
+            },
+            {
+                "text": "calls",
+                "value": 1
+            },
+            {
+                "text": "package",
+                "value": 7
+            },
+            {
+                "text": "moment",
+                "value": 3
+            },
+            {
+                "text": "Same program",
+                "value": 2
+            },
+            {
+                "text": "same package",
+                "value": 2
+            },
+            {
+                "text": "Same package",
+                "value": 1
+            },
+            {
+                "text": "One hundred halls",
+                "value": 1
+            },
+            {
+                "text": "balance",
+                "value": 3
+            },
+            {
+                "text": "bundle",
+                "value": 1
+            },
+            {
+                "text": "phone balance",
+                "value": 1
+            },
+            {
+                "text": "rest",
+                "value": 1
+            },
+            {
+                "text": "credit",
+                "value": 2
+            },
+            {
+                "text": "Iowa",
+                "value": 2
+            },
+            {
+                "text": "Salvation",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 1
+            },
+            {
+                "text": "internet",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good evening, Fatima's calls with you, Abu Bakr Mansour, welcome Professor Abu Bakr on this number and no other number? No, the same number, please help you, how do I want to renew the package? Renews the package? Okay? A moment with me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.50",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "What package, O regret, that you need to renew? Could you let me know?",
+                    "speaker": "Agent",
+                    "duration_to_play": "18.20",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Same program, same package?",
+                    "speaker": "Customer",
+                    "duration_to_play": "20.60",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Same program, same package.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.60",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Same package perfectly, same package.",
+                    "speaker": "Agent",
+                    "duration_to_play": "22.60",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Is the package that you have at the moment? Is the 25 package?",
+                    "speaker": "Agent",
+                    "duration_to_play": "34.91",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay? A moment with me and I will renew it for you immediately, and after that, if you want to renew it, it is possible to dial *566#.",
+                    "speaker": "Agent",
+                    "duration_to_play": "41.60",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "One hundred halls and we have to cancel it, deducting my balance after the package is finished.",
+                    "speaker": "Customer",
+                    "duration_to_play": "48.95",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Ok, fine, working means stopping the balance.",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.95",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Out of the bundle.",
+                    "speaker": "Agent",
+                    "duration_to_play": "60.48",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "She became out of the rest. I don't want to, so don't take from the phone balance.",
+                    "speaker": "Customer",
+                    "duration_to_play": "63.47",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay, why is the package finished? What is deducted from this credit that you need, right?",
+                    "speaker": "Agent",
+                    "duration_to_play": "66.59",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay? When the package is finished, what is deducted from this balance that you need is correct?",
+                    "speaker": "Customer",
+                    "duration_to_play": "66.59",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Iowa.",
+                    "speaker": "Customer",
+                    "duration_to_play": "70.19",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay, why is the package finished? What is deducted from this credit that you need, right?",
+                    "speaker": "Agent",
+                    "duration_to_play": "66.59",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Iowa",
+                    "speaker": "Agent",
+                    "duration_to_play": "70.19",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay. We do it for you now.",
+                    "speaker": "Agent",
+                    "duration_to_play": "71.11",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Salvation I am like this too. I did for you, Professor Abu Bakr.",
+                    "speaker": "Agent",
+                    "duration_to_play": "75.78",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "And canceled canceled thanks. Bless you. I miss the Internet, is it normal?",
+                    "speaker": "Customer",
+                    "duration_to_play": "80.04",
+                    "locale": "en",
+                    "sentiment": "mixed"
+                },
+                {
+                    "dialogue": "Yes. We use this internet.",
+                    "speaker": "Customer",
+                    "duration_to_play": "87.55",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Do you use it now as normal with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "89.43",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Bye bye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "93.12",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

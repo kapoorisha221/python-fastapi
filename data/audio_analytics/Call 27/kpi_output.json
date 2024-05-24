@@ -1,0 +1,87 @@
+{
+    "summary": "The conversation involves a person speaking on behalf of a person named Mr. Abdel Aziz. The person is inquiring about Mr. Abdel Aziz's school, his three-month balance, and a new package called Hiji. The person also mentions a debt of 36,35,000. The person apologizes for the 125D package on Mr. Abdel Azizs line, which has been replaced with the Hiji package. The person then asks if Mr. Abdel Aziz is satisfied with the service he has received from them.",
+    "sentiment_ls": [
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "name"
+        ],
+        [
+            "morning sir",
+            "Alo",
+            "honor"
+        ],
+        [
+            "morning",
+            "sir",
+            "honor",
+            "behalf"
+        ],
+        [],
+        [
+            "Peace",
+            "honour",
+            "behalf"
+        ],
+        [],
+        [
+            "Mr. Abdel Aziz",
+            "honorable teacher",
+            "same number",
+            "love",
+            "Eid",
+            "inquiry",
+            "school"
+        ],
+        [
+            "Three month balance"
+        ],
+        [],
+        [
+            "bouquet"
+        ],
+        [],
+        [
+            "work"
+        ],
+        [
+            "God Almighty"
+        ],
+        [
+            "O Vendum",
+            "125D package",
+            "125 package",
+            "creature",
+            "one",
+            "line"
+        ],
+        [],
+        [],
+        [],
+        [
+            "other question"
+        ],
+        [
+            "Etisalat"
+        ]
+    ]
+}

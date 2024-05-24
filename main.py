@@ -2,8 +2,7 @@ import json, os
 import pandas as pd
 from src.adapters.keyPhrase import keyPhrase
 from src.adapters.sentiment_analysis import Sentiment
-#from src.adapters.summarisation import Summarization
-from test_abstractive import Summarization
+from src.adapters.summarisation import Summarization
 from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
@@ -43,7 +42,7 @@ class Main:
             call_dict[audio_file] = {"id": next_call_name}
             call_dict[audio_file]["recordingID"] = next_call_number            
             call_dict[audio_file]["CallDuration"] = minutes
-            call_dict[audio_file]["Audio_Size"] = audio_atrs["audio_file_size"]
+            call_dict[audio_file]["Audio_Size"] = int(audio_atrs["audio_file_size"])
             call_dict[audio_file]["Agent Name"] = agent_name
             call_dict[audio_file]["Call Date"] = call_date
             
@@ -159,7 +158,7 @@ class Main:
             call = audio_name
             summarisation_obj = Summarization()
             summarisation_result = summarisation_obj.abstractive_summarisation_helper(call)
-           
+            print("______________________summarisation_result_________________________", summarisation_result)
             if summarisation_result:
                 result["summary"] = summarisation_result["summary"]
             else:
@@ -225,7 +224,7 @@ class Main:
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
             result = self.get_kpis(audio_name, english_transcription_jsonpath)
-
+            #self.get_kpis(audio_name, english_transcription_jsonpath)
             # merge outputs
             merged_output = {}
             merged_output["result"] = {}
@@ -273,7 +272,7 @@ class Main:
                 msg=f"Saving merged_output.json as path '{self.file_path}'",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
-            with open(merged_path, "w") as fh:
+            with open(merged_path, mode = "w", encoding='utf-8') as fh:
                 json.dump(merged_output, fh, indent=4)
 
             self.info_logger.info(
@@ -289,7 +288,7 @@ class Main:
             self.info_logger.info(msg=f"Saving power_bi_merged_output.json as path '{self.file_path}'",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
-            with open(power_bi_merged_path, "w") as fh:
+            with open(power_bi_merged_path, mode = "w", encoding='utf-8') as fh:
                 json.dump(merged_output, fh, indent=4)
 
             self.power_bi_report_main_helper(

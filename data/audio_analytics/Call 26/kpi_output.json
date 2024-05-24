@@ -1,0 +1,107 @@
+{
+    "summary": "Fatima initiates a conversation with Professor Abu Bakr Mansour, asking for assistance in renewing his package. The package in question is the 25 package, which he is currently using. The agent assures him that they can renew it immediately and also provide instructions on how to do so in the future. However, Abu Bakr expresses concern about the deduction of his balance after the package is finished. The agent assures his concern and successfully renews the package. The conversation ends with Abu Bakr expressing his longing for the internet and confirming that it is now normal for him to use it.",
+    "sentiment_ls": [
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "mixed",
+        "neutral",
+        "neutral",
+        "neutral"
+    ],
+    "keyPhrases_ls": [
+        [
+            "Abu Bakr Mansour",
+            "Professor Abu Bakr",
+            "other number",
+            "same number",
+            "evening",
+            "Fatima",
+            "calls",
+            "package",
+            "moment"
+        ],
+        [
+            "package"
+        ],
+        [
+            "Same program",
+            "same package"
+        ],
+        [
+            "Same program",
+            "same package"
+        ],
+        [
+            "Same package"
+        ],
+        [
+            "package",
+            "moment"
+        ],
+        [
+            "moment"
+        ],
+        [
+            "One hundred halls",
+            "balance",
+            "package"
+        ],
+        [
+            "balance"
+        ],
+        [
+            "bundle"
+        ],
+        [
+            "phone balance",
+            "rest"
+        ],
+        [
+            "package",
+            "credit"
+        ],
+        [
+            "package",
+            "balance"
+        ],
+        [
+            "Iowa"
+        ],
+        [
+            "package",
+            "credit"
+        ],
+        [
+            "Iowa"
+        ],
+        [],
+        [
+            "Professor Abu Bakr",
+            "Salvation"
+        ],
+        [
+            "Internet"
+        ],
+        [
+            "internet"
+        ],
+        [],
+        []
+    ]
+}

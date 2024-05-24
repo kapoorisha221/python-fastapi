@@ -1,0 +1,70 @@
+{
+    "transcript": [
+        {
+            "dialogue": "Good morning. Peace be upon you.",
+            "speaker": "Agent",
+            "duration_to_play": "2.60",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Excuse me, I would have the honor to name you.",
+            "speaker": "Customer",
+            "duration_to_play": "6.36",
+            "locale": "en"
+        },
+        {
+            "dialogue": "The sound is too far, sir. Israa Mohammed. Hello to you, Ms. Israa, go ahead.",
+            "speaker": "Customer",
+            "duration_to_play": "11.04",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I wanted a code but I ate the line. Oh, I get the messages with the number or numbers that you tried to talk to me.",
+            "speaker": "Customer",
+            "duration_to_play": "16.95",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay, is this service called cool caper? Or, Ms. Israa, but this remains a subscription with you by deducting 70 piasters every 14 days at a rate of five lessons for two days, if you would like to form your presence in the service, there is no problem.",
+            "speaker": "Agent",
+            "duration_to_play": "26.03",
+            "locale": "en"
+        },
+        {
+            "dialogue": "OK, but I don't want to subscribe to a line, I want to ask because of the Josie line, so if there is a code, he enters it and subscribes to Demeyer.",
+            "speaker": "Customer",
+            "duration_to_play": "40.91",
+            "locale": "en"
+        },
+        {
+            "dialogue": "There is no problem, I love you now in a message, and if you have my love, you will cancel it at any time, okay?",
+            "speaker": "Agent",
+            "duration_to_play": "47.67",
+            "locale": "en"
+        },
+        {
+            "dialogue": "What is the problem with your presence now in a message, and if you are my love, you will cancel it at any time?",
+            "speaker": "Customer",
+            "duration_to_play": "47.67",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Thank you very much for your taste.",
+            "speaker": "Customer",
+            "duration_to_play": "52.75",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Thank you.",
+            "speaker": "Customer",
+            "duration_to_play": "56.51",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Bye bye.",
+            "speaker": "Customer",
+            "duration_to_play": "58.64",
+            "locale": "en"
+        }
+    ]
+}

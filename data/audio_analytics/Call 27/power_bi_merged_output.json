@@ -1,0 +1,348 @@
+{
+    "result": {
+        "summary": "The conversation involves a person speaking on behalf of a person named Mr. Abdel Aziz. The person is inquiring about Mr. Abdel Aziz's school, his three-month balance, and a new package called Hiji. The person also mentions a debt of 36,35,000. The person apologizes for the 125D package on Mr. Abdel Azizs line, which has been replaced with the Hiji package. The person then asks if Mr. Abdel Aziz is satisfied with the service he has received from them.",
+        "topics": [
+            "Mr. Abdel Aziz",
+            "Eid",
+            "line",
+            "morning",
+            "Peace",
+            "God Almighty",
+            "name",
+            "honorable teacher",
+            "sir",
+            "Three month balance",
+            "work",
+            "honor",
+            "Etisalat",
+            "honour",
+            "school",
+            "behalf",
+            "O Vendum",
+            "one",
+            "morning sir",
+            "125 package",
+            "other question",
+            "same number",
+            "125D package",
+            "inquiry",
+            "love",
+            "Alo",
+            "bouquet",
+            "creature"
+        ],
+        "wordcloud": [
+            {
+                "text": "name",
+                "value": 1
+            },
+            {
+                "text": "morning sir",
+                "value": 1
+            },
+            {
+                "text": "Alo",
+                "value": 1
+            },
+            {
+                "text": "honor",
+                "value": 2
+            },
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "sir",
+                "value": 1
+            },
+            {
+                "text": "behalf",
+                "value": 2
+            },
+            {
+                "text": "Peace",
+                "value": 1
+            },
+            {
+                "text": "honour",
+                "value": 1
+            },
+            {
+                "text": "Mr. Abdel Aziz",
+                "value": 1
+            },
+            {
+                "text": "honorable teacher",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "love",
+                "value": 1
+            },
+            {
+                "text": "Eid",
+                "value": 1
+            },
+            {
+                "text": "inquiry",
+                "value": 1
+            },
+            {
+                "text": "school",
+                "value": 1
+            },
+            {
+                "text": "Three month balance",
+                "value": 1
+            },
+            {
+                "text": "bouquet",
+                "value": 1
+            },
+            {
+                "text": "work",
+                "value": 1
+            },
+            {
+                "text": "God Almighty",
+                "value": 1
+            },
+            {
+                "text": "O Vendum",
+                "value": 1
+            },
+            {
+                "text": "125D package",
+                "value": 1
+            },
+            {
+                "text": "125 package",
+                "value": 1
+            },
+            {
+                "text": "creature",
+                "value": 1
+            },
+            {
+                "text": "one",
+                "value": 1
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "other question",
+                "value": 1
+            },
+            {
+                "text": "Etisalat",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "With you I am honored by the name?",
+                    "speaker": "Agent",
+                    "duration_to_play": "1.19",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "name"
+                    ]
+                },
+                {
+                    "dialogue": "Alo. Good morning sir. I have the honor to name you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "4.68",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "morning sir",
+                        "Alo",
+                        "honor"
+                    ]
+                },
+                {
+                    "dialogue": "Good morning, sir, I have the honor to speak on behalf of you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "9.98",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "morning",
+                        "sir",
+                        "honor",
+                        "behalf"
+                    ]
+                },
+                {
+                    "dialogue": "Good morning.",
+                    "speaker": "Agent",
+                    "duration_to_play": "15.66",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Peace be upon you, peace be upon you, sir. I have the honour to speak on behalf of you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.08",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Peace",
+                        "honour",
+                        "behalf"
+                    ]
+                },
+                {
+                    "dialogue": "Can you hear me, sir?",
+                    "speaker": "Agent",
+                    "duration_to_play": "27.22",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Yes, I hear you, the love of Eid with you, welcome to you, Mr. Abdel Aziz. Your inquiry regarding the same number or is there another number? No the same number. How's your honorable teacher's school, sir?",
+                    "speaker": "Agent",
+                    "duration_to_play": "29.68",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Mr. Abdel Aziz",
+                        "honorable teacher",
+                        "same number",
+                        "love",
+                        "Eid",
+                        "inquiry",
+                        "school"
+                    ]
+                },
+                {
+                    "dialogue": "Three month balance 140. I just want to know.",
+                    "speaker": "Customer",
+                    "duration_to_play": "39.50",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Three month balance"
+                    ]
+                },
+                {
+                    "dialogue": "Or not?",
+                    "speaker": "Customer",
+                    "duration_to_play": "45.04",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "What bouquet, sir?",
+                    "speaker": "Agent",
+                    "duration_to_play": "46.67",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "bouquet"
+                    ]
+                },
+                {
+                    "dialogue": "Which is only 21,000 me?",
+                    "speaker": "Customer",
+                    "duration_to_play": "52.92",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "I changed it with her work.",
+                    "speaker": "Agent",
+                    "duration_to_play": "55.24",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "work"
+                    ]
+                },
+                {
+                    "dialogue": "Which is 125 but I was last young, I owed God Almighty 36, 35,000 which is mega.",
+                    "speaker": "Customer",
+                    "duration_to_play": "56.64",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "God Almighty"
+                    ]
+                },
+                {
+                    "dialogue": "What creature has been renewed, O Vendum? The 125 package is the one that you don't hear, the package that has been renewed is called Hiji, so I regret the 125D package that is on your line.",
+                    "speaker": "Agent",
+                    "duration_to_play": "70.01",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "O Vendum",
+                        "125D package",
+                        "125 package",
+                        "creature",
+                        "one",
+                        "line"
+                    ]
+                },
+                {
+                    "dialogue": "What?",
+                    "speaker": "Customer",
+                    "duration_to_play": "83.07",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Renewed with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "85.32",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "All right all right. Thank you.",
+                    "speaker": "Customer",
+                    "duration_to_play": "86.36",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Any other question or anything I can help you with?",
+                    "speaker": "Agent",
+                    "duration_to_play": "88.08",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "other question"
+                    ]
+                },
+                {
+                    "dialogue": "You honored us, sir. Are we happy to serve you at Etisalat?",
+                    "speaker": "Agent",
+                    "duration_to_play": "92.56",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Etisalat"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

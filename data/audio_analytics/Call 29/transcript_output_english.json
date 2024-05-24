@@ -1,0 +1,118 @@
+{
+    "transcript": [
+        {
+            "dialogue": "Good morning, I called your address, morning of light. May I be honored by the name? Rajab Mahmoud? How? Your honor? Welcome? Inquiry about the same number? Same number? Go ahead, sir. Am I your honor?",
+            "speaker": "Agent",
+            "duration_to_play": "1.13",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Would I like to connect the Internet to a house?",
+            "speaker": "Agent",
+            "duration_to_play": "16.80",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay?",
+            "speaker": "Agent",
+            "duration_to_play": "20.79",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I'm sorry, I don't have a landline. Tell me that the right choice is from Badri.",
+            "speaker": "Customer",
+            "duration_to_play": "22.76",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I mean you thought you bought with contacts?",
+            "speaker": "Customer",
+            "duration_to_play": "33.48",
+            "locale": "en"
+        },
+        {
+            "dialogue": "What are the offers?",
+            "speaker": "Customer",
+            "duration_to_play": "38.08",
+            "locale": "en"
+        },
+        {
+            "dialogue": "It's not. Isn't it a landline? No, the antenna is almost right?",
+            "speaker": "Customer",
+            "duration_to_play": "47.11",
+            "locale": "en"
+        },
+        {
+            "dialogue": "It's Eddie, ask also or.",
+            "speaker": "Agent",
+            "duration_to_play": "54.67",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Now their theirs are printed with you.",
+            "speaker": "Agent",
+            "duration_to_play": "59.52",
+            "locale": "en"
+        },
+        {
+            "dialogue": "The section concerned with the antenna Internet will transfer you to them immediately. Hitmoa.",
+            "speaker": "Agent",
+            "duration_to_play": "63.84",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I want to inquire which is the available anood and .",
+            "speaker": "Agent",
+            "duration_to_play": "67.72",
+            "locale": "en"
+        },
+        {
+            "dialogue": "He will explain it to you salvation. I walk with the air internet, I wait now, I mean, oh now, your presence is not locked until the second of your honor's structure?",
+            "speaker": "Agent",
+            "duration_to_play": "72.88",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Will he explain it to your presence, salvation walking on the air internet, I am waiting now, I mean, oh, now your presence is not closed until the second of your structure?",
+            "speaker": "Customer",
+            "duration_to_play": "72.88",
+            "locale": "en"
+        },
+        {
+            "dialogue": "OK, OK, OK, thank you, OK?",
+            "speaker": "Customer",
+            "duration_to_play": "81.72",
+            "locale": "en"
+        },
+        {
+            "dialogue": "It's done. Okay, fine, thank you.",
+            "speaker": "Agent",
+            "duration_to_play": "81.72",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Pardon, of course, in your service, the calls are laughing.",
+            "speaker": "Agent",
+            "duration_to_play": "83.76",
+            "locale": "en"
+        },
+        {
+            "dialogue": "OK, OK, OK. Thank you, okay.",
+            "speaker": "Customer",
+            "duration_to_play": "81.72",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Pardon, of course, in your service, the calls are laughing.",
+            "speaker": "Customer",
+            "duration_to_play": "83.76",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Well thank you.",
+            "speaker": "Customer",
+            "duration_to_play": "86.84",
+            "locale": "en"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "transcript": [
+        {
+            "dialogue": "صباح الخير، اتصالاتنا مع حضرتك. صباح النور يا فندم. صباح النور. أتشرف بإسم حضرتك. أهلا وسهلا يا أستاذ محمود، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "3.56",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "في بنت كانت بتكلمني من الشركة؟ تمام، هي المفروض اللي هي يعني المفروض اللي هي خلاص عملتلي اللي انا عايزه مش تمام؟",
+            "speaker": "Agent",
+            "duration_to_play": "15.27",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اللي هي الأستاذة مي تمام؟",
+            "speaker": "Agent",
+            "duration_to_play": "27.99",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يعني حضرتك عايز ترجعلها مرة تانية؟ ولا أكمل؟ أنا مع حضرتك؟",
+            "speaker": "Agent",
+            "duration_to_play": "33.92",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك عايز يعني تكلم الأستاذة مي اللي كان بتكلم حضرتك ولا أنا اللي أكمل مع حضرتك؟",
+            "speaker": "Agent",
+            "duration_to_play": "40.52",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك عايز ترجعلها تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "46.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "معلش انا بعتذر لحضرتك جدا. طبعا لحظات معايا نبعتلها ميل داخلي ما بيني وما بينه وهي اتكلم حضرتك على طول.",
+            "speaker": "Customer",
+            "duration_to_play": "49.15",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "في اي حاجة تاني اقدر اساعد حضرتك بيها؟",
+            "speaker": "Customer",
+            "duration_to_play": "56.72",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "انت حضرتك بتصلاتك وبتمنى لحضرتك يوم سعيد باذن الله. مع السلامة يا فندم.",
+            "speaker": "Customer",
+            "duration_to_play": "60.96",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "في يوم.",
+            "speaker": "Agent",
+            "duration_to_play": "67.55",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك معايا معاكي يا فندم. ممكن تحوليني؟ تمام؟ ما هي حترجع تكلم حضرتك معنديش تحويل مباشر لل للزملاء، هي بترجع بتكلم حضرتك، المفروض ان انا يعني وهي تكلمني آه.",
+            "speaker": "Customer",
+            "duration_to_play": "71.24",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "آه هي ترجع. تكلم حضرتك ما تقلقش.",
+            "speaker": "Agent",
+            "duration_to_play": "81.88",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "في اي حاجة تاني يا استاذ محمود؟",
+            "speaker": "Agent",
+            "duration_to_play": "85.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مع السلامة يا فندم.",
+            "speaker": "Agent",
+            "duration_to_play": "88.52",
+            "locale": "ar-EG"
+        }
+    ]
+}

@@ -1,0 +1,237 @@
+{
+    "result": {
+        "summary": "The document is a conversation between two individuals, presumably colleagues, with Mr. Mahmoud. The conversation begins with the speaker welcoming Mr. Mahmoud and asking if he needs assistance with a certain issue. The conversation then shifts to a question about a girl named Ms. May Tammam and whether Mr. Mahmoud wants to return a call. The speaker apologizes for any confusion and assures Mr. Mahmoud that he can continue the conversation. The conversation ends with Mr. Mahmoud asking for a transfer, to which the speaker responds that they do not have a direct transfer to colleagues.",
+        "topics": [
+            "Bye",
+            "morning",
+            "Mr. Mahmoud",
+            "Professor Mai",
+            "sir",
+            "girl",
+            "company",
+            "God",
+            "prayers",
+            "honour",
+            "presence",
+            "Ms. May Tammam",
+            "behalf",
+            "contacts",
+            "one",
+            "happy day",
+            "Vendem",
+            "speech",
+            "direct transfer",
+            "same number",
+            "internal mile",
+            "colleagues",
+            "moments",
+            "Anything",
+            "day"
+        ],
+        "wordcloud": [
+            {
+                "text": "Mr. Mahmoud",
+                "value": 2
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "contacts",
+                "value": 1
+            },
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "honour",
+                "value": 1
+            },
+            {
+                "text": "behalf",
+                "value": 1
+            },
+            {
+                "text": "girl",
+                "value": 1
+            },
+            {
+                "text": "company",
+                "value": 1
+            },
+            {
+                "text": "one",
+                "value": 2
+            },
+            {
+                "text": "Ms. May Tammam",
+                "value": 1
+            },
+            {
+                "text": "Professor Mai",
+                "value": 1
+            },
+            {
+                "text": "internal mile",
+                "value": 1
+            },
+            {
+                "text": "moments",
+                "value": 1
+            },
+            {
+                "text": "Anything",
+                "value": 1
+            },
+            {
+                "text": "happy day",
+                "value": 1
+            },
+            {
+                "text": "presence",
+                "value": 2
+            },
+            {
+                "text": "prayers",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 1
+            },
+            {
+                "text": "Bye",
+                "value": 2
+            },
+            {
+                "text": "sir",
+                "value": 2
+            },
+            {
+                "text": "day",
+                "value": 1
+            },
+            {
+                "text": "direct transfer",
+                "value": 1
+            },
+            {
+                "text": "Vendem",
+                "value": 1
+            },
+            {
+                "text": "colleagues",
+                "value": 1
+            },
+            {
+                "text": "speech",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning, our contacts with you. Good morning, sir. Good morning. I have the honour to speak on behalf of you. Welcome, Mr. Mahmoud, can I help you on the same number or on another number?",
+                    "speaker": "Agent",
+                    "duration_to_play": "3.56",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Was there a girl who was calling me from the company? Okay, she is supposed to be the one who is supposed to be the one who is done what I want is not perfect?",
+                    "speaker": "Agent",
+                    "duration_to_play": "15.27",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Who is Ms. May Tammam?",
+                    "speaker": "Agent",
+                    "duration_to_play": "27.99",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I mean, do you want to return it again? And do not complete? Am I with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "33.92",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Do you want to mean that Professor Mai spoke to you, or am I the one who continued with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "40.52",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Would you like to return it again?",
+                    "speaker": "Agent",
+                    "duration_to_play": "46.31",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Sorry, I apologize to you very much. Of course, moments with me that we have an internal mile between me and him, and I speak to you along.",
+                    "speaker": "Customer",
+                    "duration_to_play": "49.15",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "Anything else I can help you with?",
+                    "speaker": "Customer",
+                    "duration_to_play": "56.72",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "You are your presence with your prayers and I wish you a happy day, God willing. Bye, sir.",
+                    "speaker": "Customer",
+                    "duration_to_play": "60.96",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "In a day.",
+                    "speaker": "Agent",
+                    "duration_to_play": "67.55",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Your presence is with me, O Vendem. Can you transfer me? Okay? What is it that you will speak again, I do not have a direct transfer to colleagues, she will return to your speech, I am supposed to mean and she speaks to me ah.",
+                    "speaker": "Customer",
+                    "duration_to_play": "71.24",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Ah, she's coming back. Speak to you, don't worry.",
+                    "speaker": "Agent",
+                    "duration_to_play": "81.88",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Is there anything else, Mr. Mahmoud?",
+                    "speaker": "Agent",
+                    "duration_to_play": "85.60",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Bye, sir.",
+                    "speaker": "Agent",
+                    "duration_to_play": "88.52",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

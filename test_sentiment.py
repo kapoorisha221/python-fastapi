@@ -3,8 +3,8 @@ import random
 
 
 class Sentiment():
-    LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
-    LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
+    LANGUAGE_ENDPOINT = ""
+    LANGUAGE_KEY = ""
     
     def __init__(self, transcripts):
         self.transcripts = transcripts
@@ -80,7 +80,6 @@ class Sentiment():
     
     def get_sentiment_analysis(self, sentiment_result):
         try:
-            #print("___________________getting max and overall sentiment________________________")
             sentiment = self.get_sentiment(sentiment_result)[0]
             result = {"sentiment": sentiment}
             if self.words_sentiment_mapping_flag:

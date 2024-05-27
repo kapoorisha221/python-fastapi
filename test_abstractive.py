@@ -1,30 +1,17 @@
 #################################### Extractive Summarization ####################################
 import json, os, requests, time
 
-# from azure.ai.textanalytics import TextAnalyticsClient, ExtractiveSummaryAction, AbstractiveSummaryAction 
-# from azure.ai.textanalytics import TextAnalyticsClient
-# from azure.ai.language.conversations import ConversationAnalysisClient
-# from azure.core.credentials import AzureKeyCredential
-
-from config.config import LocalConfig, AzureConfig
-from logs.logger import get_Error_Logger, get_Info_Logger
-
 class Summarization():
-    info_logger = get_Info_Logger()
-    error_logger = get_Error_Logger()
-    cred = AzureConfig()
     def __init__(self):       
         self.with_diarisation_flag = False
         self.document = []
         self.text_to_append = ""
 
         ########################## REST ######################
-        self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
+        self.LANGUAGE_ENDPOINT = self.LANGUAGE_ENDPOINT
         self.url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-text/jobs?api-version=2023-04-01"
-        self.key = self.cred.LANGUAGE_KEY
+        self.key = self.LANGUAGE_KEY
         self.api_version = "2023-04-01"
-        #self.transcription_jsonPath = r"data\audio_analytics\Call 1\transcript_output_english.json"
-        self.text_to_summarise = None
         self.language = "en"
         #######################################################
 
@@ -41,7 +28,6 @@ class Summarization():
         text_to_summarise_ls = []
         
         for item in transcriptions["transcript"]:
-            text = ""
             if self.with_diarisation_flag:
                 # text_to_summarise = text_to_summarise + item["speaker"] + ": " + item["dialogue"] + "\n"
                 text_to_summarise =  item["speaker"] + ": " + item["dialogue"] 
@@ -119,13 +105,12 @@ class Summarization():
             while flag and (passed_time < max_time):
                 extractive_summary_response = requests.get(url = url, headers= headers)
                 response1 = extractive_summary_response
-                print("response _____________________________________:", response1)
                 extractive_summary_response = json.loads(extractive_summary_response.text)
                 print("____________________________test result______________________:", extractive_summary_response)
                 if extractive_summary_response["status"].lower() == "succeeded":
                     flag = False
                     result = self.get_abstractive_summary(extractive_summary_response)
-                    print("__________127_result__________________________", result)
+                    print("_________________result__________________________", result)
                 else:
                     error_msg =  f"status code : {response1.status_code}. Response : {response1.text}"
                     result = {"status": "fail", "error":error_msg}
@@ -141,6 +126,7 @@ class Summarization():
     
 if __name__ == "__main__":
     call = "Call 27"
+
     obj = Summarization()
     res= obj.abstractive_summarisation_helper(call)
     print(res)

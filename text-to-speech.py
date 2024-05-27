@@ -2,8 +2,8 @@ import requests
 
 class SpeechRecognizer:
     def __init__(self, speech_region, speech_key):
-        self.speech_region = "eastus"
-        self.speech_key = "103578cd1b1842c1bf0f10531fc13cfb"
+        self.speech_region = ""
+        self.speech_key = ""
         self.url = f"https://{self.speech_region}.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1"
     
     def recognize_speech(self, audio_file_path, language='en-US', format='detailed'):
@@ -33,11 +33,10 @@ class SpeechRecognizer:
 
 # Example usage
 if __name__ == "__main__":
-    SPEECH_REGION = 'eastus'  # Replace with your actual speech region
-    SPEECH_KEY = '103578cd1b1842c1bf0f10531fc13cfb'        # Replace with your actual subscription key
+    SPEECH_REGION = ''  # Replace with your actual speech region
+    SPEECH_KEY = ''        # Replace with your actual subscription key
     audio_file_path = 'data/processed_data/Call 30.wav' # Path to your audio file
 
     recognizer = SpeechRecognizer(SPEECH_REGION, SPEECH_KEY)
-    print("instance created ")
     result = recognizer.recognize_speech(audio_file_path)
     print(result)

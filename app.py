@@ -65,7 +65,7 @@ async def create_upload_file(
 
 
 
-@app.post("/get_file/")
+@app.post("/getfiledata/")
 async def get_file(folder_name: str = Form(...)):
     file_name = "power_bi_merged_output.json"
     folder_path = LocalConfig().DATA_FOLDER + "/" +"audio_analytics" +"/"+ folder_name 
@@ -74,7 +74,6 @@ async def get_file(folder_name: str = Form(...)):
 
     if not os.path.exists(folder_path):
         raise HTTPException(status_code=404, detail="Folder not found")
-
     if not os.path.exists(file_path):
         raise HTTPException(status_code=404, detail="File not found")
 
@@ -87,8 +86,16 @@ async def get_file(folder_name: str = Form(...)):
 
     return JSONResponse(content=json_data)
 
-
-
+@app.get("/getaudiolist")
+async def get_audio_list():
+    audio_data_path = "data/audios_info/mappings.json"
+    try:
+        with open(audio_data_path, "r") as mapping:
+            data = mapping.read()
+            json_data = json.loads(data)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading file: {str(e)}")
+    return JSONResponse(content=json_data)
           
 
 # from pyngrok import ngrok  

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "aspects_texts": [
+    {
+      "aspect": "issue",
+      "text": "The customer is having trouble connecting due to reaching credit limits."
+    },
+    {
+      "aspect": "resolution",
+      "text": "The agent attempted to clarify the customer's issue and offered to work on a refresh step to activate the service.
+                The agent asked the customer to end the call and return to check if the service worked."
+    }
+  ]
+}

@@ -6,8 +6,8 @@ from src.adapters.summarisation import Summarization
 from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
+from src.utils import convert_to_minutes, is_file_present, get_audio_attributes, get_text_count_from_keyphrases
 from logs.logger import get_Error_Logger, get_Info_Logger
-from utils import convert_to_minutes, is_file_present, get_audio_attributes, get_text_count_from_keyphrases
 from config.config import LocalConfig
 
 

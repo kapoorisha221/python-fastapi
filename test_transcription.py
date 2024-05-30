@@ -5,9 +5,6 @@ import azure.cognitiveservices.speech as speechsdk
 from logs.logger import get_Error_Logger, get_Info_Logger
 from config.config import AzureConfig
 
-cred = AzureConfig()
-info_logger = get_Info_Logger()
-error_logger = get_Error_Logger()
 
 transcript = []
 audio_file_path=""
@@ -25,24 +22,28 @@ def conversation_transcriber_transcribed_cb(evt: speechsdk.SpeechRecognitionEven
                 "locale": "ar-EG"
                 })
 
-                info_logger.info(msg=F"Got the transcription",extra={"location":"transcription.py - conversation_transcriber_transcribed_cb"})
+                print("Got the transcription")
 
             elif evt.result.reason == speechsdk.ResultReason.NoMatch:
                 # print('\tNOMATCH: Speech could not be TRANSCRIBED: {}'.format(evt.result.no_match_details))
-                error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"transcription.py - conversation_transcriber_transcribed_cb"})
+                print(msg="An Error Occured ..",exc_info=e,extra={"location":"transcription.py - conversation_transcriber_transcribed_cb"})
         except Exception as e:
-            error_logger.error(msg='NOMATCH: Speech could not be TRANSCRIBED: {}'.format(evt.result.no_match_details),exc_info=e,extra={"location":"transcription.py - conversation_transcriber_transcribed_cb"})
+            print("NOMATCH: Speech could not be TRANSCRIBED: ")
 
 def recognize_from_file(audio_file_path,folder):
         try:
-            info_logger.info(msg=F"Initializing Creds for AI Speech Services ",extra={"location":"transcription.py - recognize_from_file"})
+            print("function called____________________")
+            SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
+            SPEECH_REGION = "eastus"
+            print("Initializing Creds for AI Speech Services ")
             transcript.clear()
             
-            speech_config = speechsdk.SpeechConfig(subscription=cred.SPEECH_KEY, region=cred.SPEECH_REGION)
+            speech_config = speechsdk.SpeechConfig(subscription=SPEECH_KEY, region=SPEECH_REGION)
             speech_config.speech_recognition_language="ar-EG"
 
             audio_config = speechsdk.audio.AudioConfig(filename=audio_file_path)
             conversation_transcriber = speechsdk.transcription.ConversationTranscriber(speech_config=speech_config, audio_config=audio_config)
+            print("______________________________", conversation_transcriber)
             folder_path = folder
             transcribing_stop = False
 
@@ -52,14 +53,14 @@ def recognize_from_file(audio_file_path,folder):
 
                 with open(filename, 'w', encoding='utf-8') as outfile:
                     outfile.write(json_transcript)
-                    info_logger.info(msg=F"Saved Transcript.json at ' {filename}'")
-                info_logger.info(msg=F"Stopping Session to AI Speech Service {evt}",extra={"location":"transcription.py - stop_cb"})
+                    print("Saved Transcript.json at ' {filename}'")
+                print("Stopping Session to AI Speech Service {evt}")
                 # print('CLOSING on {}'.format(evt))
                 nonlocal transcribing_stop
                 transcribing_stop = True
 
             # Connect callbacks to the events fired by the conversation transcriber
-            info_logger.info(msg=F"Connecting to the AI Speech Services and start Transcribing for audio'{audio_file_path}'",extra={"location":"transcription.py - recognize_from_file"})
+            print("Connecting to the AI Speech Services and start Transcribing for audio'{audio_file_path}'")
             conversation_transcriber.transcribed.connect(conversation_transcriber_transcribed_cb)
 
             conversation_transcriber.session_stopped.connect(stop_cb)
@@ -71,4 +72,11 @@ def recognize_from_file(audio_file_path,folder):
 
             conversation_transcriber.stop_transcribing_async()
         except Exception as e:
-            error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"transcription.py - recognize_from_file"})
+            print(f"An Error Occured ..{e}")
+
+
+
+if __name__ == "__main __":
+    file_path = "data/processed_data/Call 30.wav"
+    folder = ""
+    recognize_from_file(file_path, folder)

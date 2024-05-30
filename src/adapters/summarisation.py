@@ -159,6 +159,10 @@ class Summarization():
             return {"status": "success", "aspects_texts": aspects_texts}
         else:
             return {"status": "fail", "error": errors}
+        
+
+
+        
 
 
 ################################################################################################################################################
@@ -188,6 +192,8 @@ class Summarization():
         status = False
         if extractive_summary_response["status"].lower() == "succeeded":
             extractive_summary = extractive_summary_response["tasks"]
+            print("_____extractive Summary response_______", extractive_summary_response)
+            print("\n_____________extractive_summary________", extractive_summary)
             final_summary = ""
             for item in extractive_summary["items"][0]["results"]["documents"][0]["summaries"]:
                 final_summary += item["text"]
@@ -207,7 +213,7 @@ class Summarization():
             return {"status": "fail", "error": "no text to summarise"}
 
         data = {
-            "displayName": "Document text Summarization Task Example",
+            "displayName": "Document text Summarization Task",
             "analysisInput": {
                 "documents": [
                 {
@@ -222,7 +228,7 @@ class Summarization():
                             "kind": "AbstractiveSummarization",
                             "taskName": "Text Abstractive Summarization Task 1",
                             "parameters": {
-                                            "summaryLength": "oneline"
+                                            "summaryLength": "short"
                                             }
                         }
                     ]
@@ -253,6 +259,7 @@ class Summarization():
                 if extractive_summary_response["status"].lower() == "succeeded":
                     flag = False
                     result = self.get_abstractive_summary(extractive_summary_response)
+                    print("___________result_____________", result)
                 else:
                     error_msg =  f"status code : {response1.status_code}. Response : {response1.text}"
                     result = {"status": "fail", "error":error_msg}

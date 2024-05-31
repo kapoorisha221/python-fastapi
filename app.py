@@ -32,6 +32,7 @@ def Process_Audio_files(agent_name, call_date):
          error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"App.py - Process_Audio_files"})
     
 
+########################################## Routes ###########################################################################
 @app.post("/uploadfile/")
 async def create_upload_file(
     files: List[UploadFile] = File(...),
@@ -63,11 +64,18 @@ async def create_upload_file(
         raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
 
 
-
+@app.get("/readallaudios")
+def read_all_audios():
+    audio_source_path = ""
+    
 
 @app.post("/getfiledata/")
-async def get_file(folder_name: str = Form(...)):
-    file_name = "power_bi_merged_output.json"
+async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
+    if file_lang == "ar":
+        file_name = "arabic_power_bi_merged_output.json"
+    elif file_lang =="en":
+        file_name = "power_bi_merged_output.json"
+
     folder_path = LocalConfig().DATA_FOLDER + "/" +"audio_analytics" +"/"+ folder_name 
     file_path = os.path.join(folder_path, file_name)
     file_path = folder_path + "/" + file_name
@@ -78,13 +86,16 @@ async def get_file(folder_name: str = Form(...)):
         raise HTTPException(status_code=404, detail="File not found")
 
     try:
-        with open(file_path, 'r') as file:
-            data = file.read()
-            json_data = json.loads(data)
+        # with open(file_path, 'r') as file:
+        #     data = file.read()
+        #     json_data = json.loads(data)
+        with open(file=file_path , mode="r", encoding="utf-8") as fh:
+            json_data = json.load(fh)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error reading file: {str(e)}")
 
     return JSONResponse(content=json_data)
+
 
 @app.get("/getaudiolist")
 async def get_audio_list():

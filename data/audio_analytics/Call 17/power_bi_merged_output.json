@@ -1,0 +1,316 @@
+{
+    "result": {
+        "summary": "The conversation involves a representative from a company welcoming Mr. Mo'men and discussing his request to compress the internet before returning it. The representative also mentions the possibility of renewing the Connect X50 package for Mr. Mo'man, mentioning that 50 piasters were deducted for their calls. The representative assures Mr. Mo' men that they will add this to his account and renew it immediately.",
+        "topics": [
+            "service",
+            "command",
+            "One moment",
+            "Timamat",
+            "problem",
+            "moments",
+            "Moments",
+            "confirmation message",
+            "time",
+            "Lord",
+            "Connect X50 package",
+            "50 piasters",
+            "bouquet",
+            "code",
+            "Mr. Mo'men",
+            "morning",
+            "procedure",
+            "number",
+            "Tani",
+            "thousand goodbye",
+            "God",
+            "moment",
+            "enquiry",
+            "calls",
+            "order",
+            "early renewal",
+            "internet"
+        ],
+        "wordcloud": [
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "Mr. Mo'men",
+                "value": 1
+            },
+            {
+                "text": "Lord",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 1
+            },
+            {
+                "text": "number",
+                "value": 3
+            },
+            {
+                "text": "Tani",
+                "value": 1
+            },
+            {
+                "text": "command",
+                "value": 3
+            },
+            {
+                "text": "internet",
+                "value": 2
+            },
+            {
+                "text": "early renewal",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 2
+            },
+            {
+                "text": "code",
+                "value": 1
+            },
+            {
+                "text": "Timamat",
+                "value": 1
+            },
+            {
+                "text": "order",
+                "value": 1
+            },
+            {
+                "text": "time",
+                "value": 1
+            },
+            {
+                "text": "moment",
+                "value": 1
+            },
+            {
+                "text": "Connect X50 package",
+                "value": 1
+            },
+            {
+                "text": "50 piasters",
+                "value": 1
+            },
+            {
+                "text": "calls",
+                "value": 1
+            },
+            {
+                "text": "problem",
+                "value": 1
+            },
+            {
+                "text": "One moment",
+                "value": 1
+            },
+            {
+                "text": "Moments",
+                "value": 1
+            },
+            {
+                "text": "confirmation message",
+                "value": 1
+            },
+            {
+                "text": "procedure",
+                "value": 1
+            },
+            {
+                "text": "bouquet",
+                "value": 1
+            },
+            {
+                "text": "moments",
+                "value": 1
+            },
+            {
+                "text": "enquiry",
+                "value": 1
+            },
+            {
+                "text": "thousand goodbye",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning, currently with you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "3.04",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "morning"
+                    ]
+                },
+                {
+                    "dialogue": "Welcome, Mr. Mo'men. Lord, be well. Thank God fine, may God save you. Thank God the number and the number Tani.",
+                    "speaker": "Agent",
+                    "duration_to_play": "6.88",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Mr. Mo'men",
+                        "Lord",
+                        "God",
+                        "number",
+                        "Tani"
+                    ]
+                },
+                {
+                    "dialogue": "I worked this number, you are welcome under your command, I just wanted to compress the internet before returning it.",
+                    "speaker": "Customer",
+                    "duration_to_play": "15.72",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "number",
+                        "command",
+                        "internet"
+                    ]
+                },
+                {
+                    "dialogue": "I worked this number, you are welcome under your command, I just wanted to compress the internet before returning it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "15.72",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "number",
+                        "command",
+                        "internet"
+                    ]
+                },
+                {
+                    "dialogue": "You would like to renew it early, yes present at your service, we can also renew early renewal through the code *566# or from Timamat or through us under your order at any time",
+                    "speaker": "Agent",
+                    "duration_to_play": "22.44",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "early renewal",
+                        "service",
+                        "code",
+                        "Timamat",
+                        "order",
+                        "time"
+                    ]
+                },
+                {
+                    "dialogue": "A moment with me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "37.12",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "moment"
+                    ]
+                },
+                {
+                    "dialogue": "Will we renew the Connect X50 package exactly?",
+                    "speaker": "Agent",
+                    "duration_to_play": "40.19",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Connect X50 package"
+                    ]
+                },
+                {
+                    "dialogue": "He only deducted 50 piasters from you for our calls. So there is no problem, I will add it to you and renew it to you immediately",
+                    "speaker": "Agent",
+                    "duration_to_play": "43.76",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "50 piasters",
+                        "calls",
+                        "problem"
+                    ]
+                },
+                {
+                    "dialogue": "One moment with me, okay?",
+                    "speaker": "Customer",
+                    "duration_to_play": "48.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "One moment"
+                    ]
+                },
+                {
+                    "dialogue": "Moments with me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "59.81",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Moments"
+                    ]
+                },
+                {
+                    "dialogue": "This is how I already took the procedure for you, and the bouquet was serious with you, and moments for you a confirmation message.",
+                    "speaker": "Agent",
+                    "duration_to_play": "76.97",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "confirmation message",
+                        "procedure",
+                        "bouquet",
+                        "moments"
+                    ]
+                },
+                {
+                    "dialogue": "Okay, sir.",
+                    "speaker": "Customer",
+                    "duration_to_play": "81.69",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "At your service, any enquiry you would like I can help you with.",
+                    "speaker": "Agent",
+                    "duration_to_play": "82.69",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "service",
+                        "enquiry"
+                    ]
+                },
+                {
+                    "dialogue": "Thanks under your command.",
+                    "speaker": "Customer",
+                    "duration_to_play": "85.67",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "command"
+                    ]
+                },
+                {
+                    "dialogue": "Happy to demand with a thousand goodbye, goodbye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "86.71",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "thousand goodbye"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

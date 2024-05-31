@@ -110,6 +110,7 @@ class Main:
                 )
                 recognize_from_file(audio_file_path=path2, folder=folder)
                 transcripted_json_file_path = folder + "/transcript_output.json"
+                #transcripted_json_file_path_arabic = folder + "/"
                 self.info_logger.info(
                     msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
                     extra={"location": "main.py-audios_main"},
@@ -158,7 +159,10 @@ class Main:
             call = audio_name
             summarisation_obj = Summarization()
             summarisation_result = summarisation_obj.abstractive_summarisation_helper(call)
-            print("______________________summarisation_result_________________________", summarisation_result)
+            self.summarisation_result = summarisation_result
+
+            #print("______________________summarisation_result_________________________", summarisation_result)
+            
             if summarisation_result:
                 result["summary"] = summarisation_result["summary"]
             else:
@@ -206,6 +210,73 @@ class Main:
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
 
+    def get_kpis_arabic(self,audio_name, transciption_jsonpath_arabic):
+        try:
+            arabic_result = {}
+            with open(transciption_jsonpath_arabic, "r", encoding="utf-8") as fp:
+                arabic_transcriptions = json.load(fp)
+                self.arabic_transcriptions = arabic_transcriptions
+
+            self.info_logger.info(
+                msg=f"getting Conversational Summarization",
+                extra={"location": "main.py - get_kpis"},
+            )
+
+            #taking english summary as an input and translating it in Arabic
+            eng_summ_result = self.summarisation_result
+            trans_obj = AzureTranslator()
+            #print("eng_summ_result[summary]", eng_summ_result["summary"])
+            arabic_summarisation_result = trans_obj.get_translated_transcriptions_pipeline(eng_summ_result["summary"], "en", "ar-EG")
+
+            if arabic_summarisation_result:
+                arabic_result["summary"] = arabic_summarisation_result
+            else:
+                self.info_logger.info(
+                    msg=f"getting no results for summary",
+                    extra={"location": "main.py - get_kpis"},
+                )
+                arabic_result["summary"] = None
+
+            self.info_logger.info(
+                msg=f"getting sentiments for the dialogue",
+                extra={"location": "main.py - get_kpis"},
+            )
+            sentiment_obj = Sentiment(transcripts=arabic_transcriptions)
+            arabic_sentiment_result = sentiment_obj.sentiment_pipeline()
+            if arabic_sentiment_result:
+                arabic_result["sentiment_ls"] = arabic_sentiment_result
+            else:
+                arabic_result["sentiment_ls"] = None
+
+            self.info_logger.info(
+                msg=f"getting Keyphrases for the arabic dialogue and conversation in list",
+                extra={"location": "main.py - get_kpis"},
+            )
+            keyPhrase_obj = keyPhrase(transcripts=arabic_transcriptions)
+            arabic_keyPhrases_results = keyPhrase_obj.keyPhrase_pipeline()
+            if arabic_keyPhrases_results:
+                arabic_result["keyPhrases_ls"] = arabic_keyPhrases_results
+            else:
+                arabic_result["keyPhrases_ls"] = None
+
+            self.file_path = f"data/audio_analytics/{audio_name}/"
+            self.info_logger.info(
+                msg=f"Saving arabic_kpi_output.json at location '{self.file_path}'",
+                extra={"location": "main.py - get_kpis"},
+            )
+            arabic_json_path = self.file_path + "arabic_kpi_output.json"
+            with open(file=arabic_json_path, mode="w", encoding = "utf-8") as fh:
+                json.dump(arabic_result, fh, ensure_ascii=False, indent=4)
+
+            return arabic_result
+        except Exception as e:
+            self.error_logger.error(
+                msg=f"An Error Occured: {e}",
+                exc_info=e,
+                extra={"location": "main.py - pipeline_after_transcription"},
+            )
+
+
     def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
         try:
             translator_obj = AzureTranslator()
@@ -224,13 +295,20 @@ class Main:
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
             result = self.get_kpis(audio_name, english_transcription_jsonpath)
-            #self.get_kpis(audio_name, english_transcription_jsonpath)
+            arabic_result = self.get_kpis_arabic(audio_name, transcription_jsonPath)
+
             # merge outputs
             merged_output = {}
             merged_output["result"] = {}
+            merged_output_arabic = {}
+            merged_output_arabic["result"] = {}
 
             merged_output["result"]["summary"] = result["summary"]
+            merged_output_arabic["result"]["summary"] = arabic_result["summary"]
+
             unique_keyphrases = []
+            unique_keyphrases_arabic = []
+
             for ls in result["keyPhrases_ls"]:
                 if isinstance(ls, list):
                     for kp in ls:
@@ -240,33 +318,56 @@ class Main:
                 msg=f"Adding unique key phrases as topics to merged output",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
+            for ls in arabic_result["keyPhrases_ls"]:
+                if isinstance(ls, list):
+                    for kp in ls:
+                        unique_keyphrases_arabic.append(kp)
+            unique_keyphrases_arabic = list(set(unique_keyphrases_arabic))
+            self.info_logger.info(
+                msg=f"Adding unique key phrases as topics to merged output",
+                extra={"location": "main.py - pipeline_after_transcription"},
+            )
 
             merged_output["result"]["topics"] = unique_keyphrases
-
+            merged_output_arabic["result"]["topics"] = unique_keyphrases_arabic
             self.info_logger.info(
                 msg=f"getting text count from keyphrases and saving in merged output as wordcloud",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
+
             merged_output["result"]["wordcloud"] = get_text_count_from_keyphrases(
                 result["keyPhrases_ls"]
             )
-
+            merged_output_arabic["result"]["wordcloud"] = get_text_count_from_keyphrases(
+                arabic_result["keyPhrases_ls"]
+            )
             self.info_logger.info(
                 msg=f"merging sentiments with transcriptions and saving in merged output as transcription",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
+
             merged_output["result"]["transcripts"] = (
                 self.merge_sentiment_with_transcription(
                     result["sentiment_ls"], self.transcriptions
+                )
+            )
+            merged_output_arabic["result"]["transcripts"] = (
+                self.merge_sentiment_with_transcription(
+                    arabic_result["sentiment_ls"], self.arabic_transcriptions
                 )
             )
 
             merged_output["result"]["language"] = self.transcriptions["transcript"][0][
                 "locale"
             ].split("-")[0]
+            merged_output_arabic["result"]["language"] = self.arabic_transcriptions["transcript"][0][
+                "locale"
+            ].split("-")[0]
 
             merged_path = self.file_path + "merged_output.json"
+            merged_path_arabic = self.file_path + "arabic_merged_output.json"
             power_bi_merged_path = self.file_path + "power_bi_merged_output.json"
+            power_bi_merged_path_arabic = self.file_path + "arabic_power_bi_merged_output.json"
 
             self.info_logger.info(
                 msg=f"Saving merged_output.json as path '{self.file_path}'",
@@ -274,6 +375,8 @@ class Main:
             )
             with open(merged_path, mode = "w", encoding='utf-8') as fh:
                 json.dump(merged_output, fh, indent=4)
+            with open(merged_path_arabic, mode = "w", encoding="utf-8") as afh:
+                json.dump(merged_output_arabic, afh, ensure_ascii=False, indent=4)
 
             self.info_logger.info(
                 msg=f"merging keyphrases with transcription for power_bi_merged_output.json",
@@ -284,12 +387,19 @@ class Main:
                     result["keyPhrases_ls"], merged_output["result"]["transcripts"]
                 )
             )
+            merged_output_arabic["result"]["transcripts"] = (
+                self.merge_keyphrases_with_transcription(
+                    arabic_result["keyPhrases_ls"], merged_output_arabic["result"]["transcripts"]
+                )
+            )
 
             self.info_logger.info(msg=f"Saving power_bi_merged_output.json as path '{self.file_path}'",
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
             with open(power_bi_merged_path, mode = "w", encoding='utf-8') as fh:
                 json.dump(merged_output, fh, indent=4)
+            with open(power_bi_merged_path_arabic, mode = "w", encoding='utf-8') as afh:
+                json.dump(merged_output_arabic, afh, ensure_ascii=False, indent=4)
 
             self.power_bi_report_main_helper(
                 audio_file=audio_name,

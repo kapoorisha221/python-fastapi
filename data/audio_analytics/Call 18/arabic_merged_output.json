@@ -1,0 +1,342 @@
+{
+    "result": {
+        "summary": "تتضمن المحادثة مناقشة السيد محمود للقضايا المتعلقة بخدمة الحجز. يذكر أنه اتصل بخدمة العملاء وكان لديه مشاكل مع إغلاق هاتفه عندما اتصل به شخص ما. على الرغم من ذلك ، تم إلغاء المكالمات مرة أخرى.",
+        "topics": [
+            "ه",
+            "حظ",
+            "عل",
+            "تلغت",
+            "ر",
+            "تلقت",
+            "مش",
+            "ست",
+            "بعت",
+            "لات",
+            "س",
+            "مر",
+            "ير",
+            "ضرت",
+            "شتر",
+            "ن",
+            "خدمة",
+            "ت",
+            "قم",
+            "خدم",
+            "قيته",
+            "ستاذ",
+            "فند",
+            "ود",
+            "تصلت",
+            "م",
+            "ندم",
+            "د",
+            "تص",
+            "ند",
+            "تم",
+            "ذ"
+        ],
+        "wordcloud": [
+            {
+                "text": "ت",
+                "value": 7
+            },
+            {
+                "text": "م",
+                "value": 4
+            },
+            {
+                "text": "ير",
+                "value": 1
+            },
+            {
+                "text": "ندم",
+                "value": 2
+            },
+            {
+                "text": "فند",
+                "value": 1
+            },
+            {
+                "text": "ست",
+                "value": 1
+            },
+            {
+                "text": "ذ",
+                "value": 1
+            },
+            {
+                "text": "ند",
+                "value": 1
+            },
+            {
+                "text": "قم",
+                "value": 1
+            },
+            {
+                "text": "ه",
+                "value": 1
+            },
+            {
+                "text": "تصلت",
+                "value": 1
+            },
+            {
+                "text": "خدم",
+                "value": 1
+            },
+            {
+                "text": "د",
+                "value": 2
+            },
+            {
+                "text": "تص",
+                "value": 1
+            },
+            {
+                "text": "لات",
+                "value": 1
+            },
+            {
+                "text": "تلغت",
+                "value": 1
+            },
+            {
+                "text": "مش",
+                "value": 1
+            },
+            {
+                "text": "ستاذ",
+                "value": 1
+            },
+            {
+                "text": "ود",
+                "value": 1
+            },
+            {
+                "text": "حظ",
+                "value": 1
+            },
+            {
+                "text": "عل",
+                "value": 1
+            },
+            {
+                "text": "قيته",
+                "value": 1
+            },
+            {
+                "text": "خدمة",
+                "value": 1
+            },
+            {
+                "text": "ر",
+                "value": 1
+            },
+            {
+                "text": "ضرت",
+                "value": 4
+            },
+            {
+                "text": "تم",
+                "value": 1
+            },
+            {
+                "text": "س",
+                "value": 1
+            },
+            {
+                "text": "ن",
+                "value": 1
+            },
+            {
+                "text": "شتر",
+                "value": 1
+            },
+            {
+                "text": "تلقت",
+                "value": 1
+            },
+            {
+                "text": "مر",
+                "value": 2
+            },
+            {
+                "text": "بعت",
+                "value": 2
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "صباح الخير، اتصالات نيهال مع حضرتك صباح؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "0.55",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "الخير يا فندم. صباح النور.",
+                    "speaker": "Customer",
+                    "duration_to_play": "2.15",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "يا فندم أهلا بيك يا استاذ محمود، اتفضل.",
+                    "speaker": "Customer",
+                    "duration_to_play": "6.52",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "يا فندم الاتصالات على نفس الرقم ولا رقم تاني؟ اه ان شاء الله تمام؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "9.51",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "انا اتصلت بخدمة العملاء على الحجز. اه والله.",
+                    "speaker": "Customer",
+                    "duration_to_play": "14.60",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "كان عندي اللي هو.",
+                    "speaker": "Customer",
+                    "duration_to_play": "19.80",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لما حد يرن عليا لما حد يرن عليا والتلفون مغلق والمتاح مكنش في الدنيا ثالث.",
+                    "speaker": "Customer",
+                    "duration_to_play": "24.27",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "تمام يا فندم.",
+                    "speaker": "Agent",
+                    "duration_to_play": "29.83",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "فااا هو رجعهالي بس انا شكلي اتصالات اتلغت تاني؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "34.08",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "المشكلة؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "43.64",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "مش اي مشكلة يا استاذ محمود.",
+                    "speaker": "Agent",
+                    "duration_to_play": "45.76",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "لحظات.",
+                    "speaker": "Agent",
+                    "duration_to_play": "58.35",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "هو حضرتك بالفعل مشترك فينا؟ يعني حضرتك أصلا ملغتهاش ما.",
+                    "speaker": "Agent",
+                    "duration_to_play": "68.72",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لقيتهاش مش خدمة. الكل كبير. متهيأ لي ولا كل كبير.",
+                    "speaker": "Agent",
+                    "duration_to_play": "71.48",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لحضرتك فيها مش حضرتك فيها؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "80.84",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لحضرتك فيها مش حضرتك فيها؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "80.84",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "تمام؟ ماشي شكرا.",
+                    "speaker": "Customer",
+                    "duration_to_play": "82.00",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "تمام، ماشي، شكرا.",
+                    "speaker": "Agent",
+                    "duration_to_play": "82.00",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "تحت أمرك، أتعرف أي حاجة تانية؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "84.00",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لا بس يسمح نفس العدين ساعة لما أعوز أشترك فيها، لو أتلقت وأعدت أشترك فيها.",
+                    "speaker": "Customer",
+                    "duration_to_play": "88.07",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "أمر حضرتك هبعت لحضرتك رسالة حالا.",
+                    "speaker": "Agent",
+                    "duration_to_play": "94.03",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "أمر حضرتك هبعت لحضرتك رسالة حالا.",
+                    "speaker": "Customer",
+                    "duration_to_play": "94.03",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "ماشي، تمام.",
+                    "speaker": "Customer",
+                    "duration_to_play": "96.27",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "مع السلامة، شكرا.",
+                    "speaker": "Agent",
+                    "duration_to_play": "100.32",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "ar"
+    }
+}

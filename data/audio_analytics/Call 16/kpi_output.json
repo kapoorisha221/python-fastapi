@@ -1,0 +1,58 @@
+{
+    "summary": "A customer, identified as Your Holyness, Ashraf Al-Hafiz, contacted the service provider to renew his story package. The representative from the service provider, Mr. Ashraf, assured the customer that he would renew the package and provide the method for renewal. The representative also asked if the customer had any other issues and wished them a happy day.",
+    "sentiment_ls": [
+        "positive",
+        "mixed",
+        "mixed",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "Good evening",
+            "contact"
+        ],
+        [
+            "Good evening sir",
+            "story package"
+        ],
+        [
+            "Good evening sir",
+            "story package"
+        ],
+        [
+            "Ashraf Al-Hafiz",
+            "Mr. Ashraf",
+            "command",
+            "name",
+            "Holiness",
+            "God",
+            "bouquet"
+        ],
+        [
+            "presence",
+            "package",
+            "method",
+            "renewal",
+            "commodity",
+            "time"
+        ],
+        [
+            "Eat",
+            "hand"
+        ],
+        [
+            "bouquet",
+            "presence"
+        ],
+        [
+            "happy day",
+            "presence",
+            "Etisalat",
+            "call"
+        ]
+    ]
+}

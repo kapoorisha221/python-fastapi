@@ -192,8 +192,6 @@ class Summarization():
         status = False
         if extractive_summary_response["status"].lower() == "succeeded":
             extractive_summary = extractive_summary_response["tasks"]
-            print("_____extractive Summary response_______", extractive_summary_response)
-            print("\n_____________extractive_summary________", extractive_summary)
             final_summary = ""
             for item in extractive_summary["items"][0]["results"]["documents"][0]["summaries"]:
                 final_summary += item["text"]
@@ -239,9 +237,9 @@ class Summarization():
                 }
         
         res = requests.post(url = self.url, headers= headers, json= data)
-        print(f"data : \n{data}\n")
+        #print(f"data : \n{data}\n")
         if res.status_code in  [202]:
-            print(f"#1 : {res.text}")
+            #print(f"#1 : {res.text}")
 
             operation_location = res.headers["operation-location"]
             job_id = operation_location.split("/")[-1].split("?")[0]
@@ -259,7 +257,7 @@ class Summarization():
                 if extractive_summary_response["status"].lower() == "succeeded":
                     flag = False
                     result = self.get_abstractive_summary(extractive_summary_response)
-                    print("___________result_____________", result)
+                    #print("___________result_____________", result)
                 else:
                     error_msg =  f"status code : {response1.status_code}. Response : {response1.text}"
                     result = {"status": "fail", "error":error_msg}

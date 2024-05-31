@@ -1,0 +1,384 @@
+{
+    "result": {
+        "summary": "The conversation involves a discussion between Professor Muhammad and Mr. Ahmed about a bill postponement. The model, Mr. Hamdi, had requested the postponement and asked for confirmation that the request was agreed upon. The conversation ends with Mr. Hamdi expressing his willingness to answer any further questions and expressing his service to Professor Muhammad.",
+        "topics": [
+            "service",
+            "command",
+            "Sir",
+            "connection",
+            "invoice",
+            "Professor Muhammad",
+            "need",
+            "presence",
+            "Saad",
+            "Lord",
+            "worker",
+            "same time",
+            "contacts",
+            "Honor",
+            "factor",
+            "model",
+            "sir.",
+            "30th",
+            "God",
+            "Holiness",
+            "Mr. Ahmed",
+            "same number",
+            "request",
+            "peace",
+            "bill",
+            "witch bill postponement",
+            "other inquiry",
+            "Dear Pasha",
+            "Dimensions",
+            "Pasha",
+            "other questions",
+            "eyes",
+            "Praise",
+            "Mr. Hamdi"
+        ],
+        "wordcloud": [
+            {
+                "text": "Professor Muhammad",
+                "value": 1
+            },
+            {
+                "text": "contacts",
+                "value": 1
+            },
+            {
+                "text": "factor",
+                "value": 1
+            },
+            {
+                "text": "Praise",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 2
+            },
+            {
+                "text": "Mr. Ahmed",
+                "value": 1
+            },
+            {
+                "text": "Lord",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "Mr. Hamdi",
+                "value": 5
+            },
+            {
+                "text": "Pasha",
+                "value": 1
+            },
+            {
+                "text": "model",
+                "value": 1
+            },
+            {
+                "text": "bill",
+                "value": 2
+            },
+            {
+                "text": "30th",
+                "value": 2
+            },
+            {
+                "text": "Dimensions",
+                "value": 1
+            },
+            {
+                "text": "request",
+                "value": 2
+            },
+            {
+                "text": "invoice",
+                "value": 1
+            },
+            {
+                "text": "witch bill postponement",
+                "value": 1
+            },
+            {
+                "text": "Holiness",
+                "value": 1
+            },
+            {
+                "text": "Honor",
+                "value": 1
+            },
+            {
+                "text": "worker",
+                "value": 1
+            },
+            {
+                "text": "other questions",
+                "value": 1
+            },
+            {
+                "text": "need",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            },
+            {
+                "text": "Sir",
+                "value": 1
+            },
+            {
+                "text": "command",
+                "value": 1
+            },
+            {
+                "text": "eyes",
+                "value": 1
+            },
+            {
+                "text": "Saad",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            },
+            {
+                "text": "sir.",
+                "value": 1
+            },
+            {
+                "text": "same time",
+                "value": 1
+            },
+            {
+                "text": "Dear Pasha",
+                "value": 1
+            },
+            {
+                "text": "connection",
+                "value": 1
+            },
+            {
+                "text": "presence",
+                "value": 1
+            },
+            {
+                "text": "peace",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good evening, Muhammad's contacts with you, good evening, Professor Muhammad, factor eh? Praise be to God, sir, how are you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "0.31",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Professor Muhammad",
+                        "contacts",
+                        "factor",
+                        "Praise",
+                        "God"
+                    ]
+                },
+                {
+                    "dialogue": "Mr. Ahmed? Lord, be well, Lord.",
+                    "speaker": "Agent",
+                    "duration_to_play": "9.36",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Mr. Ahmed",
+                        "Lord"
+                    ]
+                },
+                {
+                    "dialogue": "Thank you for the same number hopefully, Mr. Hamdi, oh I am the same number, I am telling you, Pasha, I was a model who asked for the bill on the 30th.",
+                    "speaker": "Agent",
+                    "duration_to_play": "12.96",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "same number",
+                        "Mr. Hamdi",
+                        "Pasha",
+                        "model",
+                        "bill",
+                        "30th"
+                    ]
+                },
+                {
+                    "dialogue": "Okay, Mr. Hamdi?",
+                    "speaker": "Agent",
+                    "duration_to_play": "21.48",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Mr. Hamdi"
+                    ]
+                },
+                {
+                    "dialogue": "Tell me in it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "23.88",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Oh.",
+                    "speaker": "Agent",
+                    "duration_to_play": "28.48",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Because of the bill?",
+                    "speaker": "Agent",
+                    "duration_to_play": "30.79",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "bill"
+                    ]
+                },
+                {
+                    "dialogue": "Dimensions.",
+                    "speaker": "Agent",
+                    "duration_to_play": "34.52",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Dimensions"
+                    ]
+                },
+                {
+                    "dialogue": "If your request is accepted, set the invoice successfully.",
+                    "speaker": "Agent",
+                    "duration_to_play": "36.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "request",
+                        "invoice"
+                    ]
+                },
+                {
+                    "dialogue": "Okay, Mr. Hamdi exactly.",
+                    "speaker": "Customer",
+                    "duration_to_play": "39.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Mr. Hamdi"
+                    ]
+                },
+                {
+                    "dialogue": "Okay, Mr. Hamdi exactly.",
+                    "speaker": "Agent",
+                    "duration_to_play": "39.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Mr. Hamdi"
+                    ]
+                },
+                {
+                    "dialogue": "Ok, I want to know what it means if today if 30.",
+                    "speaker": "Agent",
+                    "duration_to_play": "41.48",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Okay.",
+                    "speaker": "Agent",
+                    "duration_to_play": "49.57",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "30 Exactly, Your Holiness, Your Honor, I was the worker of requesting a witch bill postponement. Uh, perfect. Is it indeed, sir, is the request agreed upon, okay? He should respond to him today, he would narrate it today. It's approved, right? 30 five, God willing, on 30 five. Fine, sir, and don't worry. Is this how I work with you and you can pay me on the 30th hopefully on the 30th of five or what will you get along?",
+                    "speaker": "Agent",
+                    "duration_to_play": "52.08",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "witch bill postponement",
+                        "Holiness",
+                        "Honor",
+                        "worker",
+                        "request",
+                        "30th"
+                    ]
+                },
+                {
+                    "dialogue": "Okay? Okay, I don't worry about any need, Mr. Hamdi. Any other questions you would like to make me laugh at.",
+                    "speaker": "Agent",
+                    "duration_to_play": "81.79",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Mr. Hamdi",
+                        "other questions",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "Sir, I am under your command, by God. I mean, my eyes are yours, may God save you, O respected Saad, and God will save you, O regret, under your command in any other inquiry you like to clarify for you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "92.60",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "other inquiry",
+                        "Sir",
+                        "command",
+                        "God",
+                        "eyes",
+                        "Saad"
+                    ]
+                },
+                {
+                    "dialogue": "At your service, sir.",
+                    "speaker": "Agent",
+                    "duration_to_play": "106.08",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "service",
+                        "sir."
+                    ]
+                },
+                {
+                    "dialogue": "Your connection and your presence became at the same time. Dear Pasha, peace be upon you. Bye bye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "108.03",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "same time",
+                        "Dear Pasha",
+                        "connection",
+                        "presence",
+                        "peace"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

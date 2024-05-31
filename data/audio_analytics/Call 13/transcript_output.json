@@ -1,0 +1,124 @@
+{
+    "transcript": [
+        {
+            "dialogue": "محمد مع حضرتك. مساء النور. مساء النور يا فندم. ممكن أتشرف بالاسم؟",
+            "speaker": "Agent",
+            "duration_to_play": "2.05",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أهلا ب أهلا بحضرتك أستاذ هجر على نفس الرقم ورقم تاني؟ أه لا نفس الرقم تحت أمرك يا أستاذ راجل تفضلي.",
+            "speaker": "Agent",
+            "duration_to_play": "8.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أهلا. ب أهلا بحضرتك أستاذ هجر على نفس الرقم ورقم تاني، أه لا نفس الرقم تحت أمرك يا أستاذ راجل، تفضلي.",
+            "speaker": "Customer",
+            "duration_to_play": "8.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أنا عاملة باقة مكالمات ب45 وعاملة باكيت نت ب75، فأنا شحنته أو مش عارفة أجددهم، فكنت عايزة حضرتك تجددهم.",
+            "speaker": "Customer",
+            "duration_to_play": "14.23",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لا، تحت أمر حضرتك حالا يا فندم، أتأكد لحضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "25.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ماشي.",
+            "speaker": "Customer",
+            "duration_to_play": "28.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه حضرتك عاملة حكاية 45 تمام؟",
+            "speaker": "Agent",
+            "duration_to_play": "35.11",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "وباقة الانترنت اكس 75",
+            "speaker": "Agent",
+            "duration_to_play": "40.16",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "وباقة الانترنت اكس 75.",
+            "speaker": "Customer",
+            "duration_to_play": "40.16",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اتجددوا يعني؟",
+            "speaker": "Customer",
+            "duration_to_play": "42.92",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "هو دلوقتي رصيد 25 جنيه. فاحنا اتاكد لحضرتكم متجدرو ولا لا؟",
+            "speaker": "Agent",
+            "duration_to_play": "46.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "إزاي؟ رصيدي 25؟ وأنا محولة رصيد فادي التنين؟",
+            "speaker": "Customer",
+            "duration_to_play": "51.32",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "جاد 160 اه.",
+            "speaker": "Agent",
+            "duration_to_play": "54.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه، التنين، جددوا التنين تجددوا يا فندم. طب دلوقتي في حاجة الباقة بتاعت المكالمات عايزاها تبقى للمكالمات بس يعني عايزة الرصيد كله يبقى المكالمات بس مش عايزة لما أفتح البيانات ياخدوا من الدقايق بتاعت باقة المكالمات؟",
+            "speaker": "Customer",
+            "duration_to_play": "56.40",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تاني على باقة حكاية 45 تبقى مكالمات فقط؟",
+            "speaker": "Agent",
+            "duration_to_play": "72.03",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تاني على باقة حكاية 45 تبقى مكالمات فقط.",
+            "speaker": "Customer",
+            "duration_to_play": "72.03",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه مكالمات بس حتى لو فتحت البيانات بتاعت النت وما يسحبش النت ممكن حضرتك تعملهالي؟",
+            "speaker": "Customer",
+            "duration_to_play": "74.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه مكالمات. بس حتى لو فتحت البيانات بتاعت النت وما يسحبش النت ممكن حضرتك تعملهالي.",
+            "speaker": "Agent",
+            "duration_to_play": "74.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، أنا كده خليتها لحضرتك مكالمات فقط، ولو حبيت تغيراها في أي وقت الكود نجمة 808 شباك.",
+            "speaker": "Agent",
+            "duration_to_play": "81.99",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "خلاص. شكرا. العفو تحت امر حضرتك. اي استفسار اخر. لا. شكرا العفو تحت امر حضرتك يا فندم، سعداء، ربنا يخليك، ربنا يخليكي. مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "88.03",
+            "locale": "ar-EG"
+        }
+    ]
+}

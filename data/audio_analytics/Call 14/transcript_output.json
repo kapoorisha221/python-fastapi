@@ -1,0 +1,112 @@
+{
+    "transcript": [
+        {
+            "dialogue": "مساء الخير، اتصالات محمد مع حضرتك، مساء الخير يا أستاذ محمد، عامل إيه؟ الحمد لله يا فندم، إزي حضرتك؟",
+            "speaker": "Agent",
+            "duration_to_play": "0.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يا أستاذ أحمد؟ يا رب يكون بخير يا رب.",
+            "speaker": "Agent",
+            "duration_to_play": "9.36",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يا فندم بشكرك على نفس الرقم إن شاء الله، أستاذ حمدي، آه أنا نفس الرقم، بقولك يا باشا أنا كنت مجسم طلب من الفاتورة يوم 30.",
+            "speaker": "Agent",
+            "duration_to_play": "12.96",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام حضرتك أستاذ حمدي؟",
+            "speaker": "Agent",
+            "duration_to_play": "21.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بيقولي فيها.",
+            "speaker": "Agent",
+            "duration_to_play": "23.88",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اااه.",
+            "speaker": "Agent",
+            "duration_to_play": "28.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بسبب الفاتورة؟",
+            "speaker": "Agent",
+            "duration_to_play": "30.79",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بعديها.",
+            "speaker": "Agent",
+            "duration_to_play": "34.52",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "وإذا تم قبول طلبكم، تعيين الفاتورة بنجاح.",
+            "speaker": "Agent",
+            "duration_to_play": "36.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، أستاذ حمدي بالزبط.",
+            "speaker": "Customer",
+            "duration_to_play": "39.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، أستاذ حمدي بالزبط.",
+            "speaker": "Agent",
+            "duration_to_play": "39.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب أنا عايز أعرف يعني النهاردة لو 30.",
+            "speaker": "Agent",
+            "duration_to_play": "41.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام.",
+            "speaker": "Agent",
+            "duration_to_play": "49.57",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "30 تمام حضرتك هو حضرتك يا فندم كنت عامل طلب تأجيل فاتورة ساحرة. اه تمام. هو بالفعل يا فندم هو الطلب يتوافق عليه تمام؟ المفروض يترد عليه النهاردة كان اسرد عليه النهاردة. تم الموافقة عليه مضبوط صح كده؟ 30 خمسة باذن الله يوم 30 خمسة. تمام يا فندم وما تقلقش حضرتك. هو كده شغال معاك وتقدر عندي تدفع يوم 30 ان شاء الله يوم 30 خمسة او ما حضرتك هتقبض على طول؟",
+            "speaker": "Agent",
+            "duration_to_play": "52.08",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام؟ ماشي ماشي تمام حضرتك ما تقلقش من اي حاجة استاذ حمدي. اي استفسار اخر تحبو اضحولك.",
+            "speaker": "Agent",
+            "duration_to_play": "81.79",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يا فندم انا تحت امرك والله. يعني عيني ليك ربنا يخليك يا سعد المحترم، والله ربنا يخليك يا فندم، تحت امرك في اي استفسار اخر تحب اوضحهولك.",
+            "speaker": "Agent",
+            "duration_to_play": "92.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تحت امرك يا فندم.",
+            "speaker": "Agent",
+            "duration_to_play": "106.08",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اتصالك وصار حضرتك نفس الوقت. حبيبي يا سعادة الباشا، السلام عليكم. مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "108.03",
+            "locale": "ar-EG"
+        }
+    ]
+}

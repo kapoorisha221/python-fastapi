@@ -1,0 +1,444 @@
+{
+    "result": {
+        "summary": "تجري محادثة بين شخصين ، كولتون هيشال والسيد أسماء. يعبر كولتون هيشال عن عدم رضاه عن إجراء أو قرار غير محدد ، مشيرا إلى أنه لم يختاره ولا يريد المشاركة في أي أنشطة تم إعفاؤه منها سابقا. تنتهي المحادثة بإلغاء جميع الاشتراكات نيابة عن كولتون.",
+        "topics": [
+            "حظ",
+            "ر",
+            "ضرتك",
+            "سم",
+            "ع",
+            "مر",
+            "خترته",
+            "حضرت",
+            "بت",
+            "ض",
+            "ضرت",
+            "سمع",
+            "ستفس",
+            "ن",
+            "تف",
+            "ده",
+            "فس",
+            "ت",
+            "قم",
+            "حظة",
+            "ط",
+            "بعتذ",
+            "تشكر",
+            "سمحت",
+            "بس",
+            "ج",
+            "ظ",
+            "م",
+            "عتذر",
+            "ب",
+            "تش",
+            "ندم",
+            "شت",
+            "لت",
+            "مع",
+            "ة",
+            "رفت",
+            "تم",
+            "شرف",
+            "تحت"
+        ],
+        "wordcloud": [
+            {
+                "text": "ر",
+                "value": 1
+            },
+            {
+                "text": "مع",
+                "value": 1
+            },
+            {
+                "text": "سمحت",
+                "value": 3
+            },
+            {
+                "text": "لت",
+                "value": 2
+            },
+            {
+                "text": "ن",
+                "value": 4
+            },
+            {
+                "text": "ط",
+                "value": 2
+            },
+            {
+                "text": "بت",
+                "value": 2
+            },
+            {
+                "text": "خترته",
+                "value": 2
+            },
+            {
+                "text": "قم",
+                "value": 3
+            },
+            {
+                "text": "ندم",
+                "value": 3
+            },
+            {
+                "text": "فس",
+                "value": 1
+            },
+            {
+                "text": "تحت",
+                "value": 2
+            },
+            {
+                "text": "ضرت",
+                "value": 2
+            },
+            {
+                "text": "حظ",
+                "value": 1
+            },
+            {
+                "text": "عتذر",
+                "value": 1
+            },
+            {
+                "text": "بعتذ",
+                "value": 1
+            },
+            {
+                "text": "بس",
+                "value": 1
+            },
+            {
+                "text": "شرف",
+                "value": 1
+            },
+            {
+                "text": "سم",
+                "value": 1
+            },
+            {
+                "text": "ضرتك",
+                "value": 2
+            },
+            {
+                "text": "سمع",
+                "value": 1
+            },
+            {
+                "text": "ظ",
+                "value": 1
+            },
+            {
+                "text": "ب",
+                "value": 1
+            },
+            {
+                "text": "م",
+                "value": 1
+            },
+            {
+                "text": "ت",
+                "value": 2
+            },
+            {
+                "text": "ع",
+                "value": 1
+            },
+            {
+                "text": "شت",
+                "value": 1
+            },
+            {
+                "text": "ج",
+                "value": 2
+            },
+            {
+                "text": "ة",
+                "value": 1
+            },
+            {
+                "text": "مر",
+                "value": 1
+            },
+            {
+                "text": "حظة",
+                "value": 1
+            },
+            {
+                "text": "ض",
+                "value": 1
+            },
+            {
+                "text": "تف",
+                "value": 1
+            },
+            {
+                "text": "تم",
+                "value": 1
+            },
+            {
+                "text": "ده",
+                "value": 1
+            },
+            {
+                "text": "حضرت",
+                "value": 2
+            },
+            {
+                "text": "تشكر",
+                "value": 1
+            },
+            {
+                "text": "ستفس",
+                "value": 1
+            },
+            {
+                "text": "رفت",
+                "value": 1
+            },
+            {
+                "text": "تش",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "مساء الخير مع حضرتك.",
+                    "speaker": "Agent",
+                    "duration_to_play": "3.01",
+                    "locale": "ar-EG",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "ر",
+                        "مع"
+                    ]
+                },
+                {
+                    "dialogue": "مساء النور. لو سمحت. انا في كولتون محطوطلي، انا ما يعني ما عملتوش ولا طلبته ولا اخترته.",
+                    "speaker": "Customer",
+                    "duration_to_play": "4.69",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "سمحت",
+                        "لت",
+                        "ن",
+                        "ط",
+                        "بت",
+                        "خترته"
+                    ]
+                },
+                {
+                    "dialogue": "مساء النور. لو سمحت. انا في كولتون محطوطلي، انا ما يعني ما عملتوش ولا طلبته ولا اخترته.",
+                    "speaker": "Agent",
+                    "duration_to_play": "4.69",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "سمحت",
+                        "لت",
+                        "ن",
+                        "ط",
+                        "بت",
+                        "خترته"
+                    ]
+                },
+                {
+                    "dialogue": "على نفس الرقم، يا.",
+                    "speaker": "Agent",
+                    "duration_to_play": "11.97",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "قم"
+                    ]
+                },
+                {
+                    "dialogue": "على نفس الرقم، يا.",
+                    "speaker": "Customer",
+                    "duration_to_play": "11.97",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "قم"
+                    ]
+                },
+                {
+                    "dialogue": "فندم على نفس الرقم. اه.",
+                    "speaker": "Customer",
+                    "duration_to_play": "13.57",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "ندم",
+                        "فس",
+                        "قم"
+                    ]
+                },
+                {
+                    "dialogue": "تحت امر حضرتك حالا يا فندم. لحظة معايا من فضلك.",
+                    "speaker": "Agent",
+                    "duration_to_play": "15.21",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "تحت",
+                        "ضرت",
+                        "ندم",
+                        "حظ"
+                    ]
+                },
+                {
+                    "dialogue": "طبعا بعتذر جدا على الاطالة.",
+                    "speaker": "Agent",
+                    "duration_to_play": "21.75",
+                    "locale": "ar-EG",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "عتذر"
+                    ]
+                },
+                {
+                    "dialogue": "بعتذر جدا. بس ممكن اتشرف باسم حضرتك مرة تاني؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "31.36",
+                    "locale": "ar-EG",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "بعتذ",
+                        "بس",
+                        "شرف",
+                        "سم",
+                        "ضرتك"
+                    ]
+                },
+                {
+                    "dialogue": "اسمع حمدي.",
+                    "speaker": "Customer",
+                    "duration_to_play": "34.31",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "سمع"
+                    ]
+                },
+                {
+                    "dialogue": "تحت امر حضرتك طبعا يا استاذ اسماء لحظة معايا بس من فضلك.",
+                    "speaker": "Agent",
+                    "duration_to_play": "34.87",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "تحت",
+                        "ضرت",
+                        "ظ",
+                        "ب"
+                    ]
+                },
+                {
+                    "dialogue": "حالا يا فندم. الكولتون هيتشال مع حضرتك.",
+                    "speaker": "Agent",
+                    "duration_to_play": "47.05",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "ن",
+                        "م",
+                        "ت",
+                        "ع"
+                    ]
+                },
+                {
+                    "dialogue": "لو سمحت. لو انتم خليني مشتركة في اي حاجة خرجوني منها، مش عايزة اشترك في اي حاجة.",
+                    "speaker": "Customer",
+                    "duration_to_play": "48.89",
+                    "locale": "ar-EG",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "سمحت",
+                        "شت",
+                        "ج"
+                    ]
+                },
+                {
+                    "dialogue": "ما فيش أي مشكلة تحت أمر حضرتك يا فندم. متشكرة قوي.",
+                    "speaker": "Agent",
+                    "duration_to_play": "56.35",
+                    "locale": "ar-EG",
+                    "sentiment": "mixed",
+                    "keyPhrases": [
+                        "ة",
+                        "ت",
+                        "مر",
+                        "ندم"
+                    ]
+                },
+                {
+                    "dialogue": "لحظة من فضلك معايا؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "62.76",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "حظة",
+                        "ض"
+                    ]
+                },
+                {
+                    "dialogue": "تفضل.",
+                    "speaker": "Agent",
+                    "duration_to_play": "67.32",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "تف"
+                    ]
+                },
+                {
+                    "dialogue": "تمام كده يا فندم؟ تم ال. تم الغاء الاشتراكات في كافة الكرتونات اللي عند حضرتك كده، ما فيش اي حاجة تانية عند حضرتك. متشكرة أوي. اي استفسار تاني.",
+                    "speaker": "Agent",
+                    "duration_to_play": "83.57",
+                    "locale": "ar-EG",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "تم",
+                        "ن",
+                        "ضرتك",
+                        "ده",
+                        "ج",
+                        "حضرت",
+                        "تشكر",
+                        "ستفس"
+                    ]
+                },
+                {
+                    "dialogue": "شرفتيني باتصال حضرتك.",
+                    "speaker": "Agent",
+                    "duration_to_play": "92.68",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "رفت",
+                        "حضرت"
+                    ]
+                },
+                {
+                    "dialogue": "متشكر أوي. مع السلامة.",
+                    "speaker": "Customer",
+                    "duration_to_play": "95.60",
+                    "locale": "ar-EG",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "تش"
+                    ]
+                }
+            ]
+        },
+        "language": "ar"
+    }
+}

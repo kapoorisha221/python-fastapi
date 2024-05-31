@@ -1,0 +1,118 @@
+{
+    "transcript": [
+        {
+            "dialogue": "Good afternoon.",
+            "speaker": "Agent",
+            "duration_to_play": "3.01",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Good evening. Please. I'm in Colton and I'm not going to do it, I didn't ask for it, I didn't choose it.",
+            "speaker": "Customer",
+            "duration_to_play": "4.69",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Good evening. Please. I'm in Colton and I'm not going to do it, I didn't ask for it, I didn't choose it.",
+            "speaker": "Agent",
+            "duration_to_play": "4.69",
+            "locale": "en"
+        },
+        {
+            "dialogue": "On the same number, O.",
+            "speaker": "Agent",
+            "duration_to_play": "11.97",
+            "locale": "en"
+        },
+        {
+            "dialogue": "On the same number, O.",
+            "speaker": "Customer",
+            "duration_to_play": "11.97",
+            "locale": "en"
+        },
+        {
+            "dialogue": "He regretted the same number. Ah.",
+            "speaker": "Customer",
+            "duration_to_play": "13.57",
+            "locale": "en"
+        },
+        {
+            "dialogue": "At your command immediately, O Vendem. One moment, please.",
+            "speaker": "Agent",
+            "duration_to_play": "15.21",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Of course, I apologize very much for the prolongation.",
+            "speaker": "Agent",
+            "duration_to_play": "21.75",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I am very sorry. But may I have the honor to speak on your behalf again?",
+            "speaker": "Agent",
+            "duration_to_play": "31.36",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Listen to Hamdi.",
+            "speaker": "Customer",
+            "duration_to_play": "34.31",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Under the command of your honor, of course, Mr. Asma, a moment with me, but please.",
+            "speaker": "Agent",
+            "duration_to_play": "34.87",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Right away sir. Colton Hichal with you.",
+            "speaker": "Agent",
+            "duration_to_play": "47.05",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Please. If you let me participate in any need that they got me out of, I don't want to participate in anything.",
+            "speaker": "Customer",
+            "duration_to_play": "48.89",
+            "locale": "en"
+        },
+        {
+            "dialogue": "There is no problem under your command, O Vendem. Thank you very much.",
+            "speaker": "Agent",
+            "duration_to_play": "56.35",
+            "locale": "en"
+        },
+        {
+            "dialogue": "One moment, please, with me?",
+            "speaker": "Agent",
+            "duration_to_play": "62.76",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Here you are.",
+            "speaker": "Agent",
+            "duration_to_play": "67.32",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Is that all right, sir? Done. Subscriptions to all cartons that you have have been canceled, so there is no other need for you. Thank you Oi. Any other questions.",
+            "speaker": "Agent",
+            "duration_to_play": "83.57",
+            "locale": "en"
+        },
+        {
+            "dialogue": "You honored me with your honorable call.",
+            "speaker": "Agent",
+            "duration_to_play": "92.68",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Thank you Oi. Bye bye.",
+            "speaker": "Customer",
+            "duration_to_play": "95.60",
+            "locale": "en"
+        }
+    ]
+}

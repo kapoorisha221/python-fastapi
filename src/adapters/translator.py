@@ -1,4 +1,3 @@
-#from config.config import AzureConfig
 import requests, json
 import random
 import time 
@@ -15,8 +14,8 @@ class AzureTranslator():
     def __init__(self) -> None:
         super().__init__()
         self.TRANS_KEY = self.cred.TRANSLATOR_KEY
-        self.SERVICE_REGION = "eastus"
         self.ENDPOINT = self.cred.TRANSLATOR_ENDPOINT
+        self.SERVICE_REGION = "eastus"
         
 
     def get_translations(self, text, from_lang, to_lang):
@@ -99,7 +98,6 @@ class AzureTranslator():
                     transcript_output_english['transcript'].append(dialogue_info)
             
             self.english_transcript_output_path = LocalConfig().DATA_FOLDER + f"/audio_analytics/{audio_name}/"
-
             with open(self.english_transcript_output_path +'transcript_output_english.json','w', encoding='utf-8') as file:
                 json.dump(transcript_output_english, file, indent=4)
 
@@ -114,9 +112,9 @@ class AzureTranslator():
 
     
 if __name__ == '__main__':
-    transcripts_path = "data/audio_analytics/Call 1/translator_transcript_input.json"
-    with open(transcripts_path, 'r', encoding='utf-8') as tph:
-        transcripts = json.load(tph)
+    # transcripts_path = "data/audio_analytics/Call 2/translator_transcript_input.json"
+    # with open(transcripts_path, 'r', encoding='utf-8') as tph:
+    #     transcripts = json.load(tph)
     azure_translator = AzureTranslator()
     text = "شكرا، ماشي، العفو أنا برضه هحاول أتابع لحضرتك ولو في أي حاجة هكلم حضرتك تاني، ماشي، شكرا العفو على إيه؟ تحت أمرك، أي استفسار تاني، شكرا العفو."
     from_lang = 'ar-EG'

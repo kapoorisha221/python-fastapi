@@ -89,7 +89,7 @@ async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
         # with open(file_path, 'r') as file:
         #     data = file.read()
         #     json_data = json.loads(data)
-        with open(file=file_path , mode="r", encoding="utf-8") as fh:
+        with open(file=file_path, mode="r", encoding="utf-8") as fh:
             json_data = json.load(fh)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error reading file: {str(e)}")
@@ -109,10 +109,10 @@ async def get_audio_list():
     return JSONResponse(content=json_data)
           
 
-# from pyngrok import ngrok  
-# ngrok.set_auth_token("2al4KKug9Lj9a6NNZxArDX0BMNH_618BhSscx74HW56SR4RAM")
-# public_url = ngrok.connect(8000)
-# print(f"FastAPI application is accessible at: {public_url}")
+from pyngrok import ngrok  
+ngrok.set_auth_token("2al4KKug9Lj9a6NNZxArDX0BMNH_618BhSscx74HW56SR4RAM")
+public_url = ngrok.connect(8000)
+print(f"FastAPI application is accessible at: {public_url}")
 
 
 if __name__ == "__main__":

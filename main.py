@@ -126,7 +126,7 @@ class Main:
                 )
             self.create_excel_for_powerbi()
             self.info_logger.info(
-                    msg=f" ################## Successfully: Done with the Prcessing of audio files ################## ",
+                    msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
                     extra={"location": "main.py-audios_main"},
                 )
             #print("done with call processing")
@@ -201,6 +201,7 @@ class Main:
             )
             with open(file=self.file_path + "kpi_output.json", mode="w") as fh:
                 json.dump(result, fp=fh, indent=4)
+                
 
             return result
         except Exception as e:
@@ -267,7 +268,10 @@ class Main:
             arabic_json_path = self.file_path + "arabic_kpi_output.json"
             with open(file=arabic_json_path, mode="w", encoding = "utf-8") as fh:
                 json.dump(arabic_result, fh, ensure_ascii=False, indent=4)
-
+            self.info_logger.info(
+                msg=f"Saved arabic_kpi_output.json at location '{self.file_path}'",
+                extra={"location": "main.py - get_kpis"},
+            )
             return arabic_result
         except Exception as e:
             self.error_logger.error(
@@ -407,6 +411,10 @@ class Main:
                 powerbi_merged_jsonPath=power_bi_merged_path,
             )
 
+            self.info_logger.info(msg=f"Saved power_bi_merged_output.json as path '{self.file_path}'",
+                extra={"location": "main.py - pipeline_after_transcription"},
+            )
+            
         except Exception as e:
             self.error_logger.error(
                 msg=f"An Error Occured: {e}",
@@ -462,15 +470,27 @@ class Main:
 
     def powerbi_report_keyword(self, powerbi_merged_jsonPath,audio_file):
         try:
+            self.info_logger.info(msg=f"Starting function  powerbi_report_keyword",
+                extra={"location": "main.py - powerbi_report_keyword"},
+            )
             with open(powerbi_merged_jsonPath) as fp:
                 information = json.load(fp)
                 
             audio_file_ls , duration_ls, dialouges_ls, keywords_ls, sentiment_ls,sort_sentiment_ls =  [],[], [],[], [],[]
+            
+            self.info_logger.info(msg=f"Azure Translator instance created for translation of data for report",
+                extra={"location": "main.py - powerbi_report_keyword"},
+            )
+            
             translator_obj = AzureTranslator()
             native_lang='en'
             output_lang='ar-EG'
             arabic_audio_file_ls , arabic_duration_ls, arabic_dialouges_ls, arabic_keywords_ls, arabic_sentiment_ls, arabic_sort_sentiment_ls =  [],[], [],[], [],[]
-
+            
+            self.info_logger.info(msg=f"Iterating over Dialogs to translate of file '{powerbi_merged_jsonPath}'",
+                extra={"location": "main.py - powerbi_report_keyword"},
+            )
+            
             for dialouge in information["result"]["transcripts"]["transcript"]:
                 if dialouge["keyPhrases"]:
                     sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
@@ -495,6 +515,10 @@ class Main:
                         arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=sentiment_mapping[dialouge["sentiment"]],from_lang=native_lang,to_lang=output_lang))
                                                 
                 else:
+                    self.info_logger.info(msg=f"no keyword found for dialog '{dialouge['dialouge']}'",
+                        extra={"location": "main.py - powerbi_report_keyword"},
+                    )
+                    
                     duration_ls.append(dialouge["duration_to_play"])
                     arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"],from_lang=native_lang,to_lang=output_lang))
 
@@ -522,9 +546,15 @@ class Main:
             arabic_dic_pandas = {"audio_filename":arabic_audio_file_ls, "duration_1": arabic_duration_ls, "keywords_1": arabic_keywords_ls, 
                         "sentiment_1": arabic_sentiment_ls, "dialouge_1": arabic_dialouges_ls,"sort sentiment_1":arabic_sort_sentiment_ls}
             
+            self.info_logger.info(msg=f"creating the dataframe for english and arabic report.",
+                        extra={"location": "main.py - powerbi_report_keyword"},
+                    )
             df1 = pd.DataFrame(dic_pandas)
             arabic_df1 = pd.DataFrame(arabic_dic_pandas)
 
+            self.info_logger.info(msg=f"Returning the dataframe for english and arabic report.",
+                        extra={"location": "main.py - powerbi_report_keyword"},)
+                
             return df1, arabic_df1
         except Exception as e :
             self.error_logger.error(
@@ -535,86 +565,105 @@ class Main:
 
     def power_bi_report_main_helper(self, audio_file,powerbi_merged_jsonPath, merged_output_jsonPath):
             # Use merged_output.json & audios_info/mappings.json
-        
-            with open(merged_output_jsonPath) as fh:
-                data1 = json.load(fh)
-            if data1.values() != 0:
-                val = "any value is picked"
+            try:
+                self.info_logger.info(msg=f"opening the '{merged_output_jsonPath}' for the powerbi main report",
+                            extra={"location": "main.py - power_bi_report_main_helper"},)
                 
-
-            sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
-            overall_sentiment = 0
-            language = ""
-            call_opening_sentiment = 0
-            call_opening_count = 0
-            call_closing_sentiment = 0
-
-            transcriptions = data1['result']['transcripts']['transcript']
-
-            locale = transcriptions[0]["locale"]
-            if "en" in locale:
-                language = "english"
-            elif "ar" in locale:
-                language = "arabic"
-            elif "hi" in locale:
-                language = "hindi"
-
-            
-            for dialogue in transcriptions:
-                overall_sentiment += sentiment_mapping[dialogue["sentiment"]]
-                if (dialogue["speaker"].lower() == "agent"):
-                    call_opening_count += 1
-                    call_opening_sentiment += sentiment_mapping[dialogue["sentiment"]]
-                else:
-                    break
-
-            call_opening_sentiment= max(0, call_opening_sentiment)
-            call_opening_score = call_opening_sentiment/call_opening_count
-
-            reverse_transcriptions = transcriptions[::-1]
-            # removing customer last interactions
-            agent_part_start_index = -1
-            for index, dialogue in enumerate(reverse_transcriptions):
-                if (dialogue["speaker"].lower() == "agent"):
-                    agent_part_start_index = index
-                    break
+                with open(merged_output_jsonPath) as fh:
+                    data1 = json.load(fh)
+                if data1.values() != 0:
+                    val = "any value is picked"
                     
-            reverse_transcriptions = reverse_transcriptions[agent_part_start_index:]
 
+                sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
+                overall_sentiment = 0
+                language = ""
+                call_opening_sentiment = 0
+                call_opening_count = 0
+                call_closing_sentiment = 0
 
-            call_closing_count = 0
-            call_closing_sentiment = 0
-            for dialogue in reverse_transcriptions:
-                if (dialogue["speaker"].lower() == "agent") :
-                    call_closing_count += 1
-                    call_closing_sentiment += sentiment_mapping[dialogue["sentiment"]]
-                else:
-                    break
+                transcriptions = data1['result']['transcripts']['transcript']
 
-            call_closing_sentiment= max(0, call_closing_sentiment)
-            call_closing_score = call_closing_sentiment/call_closing_count
+                locale = transcriptions[0]["locale"]
+                if "en" in locale:
+                    language = "english"
+                elif "ar" in locale:
+                    language = "arabic"
+                elif "hi" in locale:
+                    language = "hindi"
 
-            path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
-            with open(path) as fh:
-                call_dict = json.load(fh)
-
-            if (overall_sentiment >= 1):
-                overall_sentiment = 1
-            elif(overall_sentiment <= -1):
-                overall_sentiment = -1
+                self.info_logger.info(msg=f"starting to Iterate over the Dialogs of '{merged_output_jsonPath}'",
+                            extra={"location": "main.py - power_bi_report_main_helper"},)
                 
-            audio_file = audio_file + ".wav"
-            call_dict[audio_file]["language"] = language
-            call_dict[audio_file]["Sentiment"] = [k for k,v in sentiment_mapping.items() if v == overall_sentiment][0]
-            call_dict[audio_file]["CallOpeningScore"] = call_opening_score
-            call_dict[audio_file]["CallClosingScore"] = call_closing_score
+                for dialogue in transcriptions:
+                    overall_sentiment += sentiment_mapping[dialogue["sentiment"]]
+                    if (dialogue["speaker"].lower() == "agent"):
+                        call_opening_count += 1
+                        call_opening_sentiment += sentiment_mapping[dialogue["sentiment"]]
+                    else:
+                        break
 
-            with open(path, "w") as json_file:
-                json.dump(call_dict, json_file, indent=4)
+                call_opening_sentiment= max(0, call_opening_sentiment)
+                call_opening_score = call_opening_sentiment/call_opening_count
+
+                reverse_transcriptions = transcriptions[::-1]
+                # removing customer last interactions
+                agent_part_start_index = -1
+                for index, dialogue in enumerate(reverse_transcriptions):
+                    if (dialogue["speaker"].lower() == "agent"):
+                        agent_part_start_index = index
+                        break
+                        
+                reverse_transcriptions = reverse_transcriptions[agent_part_start_index:]
+
+
+                call_closing_count = 0
+                call_closing_sentiment = 0
+                for dialogue in reverse_transcriptions:
+                    if (dialogue["speaker"].lower() == "agent") :
+                        call_closing_count += 1
+                        call_closing_sentiment += sentiment_mapping[dialogue["sentiment"]]
+                    else:
+                        break
+
+                call_closing_sentiment= max(0, call_closing_sentiment)
+                call_closing_score = call_closing_sentiment/call_closing_count
                 
+                self.info_logger.info(msg=f"Loading the mappings.json",
+                            extra={"location": "main.py - power_bi_report_main_helper"},)
+
+                path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+                with open(path) as fh:
+                    call_dict = json.load(fh)
+
+                if (overall_sentiment >= 1):
+                    overall_sentiment = 1
+                elif(overall_sentiment <= -1):
+                    overall_sentiment = -1
+                    
+                audio_file = audio_file + ".wav"
+                call_dict[audio_file]["language"] = language
+                call_dict[audio_file]["Sentiment"] = [k for k,v in sentiment_mapping.items() if v == overall_sentiment][0]
+                call_dict[audio_file]["CallOpeningScore"] = call_opening_score
+                call_dict[audio_file]["CallClosingScore"] = call_closing_score
+
+                with open(path, "w") as json_file:
+                    json.dump(call_dict, json_file, indent=4)
+                
+                self.info_logger.info(msg=f"Updated the values in mapping.json",
+                            extra={"location": "main.py - power_bi_report_main_helper"},)
+            except Exception as e :
+                self.error_logger.error(
+                    msg="An Error Occured ..",
+                    exc_info=e,
+                    extra={"location": "main.py - power_bi_report_main_helper"},
+                )
+                    
             
     def power_bi_main_report(self,mapping_json_path):
         try:
+            self.info_logger.info(msg=f"opening the file '{mapping_json_path}'",
+                            extra={"location": "main.py - power_bi_main_report"},)
             with open(mapping_json_path,'r') as fh:
                 data = json.load(fh)
 
@@ -626,6 +675,8 @@ class Main:
             native_lang='en'
             output_lang='ar-EG'
 
+            self.info_logger.info(msg=f"STARTS iTERATING OVER DATA OF THE  '{mapping_json_path}'",
+                            extra={"location": "main.py - power_bi_main_report"},)
             for k,v in data.items():
                 eng_res = {}
                 arabic_res = {}
@@ -639,8 +690,14 @@ class Main:
                 output.append(eng_res)
                 arabic_output.append(arabic_res)
 
+            self.info_logger.info(msg=f"creating data frame for the english and Arabic output",
+                            extra={"location": "main.py - power_bi_main_report"},)
+            
             dff = pd.DataFrame.from_dict(output)
             arabic_dff = pd.DataFrame.from_dict(arabic_output)
+            
+            self.info_logger.info(msg=f"Exporting the created dataframe to excel with name: 'eng_main_dataset.xlsx' and 'arb_main_dataset.xlsx'",
+                            extra={"location": "main.py - power_bi_main_report"},)
             dff.to_excel("Powerbi_reports/eng_main_dataset.xlsx",index=False)
             arabic_dff.to_excel("Powerbi_reports/arb_main_dataset.xlsx",index=False)
         # Save excel

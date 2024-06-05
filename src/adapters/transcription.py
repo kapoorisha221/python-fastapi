@@ -21,7 +21,6 @@ def conversation_transcriber_transcribed_cb(evt: speechsdk.SpeechRecognitionEven
                 "dialogue": evt.result.text,
                 "speaker": "Agent" if evt.result.speaker_id == "Guest-1" else "Customer",  # Assuming speaker ID 1 for Agent
                 "duration_to_play": "{:.2f}".format(evt.result.offset/ (10**7)),  
-                
                 "locale": "ar-EG"
                 })
 

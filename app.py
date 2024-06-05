@@ -20,14 +20,15 @@ app.add_middleware(
 )
 info_logger = get_Info_Logger()
 error_logger = get_Error_Logger()
+path = LocalConfig()
 
-
-def Process_Audio_files(agent_name, call_date):
+def Process_Audio_files(source_calls_path):
     try:
         info_logger.info(msg="Checking for the Old Logs",extra={"location":"App.py - Process_Audio_files"})
         log_Garbage_Collector()
         obj = Main()
-        obj.audios_main(agent_name, call_date)
+        print("object instance created")
+        obj.audios_main(source_calls_path)
     except Exception as e:
          error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"App.py - Process_Audio_files"})
     
@@ -49,7 +50,7 @@ async def create_upload_file(
                 status_code=422,
                 detail="Invalid date format, expected YYYY-MM-DD"
             )
-        # Process files
+        #Process files
         for file in files:
             with open(os.path.join(LocalConfig().RAW_DATA_FOLDER, file.filename), "wb") as f:
                 contents = await file.read()
@@ -64,16 +65,6 @@ async def create_upload_file(
         raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
 
 
-@app.get("/readallaudios")
-def read_all_audios():
-    try:
-        info_logger.info(msg="Called the route '/readallaudios' and activated the function 'read_all_audios'", extra={"location": "app.py - read_all_audios"})
-        audio_source_path = ""
-    except Exception as e:
-        error_logger.error(msg="An Error Occurred at post request..", exc_info=e, extra={"location": "app.py - read_all_audios"})
-        raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
-        
-    
 
 @app.post("/getfiledata/")
 async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
@@ -126,12 +117,27 @@ async def get_audio_list():
     
     info_logger.info(msg="Returning the Json back to the user", extra={"location": "app.py - get_audio_list"})
     return JSONResponse(content=json_data)
-          
 
-from pyngrok import ngrok  
-ngrok.set_auth_token("2al4KKug9Lj9a6NNZxArDX0BMNH_618BhSscx74HW56SR4RAM")
-public_url = ngrok.connect(8000)
-print(f"FastAPI application is accessible at: {public_url}")
+
+
+@app.get("/readallaudios")
+def read_all_audios():
+    try:
+        info_logger.info(msg="Called the route '/readallaudios' and activated the function 'read_all_audios'", extra={"location": "app.py - read_all_audios"})
+        source_calls_path = path.SOURCE_DATA
+        print("file path ____", source_calls_path)
+        Process_Audio_files(source_calls_path)
+        print("\n\nProcessing Completed")
+    except Exception as e:
+        error_logger.error(msg="An Error Occurred at post request..", exc_info=e, extra={"location": "app.py - read_all_audios"})
+        raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
+        
+     
+
+# from pyngrok import ngrok  
+# ngrok.set_auth_token("2al4KKug9Lj9a6NNZxArDX0BMNH_618BhSscx74HW56SR4RAM")
+# public_url = ngrok.connect(8000)
+# print(f"FastAPI application is accessible at: {public_url}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,27 @@
+{
+    "summary": "Sarah initiates a conversation with Mr. Alaa to transfer internet connection from one number to another. The transfer is successful, with the current line receiving 2500 megabytes, the last number receiving 2925, and the last number receiving 2457. The conversation also includes a comparison of the number of minutes each person has, with Sarah having 1355 minutes and the other having 588.",
+    "sentiment_ls": [
+        "neutral",
+        "positive",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "negative",
+        "positive"
+    ],
+    "keyPhrases_ls": null
+}

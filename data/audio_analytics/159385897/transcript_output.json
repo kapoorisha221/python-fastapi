@@ -1,0 +1,106 @@
+{
+    "transcript": [
+        {
+            "dialogue": "صباح الخير، اتصالات هيدي مع حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "2.72",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "صباح الخير يا فندم، أستاذة هناء، معايا معاكي هناء. أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "6.24",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "هو رقمين تحت بعض. المهم عايزة أداء بيقولي لا يمكن الإتصال وسيلة لحد الإئتمان.",
+            "speaker": "Customer",
+            "duration_to_play": "13.68",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "إن حضرتك بقول لحضرتك وصلتي للحد الإئتماني، آه ما فهمتش لحظة معايا.",
+            "speaker": "Agent",
+            "duration_to_play": "20.28",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب.",
+            "speaker": "Agent",
+            "duration_to_play": "27.67",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك كنتي بتكلمي ايه يا فندم؟",
+            "speaker": "Agent",
+            "duration_to_play": "30.28",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مش عارفة؟ كنت بكلم كام يعني؟",
+            "speaker": "Customer",
+            "duration_to_play": "35.11",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختصرة؟",
+            "speaker": "Agent",
+            "duration_to_play": "36.99",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أوكي؟",
+            "speaker": "Agent",
+            "duration_to_play": "44.32",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لحظة وحدة.",
+            "speaker": "Agent",
+            "duration_to_play": "50.07",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "المشكلة دي مع حضرتك من امتى دلوقتي؟",
+            "speaker": "Agent",
+            "duration_to_play": "54.60",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أوكي؟",
+            "speaker": "Agent",
+            "duration_to_play": "61.67",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "انا واضح عندي ان حضرتك معاكي دقايق. ما فيش اي مشكلة خالص تمام. انا بس هعمل لحضرتك خطوة تنشيطية من خلالي و ارجع اكلم حضرتك تاني. اتأكد بس ان الخدمة اشتغلت مع حضرتك ولا في مشكلة؟",
+            "speaker": "Agent",
+            "duration_to_play": "69.58",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام؟ و أنا حرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة لتنشيطها من خلالي.",
+            "speaker": "Agent",
+            "duration_to_play": "82.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حابة أوضح لحضرتك أي إستفسار تاني.",
+            "speaker": "Agent",
+            "duration_to_play": "94.63",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لا يا حبيبتي، شكرا شرفتيني يا فندم. سعادة أبو خالد من حضرتك؟ إتصالات؟ أتمنى لك يوم جميل، مع السلامة، مع السلامة.",
+            "speaker": "Agent",
+            "duration_to_play": "98.00",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ألو.",
+            "speaker": "Agent",
+            "duration_to_play": "106.97",
+            "locale": "ar-EG"
+        }
+    ]
+}

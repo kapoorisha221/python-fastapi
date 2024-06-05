@@ -57,3 +57,30 @@ def convert_to_minutes(seconds):
     seconds %= 60
      
     return "%d:%02d:%02d" % (hour, minutes, seconds)
+
+def utilization_precentage(transcription_path):
+    with open(transcription_path, "r", encoding="utf-8") as fp:
+        transcript_data = json.load(fp)
+
+    total_duration = 0
+    agent_duration = 0
+    customer_duration = 0
+
+    for dialogue in transcript_data["transcript"]:
+        duration = float(dialogue["duration_to_play"])
+        total_duration += duration
+        if dialogue["speaker"] == "Agent":
+            agent_duration += duration
+        elif dialogue["speaker"] == "Customer":
+            customer_duration += duration
+
+    # Calculate the percentages
+    agent_percentage = (agent_duration / total_duration) * 100
+    customer_percentage = (customer_duration / total_duration) * 100
+
+    # Rounding off the values
+    agent_percentage = "{:.2f}".format(agent_percentage)
+    customer_percentage = "{:.2f}".format(customer_percentage)
+
+    print("agent_percentage", agent_percentage, "customer_percentage", customer_percentage)
+    return agent_percentage, customer_percentage

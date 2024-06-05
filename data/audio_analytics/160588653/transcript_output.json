@@ -1,0 +1,106 @@
+{
+    "transcript": [
+        {
+            "dialogue": "مساء الخير مع حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "3.01",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مساء النور. لو سمحت. انا في كولتون محطوطلي، انا ما يعني ما عملتوش ولا طلبته ولا اخترته.",
+            "speaker": "Customer",
+            "duration_to_play": "4.69",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "على نفس الرقم، يا.",
+            "speaker": "Agent",
+            "duration_to_play": "11.97",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "فندم على نفس الرقم. اه.",
+            "speaker": "Customer",
+            "duration_to_play": "13.57",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تحت امر حضرتك حالا يا فندم. لحظة معايا من فضلك.",
+            "speaker": "Agent",
+            "duration_to_play": "15.21",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طبعا بعتذر جدا على الاطالة.",
+            "speaker": "Agent",
+            "duration_to_play": "21.75",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "بعتذر جدا. بس ممكن اتشرف باسم حضرتك مرة تاني؟",
+            "speaker": "Agent",
+            "duration_to_play": "31.36",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اسمع حمدي.",
+            "speaker": "Customer",
+            "duration_to_play": "34.31",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تحت امر حضرتك طبعا يا استاذ اسماء لحظة معايا بس من فضلك.",
+            "speaker": "Agent",
+            "duration_to_play": "34.87",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حالا يا فندم. الكولتون هيتشال مع حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "47.05",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لو سمحت. لو انتم خليني مشتركة في اي حاجة خرجوني منها، مش عايزة اشترك في اي حاجة.",
+            "speaker": "Customer",
+            "duration_to_play": "48.89",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "ما فيش أي مشكلة تحت أمر حضرتك يا فندم. متشكرة قوي.",
+            "speaker": "Agent",
+            "duration_to_play": "56.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لحظة من فضلك معايا؟",
+            "speaker": "Agent",
+            "duration_to_play": "62.76",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تفضل.",
+            "speaker": "Agent",
+            "duration_to_play": "67.32",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام كده يا فندم؟ تم ال. تم الغاء الاشتراكات في كافة الكرتونات اللي عند حضرتك كده، ما فيش اي حاجة تانية عند حضرتك. متشكرة أوي. اي استفسار تاني.",
+            "speaker": "Agent",
+            "duration_to_play": "83.57",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "شرفتيني باتصال حضرتك.",
+            "speaker": "Agent",
+            "duration_to_play": "92.68",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "متشكر أوي. مع السلامة.",
+            "speaker": "Customer",
+            "duration_to_play": "95.60",
+            "locale": "ar-EG"
+        }
+    ]
+}

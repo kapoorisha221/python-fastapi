@@ -1,0 +1,253 @@
+{
+    "result": {
+        "summary": "The customer, a professor, has a bill of 1300 and wishes to pay part of it in installments from the beginning of the next month. The customer is not required to pay anything until the fifth day of the current month. The customer also has the option to split the bill, with the first payment being made first and the second paid twice, and the customer can decide to do so at the end of the month.",
+        "topics": [
+            "communications",
+            "next month",
+            "example",
+            "job",
+            "month",
+            "course",
+            "problem",
+            "service",
+            "sir",
+            "part",
+            "56th",
+            "first time",
+            "two parts",
+            "night",
+            "fifth day",
+            "credit department",
+            "installments",
+            "second time",
+            "work",
+            "end",
+            "other inquiry",
+            "Installments",
+            "morning",
+            "new need",
+            "beginning",
+            "Contacts",
+            "validity",
+            "bill",
+            "The East part",
+            "Merci",
+            "professor"
+        ],
+        "wordcloud": [
+            {
+                "text": "Contacts",
+                "value": 1
+            },
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "sir",
+                "value": 2
+            },
+            {
+                "text": "professor",
+                "value": 1
+            },
+            {
+                "text": "job",
+                "value": 1
+            },
+            {
+                "text": "bill",
+                "value": 2
+            },
+            {
+                "text": "part",
+                "value": 1
+            },
+            {
+                "text": "The East part",
+                "value": 1
+            },
+            {
+                "text": "work",
+                "value": 1
+            },
+            {
+                "text": "next month",
+                "value": 3
+            },
+            {
+                "text": "Installments",
+                "value": 1
+            },
+            {
+                "text": "example",
+                "value": 1
+            },
+            {
+                "text": "beginning",
+                "value": 2
+            },
+            {
+                "text": "two parts",
+                "value": 1
+            },
+            {
+                "text": "installments",
+                "value": 1
+            },
+            {
+                "text": "end",
+                "value": 1
+            },
+            {
+                "text": "fifth day",
+                "value": 1
+            },
+            {
+                "text": "validity",
+                "value": 1
+            },
+            {
+                "text": "month",
+                "value": 1
+            },
+            {
+                "text": "56th",
+                "value": 1
+            },
+            {
+                "text": "night",
+                "value": 1
+            },
+            {
+                "text": "first time",
+                "value": 1
+            },
+            {
+                "text": "second time",
+                "value": 1
+            },
+            {
+                "text": "credit department",
+                "value": 1
+            },
+            {
+                "text": "new need",
+                "value": 1
+            },
+            {
+                "text": "problem",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            },
+            {
+                "text": "course",
+                "value": 1
+            },
+            {
+                "text": "Merci",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            },
+            {
+                "text": "communications",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning. Contacts you love with you. Good morning, sir. Good morning.",
+                    "speaker": "Agent",
+                    "duration_to_play": "0.51",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Welcome, sir. What's new with you, professor? Okay, thank God?",
+                    "speaker": "Agent",
+                    "duration_to_play": "7.56",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "I'm sorry, of course. No, no, and don't worry, but I have a job. Now, I have a bill of 1300 and I wanted to pay part of it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "13.36",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "The East part that is not the work is not this work.",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.84",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Installments uh. But I don't want to open. I'd like to open it for example from the beginning of next month?",
+                    "speaker": "Agent",
+                    "duration_to_play": "29.47",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I mean, do you want to pay it in installments from the beginning of the next month? Roger that? Yes, part and at the end of the month, I pay two parts, the day you had the next month.",
+                    "speaker": "Agent",
+                    "duration_to_play": "37.87",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I mean, maybe on the sixth or seventh?",
+                    "speaker": "Agent",
+                    "duration_to_play": "47.63",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Ok, you are like this, you have a validity basically until the fifth day of the month that is already coming.",
+                    "speaker": "Agent",
+                    "duration_to_play": "52.52",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay, you don't have to pay anything now with you until the next month. Now I want to raise.",
+                    "speaker": "Agent",
+                    "duration_to_play": "56.75",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "You don't have to pay anything. Now on the 56th of the night, on the 56th, you will talk to us and tell us that I want to pay this bill? Or do I want to split this bill?",
+                    "speaker": "Agent",
+                    "duration_to_play": "65.28",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "We will make you 23 with the first time you will pay and the second time you will pay as long as you want to pay it twice as long as you want to pay it twice? Okay, no problem, okay. And if I have any new need, I mean, I will also follow up with the credit department and calculate for you if there is any need right?",
+                    "speaker": "Agent",
+                    "duration_to_play": "81.19",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "I wish I could do whatever you want, of course, sir, if you have any other inquiry that I can help you with? Thank you, sweetheart. Merci is at your service, sir. We are happy to serve you in communications. Bye bye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "95.15",
+                    "locale": "en",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

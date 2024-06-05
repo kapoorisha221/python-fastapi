@@ -1,0 +1,62 @@
+{
+    "summary": "The conversation begins with a greeting and a brief interaction with a person named Mr. Shorouk. The person is in a state of confusion and concern, as they are supposed to be working but are unable to due to a bill. They also discuss a procedure that will be performed through them, which will involve a brief flight mode for 10 seconds, and they will contact Mr. Shorouk again after this period.",
+    "sentiment_ls": [
+        "positive",
+        "mixed",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "negative"
+    ],
+    "keyPhrases_ls": [
+        [
+            "morning"
+        ],
+        [
+            "Mr. Shorouk",
+            "morning",
+            "worker",
+            "God",
+            "command",
+            "line",
+            "bill"
+        ],
+        [
+            "same number"
+        ],
+        [
+            "same number",
+            "calls",
+            "work"
+        ],
+        [
+            "permission"
+        ],
+        [
+            "key phrase7",
+            "key phrase5"
+        ],
+        [
+            "flight mode",
+            "first thing",
+            "presence",
+            "Maaya",
+            "permission",
+            "procedure",
+            "10 seconds"
+        ],
+        [
+            "key phrase6",
+            "key phrase4"
+        ],
+        [
+            "time",
+            "command",
+            "request",
+            "goodbye"
+        ]
+    ]
+}

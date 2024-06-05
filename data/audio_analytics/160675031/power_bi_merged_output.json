@@ -1,0 +1,337 @@
+{
+    "result": {
+        "summary": "The conversation involves a person who is having issues with their phone due to a bill and the need to use the phone for work. They discuss various solutions, including changing the phone number, trying the internet, and using their mobile phone. The conversation ends with the person suggesting to turn off the cell phone and open it again in 5 minutes.",
+        "topics": [
+            "money",
+            "Hello Mrs Rafidah",
+            "Internet",
+            "Cats",
+            "flight mode",
+            "person",
+            "service",
+            "same number",
+            "No",
+            "Egypt",
+            "Amin",
+            "line",
+            "phone",
+            "Happy day",
+            "Alo",
+            "refresher plan",
+            "Etisalat Cash",
+            "fourth flight",
+            "work",
+            "inquiry",
+            "5 minutes",
+            "Yvonne",
+            "mobile iPhone",
+            "voice",
+            "call",
+            "cell phone",
+            "RS ships",
+            "Lord",
+            "unclear point",
+            "bill",
+            "Holiness",
+            "moments",
+            "question",
+            "Samsung moments"
+        ],
+        "wordcloud": [
+            {
+                "text": "Hello Mrs Rafidah",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "Alo",
+                "value": 1
+            },
+            {
+                "text": "voice",
+                "value": 1
+            },
+            {
+                "text": "inquiry",
+                "value": 1
+            },
+            {
+                "text": "Cats",
+                "value": 1
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "bill",
+                "value": 1
+            },
+            {
+                "text": "work",
+                "value": 1
+            },
+            {
+                "text": "phone",
+                "value": 1
+            },
+            {
+                "text": "Amin",
+                "value": 1
+            },
+            {
+                "text": "call",
+                "value": 3
+            },
+            {
+                "text": "Lord",
+                "value": 1
+            },
+            {
+                "text": "Holiness",
+                "value": 1
+            },
+            {
+                "text": "Etisalat Cash",
+                "value": 1
+            },
+            {
+                "text": "RS ships",
+                "value": 1
+            },
+            {
+                "text": "money",
+                "value": 1
+            },
+            {
+                "text": "person",
+                "value": 1
+            },
+            {
+                "text": "Egypt",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 2
+            },
+            {
+                "text": "moments",
+                "value": 1
+            },
+            {
+                "text": "Samsung moments",
+                "value": 1
+            },
+            {
+                "text": "mobile iPhone",
+                "value": 1
+            },
+            {
+                "text": "Yvonne",
+                "value": 1
+            },
+            {
+                "text": "No",
+                "value": 1
+            },
+            {
+                "text": "refresher plan",
+                "value": 1
+            },
+            {
+                "text": "fourth flight",
+                "value": 1
+            },
+            {
+                "text": "flight mode",
+                "value": 1
+            },
+            {
+                "text": "cell phone",
+                "value": 1
+            },
+            {
+                "text": "5 minutes",
+                "value": 1
+            },
+            {
+                "text": "unclear point",
+                "value": 1
+            },
+            {
+                "text": "question",
+                "value": 1
+            },
+            {
+                "text": "Happy day",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "With you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.81",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Alo. Hello Mrs Rafidah, yes, your voice is far away. Sorry, sir. Can you hear me? Oh, that's fine? Go ahead, regret, your inquiry about the same number by calling me from it, oh go ahead, ok I am now.",
+                    "speaker": "Agent",
+                    "duration_to_play": "5.52",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "Hello Mrs Rafidah",
+                        "same number",
+                        "Alo",
+                        "voice",
+                        "inquiry"
+                    ]
+                },
+                {
+                    "dialogue": "Cats I mean I cut the line on me because of the bill and I am at work and I need the phone is very necessary.",
+                    "speaker": "Agent",
+                    "duration_to_play": "21.56",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Cats",
+                        "line",
+                        "bill",
+                        "work",
+                        "phone"
+                    ]
+                },
+                {
+                    "dialogue": "Maybe they are working until I don't get home, renew and charge, the. I'm changing Amin and he's working normally, try him like this waiting and make a call.",
+                    "speaker": "Agent",
+                    "duration_to_play": "28.99",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Amin",
+                        "call"
+                    ]
+                },
+                {
+                    "dialogue": "What should I do? Sorry, put me waiting and my Lord make a call because I see that it is working?",
+                    "speaker": "Agent",
+                    "duration_to_play": "40.31",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "Lord",
+                        "call"
+                    ]
+                },
+                {
+                    "dialogue": "I am not saying to your Holiness, try me, I try while I am normal.",
+                    "speaker": "Agent",
+                    "duration_to_play": "47.60",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Holiness"
+                    ]
+                },
+                {
+                    "dialogue": "Etisalat Cash can transfer and receive money from any person in Egypt. And RS ships.",
+                    "speaker": "Agent",
+                    "duration_to_play": "57.75",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Etisalat Cash",
+                        "RS ships",
+                        "money",
+                        "person",
+                        "Egypt"
+                    ]
+                },
+                {
+                    "dialogue": "Uh, perfect. Go on. Try the Internet like this?",
+                    "speaker": "Agent",
+                    "duration_to_play": "63.83",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Internet"
+                    ]
+                },
+                {
+                    "dialogue": "Doesn't it work moments with me?",
+                    "speaker": "Agent",
+                    "duration_to_play": "68.83",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "moments"
+                    ]
+                },
+                {
+                    "dialogue": "Your mobile iPhone? Okay? What is your mobile? Yvonne okay? No Samsung moments with me?",
+                    "speaker": "Agent",
+                    "duration_to_play": "73.16",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Samsung moments",
+                        "mobile iPhone",
+                        "Yvonne",
+                        "No"
+                    ]
+                },
+                {
+                    "dialogue": "Of course, you have a refresher plan. I need that after you hang up with her, will we do the fourth flight, okay? Okay? After that, we cancel the flight mode and try the Internet. Does it work? It didn't work. Will we turn off the cell phone and open it in 5 minutes, okay?",
+                    "speaker": "Customer",
+                    "duration_to_play": "90.36",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "refresher plan",
+                        "fourth flight",
+                        "flight mode",
+                        "cell phone",
+                        "Internet",
+                        "5 minutes"
+                    ]
+                },
+                {
+                    "dialogue": "In any question you have or any unclear point.",
+                    "speaker": "Agent",
+                    "duration_to_play": "104.64",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "unclear point",
+                        "question"
+                    ]
+                },
+                {
+                    "dialogue": "Happy day hopefully to your service in your call. Bye bye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "108.28",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Happy day",
+                        "service",
+                        "call"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

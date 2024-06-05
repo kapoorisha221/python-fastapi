@@ -1,0 +1,86 @@
+{
+    "summary": "Colton Hichal initiates a conversation with a person named O Vendem, expressing his dissatisfaction with an action he did not choose. He requests to be allowed to participate in any need that he was previously relieved of, to which the person apologizes for the inconvenience and assures him that all his subscriptions have been cancelled. The conversation ends with the person thanking the person for their honor and saying goodbye.",
+    "sentiment_ls": [
+        "neutral",
+        "mixed",
+        "neutral",
+        "negative",
+        "neutral",
+        "negative",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "mixed",
+        "positive",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "afternoon"
+        ],
+        [
+            "Good evening",
+            "Colton"
+        ],
+        [
+            "same number",
+            "O."
+        ],
+        [
+            "same number"
+        ],
+        [
+            "One moment",
+            "command",
+            "Vendem"
+        ],
+        [
+            "prolongation"
+        ],
+        [
+            "honor",
+            "behalf"
+        ],
+        [
+            "Hamdi"
+        ],
+        [
+            "Mr. Asma",
+            "command",
+            "honor",
+            "moment"
+        ],
+        [
+            "Colton Hichal",
+            "sir"
+        ],
+        [
+            "need"
+        ],
+        [
+            "O Vendem",
+            "problem",
+            "command"
+        ],
+        [
+            "One moment"
+        ],
+        [],
+        [
+            "other need",
+            "other questions",
+            "Done",
+            "Subscriptions",
+            "cartons"
+        ],
+        [
+            "honorable call"
+        ],
+        []
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "result": {
+        "summary": "The conversation begins with a greeting and a brief interaction with a person named Mr. Shorouk. The person is in a state of confusion and concern, as they are supposed to be working but are unable to due to a bill. They also discuss a procedure that will be performed through them, which will involve a brief flight mode for 10 seconds, and they will contact Mr. Shorouk again after this period.",
+        "topics": [
+            "presence",
+            "key phrase4",
+            "first thing",
+            "worker",
+            "key phrase5",
+            "flight mode",
+            "Maaya",
+            "same number",
+            "line",
+            "time",
+            "key phrase7",
+            "work",
+            "God",
+            "permission",
+            "key phrase6",
+            "command",
+            "calls",
+            "Mr. Shorouk",
+            "morning",
+            "request",
+            "bill",
+            "goodbye",
+            "10 seconds",
+            "procedure"
+        ],
+        "wordcloud": [
+            {
+                "text": "morning",
+                "value": 2
+            },
+            {
+                "text": "Mr. Shorouk",
+                "value": 1
+            },
+            {
+                "text": "worker",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 1
+            },
+            {
+                "text": "command",
+                "value": 2
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "bill",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 2
+            },
+            {
+                "text": "calls",
+                "value": 1
+            },
+            {
+                "text": "work",
+                "value": 1
+            },
+            {
+                "text": "permission",
+                "value": 2
+            },
+            {
+                "text": "key phrase7",
+                "value": 1
+            },
+            {
+                "text": "key phrase5",
+                "value": 1
+            },
+            {
+                "text": "flight mode",
+                "value": 1
+            },
+            {
+                "text": "first thing",
+                "value": 1
+            },
+            {
+                "text": "presence",
+                "value": 1
+            },
+            {
+                "text": "Maaya",
+                "value": 1
+            },
+            {
+                "text": "procedure",
+                "value": 1
+            },
+            {
+                "text": "10 seconds",
+                "value": 1
+            },
+            {
+                "text": "key phrase6",
+                "value": 1
+            },
+            {
+                "text": "key phrase4",
+                "value": 1
+            },
+            {
+                "text": "time",
+                "value": 1
+            },
+            {
+                "text": "request",
+                "value": 1
+            },
+            {
+                "text": "goodbye",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning with you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "0.92",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Good morning. Good morning, sir. Welcome, Mr. Shorouk with me? Right? How? Are you a worker? Yes? It's all sweet, sweetheart? How are you doing? Thank God you are fully under your command, please how can I help you? I'm supposed to be standing on my line because I have a bill, but I run it 24 hours, and I don't want to work.",
+                    "speaker": "Agent",
+                    "duration_to_play": "3.88",
+                    "locale": "en",
+                    "sentiment": "mixed"
+                },
+                {
+                    "dialogue": "Okay, okay, just a moment, I have the same number.",
+                    "speaker": "Agent",
+                    "duration_to_play": "21.39",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "The same number you gave me from. Yes, the same number, okay? Well, and the calls are okay? Their work? Are you okay? No, it's all locked?",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.24",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Walk a moment with me. But with your permission, of course, go ahead.",
+                    "speaker": "Agent",
+                    "duration_to_play": "33.15",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "",
+                    "speaker": "Customer",
+                    "duration_to_play": "54.28",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Ok, your presence with me? Uh, Maaya exists. Could I just ask your permission, do we make flight mode okay? Now, the first thing that is closed with you is that I will take a procedure through me, and you will work, but the flight mode for 10 seconds, the first time I close with you, I will take the procedure, and after that, I will contact you again. Should I confirm this well with you or not?",
+                    "speaker": "Agent",
+                    "duration_to_play": "62.49",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "",
+                    "speaker": "Customer",
+                    "duration_to_play": "81.87",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "At a time? Surely anything else? No, don't deliver me under your command, you honored me with the request and then goodbye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "83.38",
+                    "locale": "en",
+                    "sentiment": "negative"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

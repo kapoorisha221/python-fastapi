@@ -12,6 +12,15 @@ class AzureConfig():
         self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         
+
+
+        #Audio File location
+        self.audio_source = "source/calls"
+
+        #Excel file location
+        self.audio_data = "source/records/Accent Validation Data (1).xlsx"
+        self.sheet_name = "Normal Calls"
+        
         # STT
         self.STT_HOST_URL = "ws://127.0.0.1:<port>"
         # enter the port values
@@ -49,6 +58,7 @@ class FileConfig():
 class LocalConfig():
     def __init__(self) -> None:
         self.PROJECT_PATH = os.path.abspath('.')
+        self.SOURCE_DATA = f"{self.PROJECT_PATH}/source/calls"
         self.DATA_FOLDER = f"{self.PROJECT_PATH}/data"
         self.RAW_DATA_FOLDER = f"{self.DATA_FOLDER}/raw_data"
         self.PROCESSED_DATA_FOLDER = f"{self.DATA_FOLDER}/processed_data"

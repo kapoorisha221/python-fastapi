@@ -1,0 +1,29 @@
+{
+    "summary": "تتضمن المحادثة جهة اتصال في السوق ترحب بعميل يدعى السيد سيد وتستفسر عن استفساره بشأن رقم معين. يطلب من العميل نقل ملكية رقم الخط والحصول على خصم. كما يذكر الوكيل اتصالا بالسيد سيد على نفس الرقم، لكن الخط لم يظهر أثناء حضوره، ووعده بالاتصال به مرة أخرى.",
+    "sentiment_ls": [
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+    ],
+    "keyPhrases_ls": null
+}

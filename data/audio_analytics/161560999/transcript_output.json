@@ -1,0 +1,130 @@
+{
+    "transcript": [
+        {
+            "dialogue": "5 دقايق خمس.",
+            "speaker": "Agent",
+            "duration_to_play": "1.43",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "سنوات صباح الخير. اتصالات سارة مع حضرتك صباح.",
+            "speaker": "Customer",
+            "duration_to_play": "2.03",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "الخير استاذ علاء. معايا ايوا.",
+            "speaker": "Customer",
+            "duration_to_play": "4.75",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اهلا بحضرتك يا استاذة علاء. اخبار حضرتك ايه؟",
+            "speaker": "Customer",
+            "duration_to_play": "8.43",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كله؟ طبعا كنت عايز.",
+            "speaker": "Customer",
+            "duration_to_play": "11.39",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "كنت عايز احول النت من رقم تاني. عندي الرقم اللي انا بكلمك منه.",
+            "speaker": "Customer",
+            "duration_to_play": "14.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام، تحت امر حضرتك لحظة معايا الرقم اللي اخره 82 ولا الرقم اللي اخره 86؟",
+            "speaker": "Customer",
+            "duration_to_play": "19.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام؟ تحت امر حضرتك؟ لحظة معايا الرقم اللي اخره 82؟ ولا الرقم اللي اخره 86؟",
+            "speaker": "Customer",
+            "duration_to_play": "19.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اللي اخره 82؟",
+            "speaker": "Customer",
+            "duration_to_play": "25.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اللي اخره 82.",
+            "speaker": "Customer",
+            "duration_to_play": "25.48",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "حضرتك عاوز تحمله؟ قد ايه منه؟ هو معايا 5425 ميجا؟",
+            "speaker": "Customer",
+            "duration_to_play": "26.96",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه؟ طيب عايزة احول 2 ميجا ونص يعني نص بنص يعني خمسة يبقى نص؟",
+            "speaker": "Customer",
+            "duration_to_play": "33.56",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "آه يعني أحاول حضرتك 2500 مزبوط؟ تمام؟ تمام؟",
+            "speaker": "Customer",
+            "duration_to_play": "41.67",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لحظة معايا، انا باخد لحضرتك الاجراء حالا، برضه حضرتك لو حبيت ان انت تغير اي حاجة في التوزيع دي بتكون من خلال تطبيق ميتصالات او من نجمة 800 شباك او طبعا حضرتك تشرفنا بالاتصال واحنا في خدمة حضرتك دايما.",
+            "speaker": "Customer",
+            "duration_to_play": "49.11",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تسلميلي.",
+            "speaker": "Customer",
+            "duration_to_play": "62.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تمام كده؟ أنا حولتهم لحضرتك حضرتك دلوقتي الخط اللي حضرتك بتكلمني منه معاه 2500 ميغا والخط اللي هو آخره، 82 معاه 2925 واللي آخره، 85 معاه 2457.",
+            "speaker": "Customer",
+            "duration_to_play": "64.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طب عايز أسأل حضرتك على الدقايق اللي عندي أنا و. و عنده دقائق قد ايه؟ و أنا عندي؟",
+            "speaker": "Customer",
+            "duration_to_play": "77.79",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "أنا دقايق قد ايه الدقايق اللي عندو 1355، أما الدقائق اللي مع حضرتك في 591.",
+            "speaker": "Customer",
+            "duration_to_play": "84.35",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "طيب تمام، ماشي، شكرا.",
+            "speaker": "Customer",
+            "duration_to_play": "92.39",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "استاذ علاء كده. لا شكرا. طيب اقدر اساعد حضرتك بأي حاجة تاني؟",
+            "speaker": "Customer",
+            "duration_to_play": "93.59",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تسلمي يا رب. اتمنالك يوم سعيد ان شاء الله سعداء بخدمة حضرتك في اتصالات. مع السلامة.",
+            "speaker": "Customer",
+            "duration_to_play": "100.44",
+            "locale": "ar-EG"
+        }
+    ]
+}

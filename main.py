@@ -6,7 +6,8 @@ from src.adapters.summarisation import Summarization
 from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
-from src.utils import convert_to_minutes, is_file_present, get_audio_attributes, get_text_count_from_keyphrases
+from src.starter_pipeline import starter_class
+from src.utils import convert_to_minutes, is_file_present, get_audio_attributes, get_text_count_from_keyphrases, utilization_precentage
 from logs.logger import get_Error_Logger, get_Info_Logger
 from config.config import LocalConfig
 
@@ -19,7 +20,7 @@ class Main:
 ##################################### Pre Processing and transcription ############################################
 ###################################################################################################################
 
-    def add_to_mapping(self, audio_file_path, agent_name, call_date):
+    def add_to_mapping(self,int_filename, agent_id, audio_file_path, agent_name, call_date):
         try:
             self.info_logger.info(
                 msg=f"Started function add_to_mapping to create mapping.json data",
@@ -39,12 +40,13 @@ class Main:
             minutes = convert_to_minutes(audio_atrs["audio_duration"])
 
             
-            call_dict[audio_file] = {"id": next_call_name}
+            call_dict[audio_file] = {"id": int_filename}
             call_dict[audio_file]["recordingID"] = next_call_number            
             call_dict[audio_file]["CallDuration"] = minutes
             call_dict[audio_file]["Audio_Size"] = int(audio_atrs["audio_file_size"])
+            call_dict[audio_file]["AgentID"] = int(agent_id)
             call_dict[audio_file]["Agent Name"] = agent_name
-            call_dict[audio_file]["Call Date"] = call_date
+            call_dict[audio_file]["Call Date"] = str(call_date)
             
 
             with open(path, "w") as json_file:
@@ -61,18 +63,23 @@ class Main:
                 extra={"location": "main.py - add_to_mapping"},
             )
 
-    def audios_main(self, agent_name, call_date):
+    def audios_main(self, source_calls_path):
         try:
-            """This function checks for all the files present inside RAW DATA folder and process & stores information for the
+            """This function checks for all the files present inside source folder and process & stores information for the
             audio files which are not present in PROCESSED data folder"""
             self.info_logger.info(
                 msg="Sterted Processing from audios_main",
                 extra={"location": "main.py-audios_main"},
             )
-            path = LocalConfig().RAW_DATA_FOLDER
-            for audio_file in os.listdir(path):
-                # checks
+            source_data_obj = starter_class()
+            call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
+
+            for audio_file in os.listdir(source_calls_path):
+            # temppath = "source/tempdata"
+            # templist = os.listdir(temppath)
+            # for audio_file in templist:
                 file_to_check = audio_file
+
                 if audio_file.endswith(".mp3"):
                     file_to_check = audio_file.replace(".mp3", ".wav")
                 if is_file_present(
@@ -84,22 +91,42 @@ class Main:
                         extra={"location": "main.py-audios_main"},
                     )
                     continue
-                #print(f"audio file: {audio_file}")
-                extension = audio_file.split(".")[-1]
-                filename = audio_file.split(".")[:-1][0]
+                print(f"audio file: {audio_file}")
+                try:                 
+                    extension = audio_file.split(".")[-1]
+                    filename = audio_file.split(".")[:-1][0]
+                except:
+                    self.error_logger.error(
+                        msg=f"getting error while retrivieing filename by spliting audio: {e}",
+                        extra={"location": "main.py-audios_main"},
+                    )
+                int_filename = int(filename)
+                #getting the data of agent_name and call_id for an index i
+                try:
+                    index = call_ids.index(int_filename)
+                    agent_id = agent_ids[index]
+                    agent_name = agent_names[index]
+                    call_date = call_dates[index]
+                except Exception as e:
+                    self.error_logger.error(
+                        msg=f"list index couldn't be found or list index out of range with error: {e}",
+                        extra={"location": "main.py-audios_main"},
+                    )
 
-                path1 = path + "/" + audio_file
+                path1 = source_calls_path + "/" + audio_file
                 self.info_logger.info(
                     msg=f"Calling get_audio_attributes",
                     extra={"location": "main.py-audios_main"},
                 )
-                attrs = get_audio_attributes(path=path1)
+                #attrs = get_audio_attributes(path=path1)
 
                 path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
-                # processing
+
+                # processing to enhance the sound volume by 20
                 audio_processing(input_path=path1, output_path=path2)
+
                 # get & store informations
-                self.add_to_mapping(audio_file_path=path2, agent_name=agent_name, call_date=call_date)
+                self.add_to_mapping(int_filename, audio_file_path=path2, agent_id=agent_id, agent_name=agent_name, call_date=call_date)
 
                 # make folders for the audios where corresponding analytics will get stored
                 folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
@@ -108,28 +135,29 @@ class Main:
                     msg=f"Created folder for audio to save transcriptions at'{folder}'",
                     extra={"location": "main.py-audios_main"},
                 )
+
+                # Creating the first audio transcription in Arabic(native language)
                 recognize_from_file(audio_file_path=path2, folder=folder)
                 transcripted_json_file_path = folder + "/transcript_output.json"
-                #transcripted_json_file_path_arabic = folder + "/"
                 self.info_logger.info(
                     msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
                     extra={"location": "main.py-audios_main"},
                 )
+
                 self.pipeline_after_transcription(
                     audio_name=filename,
                     transcription_jsonPath=transcripted_json_file_path,
                 )
-                
             self.info_logger.info(
                     msg=f"Starts Creating the excel for",
                     extra={"location": "main.py-audios_main"},
                 )
+            
             self.create_excel_for_powerbi()
             self.info_logger.info(
                     msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
                     extra={"location": "main.py-audios_main"},
                 )
-            #print("done with call processing")
         except Exception as e:
             self.error_logger.error(
                 msg="An Error Occured ..",
@@ -152,16 +180,10 @@ class Main:
                 msg=f"getting Conversational Summarization",
                 extra={"location": "main.py - get_kpis"},
             )
-            # summarisation_obj = Summarization()
-            # summarisation_result = (
-            #     summarisation_obj.conversational_summarisation_helper(audio_name, transcription_jsonPath)
-            # )
             call = audio_name
             summarisation_obj = Summarization()
             summarisation_result = summarisation_obj.abstractive_summarisation_helper(call)
             self.summarisation_result = summarisation_result
-
-            #print("______________________summarisation_result_________________________", summarisation_result)
             
             if summarisation_result:
                 result["summary"] = summarisation_result["summary"]
@@ -226,7 +248,6 @@ class Main:
             #taking english summary as an input and translating it in Arabic
             eng_summ_result = self.summarisation_result
             trans_obj = AzureTranslator()
-            #print("eng_summ_result[summary]", eng_summ_result["summary"])
             arabic_summarisation_result = trans_obj.get_translated_transcriptions_pipeline(eng_summ_result["summary"], "en", "ar-EG")
 
             if arabic_summarisation_result:
@@ -468,100 +489,120 @@ class Main:
 #################################### Power BI report creation process #############################################
 ###################################################################################################################
 
-    def powerbi_report_keyword(self, powerbi_merged_jsonPath,audio_file):
+    def powerbi_report_keyword(self, powerbi_merged_jsonPath, audio_file):
         try:
-            self.info_logger.info(msg=f"Starting function  powerbi_report_keyword",
+            self.info_logger.info(
+                msg=f"Starting function powerbi_report_keyword",
                 extra={"location": "main.py - powerbi_report_keyword"},
             )
-            with open(powerbi_merged_jsonPath) as fp:
+
+            with open(powerbi_merged_jsonPath, mode="r") as fp:
                 information = json.load(fp)
-                
-            audio_file_ls , duration_ls, dialouges_ls, keywords_ls, sentiment_ls,sort_sentiment_ls =  [],[], [],[], [],[]
-            
-            self.info_logger.info(msg=f"Azure Translator instance created for translation of data for report",
+
+            audio_file_ls, duration_ls, dialouges_ls, keywords_ls, sentiment_ls, sort_sentiment_ls = [], [], [], [], [], []
+
+            self.info_logger.info(
+                msg=f"Azure Translator instance created for translation of data for report",
                 extra={"location": "main.py - powerbi_report_keyword"},
             )
-            
+
             translator_obj = AzureTranslator()
-            native_lang='en'
-            output_lang='ar-EG'
-            arabic_audio_file_ls , arabic_duration_ls, arabic_dialouges_ls, arabic_keywords_ls, arabic_sentiment_ls, arabic_sort_sentiment_ls =  [],[], [],[], [],[]
-            
-            self.info_logger.info(msg=f"Iterating over Dialogs to translate of file '{powerbi_merged_jsonPath}'",
+            native_lang = 'en'
+            output_lang = 'ar-EG'
+            arabic_audio_file_ls, arabic_duration_ls, arabic_dialouges_ls, arabic_keywords_ls, arabic_sentiment_ls, arabic_sort_sentiment_ls = [], [], [], [], [], []
+
+            self.info_logger.info(
+                msg=f"Iterating over Dialogues to translate of file '{powerbi_merged_jsonPath}'",
                 extra={"location": "main.py - powerbi_report_keyword"},
             )
-            
+
+            sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0, "mixed": 0}
+
             for dialouge in information["result"]["transcripts"]["transcript"]:
                 if dialouge["keyPhrases"]:
-                    sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0,"mixed":0}
+
                     for kp in dialouge["keyPhrases"]:
                         audio_file_ls.append(audio_file)
-                        arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file,from_lang=native_lang,to_lang=output_lang))
-                        
+                        arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file, from_lang=native_lang, to_lang=output_lang))
+
                         duration_ls.append(dialouge["duration_to_play"])
-                        arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"],from_lang=native_lang,to_lang=output_lang))
-                        
+                        arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"], from_lang=native_lang, to_lang=output_lang))
+
                         dialouges_ls.append(dialouge["dialogue"])
-                        arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"],from_lang=native_lang,to_lang=output_lang))
-                        
+                        arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"], from_lang=native_lang, to_lang=output_lang))
+
                         keywords_ls.append(kp)
-                        arabic_keywords_ls.append(translator_obj.get_translations(text=kp,from_lang=native_lang,to_lang=output_lang))
-                        
+                        arabic_keywords_ls.append(translator_obj.get_translations(text=kp, from_lang=native_lang, to_lang=output_lang))
+
                         sentiment_ls.append(dialouge["sentiment"])
-                        arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"],from_lang=native_lang,to_lang=output_lang))
-                        
-                        
+                        arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"], from_lang=native_lang, to_lang=output_lang))
+
                         sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
-                        arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=sentiment_mapping[dialouge["sentiment"]],from_lang=native_lang,to_lang=output_lang))
-                                                
+                        arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=str(sentiment_mapping[dialouge["sentiment"]]), from_lang=native_lang, to_lang=output_lang))
                 else:
-                    self.info_logger.info(msg=f"no keyword found for dialog '{dialouge['dialouge']}'",
+                    self.info_logger.info(
+                        msg=f"no keyword found for dialoge '{dialouge['dialogue']}'",
                         extra={"location": "main.py - powerbi_report_keyword"},
                     )
-                    
+
                     duration_ls.append(dialouge["duration_to_play"])
-                    arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"],from_lang=native_lang,to_lang=output_lang))
+                    arabic_duration_ls.append(translator_obj.get_translations(text=dialouge["duration_to_play"], from_lang=native_lang, to_lang=output_lang))
 
                     audio_file_ls.append(audio_file)
-                    arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file,from_lang=native_lang,to_lang=output_lang))
-                    
+                    arabic_audio_file_ls.append(translator_obj.get_translations(text=audio_file, from_lang=native_lang, to_lang=output_lang))
+
                     dialouges_ls.append(dialouge["dialogue"])
-                    arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"],from_lang=native_lang,to_lang=output_lang))
+                    arabic_dialouges_ls.append(translator_obj.get_translations(text=dialouge["dialogue"], from_lang=native_lang, to_lang=output_lang))
 
                     keywords_ls.append(None)
                     arabic_keywords_ls.append(None)
 
                     sentiment_ls.append(dialouge["sentiment"])
-                    arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"],from_lang=native_lang,to_lang=output_lang))
+                    arabic_sentiment_ls.append(translator_obj.get_translations(text=dialouge["sentiment"], from_lang=native_lang, to_lang=output_lang))
 
                     sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
-                    arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=sentiment_mapping[dialouge["sentiment"]],from_lang=native_lang,to_lang=output_lang))
+                    arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=str(sentiment_mapping[dialouge["sentiment"]]), from_lang=native_lang, to_lang=output_lang))
+
+            dic_pandas = {
+                "audio_filename": audio_file_ls,
+                "duration_1": duration_ls,
+                "keywords_1": keywords_ls,
+                "sentiment_1": sentiment_ls,
+                "dialouge_1": dialouges_ls,
+                "sort sentiment_1": sort_sentiment_ls
+            }
+
+            arabic_dic_pandas = {
+                "audio_filename": arabic_audio_file_ls,
+                "duration_1": arabic_duration_ls,
+                "keywords_1": arabic_keywords_ls,
+                "sentiment_1": arabic_sentiment_ls,
+                "dialouge_1": arabic_dialouges_ls,
+                "sort sentiment_1": arabic_sort_sentiment_ls
+            }
 
 
-            # final result for an audio
-            dic_pandas = {"audio_filename":audio_file_ls, "duration_1": duration_ls, "keywords_1": keywords_ls, 
-                        "sentiment_1": sentiment_ls, "dialouge_1": dialouges_ls,"sort sentiment_1":sort_sentiment_ls}
+            self.info_logger.info(
+                msg=f"creating the dataframe for english and arabic report.",
+                extra={"location": "main.py - powerbi_report_keyword"},
+            )
             
-            
-            arabic_dic_pandas = {"audio_filename":arabic_audio_file_ls, "duration_1": arabic_duration_ls, "keywords_1": arabic_keywords_ls, 
-                        "sentiment_1": arabic_sentiment_ls, "dialouge_1": arabic_dialouges_ls,"sort sentiment_1":arabic_sort_sentiment_ls}
-            
-            self.info_logger.info(msg=f"creating the dataframe for english and arabic report.",
-                        extra={"location": "main.py - powerbi_report_keyword"},
-                    )
             df1 = pd.DataFrame(dic_pandas)
             arabic_df1 = pd.DataFrame(arabic_dic_pandas)
 
-            self.info_logger.info(msg=f"Returning the dataframe for english and arabic report.",
-                        extra={"location": "main.py - powerbi_report_keyword"},)
-                
+            self.info_logger.info(
+                msg=f"Returning the dataframe for english and arabic report.",
+                extra={"location": "main.py - powerbi_report_keyword"},
+            )
             return df1, arabic_df1
-        except Exception as e :
+
+        except Exception as e:
             self.error_logger.error(
                 msg="An Error Occured ..",
                 exc_info=e,
                 extra={"location": "main.py-powerbi_report_keyword"},
             )
+
 
     def power_bi_report_main_helper(self, audio_file,powerbi_merged_jsonPath, merged_output_jsonPath):
             # Use merged_output.json & audios_info/mappings.json
@@ -632,22 +673,30 @@ class Main:
                 self.info_logger.info(msg=f"Loading the mappings.json",
                             extra={"location": "main.py - power_bi_report_main_helper"},)
 
-                path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
-                with open(path) as fh:
+                mapping_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+                with open(mapping_path) as fh:
                     call_dict = json.load(fh)
 
                 if (overall_sentiment >= 1):
                     overall_sentiment = 1
                 elif(overall_sentiment <= -1):
                     overall_sentiment = -1
-                    
+
+                # Calculating utilization percentage 
+                transcription_path = LocalConfig().DATA_FOLDER + "/" + "audio_analytics/" + audio_file + "/transcript_output.json"
+                self.info_logger.info(msg=f"getting the utilization percentage",
+                            extra={"location": "main.py - power_bi_report_main_helper"},)
+                agent_percentage, customer_percentage = utilization_precentage(transcription_path)
+
                 audio_file = audio_file + ".wav"
                 call_dict[audio_file]["language"] = language
                 call_dict[audio_file]["Sentiment"] = [k for k,v in sentiment_mapping.items() if v == overall_sentiment][0]
+                call_dict[audio_file]["AgentPercentage"] = agent_percentage
+                call_dict[audio_file]["CustomerPercentage"] = customer_percentage
                 call_dict[audio_file]["CallOpeningScore"] = call_opening_score
                 call_dict[audio_file]["CallClosingScore"] = call_closing_score
 
-                with open(path, "w") as json_file:
+                with open(mapping_path, "w") as json_file:
                     json.dump(call_dict, json_file, indent=4)
                 
                 self.info_logger.info(msg=f"Updated the values in mapping.json",

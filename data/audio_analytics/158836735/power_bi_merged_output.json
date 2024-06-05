@@ -1,0 +1,266 @@
+{
+    "result": {
+        "summary": "The conversation involves Mercy and Mr. Mohammed, with the latter inquiring about a specific number and a potential need for a certain product. Mercy assures Mr. Mohammed that there is no need for the product and suggests focusing on the guns they are looking at, which will remain in their possession until there is an offer or need that they can benefit from. Mercy also promises to follow up with Mr. Mohammed if there is any need.",
+        "topics": [
+            "presence",
+            "Mr. Mohammed",
+            "Internet",
+            "pure need",
+            "same number",
+            "message",
+            "Mercy contacts",
+            "line",
+            "offers",
+            "other inquiry",
+            "Minutes",
+            "God",
+            "reason",
+            "command",
+            "stripes",
+            "offer",
+            "good morning mercy",
+            "need",
+            "Hidayat net",
+            "guns"
+        ],
+        "wordcloud": [
+            {
+                "text": "good morning mercy",
+                "value": 1
+            },
+            {
+                "text": "Mercy contacts",
+                "value": 1
+            },
+            {
+                "text": "Mr. Mohammed",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 3
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "Minutes",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 2
+            },
+            {
+                "text": "offers",
+                "value": 1
+            },
+            {
+                "text": "message",
+                "value": 1
+            },
+            {
+                "text": "pure need",
+                "value": 1
+            },
+            {
+                "text": "stripes",
+                "value": 1
+            },
+            {
+                "text": "reason",
+                "value": 2
+            },
+            {
+                "text": "guns",
+                "value": 1
+            },
+            {
+                "text": "offer",
+                "value": 1
+            },
+            {
+                "text": "need",
+                "value": 4
+            },
+            {
+                "text": "command",
+                "value": 2
+            },
+            {
+                "text": "Hidayat net",
+                "value": 1
+            },
+            {
+                "text": "presence",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning. Mercy contacts with you, good morning mercy. Good morning, Mr. Mohammed, what's new with you? Thank God, thank God, please inquire about the same number.",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.90",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "good morning mercy",
+                        "Mercy contacts",
+                        "Mr. Mohammed",
+                        "same number",
+                        "God"
+                    ]
+                },
+                {
+                    "dialogue": "Is this line or what?",
+                    "speaker": "Agent",
+                    "duration_to_play": "13.80",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "line"
+                    ]
+                },
+                {
+                    "dialogue": "Minutes on the Internet?",
+                    "speaker": "Agent",
+                    "duration_to_play": "16.15",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Minutes",
+                        "Internet"
+                    ]
+                },
+                {
+                    "dialogue": "No, unfortunately, by God, if there are offers that will bring you a message with it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.87",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "God",
+                        "offers",
+                        "message"
+                    ]
+                },
+                {
+                    "dialogue": "Is the Internet with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.55",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Internet"
+                    ]
+                },
+                {
+                    "dialogue": "Ok, I don't need, I'm inquiring I'm lowering a need like stripes sell it, I mean, there is no pure need, what does the reason mean?",
+                    "speaker": "Customer",
+                    "duration_to_play": "29.00",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "pure need",
+                        "stripes",
+                        "reason"
+                    ]
+                },
+                {
+                    "dialogue": "No, there is no reason, but if it is possible, but you will focus on the guns that we are looking at, because these guns will remain in them if there is an offer or need that you can benefit from.",
+                    "speaker": "Agent",
+                    "duration_to_play": "39.32",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "reason",
+                        "guns",
+                        "offer",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "Okay.",
+                    "speaker": "Customer",
+                    "duration_to_play": "51.31",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "At your command, can I help you again?",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.22",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "command"
+                    ]
+                },
+                {
+                    "dialogue": "They said in Hidayat net and there is no need.",
+                    "speaker": "Customer",
+                    "duration_to_play": "57.57",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Hidayat net",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "We said in it and there is no need.",
+                    "speaker": "Customer",
+                    "duration_to_play": "62.76",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "If by God, he will come to your presence, do not worry about what.",
+                    "speaker": "Agent",
+                    "duration_to_play": "65.87",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "God",
+                        "presence"
+                    ]
+                },
+                {
+                    "dialogue": "It's not finished, there's nothing in it.",
+                    "speaker": "Customer",
+                    "duration_to_play": "68.11",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Thank you. Pardon me. I will also try to follow up with you, even if there is any need, I will talk to you again. Thank you, pardon me for any under your command. Any other inquiry pardon.",
+                    "speaker": "Agent",
+                    "duration_to_play": "72.92",
+                    "locale": "en",
+                    "sentiment": "mixed",
+                    "keyPhrases": [
+                        "other inquiry",
+                        "need",
+                        "command"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

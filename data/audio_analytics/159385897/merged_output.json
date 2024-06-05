@@ -1,0 +1,283 @@
+{
+    "result": {
+        "summary": "The conversation involves a representative from a communications company, Miss Hana, who is assisting a customer who is having trouble connecting due to a credit limit. She assures the customer that she will provide a refresh step and will return to the call to resolve the issue. She also mentions that she will take a break after ending the call and will contact the customer again after working on the activation steps.",
+        "topics": [
+            "two numbers",
+            "telecommunications",
+            "Maaya Maaki Hana",
+            "other questions",
+            "other network",
+            "credit limits",
+            "flight mode",
+            "regular numbers",
+            "means",
+            "problem",
+            "service",
+            "Excellency Abu Khaled",
+            "credit limit",
+            "minutes",
+            "same number",
+            "Communications",
+            "Alo",
+            "Headey contacts",
+            "Miss Hana",
+            "unity",
+            "abbreviated numbers",
+            "step",
+            "nice day",
+            "morning",
+            "moment",
+            "important thing",
+            "call",
+            "goodbye",
+            "refresher step",
+            "minute"
+        ],
+        "wordcloud": [
+            {
+                "text": "Headey contacts",
+                "value": 1
+            },
+            {
+                "text": "Maaya Maaki Hana",
+                "value": 1
+            },
+            {
+                "text": "Miss Hana",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "two numbers",
+                "value": 1
+            },
+            {
+                "text": "important thing",
+                "value": 1
+            },
+            {
+                "text": "credit limits",
+                "value": 1
+            },
+            {
+                "text": "means",
+                "value": 1
+            },
+            {
+                "text": "credit limit",
+                "value": 1
+            },
+            {
+                "text": "moment",
+                "value": 2
+            },
+            {
+                "text": "regular numbers",
+                "value": 1
+            },
+            {
+                "text": "other network",
+                "value": 1
+            },
+            {
+                "text": "abbreviated numbers",
+                "value": 1
+            },
+            {
+                "text": "telecommunications",
+                "value": 1
+            },
+            {
+                "text": "unity",
+                "value": 1
+            },
+            {
+                "text": "problem",
+                "value": 2
+            },
+            {
+                "text": "refresher step",
+                "value": 1
+            },
+            {
+                "text": "minutes",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            },
+            {
+                "text": "flight mode",
+                "value": 1
+            },
+            {
+                "text": "call",
+                "value": 1
+            },
+            {
+                "text": "minute",
+                "value": 1
+            },
+            {
+                "text": "step",
+                "value": 1
+            },
+            {
+                "text": "other questions",
+                "value": 1
+            },
+            {
+                "text": "Excellency Abu Khaled",
+                "value": 1
+            },
+            {
+                "text": "nice day",
+                "value": 1
+            },
+            {
+                "text": "Communications",
+                "value": 1
+            },
+            {
+                "text": "goodbye",
+                "value": 1
+            },
+            {
+                "text": "Alo",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning, Headey contacts with you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.72",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Good morning, sir, Miss Hana, Maaya Maaki Hana. Welcome, sir, can I help you on the same number or on another number?",
+                    "speaker": "Agent",
+                    "duration_to_play": "6.24",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "It is two numbers under each other. The important thing is that I want to perform, he says that you cannot connect as a means to credit limits.",
+                    "speaker": "Customer",
+                    "duration_to_play": "13.68",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "If you say to you, you have reached the credit limit, oh I didn't understand a moment with me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.28",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "All right.",
+                    "speaker": "Agent",
+                    "duration_to_play": "27.67",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "What did you say, sir?",
+                    "speaker": "Agent",
+                    "duration_to_play": "30.28",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Don't know? I mean, how much was I talking to?",
+                    "speaker": "Customer",
+                    "duration_to_play": "35.11",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I mean, you were talking to regular numbers, meaning telecommunications or any other network? No abbreviated numbers?",
+                    "speaker": "Agent",
+                    "duration_to_play": "36.99",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay?",
+                    "speaker": "Agent",
+                    "duration_to_play": "44.32",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "A moment of unity.",
+                    "speaker": "Agent",
+                    "duration_to_play": "50.07",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "This problem is with you, since when now?",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.60",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay?",
+                    "speaker": "Agent",
+                    "duration_to_play": "61.67",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I'm clear to me that you are with me for minutes. No problem, all right. I will just work for you as a refresher step through me and come back to talk to you again. Just make sure that the service worked with you or is there a problem?",
+                    "speaker": "Agent",
+                    "duration_to_play": "69.58",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "But I'll excuse you, sir, just take flight mode after ending the call for a minute, okay? And I will talk to you again after I work for you the step to activate it through me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "82.51",
+                    "locale": "en",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "I would like to clarify to you any other questions.",
+                    "speaker": "Agent",
+                    "duration_to_play": "94.63",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "No, sweetheart, thank you, you honored me, Vendem. Your Excellency Abu Khaled, who are you? Communications? Have a nice day, goodbye, goodbye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "98.00",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Alo.",
+                    "speaker": "Agent",
+                    "duration_to_play": "106.97",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

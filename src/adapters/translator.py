@@ -101,7 +101,6 @@ class AzureTranslator():
             with open(self.english_transcript_output_path +'transcript_output_english.json','w', encoding='utf-8') as file:
                 json.dump(transcript_output_english, file, indent=4)
 
-            # print("________the modified json is created___________") #???????????
             english_transcription_jsonpath = self.english_transcript_output_path +'transcript_output_english.json'
             self.info_logger.info(msg=F"saved translated output list to transcript_output_english.json at locaton '{english_transcription_jsonpath}'",extra={"location":"translator.py - get_translated_transcriptions"})
             return english_transcription_jsonpath

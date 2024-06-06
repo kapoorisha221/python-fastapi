@@ -1,7 +1,7 @@
 # import librosa
 #import uuid
 import os
-import soundfile as sf
+#import soundfile as sf
 from pydub import AudioSegment
 
 from config.config import FileConfig, AzureConfig
@@ -58,17 +58,17 @@ def audio_processing(input_path, output_path):
         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"audio.py - audio_processing"})
         
 
-def change_subtype(input_path, output_path):
-    """Method for changing the subtype of the provided audio path
-    """
-    try:
-        # print("Entered change_bit_rate")
-        data, samplerate=sf.read(input_path)
-        # saving the audio file to the audio path
-        sf.write(file= output_path, data= data, samplerate= samplerate, subtype=FileConfig().DESIRED_SUBTYPE)
-        # print("End")
-    except Exception as e:
-        print(f"Exception inside change_bit_rate() : {e}")
+# def change_subtype(input_path, output_path):
+#     """Method for changing the subtype of the provided audio path
+#     """
+#     try:
+#         # print("Entered change_bit_rate")
+#         data, samplerate=sf.read(input_path)
+#         # saving the audio file to the audio path
+#         sf.write(file= output_path, data= data, samplerate= samplerate, subtype=FileConfig().DESIRED_SUBTYPE)
+#         # print("End")
+#     except Exception as e:
+#         print(f"Exception inside change_bit_rate() : {e}")
 
 # def get_audio_duration(path):
 #     y, sr = librosa.load(librosa.ex(path))

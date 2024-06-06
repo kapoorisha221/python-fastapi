@@ -1,5 +1,5 @@
 import os
-from soundfile import SoundFile
+# from soundfile import SoundFile
 
 from logs.logger import *
 
@@ -18,19 +18,19 @@ def is_file_present(folder_path, filename):
         # print(f"Exception in delete_files() : {e}")
         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - is_file_present"})
 
-def get_audio_attributes(path):
-    """Method for getting audio attributes like samplerate, subtype, channels
-    Args:
-        path (str): audio path
-    Returns;
-        object : object using which we can get audio attributes
-    """
-    try:
-        sf = SoundFile(path)
-        info_logger.info(msg=F"Audio loded to Python SOundFile Successfully",extra={"location":"utils.py - get_audio_attributes"})
-        return sf
-    except Exception as e:
-        error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - get_audio_attributes"})
+# def get_audio_attributes(path):
+#     """Method for getting audio attributes like samplerate, subtype, channels
+#     Args:
+#         path (str): audio path
+#     Returns;
+#         object : object using which we can get audio attributes
+#     """
+#     try:
+#         sf = SoundFile(path)
+#         info_logger.info(msg=F"Audio loded to Python SOundFile Successfully",extra={"location":"utils.py - get_audio_attributes"})
+#         return sf
+#     except Exception as e:
+#         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - get_audio_attributes"})
         
         
 def get_text_count_from_keyphrases(keyPhrase_ls):

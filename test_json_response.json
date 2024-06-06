@@ -1,0 +1,19 @@
+{
+  "displayName": "Document text Summarization Task Example",
+  "analysisInput": {
+    "documents": [
+      {
+        "id": "1",
+        "language": "en",
+        "text": "Good morning. Mercy contacts with you, good morning mercy. Good morning, Mr. Mohammed, what's new with you? Thank God, thank God, please inquire about the same number. Is this line or what? Minutes on the Internet? No, unfortunately, by God, if there are offers that will bring you a message with it. Is the Internet with you? Ok, I don't need, I'm inquiring I'm lowering a need like stripes sell it, I mean, there is no pure need, what does the reason mean? No, there is no reason, but if it is possible, but you will focus on the guns that we are looking at, because these guns will remain in them if there is an offer or need that you can benefit from. Okay. At your command, can I help you again? They said in Hidayat net and there is no need. We said in it and there is no need. If by God, he will come to your presence, do not worry about what. It's not finished, there's nothing in it. Thank you. Pardon me. I will also try to follow up with you, even if there is any need, I will talk to you again. Thank you, pardon me for any under your command. Any other inquiry pardon."
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "kind": "AbstractiveSummarization",
+      "taskName": "Text Abstractive Summarization Task 1",
+      "parameters": { "summaryLength": "oneline" }
+    }
+  ]
+}

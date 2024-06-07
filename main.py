@@ -73,91 +73,89 @@ class Main:
             )
             source_data_obj = starter_class()
             call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
+            for dir in os.listdir(source_calls_path):
+                print(f"________________________________________executing audio from directory: {dir}_______________________________________")
+                for audio_file in os.listdir(source_calls_path):
+                    file_to_check = audio_file
 
-            for audio_file in os.listdir(source_calls_path):
-            # temppath = "source/tempdata"
-            # templist = os.listdir(temppath)
-            # for audio_file in templist:
-                file_to_check = audio_file
+                    if audio_file.endswith(".mp3"):
+                        file_to_check = audio_file.replace(".mp3", ".wav")
+                    if is_file_present(
+                        folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
+                        filename=file_to_check,
+                    ):
+                        self.info_logger.info(
+                            msg=f"file {file_to_check} already found",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                        continue
+                    print(f"audio file: {audio_file}")
+                    try:                 
+                        extension = audio_file.split(".")[-1]
+                        filename = audio_file.split(".")[:-1][0]
+                    except:
+                        self.error_logger.error(
+                            msg=f"getting error while retrivieing filename by spliting audio: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                    int_filename = int(filename)
+                    #getting the data of agent_name and call_id for an index i
+                    try:
+                        index = call_ids.index(int_filename)
+                        agent_id = agent_ids[index]
+                        agent_name = agent_names[index]
+                        call_date = call_dates[index]
+                    except Exception as e:
+                        self.error_logger.error(
+                            msg=f"list index couldn't be found or list index out of range with error: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
 
-                if audio_file.endswith(".mp3"):
-                    file_to_check = audio_file.replace(".mp3", ".wav")
-                if is_file_present(
-                    folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
-                    filename=file_to_check,
-                ):
+                    path1 = source_calls_path + "/" + audio_file
                     self.info_logger.info(
-                        msg=f"file {file_to_check} already found",
+                        msg=f"Calling get_audio_attributes",
                         extra={"location": "main.py-audios_main"},
                     )
-                    continue
-                print(f"audio file: {audio_file}")
-                try:                 
-                    extension = audio_file.split(".")[-1]
-                    filename = audio_file.split(".")[:-1][0]
-                except:
-                    self.error_logger.error(
-                        msg=f"getting error while retrivieing filename by spliting audio: {e}",
-                        extra={"location": "main.py-audios_main"},
-                    )
-                int_filename = int(filename)
-                #getting the data of agent_name and call_id for an index i
-                try:
-                    index = call_ids.index(int_filename)
-                    agent_id = agent_ids[index]
-                    agent_name = agent_names[index]
-                    call_date = call_dates[index]
-                except Exception as e:
-                    self.error_logger.error(
-                        msg=f"list index couldn't be found or list index out of range with error: {e}",
+                    #attrs = get_audio_attributes(path=path1)
+
+                    path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
+
+                    # processing to enhance the sound volume by 20
+                    audio_processing(input_path=path1, output_path=path2)
+
+                    # get & store informations
+                    self.add_to_mapping(int_filename, audio_file_path=path2, agent_id=agent_id, agent_name=agent_name, call_date=call_date)
+
+                    # make folders for the audios where corresponding analytics will get stored
+                    folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
+                    os.makedirs(folder, exist_ok=True)
+                    self.info_logger.info(
+                        msg=f"Created folder for audio to save transcriptions at'{folder}'",
                         extra={"location": "main.py-audios_main"},
                     )
 
-                path1 = source_calls_path + "/" + audio_file
+                    # Creating the first audio transcription in Arabic(native language)
+                    recognize_from_file(audio_file_path=path2, folder=folder)
+                    transcripted_json_file_path = folder + "/transcript_output.json"
+                    self.info_logger.info(
+                        msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
+                        extra={"location": "main.py-audios_main"},
+                    )
+
+                    self.pipeline_after_transcription(
+                        audio_name=filename,
+                        transcription_jsonPath=transcripted_json_file_path,
+                    )
                 self.info_logger.info(
-                    msg=f"Calling get_audio_attributes",
-                    extra={"location": "main.py-audios_main"},
-                )
-                #attrs = get_audio_attributes(path=path1)
-
-                path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
-
-                # processing to enhance the sound volume by 20
-                audio_processing(input_path=path1, output_path=path2)
-
-                # get & store informations
-                self.add_to_mapping(int_filename, audio_file_path=path2, agent_id=agent_id, agent_name=agent_name, call_date=call_date)
-
-                # make folders for the audios where corresponding analytics will get stored
-                folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
-                os.makedirs(folder, exist_ok=True)
+                        msg=f"Starts Creating the excel for",
+                        extra={"location": "main.py-audios_main"},
+                    )
+                
+                self.create_excel_for_powerbi()
                 self.info_logger.info(
-                    msg=f"Created folder for audio to save transcriptions at'{folder}'",
-                    extra={"location": "main.py-audios_main"},
-                )
-
-                # Creating the first audio transcription in Arabic(native language)
-                recognize_from_file(audio_file_path=path2, folder=folder)
-                transcripted_json_file_path = folder + "/transcript_output.json"
-                self.info_logger.info(
-                    msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
-                    extra={"location": "main.py-audios_main"},
-                )
-
-                self.pipeline_after_transcription(
-                    audio_name=filename,
-                    transcription_jsonPath=transcripted_json_file_path,
-                )
-            self.info_logger.info(
-                    msg=f"Starts Creating the excel for",
-                    extra={"location": "main.py-audios_main"},
-                )
-            
-            self.create_excel_for_powerbi()
-            self.info_logger.info(
-                    msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
-                    extra={"location": "main.py-audios_main"},
-                )
+                        msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
+                        extra={"location": "main.py-audios_main"},
+                    )
         except Exception as e:
             self.error_logger.error(
                 msg="An Error Occured ..",
@@ -768,5 +766,7 @@ class Main:
             )
             
 if __name__ == "__main__":
+    source_call_path = "source\calls"
     obj = Main()
-    obj.create_excel_for_powerbi()
+    obj.audios_main()
+    

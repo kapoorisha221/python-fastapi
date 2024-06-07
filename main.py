@@ -74,6 +74,7 @@ class Main:
             source_data_obj = starter_class()
             print("got the source data object")
             call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
+            print(f"got the source file {source_call_path}")
             for dir in os.listdir(source_calls_path):
                 print(f"________________________________________executing audio from directory: {dir}_______________________________________")
                 for audio_file in dir:

@@ -22,6 +22,7 @@ class starter_class:
         sheet_name = self.cred.sheet_name
         print("sheet_name: ", sheet_name)
         df = pd.read_excel(self.cred.audio_data, sheet_name=sheet_name)
+        print(" got the dataframe:     ", df)
 
         # Append data from each column to the corresponding list
         # call_ids = df["Call id"].tolist()
@@ -41,7 +42,7 @@ class starter_class:
                 agent_ids.append(int(agent_id))
                 agent_names.append(agent_name)
                 call_dates.append(call_date)
-        
+        print("call_ids", call_ids,"agent_ids ",agent_ids ,"agent_names: ",agent_names,"call_dates: ", call_dates)
         return call_ids, agent_ids, agent_names, call_dates
         
 

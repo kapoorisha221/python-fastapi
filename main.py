@@ -75,7 +75,7 @@ class Main:
             call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
             for dir in os.listdir(source_calls_path):
                 print(f"________________________________________executing audio from directory: {dir}_______________________________________")
-                for audio_file in os.listdir(source_calls_path):
+                for audio_file in dir:
                     file_to_check = audio_file
 
                     if audio_file.endswith(".mp3"):

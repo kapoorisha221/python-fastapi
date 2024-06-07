@@ -14,6 +14,7 @@ class starter_class:
     path = LocalConfig()
 
     def read_data_csv(self):
+        print("getting data from csv using read_data_csv")
         call_ids = []
         agent_ids = []
         agent_names = []

@@ -72,6 +72,7 @@ class Main:
                 extra={"location": "main.py-audios_main"},
             )
             source_data_obj = starter_class()
+            print("got the source data object")
             call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
             for dir in os.listdir(source_calls_path):
                 print(f"________________________________________executing audio from directory: {dir}_______________________________________")
@@ -768,5 +769,5 @@ class Main:
 if __name__ == "__main__":
     source_call_path = "source\calls"
     obj = Main()
-    obj.audios_main()
+    obj.audios_main(source_call_path)
     

@@ -19,11 +19,11 @@ class starter_class:
         agent_ids = []
         agent_names = []
         call_dates = []
+        comments = []
         sheet_name = self.cred.sheet_name
         print("sheet_name: ", sheet_name)
         df = pd.read_excel(self.cred.audio_data, sheet_name=sheet_name)
-        print(" got the dataframe:     ", df)
-
+        print("the columns are: ", df.columns)
         # Append data from each column to the corresponding list
         # call_ids = df["Call id"].tolist()
         # agent_ids = df["Agent id"].tolist()
@@ -36,14 +36,16 @@ class starter_class:
             agent_id = row["Agent id"]
             agent_name = row["Agent name"]
             call_date = row["Call Date "]
+            comment = row["Comment"]
 
             if not (pd.isna(call_id) or pd.isna(agent_id)):
                 call_ids.append(int(call_id))
                 agent_ids.append(int(agent_id))
                 agent_names.append(agent_name)
                 call_dates.append(call_date)
-        print("call_ids", call_ids,"agent_ids ",agent_ids ,"agent_names: ",agent_names,"call_dates: ", call_dates)
-        return call_ids, agent_ids, agent_names, call_dates
+                comments.append(comment if pd.notna(comment) else '')
+        print("____________call_ids, agent_ids, agent_names, call_dates, comments_____", call_ids, agent_ids, agent_names, call_dates, comments)
+        return call_ids, agent_ids, agent_names, call_dates, comments
         
 
 

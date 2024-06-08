@@ -20,25 +20,28 @@ class Main:
 ##################################### Pre Processing and transcription ############################################
 ###################################################################################################################
 
-    def add_to_mapping(self,int_filename, agent_id, audio_file_path, agent_name, call_date):
+    def add_to_mapping(self,int_filename, audio_file_path, agent_id, agent_name, call_date, comment):
         try:
             self.info_logger.info(
                 msg=f"Started function add_to_mapping to create mapping.json data",
                 extra={"location": "main.py - add_to_mapping"},
             )
-
+            print("__mapping called____")
             path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
-            with open(path) as fh:
-                call_dict = json.load(fh)
 
+            # with open(path, "r", encoding="utf-8") as fp:
+            #     call_dict = json.load(fp)
+            call_dict = {}
+            print("___empty json loaded___")
             next_call_number = len(call_dict) + 1
-
-            next_call_name = "Call_{}".format(next_call_number) + ".wav"
+            #next_call_name = "Call_{}".format(next_call_number) + ".wav"
 
             audio_file = audio_file_path.split("/")[-1]
+            print("__audio file__", audio_file)
             audio_atrs = get_audio_attrs_for_report(audio_path=audio_file_path)
+            print("____got audio attributes____", audio_file, audio_atrs)
             minutes = convert_to_minutes(audio_atrs["audio_duration"])
-
+            print("got the minutes")
             
             call_dict[audio_file] = {"id": int_filename}
             call_dict[audio_file]["recordingID"] = next_call_number            
@@ -47,9 +50,10 @@ class Main:
             call_dict[audio_file]["AgentID"] = int(agent_id)
             call_dict[audio_file]["Agent Name"] = agent_name
             call_dict[audio_file]["Call Date"] = str(call_date)
+            call_dict[audio_file]["Comment"] = comment
             
-
-            with open(path, "w") as json_file:
+            print("____printing the call dictionary___", call_dict)
+            with open(path, mode = "w") as json_file:
                 json.dump(call_dict, json_file, indent=4)
 
             self.info_logger.info(
@@ -72,12 +76,14 @@ class Main:
                 extra={"location": "main.py-audios_main"},
             )
             source_data_obj = starter_class()
-            print("got the source data object")
-            call_ids, agent_ids, agent_names, call_dates = source_data_obj.read_data_csv()
-            print(f"got the source file {source_call_path}")
+            print(f"got the source file {source_calls_path}")
+            call_ids, agent_ids, agent_names, call_dates, comments = source_data_obj.read_data_csv()
+
             for dir in os.listdir(source_calls_path):
-                print(f"________________________________________executing audio from directory: {dir}_______________________________________")
-                for audio_file in dir:
+                print(f"________________________________________executing audio from directory: {dir} ______________________________________")
+                audio_path = source_calls_path + "/" + dir
+                for audio_file in os.listdir(audio_path):
+                    print(f"got the audio path as : {audio_path}")
                     file_to_check = audio_file
 
                     if audio_file.endswith(".mp3"):
@@ -107,13 +113,14 @@ class Main:
                         agent_id = agent_ids[index]
                         agent_name = agent_names[index]
                         call_date = call_dates[index]
+                        comment = comments[index]
                     except Exception as e:
                         self.error_logger.error(
                             msg=f"list index couldn't be found or list index out of range with error: {e}",
                             extra={"location": "main.py-audios_main"},
                         )
-
-                    path1 = source_calls_path + "/" + audio_file
+                    print(f"got the data for audio: {filename}", index, agent_id, agent_name, call_date, comment)
+                    path1 = source_calls_path + "/" + dir +"/" + filename  + ".wav"
                     self.info_logger.info(
                         msg=f"Calling get_audio_attributes",
                         extra={"location": "main.py-audios_main"},
@@ -124,9 +131,10 @@ class Main:
 
                     # processing to enhance the sound volume by 20
                     audio_processing(input_path=path1, output_path=path2)
-
+                    #print("audio procesing done")
+                    print("paths are: ", path1, path2)
                     # get & store informations
-                    self.add_to_mapping(int_filename, audio_file_path=path2, agent_id=agent_id, agent_name=agent_name, call_date=call_date)
+                    self.add_to_mapping(int_filename, path2, agent_id, agent_name, call_date, comment)
 
                     # make folders for the audios where corresponding analytics will get stored
                     folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
@@ -768,7 +776,8 @@ class Main:
             )
             
 if __name__ == "__main__":
-    source_call_path = "source\calls"
+    path = LocalConfig()
+    source_call_path = path.SOURCE_DATA
     obj = Main()
     obj.audios_main(source_call_path)
     

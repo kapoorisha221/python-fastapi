@@ -45,12 +45,14 @@ def audio_processing(input_path, output_path):
         sound = AudioSegment.from_mp3(input_path)
         # audio, sr = librosa.load(input_path, sr=format_options["sample_rate"])
 
-        louder_sound = sound + 20
+        #louder_sound = sound + 20
         # Export the audio to WAV format using soundfile
         # with sf.SoundFile(output_path, mode='w', samplerate=format_options["sample_rate"], channels=format_options["channels"]) as file:
         #     file.write(audio)
 
-        louder_sound.export(output_path, format="wav")
+        #louder_sound.export(output_path, format="wav")
+        sound.export(output_path, format = "wav")
+        print("file saved at processed data")
 
         info_logger.info(msg=F".wav file is created sucesfully at '{output_path}'",extra={"location":"audio.py - audio_processing"})
         # change subtype if needed
@@ -84,7 +86,9 @@ def audio_duration(length):
     return hours, mins, seconds  # returns the duration 
 
 def get_audio_duration_in_seconds(path):
+    print("got the audio path in function:______", path)
     audio = WAVE(path) 
+    print("got the audio info in function:______", audio.info)
     # contains all the metadata about the wavpack file 
     audio_info = audio.info 
     length = int(audio_info.length) 
@@ -117,6 +121,9 @@ def get_token_numbers(text):
 
 def get_audio_attrs_for_report(audio_path):
     info_logger.info(msg=F"getting audio atributes for  '{audio_path}'")
+    print(f"getting audio atributes for  '{audio_path}")
     duration = get_audio_duration_in_seconds(path= audio_path)
-    file_size = get_audio_file_size_in_KB(path= audio_path)  
+    print("__duration__", duration)
+    file_size = get_audio_file_size_in_KB(path= audio_path) 
+    print("___file_size__", file_size) 
     return {"audio_duration": duration, "audio_file_size": file_size}

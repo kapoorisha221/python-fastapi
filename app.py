@@ -25,7 +25,7 @@ path = LocalConfig()
 def Process_Audio_files(source_calls_path):
     try:
         info_logger.info(msg="Checking for the Old Logs",extra={"location":"App.py - Process_Audio_files"})
-        log_Garbage_Collector()
+        # log_Garbage_Collector()
         obj = Main()
         print("object instance created")
         obj.audios_main(source_calls_path)

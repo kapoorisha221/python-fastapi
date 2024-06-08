@@ -83,11 +83,14 @@ class Main:
                 print(f"________________________________________executing audio from directory: {dir} ______________________________________")
                 audio_path = source_calls_path + "/" + dir
                 for audio_file in os.listdir(audio_path):
-                    print(f"got the audio path as : {audio_path}")
+                    print(f"got the audio path as : {audio_path}/{audio_file}")
                     file_to_check = audio_file
 
+                    print(f"audio ends with .mp3  : {audio_file.endswith('.mp3')}")
                     if audio_file.endswith(".mp3"):
                         file_to_check = audio_file.replace(".mp3", ".wav")
+                        
+                    print(f"is file present in processed : {is_file_present(folder_path=LocalConfig().PROCESSED_DATA_FOLDER,filename=file_to_check,)}")
                     if is_file_present(
                         folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
                         filename=file_to_check,
@@ -107,6 +110,7 @@ class Main:
                             extra={"location": "main.py-audios_main"},
                         )
                     int_filename = int(filename)
+                    print(f"filename {int_filename}")
                     #getting the data of agent_name and call_id for an index i
                     try:
                         index = call_ids.index(int_filename)
@@ -120,7 +124,7 @@ class Main:
                             extra={"location": "main.py-audios_main"},
                         )
                     print(f"got the data for audio: {filename}", index, agent_id, agent_name, call_date, comment)
-                    path1 = source_calls_path + "/" + dir +"/" + filename  + ".wav"
+                    path1 = source_calls_path + "/" + dir +"/" + filename  + "." +extension
                     self.info_logger.info(
                         msg=f"Calling get_audio_attributes",
                         extra={"location": "main.py-audios_main"},
@@ -344,16 +348,16 @@ class Main:
             #     extra={"location": "main.py - pipeline_after_transcription"},
             # )
 
-            merged_output["result"]["transcripts"] = (
-                self.merge_sentiment_with_transcription(
-                    result["sentiment_ls"], self.transcriptions
-                )
-            )
-            merged_output_arabic["result"]["transcripts"] = (
-                self.merge_sentiment_with_transcription(
-                    arabic_result["sentiment_ls"], self.arabic_transcriptions
-                )
-            )
+            # merged_output["result"]["transcripts"] = (
+            #     self.merge_sentiment_with_transcription(
+            #         result["sentiment_ls"], self.transcriptions
+            #     )
+            # )
+            # merged_output_arabic["result"]["transcripts"] = (
+            #     self.merge_sentiment_with_transcription(
+            #         arabic_result["sentiment_ls"], self.arabic_transcriptions
+            #     )
+            # )
 
             merged_output["result"]["language"] = self.transcriptions["transcript"][0][
                 "locale"

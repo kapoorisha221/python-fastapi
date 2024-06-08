@@ -52,6 +52,7 @@ def log_Garbage_Collector():
     
 
     def remove_old_logs_from_top(log_path):
+        print(f"____log path____ :{log_path}")
         with open(log_path, 'r+') as log_file:
             lines = log_file.readlines()
             for idx, line in enumerate(lines):

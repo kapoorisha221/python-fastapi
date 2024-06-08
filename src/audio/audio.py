@@ -42,6 +42,7 @@ def audio_processing(input_path, output_path):
         "subtype": "" # encoding like PCM_16, u-law
         }
         # Load the MP3 file using librosa
+        print(f"file path to convert and save :  {input_path}")
         sound = AudioSegment.from_mp3(input_path)
         # audio, sr = librosa.load(input_path, sr=format_options["sample_rate"])
 

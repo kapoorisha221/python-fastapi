@@ -1,0 +1,58 @@
+{
+    "transcript": [
+        {
+            "dialogue": "Good morning with you.",
+            "speaker": "Agent",
+            "duration_to_play": "0.95",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Good morning. Good morning, sir. Welcome, Mr. Shorouk with me? Right? How? How are you doing? It's all sweet, sweetheart. How are you doing? Thank God I am completely under your command. How can I help you?",
+            "speaker": "Agent",
+            "duration_to_play": "3.84",
+            "locale": "en"
+        },
+        {
+            "dialogue": "My line is parked for a bill. But I worked 24 hours and he doesn't want to work.",
+            "speaker": "Agent",
+            "duration_to_play": "14.71",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay, okay, just a moment, I have the same number. Would you like to reduce it? What? The same number you are calling me from? Yes, the same number, okay? Well, and the calls are okay? Is it a good job with you? No, it's all locked?",
+            "speaker": "Agent",
+            "duration_to_play": "21.39",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay, just a moment with me, but with your permission, of course, go ahead",
+            "speaker": "Agent",
+            "duration_to_play": "33.11",
+            "locale": "en"
+        },
+        {
+            "dialogue": "",
+            "speaker": "Customer",
+            "duration_to_play": "54.32",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Ok, I regret you, you are with me. Uh, Maaya exists. Could I just ask your permission, do we make flight mode okay? Now I will arrive with you. I will take action through me, and you will work, but I will be put to fly for 10 seconds, the first time I close with you, I will take the procedure, regret, and after that, I will contact you again, make sure so? The service has become good, it has become good with you, or not?",
+            "speaker": "Agent",
+            "duration_to_play": "62.47",
+            "locale": "en"
+        },
+        {
+            "dialogue": "",
+            "speaker": "Agent",
+            "duration_to_play": "81.78",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Not at your command at any time. Sure, anything else. No, no, don't give me your orders.",
+            "speaker": "Agent",
+            "duration_to_play": "82.93",
+            "locale": "en"
+        }
+    ]
+}

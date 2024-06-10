@@ -13,42 +13,6 @@
             "locale": "en"
         },
         {
-            "dialogue": "Good evening. Please. I'm in Celton and I'm not. I do not. I mean, I didn't do it, I didn't ask for it, or I chose it.",
-            "speaker": "Agent",
-            "duration_to_play": "4.67",
-            "locale": "en"
-        },
-        {
-            "dialogue": "On the same number.",
-            "speaker": "Agent",
-            "duration_to_play": "11.99",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Good evening. Please. I'm in Celton and I'm not. I do not. I mean, I didn't do it, I didn't ask for it, or I chose it.",
-            "speaker": "Customer",
-            "duration_to_play": "4.67",
-            "locale": "en"
-        },
-        {
-            "dialogue": "On the same number.",
-            "speaker": "Customer",
-            "duration_to_play": "11.99",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Oh regret on the same number. Ah.",
-            "speaker": "Customer",
-            "duration_to_play": "13.51",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Good evening. Please. I'm in Celton and I'm not. I do not. I mean, I didn't do it, I didn't ask for it, or I chose it.",
-            "speaker": "Agent",
-            "duration_to_play": "4.67",
-            "locale": "en"
-        },
-        {
             "dialogue": "On the same number.",
             "speaker": "Agent",
             "duration_to_play": "11.99",
@@ -56,7 +20,7 @@
         },
         {
             "dialogue": "Oh regret on the same number. Ah.",
-            "speaker": "Agent",
+            "speaker": "Customer",
             "duration_to_play": "13.51",
             "locale": "en"
         },

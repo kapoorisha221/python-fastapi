@@ -85,42 +85,6 @@
             "locale": "en"
         },
         {
-            "dialogue": "12 six means six is available line.",
-            "speaker": "Agent",
-            "duration_to_play": "71.56",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Exactly. Oh, sir, okay. Thanks under your command. It will connect you to anything else.",
-            "speaker": "Agent",
-            "duration_to_play": "74.12",
-            "locale": "en"
-        },
-        {
-            "dialogue": "12 six means six is available line.",
-            "speaker": "Customer",
-            "duration_to_play": "71.56",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Exactly. Oh, sir, okay. Thanks under your command. It will connect you to anything else.",
-            "speaker": "Customer",
-            "duration_to_play": "74.12",
-            "locale": "en"
-        },
-        {
-            "dialogue": "No, thank you, thank you.",
-            "speaker": "Customer",
-            "duration_to_play": "79.36",
-            "locale": "en"
-        },
-        {
-            "dialogue": "12 six means six is available line.",
-            "speaker": "Agent",
-            "duration_to_play": "71.56",
-            "locale": "en"
-        },
-        {
             "dialogue": "Exactly. Oh, sir, okay. Thanks under your command. It will connect you to anything else.",
             "speaker": "Agent",
             "duration_to_play": "74.12",
@@ -128,7 +92,7 @@
         },
         {
             "dialogue": "No, thank you, thank you.",
-            "speaker": "Agent",
+            "speaker": "Customer",
             "duration_to_play": "79.36",
             "locale": "en"
         },

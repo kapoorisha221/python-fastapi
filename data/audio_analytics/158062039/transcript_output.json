@@ -13,42 +13,6 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "مساء النور. لو سمحت. انا في كلتون محطوط لي انا ما. ما. يعني ما عملتوش ولا طلبته ولا اخترته.",
-            "speaker": "Agent",
-            "duration_to_play": "4.67",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "على نفس الرقم.",
-            "speaker": "Agent",
-            "duration_to_play": "11.99",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "مساء النور. لو سمحت. انا في كلتون محطوط لي انا ما. ما. يعني ما عملتوش ولا طلبته ولا اخترته.",
-            "speaker": "Customer",
-            "duration_to_play": "4.67",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "على نفس الرقم.",
-            "speaker": "Customer",
-            "duration_to_play": "11.99",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "يا فندم على نفس الرقم. اه.",
-            "speaker": "Customer",
-            "duration_to_play": "13.51",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "مساء النور. لو سمحت. انا في كلتون محطوط لي انا ما. ما. يعني ما عملتوش ولا طلبته ولا اخترته.",
-            "speaker": "Agent",
-            "duration_to_play": "4.67",
-            "locale": "ar-EG"
-        },
-        {
             "dialogue": "على نفس الرقم.",
             "speaker": "Agent",
             "duration_to_play": "11.99",
@@ -56,7 +20,7 @@
         },
         {
             "dialogue": "يا فندم على نفس الرقم. اه.",
-            "speaker": "Agent",
+            "speaker": "Customer",
             "duration_to_play": "13.51",
             "locale": "ar-EG"
         },

@@ -20,7 +20,7 @@ class Main:
 ##################################### Pre Processing and transcription ############################################
 ###################################################################################################################
 
-    def add_to_mapping(self,int_filename, audio_file_path, agent_id, agent_name, call_date, comment):
+    def add_to_mapping(self,int_filename, audio_file_path, call_category, agent_id, agent_name, call_date, comment):
         try:
             self.info_logger.info(
                 msg=f"Started function add_to_mapping to create mapping.json data",
@@ -46,6 +46,7 @@ class Main:
             call_dict[audio_file]["recordingID"] = next_call_number            
             call_dict[audio_file]["CallDuration"] = minutes
             call_dict[audio_file]["Audio_Size"] = int(audio_atrs["audio_file_size"])
+            call_dict[audio_file]["Call Category"] = call_category
             call_dict[audio_file]["AgentID"] = int(agent_id)
             call_dict[audio_file]["Agent Name"] = agent_name
             call_dict[audio_file]["Call Date"] = str(call_date)
@@ -76,7 +77,8 @@ class Main:
             )
             source_data_obj = starter_class()
             print(f"got the source file {source_calls_path}")
-            call_ids, agent_ids, agent_names, call_dates, comments = source_data_obj.read_data_csv()
+            sheet1_res, sheet2_res, sheet3_res = source_data_obj.read_data_csv()
+            
 
             for dir in os.listdir(source_calls_path):
                 print(f"________________________________________executing audio from directory: {dir} ______________________________________")
@@ -89,7 +91,6 @@ class Main:
                     if audio_file.endswith(".mp3"):
                         file_to_check = audio_file.replace(".mp3", ".wav")
                         
-                    print(f"is file present in processed : {is_file_present(folder_path=LocalConfig().PROCESSED_DATA_FOLDER,filename=file_to_check,)}")
                     if is_file_present(
                         folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
                         filename=file_to_check,
@@ -111,17 +112,85 @@ class Main:
                     int_filename = int(filename)
                     print(f"filename {int_filename}")
                     #getting the data of agent_name and call_id for an index i
-                    try:
-                        index = call_ids.index(int_filename)
-                        agent_id = agent_ids[index]
-                        agent_name = agent_names[index]
-                        call_date = call_dates[index]
-                        comment = comments[index]
-                    except Exception as e:
-                        self.error_logger.error(
-                            msg=f"list index couldn't be found or list index out of range with error: {e}",
-                            extra={"location": "main.py-audios_main"},
-                        )
+
+                    # print(type(dir))
+                    # print(dir)
+                    # # print(sheet1_res)
+                    # # print(sheet2_res)
+                    # # print(sheet3_res)
+                    # print(sheet1_res["sheetname"])
+                    # print(type(sheet2_res["sheetname"]))
+                    # print(sheet2_res["sheetname"])
+                    # print(sheet3_res["sheetname"])
+                    # print(dir == sheet1_res["sheetname"])
+                    # print(dir == sheet2_res["sheetname"])
+                    # print(dir == sheet3_res["sheetname"])
+
+                    # print(type(dir))
+                    # print(dir)
+                    # print(sheet1_res)
+                    # print(sheet2_res)
+                    # print(sheet3_res)
+                    print(sheet1_res["sheetname"])
+                    # print(type(sheet2_res["sheetname"]))
+                    print(sheet2_res["sheetname"])
+                    print(sheet3_res["sheetname"])
+
+                    # Strip whitespace and convert to lowercase for comparison
+                    dir = dir.strip().lower()
+                    sheet1_name_stripped = sheet1_res["sheetname"].strip().lower()
+                    sheet2_name_stripped = sheet2_res["sheetname"].strip().lower()
+                    sheet3_name_stripped = sheet3_res["sheetname"].strip().lower()
+
+                    print(dir == sheet1_res["sheetname"])  # Original comparison
+                  
+
+
+                    if dir == sheet1_name_stripped:
+                        try:
+                            # print(sheet1_res)
+                            index = sheet1_res["callids"].index(int_filename)
+                            # call_id = sheet1_res.index()
+                            # call_id = sheet1_res["callids"]
+                            agent_id = sheet1_res["agentids"][index]
+                            agent_name = sheet1_res["agentnames"][index]
+                            call_date = sheet1_res["calldates"][index]
+                            comment = sheet1_res["comments"][index]
+                        except Exception as e:
+                            self.error_logger.error(
+                                msg=f"list index couldn't be found or list index out of range with error: {e}",
+                                extra={"location": "main.py-audios_main"},
+                            )
+                    elif dir == sheet2_name_stripped:
+                        try:
+                            # print(sheet1_res)
+                            index = sheet2_res["callids"].index(int_filename)
+                            # call_id = sheet1_res.index()
+                            # call_id = sheet1_res["callids"]
+                            agent_id = sheet2_res["agentids"][index]
+                            agent_name = sheet2_res["agentnames"][index]
+                            call_date = sheet2_res["calldates"][index]
+                            comment = sheet2_res["comments"][index]
+                        except Exception as e:
+                            self.error_logger.error(
+                                msg=f"list index couldn't be found or list index out of range with error: {e}",
+                                extra={"location": "main.py-audios_main"},
+                            )
+                    elif dir == sheet3_name_stripped:
+                        try:
+                            # print(sheet1_res)
+                            index = sheet3_res["callids"].index(int_filename)
+                            # call_id = sheet1_res.index()
+                            # call_id = sheet1_res["callids"]
+                            agent_id = sheet3_res["agentids"][index]
+                            agent_name = sheet3_res["agentnames"][index]
+                            call_date = sheet3_res["calldates"][index]
+                            comment = sheet3_res["comments"][index]
+                        except Exception as e:
+                            self.error_logger.error(
+                                msg=f"list index couldn't be found or list index out of range with error: {e}",
+                                extra={"location": "main.py-audios_main"},
+                            )
                     print(f"got the data for audio: {filename}", index, agent_id, agent_name, call_date, comment)
                     path1 = source_calls_path + "/" + dir +"/" + filename  + "." +extension
                     self.info_logger.info(
@@ -137,7 +206,7 @@ class Main:
                     #print("audio procesing done")
                     print("paths are: ", path1, path2)
                     # get & store informations
-                    self.add_to_mapping(int_filename, path2, agent_id, agent_name, call_date, comment)
+                    self.add_to_mapping(int_filename, path2, dir, agent_id, agent_name, call_date, comment)
 
                     # make folders for the audios where corresponding analytics will get stored
                     folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
@@ -321,13 +390,32 @@ class Main:
 
             excel_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mapping.xlsx"
             mapping_df.to_excel(excel_path)
+            transcript_data =[]
 
             ##Creating excel of transccriptions for all the audio calls 
             calls_path = LocalConfig().DATA_FOLDER + "/"  + "audio_analytics"
             for call in os.listdir(calls_path):
-                transcription_path = calls_path + "/" + call + "transcript_output_english.json"
-                with open(transcription_path, "r", encoding="utf-8") as tp:
-                    transcript_dict = json.load(tp)
+                print(call)
+                transcription_path = calls_path + "/" + call + "/transcript_output_english.json"
+                print(transcription_path)
+                if os.path.exists(transcription_path):
+                    with open(transcription_path, "r", encoding="utf-8") as tp:
+                        transcript_dict = json.load(tp)
+                        if isinstance(transcript_dict, dict) and 'transcript' in transcript_dict:
+                            for dialogue_entry in transcript_dict['transcript']:
+                                dialogue = dialogue_entry.get('dialogue', '')
+                                speaker = dialogue_entry.get('speaker', '')
+                                transcript_data.append({
+                                    'call': call,
+                                    'dialogue': dialogue,
+                                    'speaker': speaker
+                                })
+                     
+            if transcript_data:
+                transcription_df = pd.DataFrame(transcript_data)
+                print(transcription_df)
+                transcription_excel_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/transcriptions.xlsx"
+                transcription_df.to_excel(transcription_excel_path, index=False)
 
                 
         except Exception as e:
@@ -731,8 +819,8 @@ class Main:
             )
             
 if __name__ == "__main__":
-    path = LocalConfig()
-    source_call_path = path.SOURCE_DATA
+    # path = LocalConfig()
+    # source_call_path = path.SOURCE_DATA
     obj = Main()
-    obj.audios_main(source_call_path)
-    
+    # obj.audios_main(source_call_path)
+    obj.add_mapping_to_excel()

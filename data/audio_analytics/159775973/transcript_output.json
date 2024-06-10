@@ -13,14 +13,14 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "تمام، تحت امر حضرتك لحظة معايا الرقم اللي اخره 82 ولا الرقم اللي اخره ستة؟",
+            "dialogue": "كنت عايز احول. نت من رقم تاني. عندي الرقم اللي انا بكلمك منه.",
             "speaker": "Agent",
-            "duration_to_play": "19.72",
+            "duration_to_play": "14.88",
             "locale": "ar-EG"
         },
         {
-            "dialogue": "تمام؟ تحت امر حضرتك؟ لحظة معايا الرقم اللي اخره 82؟ ولا الرقم اللي اخره ستة؟",
-            "speaker": "Customer",
+            "dialogue": "تمام، تحت امر حضرتك لحظة معايا الرقم اللي اخره 82 ولا الرقم اللي اخره ستة؟",
+            "speaker": "Agent",
             "duration_to_play": "19.72",
             "locale": "ar-EG"
         },
@@ -31,13 +31,7 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "تمام؟ تحت امر حضرتك. لحظة معايا الرقم اللي اخره 82 ولا الرقم اللي اخره ستة؟",
-            "speaker": "Agent",
-            "duration_to_play": "19.72",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "و80 اللي اخره 82؟",
+            "dialogue": "و80 اللي اخره 82.",
             "speaker": "Agent",
             "duration_to_play": "25.32",
             "locale": "ar-EG"
@@ -46,12 +40,6 @@
             "dialogue": "حضرتك عاوز تحول قد ايه منه؟ هو معايا 5425 ميجا متر؟",
             "speaker": "Agent",
             "duration_to_play": "27.20",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "تمام؟ تحت امر حضرتك؟ لحظة معايا الرقم اللي اخره 82؟ ولا الرقم اللي اخره ستة؟",
-            "speaker": "Agent",
-            "duration_to_play": "19.72",
             "locale": "ar-EG"
         },
         {
@@ -73,13 +61,7 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "تمام تحت امر حضرتك. لحظة معايا الرقم اللي اخره 82 ولا الرقم اللي اخره ستة؟",
-            "speaker": "Customer",
-            "duration_to_play": "19.72",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "و80 اللي اخره 82؟",
+            "dialogue": "و80 اللي اخره 82.",
             "speaker": "Customer",
             "duration_to_play": "25.32",
             "locale": "ar-EG"

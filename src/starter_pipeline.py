@@ -15,38 +15,76 @@ class starter_class:
 
     def read_data_csv(self):
         print("getting data from csv using read_data_csv")
-        call_ids = []
-        agent_ids = []
-        agent_names = []
-        call_dates = []
-        comments = []
-        sheet_name = self.cred.sheet_name
-        print("sheet_name: ", sheet_name)
-        df = pd.read_excel(self.cred.audio_data, sheet_name=sheet_name)
-        print("the columns are: ", df.columns)
-        # Append data from each column to the corresponding list
-        # call_ids = df["Call id"].tolist()
-        # agent_ids = df["Agent id"].tolist()
-        # agent_names = df["Agent name"].tolist()
-        # call_dates = df["Call Date "].tolist()
+        s1_call_ids = []
+        s1_agent_ids = []
+        s1_agent_names = []
+        s1_call_dates = []
+        s1_comments = []
 
-         # Check if call_id and agent_id are not NaN
-        for index, row in df.iterrows():
-            call_id = row["Call id"]
-            agent_id = row["Agent id"]
-            agent_name = row["Agent name"]
-            call_date = row["Call Date "]
-            comment = row["Comment"]
+        s2_call_ids = []
+        s2_agent_ids = []
+        s2_agent_names = []
+        s2_call_dates = []
+        s2_comments = []
 
-            if not (pd.isna(call_id) or pd.isna(agent_id)):
-                call_ids.append(int(call_id))
-                agent_ids.append(int(agent_id))
-                agent_names.append(agent_name)
-                call_dates.append(call_date)
-                comments.append(comment if pd.notna(comment) else '')
-        print("____________call_ids, agent_ids, agent_names, call_dates, comments_____", call_ids, agent_ids, agent_names, call_dates, comments)
-        return call_ids, agent_ids, agent_names, call_dates, comments
-        
+        s3_call_ids = []
+        s3_agent_ids = []
+        s3_agent_names = []
+        s3_call_dates = []
+        s3_comments = []
+
+        sheet_names = [self.cred.sheet1 , self.cred.sheet2, self.cred.sheet3]
+        sheet1_res = {}
+        sheet2_res = {}
+        sheet3_res = {}
+
+        for sheet_name in sheet_names:
+            print("sheet_name: ", sheet_name)
+            df = pd.read_excel(self.cred.audio_data, sheet_name=sheet_name)
+            print(f"the columns in sheet {sheet_name}: ", df.columns)
+
+            for index, row in df.iterrows():
+                # print("inner loop _______________________")
+                call_id = row["Call id"]
+                agent_id = row["Agent id"]
+                agent_name = row["Agent name"]
+                call_date = row["Call Date"]
+                comment = row["Comment"]
+                if sheet_name == self.cred.sheet1:
+                    sheet_name = self.cred.sheet1
+                    # print(sheet_name)
+                    if not (pd.isna(call_id) or pd.isna(agent_id)):
+                        s1_call_ids.append(int(call_id))
+                        s1_agent_ids.append(int(agent_id))
+                        s1_agent_names.append(agent_name)
+                        s1_call_dates.append(call_date)
+                        s1_comments.append(comment if pd.notna(comment) else '')
+                    sheet1_res = {"sheetname": sheet_name,"callids": s1_call_ids, "agentids": s1_agent_ids, "agentnames": s1_agent_names, "calldates":s1_call_dates, "comments":s1_comments}
+                
+                if sheet_name == self.cred.sheet2:
+                    
+                    sheet_name = self.cred.sheet2
+                    # print(sheet_name)
+                    if not (pd.isna(call_id) or pd.isna(agent_id)):
+                        s2_call_ids.append(int(call_id))
+                        s2_agent_ids.append(int(agent_id))
+                        s2_agent_names.append(agent_name)
+                        s2_call_dates.append(call_date)
+                        s2_comments.append(comment if pd.notna(comment) else '')
+                    sheet2_res = {"sheetname": sheet_name,"callids": s2_call_ids, "agentids": s2_agent_ids, "agentnames": s2_agent_names, "calldates":s2_call_dates, "comments":s2_comments}
+
+                if sheet_name == self.cred.sheet3:
+                    sheet_name = self.cred.sheet3
+                    # print(sheet_name)
+                    if not (pd.isna(call_id) or pd.isna(agent_id)):
+                        s3_call_ids.append(int(call_id))
+                        s3_agent_ids.append(int(agent_id))
+                        s3_agent_names.append(agent_name)
+                        s3_call_dates.append(call_date)
+                        s3_comments.append(comment if pd.notna(comment) else '')
+                    sheet3_res = {"sheetname": sheet_name,"callids": s3_call_ids, "agentids": s3_agent_ids, "agentnames": s3_agent_names, "calldates":s3_call_dates, "comments":s3_comments}
+
+        return sheet1_res, sheet2_res, sheet3_res
 
 
 

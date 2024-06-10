@@ -85,42 +85,6 @@
             "locale": "ar-EG"
         },
         {
-            "dialogue": "12 ستة يعني الخط متاح ستة.",
-            "speaker": "Agent",
-            "duration_to_play": "71.56",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "بالزبط كده. اه يا فندم ماشي. شكرا تحت امرك. حيوصلك بأي حاجة تاني.",
-            "speaker": "Agent",
-            "duration_to_play": "74.12",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "12 ستة يعني الخط متاح ستة.",
-            "speaker": "Customer",
-            "duration_to_play": "71.56",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "بالزبط كده. اه يا فندم ماشي. شكرا تحت امرك. حيوصلك بأي حاجة تاني.",
-            "speaker": "Customer",
-            "duration_to_play": "74.12",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "لا، شكرا، شكرا.",
-            "speaker": "Customer",
-            "duration_to_play": "79.36",
-            "locale": "ar-EG"
-        },
-        {
-            "dialogue": "12 ستة يعني الخط متاح ستة.",
-            "speaker": "Agent",
-            "duration_to_play": "71.56",
-            "locale": "ar-EG"
-        },
-        {
             "dialogue": "بالزبط كده. اه يا فندم ماشي. شكرا تحت امرك. حيوصلك بأي حاجة تاني.",
             "speaker": "Agent",
             "duration_to_play": "74.12",
@@ -128,7 +92,7 @@
         },
         {
             "dialogue": "لا، شكرا، شكرا.",
-            "speaker": "Agent",
+            "speaker": "Customer",
             "duration_to_play": "79.36",
             "locale": "ar-EG"
         },

@@ -20,7 +20,9 @@ class AzureConfig():
 
         #Excel file location
         self.audio_data = "source/records/Accent Validation Data (1).xlsx"
-        self.sheet_name = "Normal Calls"
+        self.sheet1 = "Normal Calls"
+        self.sheet2 = "Complaint "
+        self.sheet3 = "Hitting the company "
         
         # STT
         self.STT_HOST_URL = "ws://127.0.0.1:<port>"

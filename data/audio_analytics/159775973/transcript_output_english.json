@@ -13,14 +13,14 @@
             "locale": "en"
         },
         {
-            "dialogue": "Okay, under your command, a moment with me the last number 82 or the last number six?",
+            "dialogue": "I wanted to transfer. Internet from another number. I have the number I'm calling you from.",
             "speaker": "Agent",
-            "duration_to_play": "19.72",
+            "duration_to_play": "14.88",
             "locale": "en"
         },
         {
-            "dialogue": "Okay? At your command? Wait a minute, do I have the last number 82? Or the last number six?",
-            "speaker": "Customer",
+            "dialogue": "Okay, under your command, a moment with me the last number 82 or the last number six?",
+            "speaker": "Agent",
             "duration_to_play": "19.72",
             "locale": "en"
         },
@@ -31,13 +31,7 @@
             "locale": "en"
         },
         {
-            "dialogue": "Okay? At your command. Wait a minute, do I have the last number 82 or the last number six?",
-            "speaker": "Agent",
-            "duration_to_play": "19.72",
-            "locale": "en"
-        },
-        {
-            "dialogue": "And 80 which is the last 82?",
+            "dialogue": "And 80 which is the last 82.",
             "speaker": "Agent",
             "duration_to_play": "25.32",
             "locale": "en"
@@ -46,12 +40,6 @@
             "dialogue": "How much do you want to transfer from it? Do I have 5425 megameters?",
             "speaker": "Agent",
             "duration_to_play": "27.20",
-            "locale": "en"
-        },
-        {
-            "dialogue": "Okay? At your command? Wait a minute, do I have the last number 82? Or the last number six?",
-            "speaker": "Agent",
-            "duration_to_play": "19.72",
             "locale": "en"
         },
         {
@@ -73,13 +61,7 @@
             "locale": "en"
         },
         {
-            "dialogue": "All right, at your command. Wait a minute, do I have the last number 82 or the last number six?",
-            "speaker": "Customer",
-            "duration_to_play": "19.72",
-            "locale": "en"
-        },
-        {
-            "dialogue": "And 80 which is the last 82?",
+            "dialogue": "And 80 which is the last 82.",
             "speaker": "Customer",
             "duration_to_play": "25.32",
             "locale": "en"

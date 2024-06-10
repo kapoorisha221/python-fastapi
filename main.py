@@ -29,10 +29,9 @@ class Main:
             print("__mapping called____")
             path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
 
-            # with open(path, "r", encoding="utf-8") as fp:
-            #     call_dict = json.load(fp)
-            call_dict = {}
-            print("___empty json loaded___")
+            with open(path, "r", encoding="utf-8") as fp:
+                call_dict = json.load(fp)
+            # print("___empty json loaded___")
             next_call_number = len(call_dict) + 1
             #next_call_name = "Call_{}".format(next_call_number) + ".wav"
 
@@ -164,12 +163,14 @@ class Main:
                         msg=f"Starts Creating the excel for",
                         extra={"location": "main.py-audios_main"},
                     )
-                
-                self.create_excel_for_powerbi()
-                self.info_logger.info(
-                        msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
-                        extra={"location": "main.py-audios_main"},
-                    )
+                ###Adding a method to create an excel at last with the data from mapping.json
+
+            self.add_mapping_to_excel()
+            #self.create_excel_for_powerbi()
+            self.info_logger.info(
+                    msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
+                    extra={"location": "main.py-audios_main"},
+                )
         except Exception as e:
             self.error_logger.error(
                 msg="An Error Occured ..",
@@ -279,6 +280,66 @@ class Main:
             )
 
 
+    def add_summarization_to_mapping(self,call_audio_name,summarized_key,summarized_text):
+        try:
+            path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+            
+            self.info_logger.info(
+                msg=f"Started function add_summarization_to_mapping to update mapping.json data for summarization",
+                extra={"location": "main.py - add_summarization_to_mapping"},
+            )
+            with open(path, "r", encoding="utf-8") as fp:
+                call_dict = json.load(fp)
+                
+            print(f"adding the data to the mapping for key : {summarized_key} with value {summarized_text['summary']}")
+            call_dict[call_audio_name+".wav"][summarized_key] = summarized_text['summary']
+
+            with open(path, mode = "w", encoding="utf-8") as json_file:
+                json.dump(call_dict, json_file, indent=4)
+                
+            self.info_logger.info(
+                msg=f"Added the summarization data for Key : {summarized_key} to mapping.json",
+                extra={"location": "main.py - add_summarization_to_mapping"},
+            )
+            
+        except Exception as e:
+            self.error_logger.error(
+                msg=f"An Error Occured: {e}",
+                exc_info=e,
+                extra={"location": "main.py - add_summarization_to_mapping"},
+            )
+
+    def add_mapping_to_excel(self):
+        try:
+            print("__add mapping to excel__")
+            mapping_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+
+            with open(mapping_path, "r", encoding="utf-8") as fp:
+                call_dict = json.load(fp)
+            mapping_df = pd.DataFrame(call_dict).T  # Transpose to have each call as a row
+            print(mapping_df.head())
+
+            excel_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mapping.xlsx"
+            mapping_df.to_excel(excel_path)
+
+            ##Creating excel of transccriptions for all the audio calls 
+            calls_path = LocalConfig().DATA_FOLDER + "/"  + "audio_analytics"
+            for call in os.listdir(calls_path):
+                transcription_path = calls_path + "/" + call + "transcript_output_english.json"
+                with open(transcription_path, "r", encoding="utf-8") as tp:
+                    transcript_dict = json.load(tp)
+
+                
+        except Exception as e:
+            self.error_logger.error(
+                msg=f"An Error Occurred: {e}",
+                exc_info=e,
+                extra={"location": "main.py - add_mapping_to_excel"},
+            )
+
+
+
+
     def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
         try:
             translator_obj = AzureTranslator()
@@ -298,7 +359,16 @@ class Main:
             )
             result = self.get_kpis(audio_name, english_transcription_jsonpath)
             arabic_result = self.get_kpis_arabic(audio_name, transcription_jsonPath)
+            
+            print(f"summarization result english: {result}")
+            print(f"summarization result arabic: {arabic_result}")
+            
+            self.add_summarization_to_mapping(call_audio_name=audio_name,summarized_key="summarization_en",summarized_text=result)
+            self.add_summarization_to_mapping(call_audio_name=audio_name,summarized_key="summarization_ar-eg",summarized_text=arabic_result)
 
+            
+            #self.add_mapping_to_excel()
+            
             # merge outputs
             merged_output = {}
             merged_output["result"] = {}
@@ -308,106 +378,7 @@ class Main:
             merged_output["result"]["summary"] = result["summary"]
             merged_output_arabic["result"]["summary"] = arabic_result["summary"]
 
-            # unique_keyphrases = []
-            # unique_keyphrases_arabic = []
-
-            # for ls in result["keyPhrases_ls"]:
-            #     if isinstance(ls, list):
-            #         for kp in ls:
-            #             unique_keyphrases.append(kp)
-            # unique_keyphrases = list(set(unique_keyphrases))
-            # self.info_logger.info(
-            #     msg=f"Adding unique key phrases as topics to merged output",
-            #     extra={"location": "main.py - pipeline_after_transcription"},
-            # )
-            # for ls in arabic_result["keyPhrases_ls"]:
-            #     if isinstance(ls, list):
-            #         for kp in ls:
-            #             unique_keyphrases_arabic.append(kp)
-            # unique_keyphrases_arabic = list(set(unique_keyphrases_arabic))
-            # self.info_logger.info(
-            #     msg=f"Adding unique key phrases as topics to merged output",
-            #     extra={"location": "main.py - pipeline_after_transcription"},
-            # )
-
-            # merged_output["result"]["topics"] = unique_keyphrases
-            # merged_output_arabic["result"]["topics"] = unique_keyphrases_arabic
-            # self.info_logger.info(
-            #     msg=f"getting text count from keyphrases and saving in merged output as wordcloud",
-            #     extra={"location": "main.py - pipeline_after_transcription"},
-            # )
-
-            # merged_output["result"]["wordcloud"] = get_text_count_from_keyphrases(
-            #     result["keyPhrases_ls"]
-            # )
-            # merged_output_arabic["result"]["wordcloud"] = get_text_count_from_keyphrases(
-            #     arabic_result["keyPhrases_ls"]
-            # )
-            # self.info_logger.info(
-            #     msg=f"merging sentiments with transcriptions and saving in merged output as transcription",
-            #     extra={"location": "main.py - pipeline_after_transcription"},
-            # )
-
-            # merged_output["result"]["transcripts"] = (
-            #     self.merge_sentiment_with_transcription(
-            #         result["sentiment_ls"], self.transcriptions
-            #     )
-            # )
-            # merged_output_arabic["result"]["transcripts"] = (
-            #     self.merge_sentiment_with_transcription(
-            #         arabic_result["sentiment_ls"], self.arabic_transcriptions
-            #     )
-            # )
-
-            merged_output["result"]["language"] = self.transcriptions["transcript"][0][
-                "locale"
-            ].split("-")[0]
-            merged_output_arabic["result"]["language"] = self.arabic_transcriptions["transcript"][0][
-                "locale"
-            ].split("-")[0]
-
-            merged_path = self.file_path + "merged_output.json"
-            merged_path_arabic = self.file_path + "arabic_merged_output.json"
-            power_bi_merged_path = self.file_path + "power_bi_merged_output.json"
-            power_bi_merged_path_arabic = self.file_path + "arabic_power_bi_merged_output.json"
-
-            self.info_logger.info(
-                msg=f"Saving merged_output.json as path '{self.file_path}'",
-                extra={"location": "main.py - pipeline_after_transcription"},
-            )
-            with open(merged_path, mode = "w", encoding='utf-8') as fh:
-                json.dump(merged_output, fh, indent=4)
-            with open(merged_path_arabic, mode = "w", encoding="utf-8") as afh:
-                json.dump(merged_output_arabic, afh, ensure_ascii=False, indent=4)
-
-            self.info_logger.info(
-                msg=f"merging keyphrases with transcription for power_bi_merged_output.json",
-                extra={"location": "main.py - pipeline_after_transcription"},
-            )
-            merged_output["result"]["transcripts"] = (
-                self.merge_keyphrases_with_transcription(
-                    result["keyPhrases_ls"], merged_output["result"]["transcripts"]
-                )
-            )
-            merged_output_arabic["result"]["transcripts"] = (
-                self.merge_keyphrases_with_transcription(
-                    arabic_result["keyPhrases_ls"], merged_output_arabic["result"]["transcripts"]
-                )
-            )
-
-            self.info_logger.info(msg=f"Saving power_bi_merged_output.json as path '{self.file_path}'",
-                extra={"location": "main.py - pipeline_after_transcription"},
-            )
-            with open(power_bi_merged_path, mode = "w", encoding='utf-8') as fh:
-                json.dump(merged_output, fh, indent=4)
-            with open(power_bi_merged_path_arabic, mode = "w", encoding='utf-8') as afh:
-                json.dump(merged_output_arabic, afh, ensure_ascii=False, indent=4)
-
-            self.power_bi_report_main_helper(
-                audio_file=audio_name,
-                merged_output_jsonPath=merged_path,
-                powerbi_merged_jsonPath=power_bi_merged_path,
-            )
+            
 
             self.info_logger.info(msg=f"Saved power_bi_merged_output.json as path '{self.file_path}'",
                 extra={"location": "main.py - pipeline_after_transcription"},
@@ -420,27 +391,6 @@ class Main:
                 extra={"location": "main.py - pipeline_after_transcription"},
             )
 
-    # def merge_sentiment_with_transcription(self, sentiment_ls, transcriptions):
-    #     try:
-    #         modified_transcriptions = []
-    #         # iterating over list where each item is a dialouge
-    #         for item, sentiment in zip(transcriptions["transcript"], sentiment_ls):
-    #             res = item.copy()
-    #             res["sentiment"] = sentiment
-    #             modified_transcriptions.append(res)
-
-    #         self.info_logger.info(
-    #             msg=f"sentiments added with the transcription based on the both list indexing",
-    #             extra={"location": "main.py - pipeline_after_transcription"},
-    #         )
-    #         output = {"transcript": modified_transcriptions}
-    #         return output
-    #     except Exception as e:
-    #         self.error_logger.error(
-    #             msg=f"An Error Occured: {e}",
-    #             exc_info=e,
-    #             extra={"location": "main.py - merge_sentiment_with_transcription"},
-    #         )
 
     def merge_keyphrases_with_transcription(self, keyPhrases_ls, transcriptions):
         try:
@@ -495,6 +445,7 @@ class Main:
 
             sentiment_mapping = {"positive": 1, "negative": -1, "neutral": 0, "mixed": 0}
 
+            
             for dialouge in information["result"]["transcripts"]["transcript"]:
                 if dialouge["keyPhrases"]:
 

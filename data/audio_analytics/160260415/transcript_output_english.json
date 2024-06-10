@@ -1,3 +1,76 @@
 {
-    "transcript": []
+    "transcript": [
+        {
+            "dialogue": "Good morning. Salma's contacts with you. Good morning, sir, Mr. Waleed, with me?",
+            "speaker": "Agent",
+            "duration_to_play": "2.09",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Welcome, Mr. Walid. Here you have the same price as you. Will you call me from him or another number?",
+            "speaker": "Agent",
+            "duration_to_play": "9.44",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Here's your prices, of course?",
+            "speaker": "Agent",
+            "duration_to_play": "15.39",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay?",
+            "speaker": "Agent",
+            "duration_to_play": "24.23",
+            "locale": "en"
+        },
+        {
+            "dialogue": "And every time I say that there is a mistake.",
+            "speaker": "Customer",
+            "duration_to_play": "26.32",
+            "locale": "en"
+        },
+        {
+            "dialogue": "There is no problem in replacing points, I mean, uh, exactly, uh, is it apparent to me with your presence 8942 points, it is, uh, perfect?",
+            "speaker": "Agent",
+            "duration_to_play": "33.06",
+            "locale": "en"
+        },
+        {
+            "dialogue": "If there is a problem with the machine they have, you can let him try another machine in the place, or try another place, a second branch, but the dots are on the line, the replacement is done through the machine in the same place.",
+            "speaker": "Agent",
+            "duration_to_play": "44.19",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay. BThey stay through.",
+            "speaker": "Customer",
+            "duration_to_play": "60.98",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Use cash, vouchers for this is what is, but you will redeem the 8942 points you will redeem them by choosing Mish points.",
+            "speaker": "Agent",
+            "duration_to_play": "66.08",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Ok, salvation. Okay. Not more, so I tried to try a possible problem, for example, in the technical machine, let me try another machine, or try another branch, but not more.",
+            "speaker": "Agent",
+            "duration_to_play": "78.95",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Ok, I am from your service and I apologize for any problem with you. Of course, O regret, under God. Of course, any questions?",
+            "speaker": "Agent",
+            "duration_to_play": "87.43",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Your honor?",
+            "speaker": "Agent",
+            "duration_to_play": "95.80",
+            "locale": "en"
+        }
+    ]
 }

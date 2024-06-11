@@ -111,30 +111,6 @@ class Main:
                         )
                     int_filename = int(filename)
                     print(f"filename {int_filename}")
-                    #getting the data of agent_name and call_id for an index i
-
-                    # print(type(dir))
-                    # print(dir)
-                    # # print(sheet1_res)
-                    # # print(sheet2_res)
-                    # # print(sheet3_res)
-                    # print(sheet1_res["sheetname"])
-                    # print(type(sheet2_res["sheetname"]))
-                    # print(sheet2_res["sheetname"])
-                    # print(sheet3_res["sheetname"])
-                    # print(dir == sheet1_res["sheetname"])
-                    # print(dir == sheet2_res["sheetname"])
-                    # print(dir == sheet3_res["sheetname"])
-
-                    # print(type(dir))
-                    # print(dir)
-                    # print(sheet1_res)
-                    # print(sheet2_res)
-                    # print(sheet3_res)
-                    print(sheet1_res["sheetname"])
-                    # print(type(sheet2_res["sheetname"]))
-                    print(sheet2_res["sheetname"])
-                    print(sheet3_res["sheetname"])
 
                     # Strip whitespace and convert to lowercase for comparison
                     dir = dir.strip().lower()
@@ -142,16 +118,10 @@ class Main:
                     sheet2_name_stripped = sheet2_res["sheetname"].strip().lower()
                     sheet3_name_stripped = sheet3_res["sheetname"].strip().lower()
 
-                    print(dir == sheet1_res["sheetname"])  # Original comparison
-                  
-
-
+                    #getting the data of agent_name and call_id for an index i
                     if dir == sheet1_name_stripped:
                         try:
-                            # print(sheet1_res)
                             index = sheet1_res["callids"].index(int_filename)
-                            # call_id = sheet1_res.index()
-                            # call_id = sheet1_res["callids"]
                             agent_id = sheet1_res["agentids"][index]
                             agent_name = sheet1_res["agentnames"][index]
                             call_date = sheet1_res["calldates"][index]
@@ -163,10 +133,7 @@ class Main:
                             )
                     elif dir == sheet2_name_stripped:
                         try:
-                            # print(sheet1_res)
                             index = sheet2_res["callids"].index(int_filename)
-                            # call_id = sheet1_res.index()
-                            # call_id = sheet1_res["callids"]
                             agent_id = sheet2_res["agentids"][index]
                             agent_name = sheet2_res["agentnames"][index]
                             call_date = sheet2_res["calldates"][index]
@@ -178,10 +145,7 @@ class Main:
                             )
                     elif dir == sheet3_name_stripped:
                         try:
-                            # print(sheet1_res)
                             index = sheet3_res["callids"].index(int_filename)
-                            # call_id = sheet1_res.index()
-                            # call_id = sheet1_res["callids"]
                             agent_id = sheet3_res["agentids"][index]
                             agent_name = sheet3_res["agentnames"][index]
                             call_date = sheet3_res["calldates"][index]
@@ -197,14 +161,13 @@ class Main:
                         msg=f"Calling get_audio_attributes",
                         extra={"location": "main.py-audios_main"},
                     )
-                    #attrs = get_audio_attributes(path=path1)
 
                     path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
 
                     # processing to enhance the sound volume by 20
                     audio_processing(input_path=path1, output_path=path2)
-                    #print("audio procesing done")
                     print("paths are: ", path1, path2)
+
                     # get & store informations
                     self.add_to_mapping(int_filename, path2, dir, agent_id, agent_name, call_date, comment)
 
@@ -235,7 +198,6 @@ class Main:
                 ###Adding a method to create an excel at last with the data from mapping.json
 
             self.add_mapping_to_excel()
-            #self.create_excel_for_powerbi()
             self.info_logger.info(
                     msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
                     extra={"location": "main.py-audios_main"},
@@ -416,17 +378,13 @@ class Main:
                 print(transcription_df)
                 transcription_excel_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/transcriptions.xlsx"
                 transcription_df.to_excel(transcription_excel_path, index=False)
-
-                
+            
         except Exception as e:
             self.error_logger.error(
                 msg=f"An Error Occurred: {e}",
                 exc_info=e,
                 extra={"location": "main.py - add_mapping_to_excel"},
             )
-
-
-
 
     def pipeline_after_transcription(self, audio_name, transcription_jsonPath):
         try:
@@ -448,14 +406,11 @@ class Main:
             result = self.get_kpis(audio_name, english_transcription_jsonpath)
             arabic_result = self.get_kpis_arabic(audio_name, transcription_jsonPath)
             
-            print(f"summarization result english: {result}")
-            print(f"summarization result arabic: {arabic_result}")
+            # print(f"summarization result english: {result}")
+            # print(f"summarization result arabic: {arabic_result}")
             
             self.add_summarization_to_mapping(call_audio_name=audio_name,summarized_key="summarization_en",summarized_text=result)
             self.add_summarization_to_mapping(call_audio_name=audio_name,summarized_key="summarization_ar-eg",summarized_text=arabic_result)
-
-            
-            #self.add_mapping_to_excel()
             
             # merge outputs
             merged_output = {}

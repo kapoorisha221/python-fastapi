@@ -25,7 +25,7 @@ path = LocalConfig()
 def Process_Audio_files(source_calls_path):
     try:
         info_logger.info(msg="Checking for the Old Logs",extra={"location":"App.py - Process_Audio_files"})
-        # log_Garbage_Collector()
+        log_Garbage_Collector()
         obj = Main()
         print("object instance created")
         obj.audios_main(source_calls_path)
@@ -120,7 +120,7 @@ async def get_audio_list():
 
 
 
-@app.get("/readallaudios")
+@app.get("/startprocess")
 def read_all_audios():
     try:
         info_logger.info(msg="Called the route '/readallaudios' and activated the function 'read_all_audios'", extra={"location": "app.py - read_all_audios"})
@@ -132,12 +132,6 @@ def read_all_audios():
         error_logger.error(msg="An Error Occurred at post request..", exc_info=e, extra={"location": "app.py - read_all_audios"})
         raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
         
-     
-
-# from pyngrok import ngrok  
-# ngrok.set_auth_token("2al4KKug9Lj9a6NNZxArDX0BMNH_618BhSscx74HW56SR4RAM")
-# public_url = ngrok.connect(8000)
-# print(f"FastAPI application is accessible at: {public_url}")
 
 
 if __name__ == "__main__":

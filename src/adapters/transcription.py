@@ -38,7 +38,7 @@ def recognize_from_file(audio_file_path,folder):
             info_logger.info(msg=F"Initializing Creds for AI Speech Services ",extra={"location":"transcription.py - recognize_from_file"})
             transcript.clear()
             
-            speech_config = speechsdk.SpeechConfig(region=cred.SPEECH_REGION, subscription=cred.SPEECH_KEY)
+            speech_config = speechsdk.SpeechConfig(endpoint=cred.SPEECH_ENDPOINT, subscription=cred.SPEECH_KEY)
             speech_config.speech_recognition_language="ar-EG"
 
             audio_config = speechsdk.audio.AudioConfig(filename=audio_file_path)

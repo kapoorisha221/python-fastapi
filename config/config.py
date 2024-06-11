@@ -13,13 +13,26 @@ class AzureConfig():
         self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         
 
+        ############ Container Credentials #######################
+        # self.LANGUAGE_KEY = "49ea02bc7cc644c49ec309ca849a3810"
+        # self.LANGUAGE_ENDPOINT = "https://tanzu.cognitiveservices.azure.com/"
+
+        # self.SPEECH_KEY = "a3357a8ce902473f830837e46d7e538c"
+        # self.SPEECH_ENDPOINT = "https://centralindia.api.cognitive.microsoft.com/"
+        # self.SPEECH_REGION = "centralindia"
+
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+
 
         #Audio File location
         self.audio_source = "source/calls"
 
         #Excel file location
         self.audio_data = "source/records/Accent Validation Data (1).xlsx"
-        self.sheet_name = "Normal Calls"
+        self.sheet1 = "Normal Calls"
+        self.sheet2 = "Complaint "
+        self.sheet3 = "Hitting the company "
         
         # STT
         self.STT_HOST_URL = "ws://127.0.0.1:<port>"

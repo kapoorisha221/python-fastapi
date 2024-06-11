@@ -1,5 +1,6 @@
 import os
-from soundfile import SoundFile
+import subprocess, json
+#from soundfile import SoundFile
 
 from logs.logger import *
 
@@ -18,20 +19,19 @@ def is_file_present(folder_path, filename):
         # print(f"Exception in delete_files() : {e}")
         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - is_file_present"})
 
-def get_audio_attributes(path):
-    """Method for getting audio attributes like samplerate, subtype, channels
-    Args:
-        path (str): audio path
-    Returns;
-        object : object using which we can get audio attributes
-    """
-    try:
-        sf = SoundFile(path)
-        info_logger.info(msg=F"Audio loded to Python SOundFile Successfully",extra={"location":"utils.py - get_audio_attributes"})
-        return sf
-    except Exception as e:
-        error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - get_audio_attributes"})
-        
+# def get_audio_attributes(path):
+#     """Method for getting audio attributes like samplerate, subtype, channels
+#     Args:
+#         path (str): audio path
+#     Returns;
+#         object : object using which we can get audio attributes
+#     """
+#     try:
+#         sf = SoundFile(path)
+#         info_logger.info(msg=F"Audio loded to Python SOundFile Successfully",extra={"location":"utils.py - get_audio_attributes"})
+#         return sf
+#     except Exception as e:
+#         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"utils.py - get_audio_attributes"})
         
 def get_text_count_from_keyphrases(keyPhrase_ls):
     dic = {}
@@ -84,3 +84,59 @@ def utilization_precentage(transcription_path):
 
     print("agent_percentage", agent_percentage, "customer_percentage", customer_percentage)
     return agent_percentage, customer_percentage
+
+
+def detect_silence(path,time):
+    '''This function is a python wrapper to run the ffmpeg command in python and extranct the desired output
+    
+    path= Audio file path,
+    time = silence time threshold
+    
+    returns = list of tuples with start and end point of silences   
+    '''
+    command="ffmpeg -i "+path+" -af silencedetect=n=-23dB:d="+str(time)+" -f null -"
+    command = command.split()
+    out = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    stdout, stderr = out.communicate()
+    s=stdout.decode("utf-8")
+    k=s.split('[silencedetect @')
+    if len(k)==1:
+        #print(stderr)
+        return None
+        
+    start,end=[],[]
+    for i in range(1,len(k)):
+        x=k[i].split(']')[1]
+        if i%2==0:
+            x=x.split('|')[0]
+            x=x.split(':')[1].strip()
+            end.append(float(x))
+        else:
+            x=x.split(':')[1]
+            x=x.split('size')[0]
+            x=x.replace('\r','')
+            x=x.replace('\n','').strip()
+            start.append(float(x))
+    return list(zip(start,end))
+
+
+def get_total_silence(audio_path):
+    silent_segments = detect_silence(path= audio_path, time= 1)
+    print(silent_segments)
+    total_silence = 0
+    for i in silent_segments:
+        total_silence += (i[1] - i[0])
+
+    print(f"Total Silence detected : {total_silence} secs")
+    return total_silence
+
+
+
+if __name__ == "__main__":
+    #path = "C:\Users\GagandeepSingh1\Desktop\TE06.06.24\TE06.06.24\data\processed_data\161560999.wav"
+    p = "../data/processed_data/161316483.wav"
+    p1 = "../source/tempdata/161316483.wav"
+    result = get_total_silence(audio_path= p1)
+    print(result)
+                
+

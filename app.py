@@ -120,7 +120,7 @@ async def get_audio_list():
 
 
 
-@app.get("/readallaudios")
+@app.get("/startprocess")
 def read_all_audios():
     try:
         info_logger.info(msg="Called the route '/readallaudios' and activated the function 'read_all_audios'", extra={"location": "app.py - read_all_audios"})

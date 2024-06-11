@@ -1,7 +1,7 @@
 # import librosa
 #import uuid
 import os
-import soundfile as sf
+#import soundfile as sf
 from pydub import AudioSegment
 
 from config.config import FileConfig, AzureConfig
@@ -45,12 +45,14 @@ def audio_processing(input_path, output_path):
         sound = AudioSegment.from_mp3(input_path)
         # audio, sr = librosa.load(input_path, sr=format_options["sample_rate"])
 
-        louder_sound = sound + 20
+        #louder_sound = sound + 20
         # Export the audio to WAV format using soundfile
         # with sf.SoundFile(output_path, mode='w', samplerate=format_options["sample_rate"], channels=format_options["channels"]) as file:
         #     file.write(audio)
 
-        louder_sound.export(output_path, format="wav")
+        #louder_sound.export(output_path, format="wav")
+        sound.export(output_path, format = "wav")
+        print("file saved at processed data")
 
         info_logger.info(msg=F".wav file is created sucesfully at '{output_path}'",extra={"location":"audio.py - audio_processing"})
         # change subtype if needed
@@ -58,17 +60,17 @@ def audio_processing(input_path, output_path):
         error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"audio.py - audio_processing"})
         
 
-def change_subtype(input_path, output_path):
-    """Method for changing the subtype of the provided audio path
-    """
-    try:
-        # print("Entered change_bit_rate")
-        data, samplerate=sf.read(input_path)
-        # saving the audio file to the audio path
-        sf.write(file= output_path, data= data, samplerate= samplerate, subtype=FileConfig().DESIRED_SUBTYPE)
-        # print("End")
-    except Exception as e:
-        print(f"Exception inside change_bit_rate() : {e}")
+# def change_subtype(input_path, output_path):
+#     """Method for changing the subtype of the provided audio path
+#     """
+#     try:
+#         # print("Entered change_bit_rate")
+#         data, samplerate=sf.read(input_path)
+#         # saving the audio file to the audio path
+#         sf.write(file= output_path, data= data, samplerate= samplerate, subtype=FileConfig().DESIRED_SUBTYPE)
+#         # print("End")
+#     except Exception as e:
+#         print(f"Exception inside change_bit_rate() : {e}")
 
 # def get_audio_duration(path):
 #     y, sr = librosa.load(librosa.ex(path))

@@ -36,24 +36,23 @@ def get_Info_Logger():
 
 def log_Garbage_Collector():
     current_time = datetime.datetime.now(datetime.timezone.utc)
-    
-    #one_week_ago = current_time - datetime.timedelta(days=7)
-    one_week_ago = current_time - datetime.timedelta(seconds=1000)
+
+    one_week_ago = current_time - datetime.timedelta(seconds=2)
     
     def is_log_old(log_line):
         log_data = json.loads(log_line)
         timestamp_str = log_data.get("asctime", "")
         if timestamp_str:
             log_timestamp = datetime.datetime.strptime(timestamp_str, "%Y-%m-%d T%H:%M:%S%z")
-            # print("________________log time stanp _________________",log_timestamp)
-            # print("________________one week time stanp _________________",one_week_ago)
             return log_timestamp < one_week_ago
         return False
     
 
     def remove_old_logs_from_top(log_path):
+        #print(f"____log path____ :{log_path}")
         with open(log_path, 'r+') as log_file:
             lines = log_file.readlines()
+            idx =0
             for idx, line in enumerate(lines):
                 if not is_log_old(line):
                     break

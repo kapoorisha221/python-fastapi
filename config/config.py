@@ -4,27 +4,27 @@ class AzureConfig():
     def __init__(self) -> None:
 
         ####### CREDENTIALS #######
-        self.LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
-        self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
-        self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
-        self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
-        self.SPEECH_REGION = "eastus"
-        self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        # self.LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
+        # self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
+        # self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
+        # self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
+        # self.SPEECH_REGION = "eastus"
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         
 
-        ############ Container Credentials #######################
-        # self.LANGUAGE_KEY = "49ea02bc7cc644c49ec309ca849a3810"
-        # self.LANGUAGE_ENDPOINT = "https://tanzu.cognitiveservices.azure.com/"
+        ########### Container Credentials #######################
+        self.LANGUAGE_KEY = "49ea02bc7cc644c49ec309ca849a3810"
+        self.LANGUAGE_ENDPOINT = "https://tanzu.cognitiveservices.azure.com/"
 
-        # self.SPEECH_KEY = "a3357a8ce902473f830837e46d7e538c"
-        # self.SPEECH_ENDPOINT = "https://centralindia.api.cognitive.microsoft.com/"
-        # self.SPEECH_REGION = "centralindia"
+        self.SPEECH_KEY = "a3357a8ce902473f830837e46d7e538c"
+        self.SPEECH_ENDPOINT = "https://centralindia.api.cognitive.microsoft.com/"
+        self.SPEECH_REGION = "centralindia"
 
-        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
-        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
 
 
         #Audio File location

@@ -23,6 +23,8 @@ class AzureConfig():
 
         # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
 
 
         #Audio File location
@@ -30,9 +32,9 @@ class AzureConfig():
 
         #Excel file location
         self.audio_data = "source/records/Accent Validation Data (1).xlsx"
-        self.sheet1 = "Normal Calls"
-        self.sheet2 = "Complaint "
-        self.sheet3 = "Hitting the company "
+        self.sheet1 = "Complaint"
+        self.sheet2 = "Normal Calls"
+        self.sheet3 = "Hitting the company"
         
         # STT
         self.STT_HOST_URL = "ws://127.0.0.1:<port>"

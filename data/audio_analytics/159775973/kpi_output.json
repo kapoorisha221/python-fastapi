@@ -1,0 +1,75 @@
+{
+    "summary": "The document is a conversation between a customer and a representative from a communications company. The customer has a bill of 1300 and wishes to pay part of it in installments from the beginning of the next month. The representative agrees to this plan and promises to follow up with the credit department if there are any new issues.",
+    "sentiment_ls": [
+        "mixed",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "mixed"
+    ],
+    "keyPhrases_ls": [
+        [
+            "same number",
+            "Contacts",
+            "morning",
+            "sir",
+            "news",
+            "professor",
+            "God",
+            "honor",
+            "job",
+            "bill",
+            "part"
+        ],
+        [
+            "next part",
+            "month"
+        ],
+        [
+            "next month",
+            "work",
+            "installments",
+            "example",
+            "beginning"
+        ],
+        [
+            "next month",
+            "second part",
+            "installments",
+            "beginning",
+            "end"
+        ],
+        [
+            "next month",
+            "day",
+            "expiration"
+        ],
+        [
+            "day",
+            "56th"
+        ],
+        [
+            "bill"
+        ],
+        [
+            "three installments",
+            "first date",
+            "credit department",
+            "second",
+            "problem"
+        ],
+        [
+            "Mercy Leckie Bye Bye",
+            "other inquiry",
+            "command",
+            "life",
+            "service",
+            "sir",
+            "communications"
+        ]
+    ]
+}

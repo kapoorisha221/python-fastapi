@@ -1,0 +1,82 @@
+{
+    "transcript": [
+        {
+            "dialogue": "صباح الخير، اتصالات مع حضرتك، صباح الخير، صباح النور يا أستاذ محمد أخبارك ايه؟ تمام الحمد لله الحمد لله، تفضل استفسار حضرتك بخصوص هو ما فيش ما فيش دايق النت تنزل هدية على الخط ده ولا ايه؟",
+            "speaker": "Agent",
+            "duration_to_play": "2.93",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "نت يعني؟",
+            "speaker": "Agent",
+            "duration_to_play": "17.99",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لا للأسف والله هو لو في عروض حتيجي لحضرتك رسالة بيها.",
+            "speaker": "Agent",
+            "duration_to_play": "20.64",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه هو الانترنت وخلصهم مع حضرتك؟",
+            "speaker": "Agent",
+            "duration_to_play": "25.51",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "خلاص؟ طيب ما فيش حاجة. انا بستفسر انا ما جبتش حاجة جاية عليه خالص واشوف ناس معاها خطوط بيعجيلها هدية. ما فيش حاجة خالص. ايه السبب يعني؟",
+            "speaker": "Agent",
+            "duration_to_play": "28.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "لا هو ما فيش سبب، بس هي لو ممكن تكون بس حضرتك نركز في المسجلات اللي بتجيلنا، لان المسدجات دي بيبقى فيها لو في عرض او حاجة حضرتك تقدر تستفيد بيه.",
+            "speaker": "Customer",
+            "duration_to_play": "39.24",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "اه تمام.",
+            "speaker": "Agent",
+            "duration_to_play": "51.07",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "تحت أمر حضرتك أي حاجة أساعدك بيها مرة تانية؟",
+            "speaker": "Customer",
+            "duration_to_play": "54.22",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "قلنا قلنا في هدايا نت ولا حاجة.",
+            "speaker": "Agent",
+            "duration_to_play": "58.70",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "قلنا فيها نت ولا حاجة؟",
+            "speaker": "Agent",
+            "duration_to_play": "62.84",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "هو لو والله هيجي لحضرتك ما تقلقش؟",
+            "speaker": "Customer",
+            "duration_to_play": "65.87",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "مافيش. ما فيش حاجة فيه.",
+            "speaker": "Agent",
+            "duration_to_play": "68.07",
+            "locale": "ar-EG"
+        },
+        {
+            "dialogue": "شكرا العفو. انا برضه ححاول اتابع لحضرتك ولو في اي حاجة حكلم حضرتك تاني. ماشي؟ شكرا العفو على اي تحت امرك. اي استفسار تاني العفو.",
+            "speaker": "Customer",
+            "duration_to_play": "72.96",
+            "locale": "ar-EG"
+        }
+    ]
+}

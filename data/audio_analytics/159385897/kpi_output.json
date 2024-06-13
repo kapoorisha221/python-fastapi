@@ -1,0 +1,91 @@
+{
+    "summary": "The conversation begins with Professor Hana Maara Maara greeting a customer and asking if they need help with a call. The customer confirms they are unable to call and asks if they have reached their credit limit. The professor offers to help with a refresh step and asks for permission to turn on flight mode after the call ends.",
+    "sentiment_ls": [
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "positive",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "call"
+        ],
+        [
+            "Professor Hana Maaya Maaya Hana",
+            "Good morning sir",
+            "same number"
+        ],
+        [
+            "two digits",
+            "important thing",
+            "credit limit"
+        ],
+        [
+            "credit limit",
+            "presence",
+            "moment"
+        ],
+        [],
+        [],
+        [],
+        [
+            "regular numbers",
+            "other network",
+            "specialized numbers",
+            "telecommunications"
+        ],
+        [],
+        [
+            "moment",
+            "unity"
+        ],
+        [
+            "problem"
+        ],
+        [
+            "same price",
+            "1/4 hour"
+        ],
+        [],
+        [
+            "refresher step",
+            "minutes",
+            "problem",
+            "service"
+        ],
+        [
+            "flight mode",
+            "activation step",
+            "permission",
+            "call",
+            "minute"
+        ],
+        [
+            "other questions"
+        ],
+        [
+            "Happy Abu Khaled",
+            "beautiful day",
+            "Communications",
+            "goodbye",
+            "mercy"
+        ],
+        [
+            "Peace"
+        ]
+    ]
+}

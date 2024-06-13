@@ -1,0 +1,385 @@
+{
+    "result": {
+        "summary": "تبدأ المحادثة بالبروفيسورة هناء معرة معرة وهي تحيي أحد العملاء وتسأله عما إذا كان بحاجة إلى مساعدة في المكالمة. يؤكد العميل أنه غير قادر على الاتصال ويسأل عما إذا كان قد وصل إلى حد الائتمان الخاص به. يعرض الأستاذ المساعدة في خطوة التحديث ويطلب الإذن لتشغيل وضع الطيران بعد انتهاء المكالمة.",
+        "topics": [
+            "ط",
+            "ض",
+            "قم",
+            "لات",
+            "ظ",
+            "تص",
+            "ست",
+            "ق",
+            "ذ",
+            "بت",
+            "كم",
+            "إستفس",
+            "كنت",
+            "تأكد",
+            "مش",
+            "د",
+            "حظة",
+            "بيبت",
+            "دة",
+            "تحت",
+            "ع",
+            "تعم",
+            "م",
+            "ن",
+            "بس",
+            "حضرت",
+            "شكلة",
+            "س",
+            "قت",
+            "كة",
+            "ندم",
+            "دم",
+            "رقم",
+            "ضرتك",
+            "ش",
+            "ده",
+            "ت",
+            "خ",
+            "ة",
+            "ستأذ",
+            "عد",
+            "ص",
+            "تغلت",
+            "ر",
+            "ف",
+            "بعض",
+            "ه",
+            "ضرت",
+            "قدر"
+        ],
+        "wordcloud": [
+            {
+                "text": "تص",
+                "value": 2
+            },
+            {
+                "text": "لات",
+                "value": 1
+            },
+            {
+                "text": "د",
+                "value": 2
+            },
+            {
+                "text": "م",
+                "value": 5
+            },
+            {
+                "text": "ضرت",
+                "value": 5
+            },
+            {
+                "text": "ندم",
+                "value": 1
+            },
+            {
+                "text": "ست",
+                "value": 1
+            },
+            {
+                "text": "ذ",
+                "value": 1
+            },
+            {
+                "text": "قدر",
+                "value": 1
+            },
+            {
+                "text": "عد",
+                "value": 2
+            },
+            {
+                "text": "قم",
+                "value": 1
+            },
+            {
+                "text": "ه",
+                "value": 1
+            },
+            {
+                "text": "رقم",
+                "value": 1
+            },
+            {
+                "text": "ن",
+                "value": 2
+            },
+            {
+                "text": "تحت",
+                "value": 1
+            },
+            {
+                "text": "بعض",
+                "value": 1
+            },
+            {
+                "text": "ظ",
+                "value": 1
+            },
+            {
+                "text": "حضرت",
+                "value": 2
+            },
+            {
+                "text": "بت",
+                "value": 1
+            },
+            {
+                "text": "ش",
+                "value": 1
+            },
+            {
+                "text": "كنت",
+                "value": 1
+            },
+            {
+                "text": "ض",
+                "value": 1
+            },
+            {
+                "text": "ت",
+                "value": 1
+            },
+            {
+                "text": "ق",
+                "value": 3
+            },
+            {
+                "text": "كة",
+                "value": 1
+            },
+            {
+                "text": "حظة",
+                "value": 1
+            },
+            {
+                "text": "مش",
+                "value": 1
+            },
+            {
+                "text": "ع",
+                "value": 1
+            },
+            {
+                "text": "ضرتك",
+                "value": 3
+            },
+            {
+                "text": "قت",
+                "value": 1
+            },
+            {
+                "text": "ده",
+                "value": 1
+            },
+            {
+                "text": "س",
+                "value": 3
+            },
+            {
+                "text": "ر",
+                "value": 1
+            },
+            {
+                "text": "ة",
+                "value": 1
+            },
+            {
+                "text": "شكلة",
+                "value": 1
+            },
+            {
+                "text": "ص",
+                "value": 1
+            },
+            {
+                "text": "ط",
+                "value": 2
+            },
+            {
+                "text": "تأكد",
+                "value": 1
+            },
+            {
+                "text": "دم",
+                "value": 1
+            },
+            {
+                "text": "تغلت",
+                "value": 1
+            },
+            {
+                "text": "بس",
+                "value": 1
+            },
+            {
+                "text": "ستأذ",
+                "value": 1
+            },
+            {
+                "text": "تعم",
+                "value": 1
+            },
+            {
+                "text": "دة",
+                "value": 1
+            },
+            {
+                "text": "إستفس",
+                "value": 1
+            },
+            {
+                "text": "بيبت",
+                "value": 1
+            },
+            {
+                "text": "ف",
+                "value": 1
+            },
+            {
+                "text": "خ",
+                "value": 1
+            },
+            {
+                "text": "كم",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "صباح الخير، إتصالات هيدي مع حضرتك؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.68",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "صباح الخير يا فندم. أستاذة هناء معايا معاكي هناء. أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "6.24",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "ايوا هو رقمين تحت بعض. المهم ان عايزة بيقولي لا يمكن الاتصال وصلت لحد الائتماني؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "14.51",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "ان حضرتك بقول لحضرتك وصلتي للحد الائتماني لحظة معايا.",
+                    "speaker": "Agent",
+                    "duration_to_play": "22.08",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "طيب اوكي.",
+                    "speaker": "Agent",
+                    "duration_to_play": "27.63",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "حضرتك كنت بتكلمي ايه يا فندم؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "30.41",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "مش عارفة؟ كنت بكلم كام يعني؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "35.09",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختصة؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "36.97",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "أوكي؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "44.28",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لحظة وحدة.",
+                    "speaker": "Agent",
+                    "duration_to_play": "49.88",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "المشكلة دي مع حضرتك من أمتى؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.64",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "دلوقتي كده من نفس السعر 1/4 ساعة.",
+                    "speaker": "Customer",
+                    "duration_to_play": "57.84",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "أوكي.",
+                    "speaker": "Agent",
+                    "duration_to_play": "61.67",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "انا واضح عندي ان حضرتك معاكي دقايق. ما فيش اي مشكلة خالص تمام. انا بس هعمل لحضرتك خطوة تنشيطية من خلالي وهرجع اكلم حضرتك تاني. اتأكد بس ان الخدمة اشتغلت مع حضرتك ولا في مشكلة؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "69.58",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "بس حستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام؟ و أنا حرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلالي.",
+                    "speaker": "Agent",
+                    "duration_to_play": "82.47",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "حابة أوضح لحضرتك أي إستفسار تاني.",
+                    "speaker": "Agent",
+                    "duration_to_play": "94.63",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لا يا حبيبتي، شكرا شرفتيني يا فندم. سعداء أبو خالد من حضرتك؟ إتصالات؟ أتمنى لك يوم جميل مع السلامة، ميرسي، مع السلامة.",
+                    "speaker": "Agent",
+                    "duration_to_play": "97.88",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "السلام عليكم.",
+                    "speaker": "Agent",
+                    "duration_to_play": "106.55",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "ar"
+    }
+}

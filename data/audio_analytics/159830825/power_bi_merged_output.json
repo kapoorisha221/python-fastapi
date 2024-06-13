@@ -1,0 +1,281 @@
+{
+    "result": {
+        "summary": "The conversation begins with a customer inquiring about the internet and its use, specifically in relation to downloading gifts. The customer expresses no need for such services, but the customer is advised to focus on the recorders that bring them, as they can be used for offers or needs that the customer can benefit from. The customer is also assured that they will follow up on any further inquiries.",
+        "topics": [
+            "message",
+            "command",
+            "lines",
+            "Internet",
+            "gift",
+            "offers",
+            "recorders",
+            "reason",
+            "contacts",
+            "other inquiry",
+            "God",
+            "offer",
+            "internet",
+            "gifts",
+            "news",
+            "sincere need",
+            "net",
+            "line",
+            "guns",
+            "people",
+            "need",
+            "Mr. Mohammed",
+            "Mafish",
+            "morning"
+        ],
+        "wordcloud": [
+            {
+                "text": "Mr. Mohammed",
+                "value": 1
+            },
+            {
+                "text": "morning",
+                "value": 1
+            },
+            {
+                "text": "contacts",
+                "value": 1
+            },
+            {
+                "text": "news",
+                "value": 1
+            },
+            {
+                "text": "God",
+                "value": 2
+            },
+            {
+                "text": "net",
+                "value": 2
+            },
+            {
+                "text": "gift",
+                "value": 2
+            },
+            {
+                "text": "line",
+                "value": 1
+            },
+            {
+                "text": "offers",
+                "value": 1
+            },
+            {
+                "text": "message",
+                "value": 1
+            },
+            {
+                "text": "Internet",
+                "value": 1
+            },
+            {
+                "text": "sincere need",
+                "value": 1
+            },
+            {
+                "text": "people",
+                "value": 1
+            },
+            {
+                "text": "lines",
+                "value": 1
+            },
+            {
+                "text": "reason",
+                "value": 2
+            },
+            {
+                "text": "recorders",
+                "value": 1
+            },
+            {
+                "text": "guns",
+                "value": 1
+            },
+            {
+                "text": "offer",
+                "value": 1
+            },
+            {
+                "text": "need",
+                "value": 4
+            },
+            {
+                "text": "command",
+                "value": 2
+            },
+            {
+                "text": "gifts",
+                "value": 1
+            },
+            {
+                "text": "internet",
+                "value": 1
+            },
+            {
+                "text": "Mafish",
+                "value": 1
+            },
+            {
+                "text": "other inquiry",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning, contacts with you, good morning, good morning, Mr. Mohammed, what is your news? Fine, thank God, thank God, please inquire about what's wrong with the net, download a gift on this line, or what?",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.93",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "Mr. Mohammed",
+                        "morning",
+                        "contacts",
+                        "news",
+                        "God",
+                        "net",
+                        "gift",
+                        "line"
+                    ]
+                },
+                {
+                    "dialogue": "What does the net mean?",
+                    "speaker": "Agent",
+                    "duration_to_play": "17.99",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "net"
+                    ]
+                },
+                {
+                    "dialogue": "No, unfortunately, by God, it is if there are offers that you need a message with it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.64",
+                    "locale": "en",
+                    "sentiment": "negative",
+                    "keyPhrases": [
+                        "God",
+                        "offers",
+                        "message"
+                    ]
+                },
+                {
+                    "dialogue": "Yes, is the Internet and finish them with you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.51",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Internet"
+                    ]
+                },
+                {
+                    "dialogue": "It's done? Ok, there's no need. I am inquiring that I do not have a sincere need for it, and I see people with lines selling it as a gift. There is no need sincerely. What is the reason?",
+                    "speaker": "Agent",
+                    "duration_to_play": "28.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "sincere need",
+                        "people",
+                        "lines",
+                        "gift",
+                        "reason"
+                    ]
+                },
+                {
+                    "dialogue": "No, there is no reason, but if it could be, but you focus on the recorders that bring us, because these guns will remain in them if there is an offer or a need that you can benefit from.",
+                    "speaker": "Customer",
+                    "duration_to_play": "39.24",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "reason",
+                        "recorders",
+                        "guns",
+                        "offer",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "Uh, perfect.",
+                    "speaker": "Agent",
+                    "duration_to_play": "51.07",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "At your command, can I help you again?",
+                    "speaker": "Customer",
+                    "duration_to_play": "54.22",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "command"
+                    ]
+                },
+                {
+                    "dialogue": "We said we said in gifts net and no need.",
+                    "speaker": "Agent",
+                    "duration_to_play": "58.70",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "gifts",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "We said there is internet or anything?",
+                    "speaker": "Agent",
+                    "duration_to_play": "62.84",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "internet"
+                    ]
+                },
+                {
+                    "dialogue": "If he comes to you, don't worry?",
+                    "speaker": "Customer",
+                    "duration_to_play": "65.87",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": []
+                },
+                {
+                    "dialogue": "Mafish. There is no need in it.",
+                    "speaker": "Agent",
+                    "duration_to_play": "68.07",
+                    "locale": "en",
+                    "sentiment": "neutral",
+                    "keyPhrases": [
+                        "Mafish",
+                        "need"
+                    ]
+                },
+                {
+                    "dialogue": "Thanks pardon. I will also try to follow up with you, even if there is any need for you, I will talk to you again. Okay? Thank you, pardon me for any under your command. Any other inquiry pardon.",
+                    "speaker": "Customer",
+                    "duration_to_play": "72.96",
+                    "locale": "en",
+                    "sentiment": "positive",
+                    "keyPhrases": [
+                        "other inquiry",
+                        "need",
+                        "command"
+                    ]
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

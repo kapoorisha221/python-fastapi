@@ -1,0 +1,295 @@
+{
+    "result": {
+        "summary": "The conversation begins with Professor Hana Maara Maara greeting a customer and asking if they need help with a call. The customer confirms they are unable to call and asks if they have reached their credit limit. The professor offers to help with a refresh step and asks for permission to turn on flight mode after the call ends.",
+        "topics": [
+            "regular numbers",
+            "problem",
+            "Communications",
+            "specialized numbers",
+            "permission",
+            "refresher step",
+            "activation step",
+            "Peace",
+            "presence",
+            "call",
+            "telecommunications",
+            "mercy",
+            "same price",
+            "other questions",
+            "1/4 hour",
+            "other network",
+            "flight mode",
+            "beautiful day",
+            "Happy Abu Khaled",
+            "minutes",
+            "credit limit",
+            "Good morning sir",
+            "unity",
+            "minute",
+            "service",
+            "Professor Hana Maaya Maaya Hana",
+            "goodbye",
+            "moment",
+            "same number",
+            "two digits",
+            "important thing"
+        ],
+        "wordcloud": [
+            {
+                "text": "call",
+                "value": 2
+            },
+            {
+                "text": "Professor Hana Maaya Maaya Hana",
+                "value": 1
+            },
+            {
+                "text": "Good morning sir",
+                "value": 1
+            },
+            {
+                "text": "same number",
+                "value": 1
+            },
+            {
+                "text": "two digits",
+                "value": 1
+            },
+            {
+                "text": "important thing",
+                "value": 1
+            },
+            {
+                "text": "credit limit",
+                "value": 2
+            },
+            {
+                "text": "presence",
+                "value": 1
+            },
+            {
+                "text": "moment",
+                "value": 2
+            },
+            {
+                "text": "regular numbers",
+                "value": 1
+            },
+            {
+                "text": "other network",
+                "value": 1
+            },
+            {
+                "text": "specialized numbers",
+                "value": 1
+            },
+            {
+                "text": "telecommunications",
+                "value": 1
+            },
+            {
+                "text": "unity",
+                "value": 1
+            },
+            {
+                "text": "problem",
+                "value": 2
+            },
+            {
+                "text": "same price",
+                "value": 1
+            },
+            {
+                "text": "1/4 hour",
+                "value": 1
+            },
+            {
+                "text": "refresher step",
+                "value": 1
+            },
+            {
+                "text": "minutes",
+                "value": 1
+            },
+            {
+                "text": "service",
+                "value": 1
+            },
+            {
+                "text": "flight mode",
+                "value": 1
+            },
+            {
+                "text": "activation step",
+                "value": 1
+            },
+            {
+                "text": "permission",
+                "value": 1
+            },
+            {
+                "text": "minute",
+                "value": 1
+            },
+            {
+                "text": "other questions",
+                "value": 1
+            },
+            {
+                "text": "Happy Abu Khaled",
+                "value": 1
+            },
+            {
+                "text": "beautiful day",
+                "value": 1
+            },
+            {
+                "text": "Communications",
+                "value": 1
+            },
+            {
+                "text": "goodbye",
+                "value": 1
+            },
+            {
+                "text": "mercy",
+                "value": 1
+            },
+            {
+                "text": "Peace",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "Good morning, is this a call to you?",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.68",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Good morning sir. Professor Hana Maaya Maaya Hana. Welcome, sir, can I help you on the same number or on another number?",
+                    "speaker": "Agent",
+                    "duration_to_play": "6.24",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Yes, it's two digits under each other. The important thing is that I want to tell me that I can't call, have you reached the credit limit?",
+                    "speaker": "Customer",
+                    "duration_to_play": "14.51",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "If you say to your presence, you reached the credit limit for a moment with me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "22.08",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Ok, okay.",
+                    "speaker": "Agent",
+                    "duration_to_play": "27.63",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "What were you talking about, sir?",
+                    "speaker": "Agent",
+                    "duration_to_play": "30.41",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Don't know? I mean, how much was I talking to?",
+                    "speaker": "Customer",
+                    "duration_to_play": "35.09",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I mean, you were talking to regular numbers, meaning telecommunications or any other network? No specialized numbers?",
+                    "speaker": "Agent",
+                    "duration_to_play": "36.97",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay?",
+                    "speaker": "Agent",
+                    "duration_to_play": "44.28",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "A moment of unity.",
+                    "speaker": "Agent",
+                    "duration_to_play": "49.88",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "This problem is with you since when?",
+                    "speaker": "Agent",
+                    "duration_to_play": "54.64",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Now it's the same price for 1/4 hour.",
+                    "speaker": "Customer",
+                    "duration_to_play": "57.84",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "Okay.",
+                    "speaker": "Agent",
+                    "duration_to_play": "61.67",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I'm clear to me that you are with me for minutes. No problem, all right. I will just work for you as a refresher step through me, and I will talk to you again. Just make sure that the service worked with you or is there a problem?",
+                    "speaker": "Agent",
+                    "duration_to_play": "69.58",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "But I will ask your permission to turn on flight mode after ending the call for a minute, okay? And I will talk to you again after I work for you the activation step through me.",
+                    "speaker": "Agent",
+                    "duration_to_play": "82.47",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "I would like to clarify to you any other questions.",
+                    "speaker": "Agent",
+                    "duration_to_play": "94.63",
+                    "locale": "en",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "No, sweetheart, thank you, you honored me, Vendem. Happy Abu Khaled from you? Communications? Have a beautiful day with goodbye, mercy, goodbye.",
+                    "speaker": "Agent",
+                    "duration_to_play": "97.88",
+                    "locale": "en",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "Peace be upon you.",
+                    "speaker": "Agent",
+                    "duration_to_play": "106.55",
+                    "locale": "en",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "en"
+    }
+}

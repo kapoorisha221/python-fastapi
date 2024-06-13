@@ -31,15 +31,16 @@ class Main:
 
             with open(path, "r", encoding="utf-8") as fp:
                 call_dict = json.load(fp)
-            # print("___empty json loaded___")
+            print("___empty json loaded___")
             next_call_number = len(call_dict) + 1
 
             audio_file = audio_file_path.split("/")[-1]
             audio_atrs = get_audio_attrs_for_report(audio_path=audio_file_path)
             minutes = convert_to_minutes(audio_atrs["audio_duration"])
             raw_audio_path = audio_file_path
-            print("raw_audio_path: ", raw_audio_path)
-            hold_time = get_total_silence(raw_audio_path)
+            print("raw_audio_path: ", raw_audio_path, "audio_atrs: ", audio_atrs, "minutes: ", minutes)
+            #hold_time = get_total_silence(raw_audio_path)
+            #print("hold time", hold_time)
             
             call_dict[audio_file] = {"id": int_filename}
             call_dict[audio_file]["recordingID"] = next_call_number            
@@ -49,8 +50,10 @@ class Main:
             call_dict[audio_file]["AgentID"] = int(agent_id)
             call_dict[audio_file]["Agent Name"] = agent_name
             call_dict[audio_file]["Call Date"] = str(call_date)
-            call_dict[audio_file]["HoldTime"] = int(hold_time)
+            #call_dict[audio_file]["HoldTime"] = int(hold_time)
+            call_dict[audio_file]["Comment"] = comment
             
+            print("call_dict picked: ", call_dict)
             with open(path, mode="w") as json_file:
                 json.dump(call_dict, json_file, indent=4)
 
@@ -59,6 +62,7 @@ class Main:
                 extra={"location": "main.py - add_to_mapping"},
             )
         except Exception as e:
+            print("error in creating mapping: ", e)
             self.error_logger.error(
                 msg="An Error Occured ..",
                 exc_info=e,
@@ -113,26 +117,35 @@ class Main:
                     sheet1_name_stripped = sheet1_res["sheetname"].strip().lower()
                     sheet2_name_stripped = sheet2_res["sheetname"].strip().lower()
                     sheet3_name_stripped = sheet3_res["sheetname"].strip().lower()
+
+                    print("dir stripped: ", dir, "sheet1_name_stripped: ", sheet1_name_stripped, "sheet2_name_stripped", sheet2_name_stripped, "sheet3_name_stripped", sheet3_name_stripped)
                     #getting the data of agent_name and call_id for an index i
                     if dir == sheet1_name_stripped:
                         try:
+                            print("dir1 matched")
+
                             index = sheet1_res["callids"].index(int_filename)
+                            print("got the index:", index)
                             agent_id = sheet1_res["agentids"][index]
                             agent_name = sheet1_res["agentnames"][index]
                             call_date = sheet1_res["calldates"][index]
                             comment = sheet1_res["comments"][index]
+                            print("sheet1_name_stripped, index, agent_id, agent_name, call_date, comment", sheet1_name_stripped, agent_id, agent_name, call_date, comment)
                         except Exception as e:
                             self.error_logger.error(
-                                msg=f"list index couldn't be found or list index out of range with error: {e}",
+                                msg=f"list index couldn't be found or error: {e}",
                                 extra={"location": "main.py-audios_main"},
                             )
                     elif dir == sheet2_name_stripped:
                         try:
+                            print("dir2 matched")
                             index = sheet2_res["callids"].index(int_filename)
                             agent_id = sheet2_res["agentids"][index]
                             agent_name = sheet2_res["agentnames"][index]
                             call_date = sheet2_res["calldates"][index]
                             comment = sheet2_res["comments"][index]
+                            print("sheet2_name_stripped, agent_id, agent_name, call_date, comment", sheet2_name_stripped, agent_id, agent_name, call_date, comment)
+
                         except Exception as e:
                             self.error_logger.error(
                                 msg=f"list index couldn't be found or list index out of range with error: {e}",
@@ -140,11 +153,14 @@ class Main:
                             )
                     elif dir == sheet3_name_stripped:
                         try:
+                            print("dir3 matched")
                             index = sheet3_res["callids"].index(int_filename)
                             agent_id = sheet3_res["agentids"][index]
                             agent_name = sheet3_res["agentnames"][index]
                             call_date = sheet3_res["calldates"][index]
                             comment = sheet3_res["comments"][index]
+                            print("sheet3_name_stripped, agent_id, agent_name, call_date, comment", sheet3_name_stripped, index, agent_id, agent_name, call_date, comment)
+
                         except Exception as e:
                             self.error_logger.error(
                                 msg=f"list index couldn't be found or list index out of range with error: {e}",
@@ -192,8 +208,7 @@ class Main:
                         extra={"location": "main.py-audios_main"},
                     )
                 ###Adding a method to create an excel at last with the data from mapping.json
-
-            self.add_mapping_to_excel()
+            self.create_excel_for_powerbi()
             self.info_logger.info(
                     msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
                     extra={"location": "main.py-audios_main"},

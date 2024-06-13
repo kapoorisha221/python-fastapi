@@ -34,6 +34,8 @@ class starter_class:
         s3_comments = []
 
         sheet_names = [self.cred.sheet1 , self.cred.sheet2, self.cred.sheet3]
+        for sheet in sheet_names:
+            print("sheet name: ", sheet)
         sheet1_res = {}
         sheet2_res = {}
         sheet3_res = {}
@@ -51,38 +53,35 @@ class starter_class:
                 call_date = row["Call Date"]
                 comment = row["Comment"]
                 if sheet_name == self.cred.sheet1:
-                    sheet_name = self.cred.sheet1
-                    # print(sheet_name)
+                    sheet1 = self.cred.sheet1
                     if not (pd.isna(call_id) or pd.isna(agent_id)):
                         s1_call_ids.append(int(call_id))
                         s1_agent_ids.append(int(agent_id))
                         s1_agent_names.append(agent_name)
                         s1_call_dates.append(call_date)
                         s1_comments.append(comment if pd.notna(comment) else '')
-                    sheet1_res = {"sheetname": sheet_name,"callids": s1_call_ids, "agentids": s1_agent_ids, "agentnames": s1_agent_names, "calldates":s1_call_dates, "comments":s1_comments}
-                
-                if sheet_name == self.cred.sheet2:
-                    
-                    sheet_name = self.cred.sheet2
-                    # print(sheet_name)
+                    sheet1_res = {"sheetname": sheet1,"callids": s1_call_ids, "agentids": s1_agent_ids, "agentnames": s1_agent_names, "calldates":s1_call_dates, "comments":s1_comments}
+
+                elif sheet_name == self.cred.sheet2:  
+                    sheet2 = self.cred.sheet2
                     if not (pd.isna(call_id) or pd.isna(agent_id)):
                         s2_call_ids.append(int(call_id))
                         s2_agent_ids.append(int(agent_id))
                         s2_agent_names.append(agent_name)
                         s2_call_dates.append(call_date)
                         s2_comments.append(comment if pd.notna(comment) else '')
-                    sheet2_res = {"sheetname": sheet_name,"callids": s2_call_ids, "agentids": s2_agent_ids, "agentnames": s2_agent_names, "calldates":s2_call_dates, "comments":s2_comments}
+                    sheet2_res = {"sheetname": sheet2,"callids": s2_call_ids, "agentids": s2_agent_ids, "agentnames": s2_agent_names, "calldates":s2_call_dates, "comments":s2_comments}
 
-                if sheet_name == self.cred.sheet3:
-                    sheet_name = self.cred.sheet3
-                    # print(sheet_name)
+                elif sheet_name == self.cred.sheet3:
+                    sheet3 = self.cred.sheet3
                     if not (pd.isna(call_id) or pd.isna(agent_id)):
                         s3_call_ids.append(int(call_id))
                         s3_agent_ids.append(int(agent_id))
                         s3_agent_names.append(agent_name)
                         s3_call_dates.append(call_date)
                         s3_comments.append(comment if pd.notna(comment) else '')
-                    sheet3_res = {"sheetname": sheet_name,"callids": s3_call_ids, "agentids": s3_agent_ids, "agentnames": s3_agent_names, "calldates":s3_call_dates, "comments":s3_comments}
+                    sheet3_res = {"sheetname": sheet3,"callids": s3_call_ids, "agentids": s3_agent_ids, "agentnames": s3_agent_names, "calldates":s3_call_dates, "comments":s3_comments}
+        
 
         return sheet1_res, sheet2_res, sheet3_res
 
@@ -91,3 +90,4 @@ class starter_class:
 if __name__ == "__main__":
     obj = starter_class()
     obj.read_data_csv()
+

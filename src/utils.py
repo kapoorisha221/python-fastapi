@@ -96,6 +96,7 @@ def detect_silence(path,time):
     '''
     command="ffmpeg -i "+path+" -af silencedetect=n=-23dB:d="+str(time)+" -f null -"
     command = command.split()
+    print("running command in shell")
     out = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     stdout, stderr = out.communicate()
     s=stdout.decode("utf-8")
@@ -121,14 +122,32 @@ def detect_silence(path,time):
 
 
 def get_total_silence(audio_path):
+    audio_path = normalize_path(audio_path)
+    print("Audio path passed to detect the silence time: ", audio_path)
     silent_segments = detect_silence(path= audio_path, time= 1)
-    print(silent_segments)
+    print("silent segments", silent_segments)
     total_silence = 0
     for i in silent_segments:
         total_silence += (i[1] - i[0])
 
     print(f"Total Silence detected : {total_silence} secs")
     return total_silence
+
+def normalize_path(path):
+    """
+    This function checks if the provided path contains backward slashes
+    and replaces them with forward slashes.
+    
+    Args:
+    path (str): The path to be normalized.
+    
+    Returns:
+    str: The normalized path with forward slashes.
+    """
+    normalized_path = path.replace('\\', '/')
+    
+    return normalized_path
+
 
 
 
@@ -138,5 +157,6 @@ if __name__ == "__main__":
     p1 = "../source/tempdata/161316483.wav"
     result = get_total_silence(audio_path= p1)
     print(result)
+    
                 
 

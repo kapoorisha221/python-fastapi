@@ -1,0 +1,275 @@
+{
+    "result": {
+        "summary": "تبدأ المحادثة باستفسار أحد العملاء عن الإنترنت واستخدامه ، وتحديدا فيما يتعلق بتنزيل الهدايا. لا يعبر العميل عن حاجته لمثل هذه الخدمات، ولكن ينصح العميل بالتركيز على المسجلات التي تجلبها، حيث يمكن استخدامها للعروض أو الاحتياجات التي يمكن للعميل الاستفادة منها. كما يطمئن العميل إلى أنه سيتابع أي استفسارات أخرى.",
+        "topics": [
+            "ط",
+            "ض",
+            "تقدر",
+            "ج",
+            "تص",
+            "ست",
+            "ذ",
+            "ك",
+            "مرة",
+            "د",
+            "نت",
+            "تحت",
+            "جة",
+            "برض",
+            "خلصهم",
+            "ح",
+            "م",
+            "ب",
+            "نترنت",
+            "س",
+            "ستفس",
+            "عرض",
+            "ل",
+            "تش",
+            "ضرتك",
+            "سب",
+            "روض",
+            "ت",
+            "مكن",
+            "ة",
+            "ه",
+            "ضرت",
+            "ش",
+            "بخصوص"
+        ],
+        "wordcloud": [
+            {
+                "text": "تص",
+                "value": 1
+            },
+            {
+                "text": "ل",
+                "value": 2
+            },
+            {
+                "text": "م",
+                "value": 2
+            },
+            {
+                "text": "ضرت",
+                "value": 2
+            },
+            {
+                "text": "ذ",
+                "value": 1
+            },
+            {
+                "text": "ستفس",
+                "value": 1
+            },
+            {
+                "text": "بخصوص",
+                "value": 1
+            },
+            {
+                "text": "د",
+                "value": 2
+            },
+            {
+                "text": "ط",
+                "value": 2
+            },
+            {
+                "text": "نت",
+                "value": 1
+            },
+            {
+                "text": "روض",
+                "value": 1
+            },
+            {
+                "text": "ت",
+                "value": 5
+            },
+            {
+                "text": "ج",
+                "value": 2
+            },
+            {
+                "text": "نترنت",
+                "value": 1
+            },
+            {
+                "text": "خلصهم",
+                "value": 1
+            },
+            {
+                "text": "ض",
+                "value": 1
+            },
+            {
+                "text": "ست",
+                "value": 1
+            },
+            {
+                "text": "تش",
+                "value": 1
+            },
+            {
+                "text": "ة",
+                "value": 1
+            },
+            {
+                "text": "ه",
+                "value": 2
+            },
+            {
+                "text": "سب",
+                "value": 1
+            },
+            {
+                "text": "ش",
+                "value": 2
+            },
+            {
+                "text": "س",
+                "value": 2
+            },
+            {
+                "text": "مكن",
+                "value": 1
+            },
+            {
+                "text": "ضرتك",
+                "value": 2
+            },
+            {
+                "text": "عرض",
+                "value": 1
+            },
+            {
+                "text": "ح",
+                "value": 1
+            },
+            {
+                "text": "جة",
+                "value": 2
+            },
+            {
+                "text": "تقدر",
+                "value": 1
+            },
+            {
+                "text": "ب",
+                "value": 1
+            },
+            {
+                "text": "تحت",
+                "value": 1
+            },
+            {
+                "text": "مرة",
+                "value": 1
+            },
+            {
+                "text": "برض",
+                "value": 1
+            },
+            {
+                "text": "ك",
+                "value": 1
+            }
+        ],
+        "transcripts": {
+            "transcript": [
+                {
+                    "dialogue": "صباح الخير، اتصالات مع حضرتك، صباح الخير، صباح النور يا أستاذ محمد أخبارك ايه؟ تمام الحمد لله الحمد لله، تفضل استفسار حضرتك بخصوص هو ما فيش ما فيش دايق النت تنزل هدية على الخط ده ولا ايه؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "2.93",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "نت يعني؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "17.99",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لا للأسف والله هو لو في عروض حتيجي لحضرتك رسالة بيها.",
+                    "speaker": "Agent",
+                    "duration_to_play": "20.64",
+                    "locale": "ar-EG",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "اه هو الانترنت وخلصهم مع حضرتك؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "25.51",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "خلاص؟ طيب ما فيش حاجة. انا بستفسر انا ما جبتش حاجة جاية عليه خالص واشوف ناس معاها خطوط بيعجيلها هدية. ما فيش حاجة خالص. ايه السبب يعني؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "28.84",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "لا هو ما فيش سبب، بس هي لو ممكن تكون بس حضرتك نركز في المسجلات اللي بتجيلنا، لان المسدجات دي بيبقى فيها لو في عرض او حاجة حضرتك تقدر تستفيد بيه.",
+                    "speaker": "Customer",
+                    "duration_to_play": "39.24",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "اه تمام.",
+                    "speaker": "Agent",
+                    "duration_to_play": "51.07",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                },
+                {
+                    "dialogue": "تحت أمر حضرتك أي حاجة أساعدك بيها مرة تانية؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "54.22",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "قلنا قلنا في هدايا نت ولا حاجة.",
+                    "speaker": "Agent",
+                    "duration_to_play": "58.70",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "قلنا فيها نت ولا حاجة؟",
+                    "speaker": "Agent",
+                    "duration_to_play": "62.84",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "هو لو والله هيجي لحضرتك ما تقلقش؟",
+                    "speaker": "Customer",
+                    "duration_to_play": "65.87",
+                    "locale": "ar-EG",
+                    "sentiment": "negative"
+                },
+                {
+                    "dialogue": "مافيش. ما فيش حاجة فيه.",
+                    "speaker": "Agent",
+                    "duration_to_play": "68.07",
+                    "locale": "ar-EG",
+                    "sentiment": "neutral"
+                },
+                {
+                    "dialogue": "شكرا العفو. انا برضه ححاول اتابع لحضرتك ولو في اي حاجة حكلم حضرتك تاني. ماشي؟ شكرا العفو على اي تحت امرك. اي استفسار تاني العفو.",
+                    "speaker": "Customer",
+                    "duration_to_play": "72.96",
+                    "locale": "ar-EG",
+                    "sentiment": "positive"
+                }
+            ]
+        },
+        "language": "ar"
+    }
+}

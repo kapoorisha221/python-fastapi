@@ -1,0 +1,76 @@
+{
+    "summary": "The conversation begins with a customer inquiring about the internet and its use, specifically in relation to downloading gifts. The customer expresses no need for such services, but the customer is advised to focus on the recorders that bring them, as they can be used for offers or needs that the customer can benefit from. The customer is also assured that they will follow up on any further inquiries.",
+    "sentiment_ls": [
+        "positive",
+        "neutral",
+        "negative",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral",
+        "positive"
+    ],
+    "keyPhrases_ls": [
+        [
+            "Mr. Mohammed",
+            "morning",
+            "contacts",
+            "news",
+            "God",
+            "net",
+            "gift",
+            "line"
+        ],
+        [
+            "net"
+        ],
+        [
+            "God",
+            "offers",
+            "message"
+        ],
+        [
+            "Internet"
+        ],
+        [
+            "sincere need",
+            "people",
+            "lines",
+            "gift",
+            "reason"
+        ],
+        [
+            "reason",
+            "recorders",
+            "guns",
+            "offer",
+            "need"
+        ],
+        [],
+        [
+            "command"
+        ],
+        [
+            "gifts",
+            "need"
+        ],
+        [
+            "internet"
+        ],
+        [],
+        [
+            "Mafish",
+            "need"
+        ],
+        [
+            "other inquiry",
+            "need",
+            "command"
+        ]
+    ]
+}

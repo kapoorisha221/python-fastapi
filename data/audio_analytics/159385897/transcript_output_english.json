@@ -1,0 +1,112 @@
+{
+    "transcript": [
+        {
+            "dialogue": "Good morning, is this a call to you?",
+            "speaker": "Agent",
+            "duration_to_play": "2.68",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Good morning sir. Professor Hana Maaya Maaya Hana. Welcome, sir, can I help you on the same number or on another number?",
+            "speaker": "Agent",
+            "duration_to_play": "6.24",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Yes, it's two digits under each other. The important thing is that I want to tell me that I can't call, have you reached the credit limit?",
+            "speaker": "Customer",
+            "duration_to_play": "14.51",
+            "locale": "en"
+        },
+        {
+            "dialogue": "If you say to your presence, you reached the credit limit for a moment with me.",
+            "speaker": "Agent",
+            "duration_to_play": "22.08",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Ok, okay.",
+            "speaker": "Agent",
+            "duration_to_play": "27.63",
+            "locale": "en"
+        },
+        {
+            "dialogue": "What were you talking about, sir?",
+            "speaker": "Agent",
+            "duration_to_play": "30.41",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Don't know? I mean, how much was I talking to?",
+            "speaker": "Customer",
+            "duration_to_play": "35.09",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I mean, you were talking to regular numbers, meaning telecommunications or any other network? No specialized numbers?",
+            "speaker": "Agent",
+            "duration_to_play": "36.97",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay?",
+            "speaker": "Agent",
+            "duration_to_play": "44.28",
+            "locale": "en"
+        },
+        {
+            "dialogue": "A moment of unity.",
+            "speaker": "Agent",
+            "duration_to_play": "49.88",
+            "locale": "en"
+        },
+        {
+            "dialogue": "This problem is with you since when?",
+            "speaker": "Agent",
+            "duration_to_play": "54.64",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Now it's the same price for 1/4 hour.",
+            "speaker": "Customer",
+            "duration_to_play": "57.84",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Okay.",
+            "speaker": "Agent",
+            "duration_to_play": "61.67",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I'm clear to me that you are with me for minutes. No problem, all right. I will just work for you as a refresher step through me, and I will talk to you again. Just make sure that the service worked with you or is there a problem?",
+            "speaker": "Agent",
+            "duration_to_play": "69.58",
+            "locale": "en"
+        },
+        {
+            "dialogue": "But I will ask your permission to turn on flight mode after ending the call for a minute, okay? And I will talk to you again after I work for you the activation step through me.",
+            "speaker": "Agent",
+            "duration_to_play": "82.47",
+            "locale": "en"
+        },
+        {
+            "dialogue": "I would like to clarify to you any other questions.",
+            "speaker": "Agent",
+            "duration_to_play": "94.63",
+            "locale": "en"
+        },
+        {
+            "dialogue": "No, sweetheart, thank you, you honored me, Vendem. Happy Abu Khaled from you? Communications? Have a beautiful day with goodbye, mercy, goodbye.",
+            "speaker": "Agent",
+            "duration_to_play": "97.88",
+            "locale": "en"
+        },
+        {
+            "dialogue": "Peace be upon you.",
+            "speaker": "Agent",
+            "duration_to_play": "106.55",
+            "locale": "en"
+        }
+    ]
+}

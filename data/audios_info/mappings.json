@@ -1,3 +1,53 @@
 {
-    
+    "159775973.wav": {
+        "id": 159775973,
+        "recordingID": 1,
+        "CallDuration": "0:01:44",
+        "Audio_Size": 6552,
+        "Call Category": "complaint",
+        "AgentID": 219726,
+        "Agent Name": "Hosni abd elhafez rashed mohamed",
+        "Call Date": "2023-10-06 18:36:01",
+        "Comment": "",
+        "language": "english",
+        "Sentiment": "positive",
+        "AgentPercentage": "100.00",
+        "CustomerPercentage": "0.00",
+        "CallOpeningScore": 0.2222222222222222,
+        "CallClosingScore": 0.2222222222222222
+    },
+    "159830825.wav": {
+        "id": 159830825,
+        "recordingID": 2,
+        "CallDuration": "0:01:22",
+        "Audio_Size": 5127,
+        "Call Category": "hitting the company",
+        "AgentID": 67516,
+        "Agent Name": "Hossam Moawad Thabet Mohamed",
+        "Call Date": "2023-10-06 21:36:23",
+        "Comment": "",
+        "language": "english",
+        "Sentiment": "neutral",
+        "AgentPercentage": "59.17",
+        "CustomerPercentage": "40.83",
+        "CallOpeningScore": 0.0,
+        "CallClosingScore": 0.0
+    },
+    "159385897.wav": {
+        "id": 159385897,
+        "recordingID": 3,
+        "CallDuration": "0:01:47",
+        "Audio_Size": 6700,
+        "Call Category": "normal calls",
+        "AgentID": 261800,
+        "Agent Name": "Huda Abdo Zaghloul Raslan",
+        "Call Date": "2023-10-05 13:59:28",
+        "Comment": "line down first escalation ",
+        "language": "english",
+        "Sentiment": "neutral",
+        "AgentPercentage": "88.00",
+        "CustomerPercentage": "12.00",
+        "CallOpeningScore": 0.0,
+        "CallClosingScore": 0.5
+    }
 }

@@ -11,15 +11,14 @@ class Sentiment():
     def __init__(self, transcripts):
         self.transcripts = transcripts
         self.transcriptions = self.transcripts["transcript"]
-        self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
-        self.LANGUAGE_KEY = self.cred.LANGUAGE_KEY
+        self.SENTIMENT_URL = self.cred.STT_HOST_URL + f"{self.cred.SENTIMENT_PORT}"
 
         self.words_sentiment_mapping_flag = False
         
     
     def send_request(self, dialogue):
         try:
-            data= {
+            data = {
                         "kind": "SentimentAnalysis",
                         "parameters": {
                             "modelVersion": "latest",
@@ -36,31 +35,30 @@ class Sentiment():
                         }
                     }
 
-            url = f"{self.LANGUAGE_ENDPOINT}/language/:analyze-text?api-version=2023-04-15-preview"
+            url = f"{self.SENTIMENT_URL}/language/:analyze-text?api-version=2023-04-15-preview"
 
             headers = {
                         "Content-Type": "application/json",
-                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY
-                    }
+                      }
 
             self.info_logger.info(msg=F"Sending request to the API for Sentiment Analysis",extra={"location":"sentiment_analysis.py - send_request"})
             sentiment_response = requests.post(url= url, json=data, headers= headers)
-            # print(f"sentiment response status : {sentiment_response.status_code} ")
+            print(f"sentiment response status : {sentiment_response.status_code} ")
             return sentiment_response
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - send_request"})
     
     def get_sentiment(self,sentiment_result):
         try:
             overall_sentiment = sentiment_result["results"]["documents"][0]["sentiment"]
-            # print(f"overall sentiment : ", overall_sentiment)
+            print(f"overall sentiment : ", overall_sentiment)
             dic1 = sentiment_result["results"]["documents"][0]["confidenceScores"]
             max_sentiment = max(dic1, key=dic1.get)
-            # print(f"sentiment : {max_sentiment}")
+            print(f"sentiment : {max_sentiment}")
             return overall_sentiment, max_sentiment
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - get_sentiment"})
 
     def get_words_sentiment_mapping(self, sentiment_result):
@@ -78,7 +76,7 @@ class Sentiment():
             
             return words_sentiment_mapping
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - get_words_sentiment_mapping"})
     
     def get_sentiment_analysis(self, sentiment_result):
@@ -98,7 +96,7 @@ class Sentiment():
             
             return result
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - get_sentiment_analysis"})
     
     def sentiment_helper(self, dialouge):
@@ -106,7 +104,7 @@ class Sentiment():
             sentiment_response = self.send_request(dialogue= dialouge)
             
             sentiment_result = json.loads(sentiment_response.text)
-            # print(f"sentiment_response : {sentiment_response.status_code}")
+            print(f"sentiment_response : {sentiment_response.status_code}")
             # print(sentiment_response.text)
 
             if sentiment_response.status_code == 401:
@@ -128,7 +126,7 @@ class Sentiment():
             self.info_logger.info(msg=F"returning the final value to the main.py",extra={"location":"sentiment_analysis.py - sentiment_helper"})
             return result
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - sentiment_helper"})
     
     def sentiment_pipeline(self):
@@ -145,7 +143,7 @@ class Sentiment():
 
             return output
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - sentiment_pipeline"})
 
 

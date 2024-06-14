@@ -13,7 +13,6 @@ class AzureConfig():
 
         self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
-        
 
         #Audio File location
         self.audio_source = "source/calls"
@@ -23,16 +22,49 @@ class AzureConfig():
         self.sheet1 = "Normal Calls"
         self.sheet2 = "Complaint "
         self.sheet3 = "Hitting the company "
+    
+
+        ####### CREDENTIALS #######
+        # self.LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
+        # self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
+        # self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
+        # self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
+        # self.SPEECH_REGION = "eastus"
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        
+
+        ########### Container Credentials #######################
+        # self.LANGUAGE_KEY = "49ea02bc7cc644c49ec309ca849a3810"
+        # self.LANGUAGE_ENDPOINT = "https://tanzu.cognitiveservices.azure.com/"
+
+        # self.SPEECH_KEY = "a3357a8ce902473f830837e46d7e538c"
+        # self.SPEECH_ENDPOINT = "https://centralindia.api.cognitive.microsoft.com/"
+        # self.SPEECH_REGION = "centralindia"
+
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
+        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
+
+
+        #Audio File location
+        self.audio_source = "source/calls"
         
         # STT
-        self.STT_HOST_URL = "ws://127.0.0.1:<port>"
-        # enter the port values
-        # self.EN_US_PORT = "5000"  # original
-        # self.AR_AE_PORT = "5001"   # original
+        self.STT_HOST_URL = "http://10.20.20.126:"
+        self.SUMMARIZATION_URL = "http://10.20.20.125:"
+
         #####
-        self.EN_US_PORT = "5070"
-        self.EN_US_PORT = "5071" # testing acoustic
-        self.AR_AE_PORT = "5060"
+        # self.EN_US_PORT = "5070"
+        # self.EN_US_PORT = "5071" # testing acoustic
+        # self.AR_AE_PORT = "5060"
+        ##Connected Container Ports
+        self.SUMMARIZATION_PORT = "5000"
+        self.SPEECH_PORT = "5001"
+        self.KEYPHRASE_PORT = "5002"
+        self.SENTIMENT_PORT = "5003"
+        self.TRANSLATOR_PORT = "5004"
         
         #####
       

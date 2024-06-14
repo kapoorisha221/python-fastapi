@@ -18,7 +18,7 @@ class Summarization():
         self.text_to_append = ""
 
         ########################## REST ######################
-        self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
+        self.LANGUAGE_ENDPOINT = self.cred.SUMMARIZATION_URL + f"{self.cred.SUMMARIZATION_PORT}"
         self.url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-text/jobs?api-version=2023-04-01"
         self.key = self.cred.LANGUAGE_KEY
         self.api_version = "2023-04-01"
@@ -62,7 +62,6 @@ class Summarization():
             url = f"{self.LANGUAGE_ENDPOINT}/language/analyze-conversations/jobs?api-version={self.api_version}"
             headers = {
                     "Content-Type": "application/json",
-                    "Ocp-Apim-Subscription-Key": self.key
                     }
             data = {
                 "displayName": "Conversation Task Example",
@@ -94,10 +93,11 @@ class Summarization():
             }
 
             self.info_logger.info(msg=F"Sending request for summarization",extra={"location":"summarisation.py - conversational_summarisation_helper"})
+            print("Sending request for summarization")
             res = requests.post(url = url, headers= headers, json=data)
             
             if res.status_code in  [202]:
-
+                print("res got ")
                 operation_location = res.headers["operation-location"]
                 job_id = operation_location.split("/")[-1].split("?")[0]
                 self.info_logger.info(msg=F"Extracted job id from the response '{job_id}'",extra={"location":"summarisation.py - conversational_summarisation_helper"})

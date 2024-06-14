@@ -8,8 +8,7 @@ class keyPhrase():
     def __init__(self, transcripts):
         self.transcripts = transcripts
         self.transcriptions = self.transcripts["transcript"]
-        self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
-        self.LANGUAGE_KEY = self.cred.LANGUAGE_KEY
+        self.KEYPHRASE_URL = self.cred.STT_HOST_URL + f"{self.cred.KEYPHRASE_PORT}"
         
     info_logger = get_Info_Logger()
     error_logger = get_Error_Logger()
@@ -19,7 +18,6 @@ class keyPhrase():
 
             headers = {
                         "Content-Type": "application/json",
-                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY
                     }
             data = {
                 "kind": "KeyPhraseExtraction",
@@ -36,7 +34,7 @@ class keyPhrase():
                     ]
                 }
             }
-            url = f"{self.LANGUAGE_ENDPOINT}/language/:analyze-text?api-version=2022-05-01"
+            url = f"{self.KEYPHRASE_URL}/language/:analyze-text?api-version=2022-05-01"
             self.info_logger.info(msg=F"Sending Post request to the API for keyPhrase",extra={"location":"KeyPhrase.py - send_request"})
             response = requests.post(url= url, json= data, headers= headers)
             return response
@@ -55,7 +53,7 @@ class keyPhrase():
             
             self.info_logger.info(msg=F"loading API response to json.",extra={"location":"KeyPhrase.py - keyPhrase_helper"})
             result = json.loads(response.text)
-            # print("___________________________________ result ________________________",result)
+            print("___________________________________ result ________________________",result)
             if result["results"]["errors"]:
                 error_msg = str(result["results"]["errors"])
                 output = {"status": "fail", "error": error_msg}
@@ -68,7 +66,7 @@ class keyPhrase():
 
             return output
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"KeyPhrase.py - keyPhrase_helper"})
 
     def keyPhrase_pipeline(self):
@@ -89,7 +87,7 @@ class keyPhrase():
 
             return output
         except Exception as e :
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"KeyPhrase.py - keyPhrase_pipeline"})
 
     

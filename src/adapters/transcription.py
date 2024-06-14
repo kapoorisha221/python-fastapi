@@ -38,11 +38,11 @@ def recognize_from_file(audio_file_path,folder):
             info_logger.info(msg=F"Initializing Creds for AI Speech Services ",extra={"location":"transcription.py - recognize_from_file"})
             transcript.clear()
             
-            speech_config = speechsdk.SpeechConfig(endpoint=cred.SPEECH_ENDPOINT, subscription=cred.SPEECH_KEY)
+            speech_config = speechsdk.SpeechConfig(host=cred.STT_HOST_URL + f"{cred.SPEECH_PORT}")
             speech_config.speech_recognition_language="ar-EG"
 
             audio_config = speechsdk.audio.AudioConfig(filename=audio_file_path)
-            print("___________________Connectied to Speech________")
+            print("___________________Connected to Speech________")
             conversation_transcriber = speechsdk.transcription.ConversationTranscriber(speech_config=speech_config, audio_config=audio_config)
             folder_path = folder
             transcribing_stop = False

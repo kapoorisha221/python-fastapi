@@ -13,34 +13,67 @@ class AzureTranslator():
     error_logger = get_Error_Logger()
     def __init__(self) -> None:
         super().__init__()
-        self.TRANS_KEY = self.cred.TRANSLATOR_KEY
-        self.ENDPOINT = self.cred.TRANSLATOR_ENDPOINT
+        self.ENDPOINT = self.cred.STT_HOST_URL
+        self.PORT = self.cred.TRANSLATOR_PORT
         self.SERVICE_REGION = "eastus"
         
 
+    # def get_translations(self, text, from_lang, to_lang):
+    #     response = "Translator service not working"
+    #     for delay_secs in (3**x for x in range(0,3)):
+    #         try:
+    #             path = '/translate'
+    #             constructed_url = self.ENDPOINT + path
+    #             params = {
+    #                 'api-version': '3.0',
+    #                 'from': from_lang,
+    #                 'to': [to_lang]
+    #             }
+    #             headers = {
+    #                 'Content-type': 'application/json',
+    #                 'X-ClientTraceId': str(uuid.uuid4())
+    #             }
+    #             body = [
+    #                 {
+    #                     'text': f'{text}'
+    #                 }
+    #             ]
+    #             self.info_logger.info(msg=F"Sending request to the API to translate",extra={"location":"translator.py - get_translated_transcriptions"})
+    #             request = requests.post(constructed_url, params=params, headers=headers, json=body)
+    #             response = request.json()
+    #             response = response[0]['translations'][0]['text']
+    #             break
+    #         except Exception as e:
+    #             randomness_collision_avoidance = random.randint(0, 1000) / 1000.0
+    #             sleep_dur = delay_secs + randomness_collision_avoidance
+    #             # print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
+    #             # print(traceback.format_exc())
+    #             time.sleep(sleep_dur)
+    #             continue 
+    #     return response
+
     def get_translations(self, text, from_lang, to_lang):
         response = "Translator service not working"
-        for delay_secs in (3**x for x in range(0,3)):
+        for delay_secs in (3**x for x in range(0, 3)):
             try:
                 path = '/translate'
-                constructed_url = self.ENDPOINT + path
+                constructed_url = self.ENDPOINT + f"{self.PORT}"
+                constructed_url = constructed_url + path
                 params = {
                     'api-version': '3.0',
                     'from': from_lang,
                     'to': [to_lang]
                 }
                 headers = {
-                    'Ocp-Apim-Subscription-Key': self.TRANS_KEY,
-                    'Ocp-Apim-Subscription-Region': self.SERVICE_REGION,
                     'Content-type': 'application/json',
                     'X-ClientTraceId': str(uuid.uuid4())
                 }
                 body = [
                     {
-                        'text': f'{text}'
+                        'Text': text
                     }
                 ]
-                self.info_logger.info(msg=F"Sending request to the API to translate",extra={"location":"translator.py - get_translated_transcriptions"})
+                print(f"Sending request to the API to translate: {text}")
                 request = requests.post(constructed_url, params=params, headers=headers, json=body)
                 response = request.json()
                 response = response[0]['translations'][0]['text']
@@ -48,12 +81,11 @@ class AzureTranslator():
             except Exception as e:
                 randomness_collision_avoidance = random.randint(0, 1000) / 1000.0
                 sleep_dur = delay_secs + randomness_collision_avoidance
-                # print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
-                # print(traceback.format_exc())
+                print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
                 time.sleep(sleep_dur)
-                continue 
+                continue
         return response
-    
+
     def get_translated_transcriptions_pipeline(self, text,  from_lang, to_lang):
         # for item in self.transcriptions:
         result = self.get_translations(text, from_lang, to_lang)

@@ -803,7 +803,7 @@ class Main:
             
 if __name__ == "__main__":
     path = LocalConfig()
-    source_call_path = path.SOURCE_DATA
+    source_call_path = path.TRANSCRIPT_DATA
     obj = Main()
     obj.audios_main(source_call_path)
     #obj.add_mapping_to_excel()

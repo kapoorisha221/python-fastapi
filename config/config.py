@@ -18,10 +18,12 @@ class AzureConfig():
         self.audio_source = "source/calls"
 
         #Excel file location
-        self.audio_data = "source/records/Accent Validation Data (1).xlsx"
-        self.sheet1 = "Normal Calls"
-        self.sheet2 = "Complaint "
-        self.sheet3 = "Hitting the company "
+        self.audio_data = "source/records/Accent Validation Data Updated.xlsx"
+        self.sheet1 = "Normal Calls without escalation"
+        self.sheet2 = "Escalated Calls"
+        self.sheet3 = "Outages"
+        self.sheet4 = "Hard Calls"
+        self.sheet5 = "Hitting Calls"
     
 
         ####### CREDENTIALS #######
@@ -47,9 +49,6 @@ class AzureConfig():
         # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
 
-
-        #Audio File location
-        self.audio_source = "source/calls"
         
         # STT
         self.STT_HOST_URL = "http://10.20.20.126:"
@@ -69,8 +68,8 @@ class AzureConfig():
         #####
       
         # Host urls for using stt services in disconnected environment
-        self.EN_US_HOST_URL = self.STT_HOST_URL.replace("<port>",self.EN_US_PORT)
-        self.AR_AE_HOST_URL = self.STT_HOST_URL.replace("<port>",self.AR_AE_PORT)
+        # self.EN_US_HOST_URL = self.STT_HOST_URL.replace("<port>",self.EN_US_PORT)
+        # self.AR_AE_HOST_URL = self.STT_HOST_URL.replace("<port>",self.AR_AE_PORT)
         
         
         
@@ -93,6 +92,7 @@ class FileConfig():
 class LocalConfig():
     def __init__(self) -> None:
         self.PROJECT_PATH = os.path.abspath('.')
+        self.TRANSCRIPT_DATA = f"{self.PROJECT_PATH}/source/source_transcription"
         self.SOURCE_DATA = f"{self.PROJECT_PATH}/source/calls"
         self.DATA_FOLDER = f"{self.PROJECT_PATH}/data"
         self.RAW_DATA_FOLDER = f"{self.DATA_FOLDER}/raw_data"

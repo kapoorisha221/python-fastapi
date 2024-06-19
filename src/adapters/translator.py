@@ -18,40 +18,6 @@ class AzureTranslator():
         self.SERVICE_REGION = "eastus"
         
 
-    # def get_translations(self, text, from_lang, to_lang):
-    #     response = "Translator service not working"
-    #     for delay_secs in (3**x for x in range(0,3)):
-    #         try:
-    #             path = '/translate'
-    #             constructed_url = self.ENDPOINT + path
-    #             params = {
-    #                 'api-version': '3.0',
-    #                 'from': from_lang,
-    #                 'to': [to_lang]
-    #             }
-    #             headers = {
-    #                 'Content-type': 'application/json',
-    #                 'X-ClientTraceId': str(uuid.uuid4())
-    #             }
-    #             body = [
-    #                 {
-    #                     'text': f'{text}'
-    #                 }
-    #             ]
-    #             self.info_logger.info(msg=F"Sending request to the API to translate",extra={"location":"translator.py - get_translated_transcriptions"})
-    #             request = requests.post(constructed_url, params=params, headers=headers, json=body)
-    #             response = request.json()
-    #             response = response[0]['translations'][0]['text']
-    #             break
-    #         except Exception as e:
-    #             randomness_collision_avoidance = random.randint(0, 1000) / 1000.0
-    #             sleep_dur = delay_secs + randomness_collision_avoidance
-    #             # print(f"Error: {e} retrying in {round(sleep_dur, 2)} seconds.")
-    #             # print(traceback.format_exc())
-    #             time.sleep(sleep_dur)
-    #             continue 
-    #     return response
-
     def get_translations(self, text, from_lang, to_lang):
         response = "Translator service not working"
         for delay_secs in (3**x for x in range(0, 3)):
@@ -99,9 +65,6 @@ class AzureTranslator():
         return result
     
 
-
-
-
     def get_translated_transcriptions(self,audio_name, transcription_jsonPath):
         try:
             with open(transcription_jsonPath, 'r', encoding='utf-8') as file:
@@ -121,6 +84,7 @@ class AzureTranslator():
                         'dialogue': translated_dialogue,
                         'speaker': dialogue_info['speaker'],
                         'duration_to_play': dialogue_info['duration_to_play'],
+                        'duration_in_seconds': dialogue_info['duration_in_seconds'],
                         'locale': 'en' 
                     })
                     # print(f"\n the response from translator is: {translated_dialogue}\n")

@@ -1,0 +1,1995 @@
+{
+  "AudioFileResults": [
+    {
+      "AudioFileHash": "dcdba3aec2960d7f3efd9a5fc83c5b699ec518a149ee4e9f4b7cef8074134ed1",
+      "AudioFileName": "159385897_mono.wav",
+      "AudioFileUrl": "/my_nfs/audio_files/159385897_mono.wav",
+      "AudioLengthInSeconds": 107.208,
+      "CombinedResults": [
+        {
+          "ChannelNumber": null,
+          "Display": "صباح الخير. اتصالات هادي مع حضرتك. أوكي صباح الخير يا فندم، أستاذة هناء معايا؟ معاك هنا أه. أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟ أيوة هو رقمين تحت بعض، مهم إن عايزة ده بيقول لي لا يمكن الإتصال، وصلت الحد الائتماني. ن حضرتك بقول لحضرتك وصلتي للحد الائتماني. آه مفهمتش لحظة معايا. طيب، أوكي. حضرتك كنت بتكلم يا فندم؟ أه. مش عارفة. كنت بكلم زيرو كام يعني؟ يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختلفة؟ ودافون؟ أوكي؟ لحظة واحدة؟ المشكلة دي مع حضرتك من امتى؟ دلوقتي كده؟ مينفعش فعلا 1/4 ساعة؟ أوكي؟ أنا واضح عندي إن حضرتك معاكي دقايق، مفيش أي مشكلة خالص. تمام، أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي، وهرجع أكلم حضرتك تاني، تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة، بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة، تمام؟ وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال. حاضر. حابه أوضح لحضرتك أي استفسار تاني. لا، يا حبيبتي. شكرا شرفتيني يا فندم. سعداء بخدمة حضرتك إتصالات، أتمنى لك يوم جميل. مع السلامة يا حبي، ميرسي، مع السلامة. آه.",
+          "ITN": "صباح الخير اتصالات هادي مع حضرتك أوكي صباح الخير يا فندم أستاذة هناء معايا معاك هنا أه أهلا وسهلا يا فندم أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني أيوة هو رقمين تحت بعض مهم إن عايزة ده بيقول لي لا يمكن الإتصال وصلت الحد الائتماني ن حضرتك بقول لحضرتك وصلتي للحد الائتماني آه مفهمتش لحظة معايا طيب أوكي حضرتك كنت بتكلم يا فندم أه مش عارفة كنت بكلم زيرو كام يعني يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية ولا أرقام مختلفة ودافون أوكي لحظة واحدة المشكلة دي مع حضرتك من امتى دلوقتي كده مينفعش فعلا 1/4 ساعة أوكي أنا واضح عندي إن حضرتك معاكي دقايق مفيش أي مشكلة خالص تمام أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي وهرجع أكلم حضرتك تاني تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال حاضر حابه أوضح لحضرتك أي استفسار تاني لا يا حبيبتي شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات أتمنى لك يوم جميل مع السلامة يا حبي ميرسي مع السلامة آه",
+          "Lexical": "صباح الخير اتصالات هادي مع حضرتك أوكي صباح الخير يا فندم أستاذة هناء معايا معاك هنا أه أهلا وسهلا يا فندم أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني أيوة هو رقمين تحت بعض مهم إن عايزة ده بيقول لي لا يمكن الإتصال وصلت الحد الائتماني ن حضرتك بقول لحضرتك وصلتي للحد الائتماني آه مفهمتش لحظة معايا طيب أوكي حضرتك كنت بتكلم يا فندم أه مش عارفة كنت بكلم زيرو كام يعني يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية ولا أرقام مختلفة ودافون أوكي لحظة واحدة المشكلة دي مع حضرتك من امتى دلوقتي كده مينفعش فعلا ربع ساعة أوكي أنا واضح عندي إن حضرتك معاكي دقايق مفيش أي مشكلة خالص تمام أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي وهرجع أكلم حضرتك تاني تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال حاضر حابه أوضح لحضرتك أي استفسار تاني لا يا حبيبتي شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات أتمنى لك يوم جميل مع السلامة يا حبي ميرسي مع السلامة آه",
+          "MaskedITN": "صباح الخير اتصالات هادي مع حضرتك أوكي صباح الخير يا فندم، أستاذة هناء معايا؟ معاك هنا أه أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟ أيوة هو رقمين تحت بعض، مهم إن عايزة ده بيقول لي لا يمكن الإتصال، وصلت الحد الائتماني ن حضرتك بقول لحضرتك وصلتي للحد الائتماني آه مفهمتش لحظة معايا طيب، أوكي حضرتك كنت بتكلم يا فندم؟ أه مش عارفة كنت بكلم زيرو كام يعني؟ يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختلفة؟ ودافون؟ أوكي؟ لحظة واحدة؟ المشكلة دي مع حضرتك من امتى؟ دلوقتي كده؟ مينفعش فعلا 1/4 ساعة؟ أوكي؟ أنا واضح عندي إن حضرتك معاكي دقايق، مفيش أي مشكلة خالص تمام، أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي، وهرجع أكلم حضرتك تاني، تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة، بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة، تمام؟ وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال حاضر حابه أوضح لحضرتك أي استفسار تاني لا، يا حبيبتي شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات، أتمنى لك يوم جميل مع السلامة يا حبي، ميرسي، مع السلامة آه"
+        }
+      ],
+      "LastProcessedOffsetInSeconds": 107.09,
+      "SegmentResults": [
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "صباح الخير. اتصالات هادي مع حضرتك.",
+          "Duration": 20700000,
+          "DurationInSeconds": 2.07,
+          "Id": "2e4713974430412d83afc92a400d550f",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8871014,
+              "Display": "صباح الخير. اتصالات هادي مع حضرتك.",
+              "ITN": "صباح الخير اتصالات هادي مع حضرتك",
+              "Lexical": "صباح الخير اتصالات هادي مع حضرتك",
+              "MaskedITN": "صباح الخير اتصالات هادي مع حضرتك",
+              "Words": [
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 26500000,
+                  "OffsetInSeconds": 2.65,
+                  "Word": "صباح"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 29900000,
+                  "OffsetInSeconds": 2.99,
+                  "Word": "الخير"
+                },
+                {
+                  "Duration": 4600000,
+                  "DurationInSeconds": 0.46,
+                  "Offset": 33000000,
+                  "OffsetInSeconds": 3.3,
+                  "Word": "اتصالات"
+                },
+                {
+                  "Duration": 2400000,
+                  "DurationInSeconds": 0.24,
+                  "Offset": 37700000,
+                  "OffsetInSeconds": 3.77,
+                  "Word": "هادي"
+                },
+                {
+                  "Duration": 1200000,
+                  "DurationInSeconds": 0.12,
+                  "Offset": 40200000,
+                  "OffsetInSeconds": 4.02,
+                  "Word": "مع"
+                },
+                {
+                  "Duration": 5700000,
+                  "DurationInSeconds": 0.57,
+                  "Offset": 41500000,
+                  "OffsetInSeconds": 4.15,
+                  "Word": "حضرتك"
+                }
+              ]
+            }
+          ],
+          "Offset": 26500000,
+          "OffsetInSeconds": 2.65,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Unknown",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أوكي صباح الخير يا فندم، أستاذة هناء معايا؟",
+          "Duration": 31400000,
+          "DurationInSeconds": 3.14,
+          "Id": "4caca29486f3415a9021710f457c5e12",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8801469,
+              "Display": "أوكي صباح الخير يا فندم، أستاذة هناء معايا؟",
+              "ITN": "أوكي صباح الخير يا فندم أستاذة هناء معايا",
+              "Lexical": "أوكي صباح الخير يا فندم أستاذة هناء معايا",
+              "MaskedITN": "أوكي صباح الخير يا فندم، أستاذة هناء معايا؟",
+              "Words": [
+                {
+                  "Duration": 7800000,
+                  "DurationInSeconds": 0.78,
+                  "Offset": 52700000,
+                  "OffsetInSeconds": 5.27,
+                  "Word": "أوكي"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 64100000,
+                  "OffsetInSeconds": 6.41,
+                  "Word": "صباح"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 67300000,
+                  "OffsetInSeconds": 6.73,
+                  "Word": "الخير"
+                },
+                {
+                  "Duration": 1100000,
+                  "DurationInSeconds": 0.11,
+                  "Offset": 70500000,
+                  "OffsetInSeconds": 7.05,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 2700000,
+                  "DurationInSeconds": 0.27,
+                  "Offset": 71700000,
+                  "OffsetInSeconds": 7.17,
+                  "Word": "فندم"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 74500000,
+                  "OffsetInSeconds": 7.45,
+                  "Word": "أستاذة"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 77100000,
+                  "OffsetInSeconds": 7.71,
+                  "Word": "هناء"
+                },
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 79700000,
+                  "OffsetInSeconds": 7.97,
+                  "Word": "معايا"
+                }
+              ]
+            }
+          ],
+          "Offset": 52700000,
+          "OffsetInSeconds": 5.27,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Unknown",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "معاك هنا أه.",
+          "Duration": 13300000,
+          "DurationInSeconds": 1.33,
+          "Id": "e5db9010156f4a3bb08d9c90909eef47",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8806441,
+              "Display": "معاك هنا أه.",
+              "ITN": "معاك هنا أه",
+              "Lexical": "معاك هنا أه",
+              "MaskedITN": "معاك هنا أه",
+              "Words": [
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 88300000,
+                  "OffsetInSeconds": 8.83,
+                  "Word": "معاك"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 91700000,
+                  "OffsetInSeconds": 9.17,
+                  "Word": "هنا"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 94900000,
+                  "OffsetInSeconds": 9.49,
+                  "Word": "أه"
+                }
+              ]
+            }
+          ],
+          "Offset": 84100000,
+          "OffsetInSeconds": 8.41,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Unknown",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+          "Duration": 41600000,
+          "DurationInSeconds": 4.16,
+          "Id": "e204818a9ce640cba6d0a1fd73592630",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8818779,
+              "Display": "أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+              "ITN": "أهلا وسهلا يا فندم أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني",
+              "Lexical": "أهلا وسهلا يا فندم أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني",
+              "MaskedITN": "أهلا وسهلا يا فندم، أقدر أساعد حضرتك على نفس الرقم ولا في رقم تاني؟",
+              "Words": [
+                {
+                  "Duration": 6600000,
+                  "DurationInSeconds": 0.66,
+                  "Offset": 97700000,
+                  "OffsetInSeconds": 9.77,
+                  "Word": "أهلا"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 104400000,
+                  "OffsetInSeconds": 10.44,
+                  "Word": "وسهلا"
+                },
+                {
+                  "Duration": 700000,
+                  "DurationInSeconds": 0.07,
+                  "Offset": 107500000,
+                  "OffsetInSeconds": 10.75,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 108300000,
+                  "OffsetInSeconds": 10.83,
+                  "Word": "فندم"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 111700000,
+                  "OffsetInSeconds": 11.17,
+                  "Word": "أقدر"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 114300000,
+                  "OffsetInSeconds": 11.43,
+                  "Word": "أساعد"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 116500000,
+                  "OffsetInSeconds": 11.65,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1700000,
+                  "DurationInSeconds": 0.17,
+                  "Offset": 120900000,
+                  "OffsetInSeconds": 12.09,
+                  "Word": "على"
+                },
+                {
+                  "Duration": 2300000,
+                  "DurationInSeconds": 0.23,
+                  "Offset": 122700000,
+                  "OffsetInSeconds": 12.27,
+                  "Word": "نفس"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 125100000,
+                  "OffsetInSeconds": 12.51,
+                  "Word": "الرقم"
+                },
+                {
+                  "Duration": 2300000,
+                  "DurationInSeconds": 0.23,
+                  "Offset": 129300000,
+                  "OffsetInSeconds": 12.93,
+                  "Word": "ولا"
+                },
+                {
+                  "Duration": 1300000,
+                  "DurationInSeconds": 0.13,
+                  "Offset": 131700000,
+                  "OffsetInSeconds": 13.17,
+                  "Word": "في"
+                },
+                {
+                  "Duration": 2700000,
+                  "DurationInSeconds": 0.27,
+                  "Offset": 133100000,
+                  "OffsetInSeconds": 13.31,
+                  "Word": "رقم"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 135900000,
+                  "OffsetInSeconds": 13.59,
+                  "Word": "تاني"
+                }
+              ]
+            }
+          ],
+          "Offset": 97400000,
+          "OffsetInSeconds": 9.74,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أيوة هو رقمين تحت بعض، مهم إن عايزة ده بيقول لي لا يمكن الإتصال، وصلت الحد الائتماني.",
+          "Duration": 62200000,
+          "DurationInSeconds": 6.22,
+          "Id": "9d9b99f9503842b4a2648b17f461fc1c",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.82193077,
+              "Display": "أيوة هو رقمين تحت بعض، مهم إن عايزة ده بيقول لي لا يمكن الإتصال، وصلت الحد الائتماني.",
+              "ITN": "أيوة هو رقمين تحت بعض مهم إن عايزة ده بيقول لي لا يمكن الإتصال وصلت الحد الائتماني",
+              "Lexical": "أيوة هو رقمين تحت بعض مهم إن عايزة ده بيقول لي لا يمكن الإتصال وصلت الحد الائتماني",
+              "MaskedITN": "أيوة هو رقمين تحت بعض، مهم إن عايزة ده بيقول لي لا يمكن الإتصال، وصلت الحد الائتماني",
+              "Words": [
+                {
+                  "Duration": 4200000,
+                  "DurationInSeconds": 0.42,
+                  "Offset": 144600000,
+                  "OffsetInSeconds": 14.46,
+                  "Word": "أيوة"
+                },
+                {
+                  "Duration": 2400000,
+                  "DurationInSeconds": 0.24,
+                  "Offset": 148900000,
+                  "OffsetInSeconds": 14.89,
+                  "Word": "هو"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 151400000,
+                  "OffsetInSeconds": 15.14,
+                  "Word": "رقمين"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 155600000,
+                  "OffsetInSeconds": 15.56,
+                  "Word": "تحت"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 158200000,
+                  "OffsetInSeconds": 15.82,
+                  "Word": "بعض"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 161400000,
+                  "OffsetInSeconds": 16.14,
+                  "Word": "مهم"
+                },
+                {
+                  "Duration": 2000000,
+                  "DurationInSeconds": 0.2,
+                  "Offset": 164600000,
+                  "OffsetInSeconds": 16.46,
+                  "Word": "إن"
+                },
+                {
+                  "Duration": 4600000,
+                  "DurationInSeconds": 0.46,
+                  "Offset": 166900000,
+                  "OffsetInSeconds": 16.69,
+                  "Word": "عايزة"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 171600000,
+                  "OffsetInSeconds": 17.16,
+                  "Word": "ده"
+                },
+                {
+                  "Duration": 4000000,
+                  "DurationInSeconds": 0.4,
+                  "Offset": 173800000,
+                  "OffsetInSeconds": 17.38,
+                  "Word": "بيقول"
+                },
+                {
+                  "Duration": 900000,
+                  "DurationInSeconds": 0.09,
+                  "Offset": 177900000,
+                  "OffsetInSeconds": 17.79,
+                  "Word": "لي"
+                },
+                {
+                  "Duration": 1400000,
+                  "DurationInSeconds": 0.14,
+                  "Offset": 186400000,
+                  "OffsetInSeconds": 18.64,
+                  "Word": "لا"
+                },
+                {
+                  "Duration": 2900000,
+                  "DurationInSeconds": 0.29,
+                  "Offset": 187900000,
+                  "OffsetInSeconds": 18.79,
+                  "Word": "يمكن"
+                },
+                {
+                  "Duration": 5300000,
+                  "DurationInSeconds": 0.53,
+                  "Offset": 190900000,
+                  "OffsetInSeconds": 19.09,
+                  "Word": "الإتصال"
+                },
+                {
+                  "Duration": 2400000,
+                  "DurationInSeconds": 0.24,
+                  "Offset": 196300000,
+                  "OffsetInSeconds": 19.63,
+                  "Word": "وصلت"
+                },
+                {
+                  "Duration": 2900000,
+                  "DurationInSeconds": 0.29,
+                  "Offset": 198800000,
+                  "OffsetInSeconds": 19.88,
+                  "Word": "الحد"
+                },
+                {
+                  "Duration": 5000000,
+                  "DurationInSeconds": 0.5,
+                  "Offset": 201800000,
+                  "OffsetInSeconds": 20.18,
+                  "Word": "الائتماني"
+                }
+              ]
+            }
+          ],
+          "Offset": 144600000,
+          "OffsetInSeconds": 14.46,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "ن حضرتك بقول لحضرتك وصلتي للحد الائتماني.",
+          "Duration": 23700000,
+          "DurationInSeconds": 2.37,
+          "Id": "14f5e82460e84bd28ea5ece0d5f6766b",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.7597086,
+              "Display": "ن حضرتك بقول لحضرتك وصلتي للحد الائتماني.",
+              "ITN": "ن حضرتك بقول لحضرتك وصلتي للحد الائتماني",
+              "Lexical": "ن حضرتك بقول لحضرتك وصلتي للحد الائتماني",
+              "MaskedITN": "ن حضرتك بقول لحضرتك وصلتي للحد الائتماني",
+              "Words": [
+                {
+                  "Duration": 2300000,
+                  "DurationInSeconds": 0.23,
+                  "Offset": 216400000,
+                  "OffsetInSeconds": 21.64,
+                  "Word": "ن"
+                },
+                {
+                  "Duration": 2900000,
+                  "DurationInSeconds": 0.29,
+                  "Offset": 218800000,
+                  "OffsetInSeconds": 21.88,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 221800000,
+                  "OffsetInSeconds": 22.18,
+                  "Word": "بقول"
+                },
+                {
+                  "Duration": 2900000,
+                  "DurationInSeconds": 0.29,
+                  "Offset": 223800000,
+                  "OffsetInSeconds": 22.38,
+                  "Word": "لحضرتك"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 226800000,
+                  "OffsetInSeconds": 22.68,
+                  "Word": "وصلتي"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 230200000,
+                  "OffsetInSeconds": 23.02,
+                  "Word": "للحد"
+                },
+                {
+                  "Duration": 6500000,
+                  "DurationInSeconds": 0.65,
+                  "Offset": 233600000,
+                  "OffsetInSeconds": 23.36,
+                  "Word": "الائتماني"
+                }
+              ]
+            }
+          ],
+          "Offset": 216400000,
+          "OffsetInSeconds": 21.64,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "آه مفهمتش لحظة معايا.",
+          "Duration": 19200000,
+          "DurationInSeconds": 1.92,
+          "Id": "65c79522358f4653a8fb0154ceb614e1",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8147704,
+              "Display": "آه مفهمتش لحظة معايا.",
+              "ITN": "آه مفهمتش لحظة معايا",
+              "Lexical": "آه مفهمتش لحظة معايا",
+              "MaskedITN": "آه مفهمتش لحظة معايا",
+              "Words": [
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 247300000,
+                  "OffsetInSeconds": 24.73,
+                  "Word": "آه"
+                },
+                {
+                  "Duration": 7400000,
+                  "DurationInSeconds": 0.74,
+                  "Offset": 249300000,
+                  "OffsetInSeconds": 24.93,
+                  "Word": "مفهمتش"
+                },
+                {
+                  "Duration": 3900000,
+                  "DurationInSeconds": 0.39,
+                  "Offset": 257700000,
+                  "OffsetInSeconds": 25.77,
+                  "Word": "لحظة"
+                },
+                {
+                  "Duration": 4800000,
+                  "DurationInSeconds": 0.48,
+                  "Offset": 261700000,
+                  "OffsetInSeconds": 26.17,
+                  "Word": "معايا"
+                }
+              ]
+            }
+          ],
+          "Offset": 247300000,
+          "OffsetInSeconds": 24.73,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "طيب، أوكي.",
+          "Duration": 6800000,
+          "DurationInSeconds": 0.68,
+          "Id": "3eba7b109fd74b82a580793e27048ba2",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.880051,
+              "Display": "طيب، أوكي.",
+              "ITN": "طيب أوكي",
+              "Lexical": "طيب أوكي",
+              "MaskedITN": "طيب، أوكي",
+              "Words": [
+                {
+                  "Duration": 2800000,
+                  "DurationInSeconds": 0.28,
+                  "Offset": 276700000,
+                  "OffsetInSeconds": 27.67,
+                  "Word": "طيب"
+                },
+                {
+                  "Duration": 3400000,
+                  "DurationInSeconds": 0.34,
+                  "Offset": 280100000,
+                  "OffsetInSeconds": 28.01,
+                  "Word": "أوكي"
+                }
+              ]
+            }
+          ],
+          "Offset": 276700000,
+          "OffsetInSeconds": 27.67,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "حضرتك كنت بتكلم يا فندم؟",
+          "Duration": 19400000,
+          "DurationInSeconds": 1.94,
+          "Id": "eca020eab5974c26aef8277c4a466325",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.91427636,
+              "Display": "حضرتك كنت بتكلم يا فندم؟",
+              "ITN": "حضرتك كنت بتكلم يا فندم",
+              "Lexical": "حضرتك كنت بتكلم يا فندم",
+              "MaskedITN": "حضرتك كنت بتكلم يا فندم؟",
+              "Words": [
+                {
+                  "Duration": 4700000,
+                  "DurationInSeconds": 0.47,
+                  "Offset": 303600000,
+                  "OffsetInSeconds": 30.36,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 308400000,
+                  "OffsetInSeconds": 30.84,
+                  "Word": "كنت"
+                },
+                {
+                  "Duration": 4500000,
+                  "DurationInSeconds": 0.45,
+                  "Offset": 310600000,
+                  "OffsetInSeconds": 31.06,
+                  "Word": "بتكلم"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 315200000,
+                  "OffsetInSeconds": 31.52,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 5200000,
+                  "DurationInSeconds": 0.52,
+                  "Offset": 317800000,
+                  "OffsetInSeconds": 31.78,
+                  "Word": "فندم"
+                }
+              ]
+            }
+          ],
+          "Offset": 303600000,
+          "OffsetInSeconds": 30.36,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أه. مش عارفة. كنت بكلم زيرو كام يعني؟",
+          "Duration": 25300000,
+          "DurationInSeconds": 2.53,
+          "Id": "6ec8f15ddd8a4fef9fd9e3156d8bf1b7",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8288113,
+              "Display": "أه. مش عارفة. كنت بكلم زيرو كام يعني؟",
+              "ITN": "أه مش عارفة كنت بكلم زيرو كام يعني",
+              "Lexical": "أه مش عارفة كنت بكلم زيرو كام يعني",
+              "MaskedITN": "أه مش عارفة كنت بكلم زيرو كام يعني؟",
+              "Words": [
+                {
+                  "Duration": 3900000,
+                  "DurationInSeconds": 0.39,
+                  "Offset": 346000000,
+                  "OffsetInSeconds": 34.6,
+                  "Word": "أه"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 351000000,
+                  "OffsetInSeconds": 35.1,
+                  "Word": "مش"
+                },
+                {
+                  "Duration": 3400000,
+                  "DurationInSeconds": 0.34,
+                  "Offset": 353000000,
+                  "OffsetInSeconds": 35.3,
+                  "Word": "عارفة"
+                },
+                {
+                  "Duration": 2000000,
+                  "DurationInSeconds": 0.2,
+                  "Offset": 356500000,
+                  "OffsetInSeconds": 35.65,
+                  "Word": "كنت"
+                },
+                {
+                  "Duration": 3700000,
+                  "DurationInSeconds": 0.37,
+                  "Offset": 358600000,
+                  "OffsetInSeconds": 35.86,
+                  "Word": "بكلم"
+                },
+                {
+                  "Duration": 2300000,
+                  "DurationInSeconds": 0.23,
+                  "Offset": 362400000,
+                  "OffsetInSeconds": 36.24,
+                  "Word": "زيرو"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 364800000,
+                  "OffsetInSeconds": 36.48,
+                  "Word": "كام"
+                },
+                {
+                  "Duration": 4500000,
+                  "DurationInSeconds": 0.45,
+                  "Offset": 366800000,
+                  "OffsetInSeconds": 36.68,
+                  "Word": "يعني"
+                }
+              ]
+            }
+          ],
+          "Offset": 346000000,
+          "OffsetInSeconds": 34.6,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختلفة؟ ودافون؟ أوكي؟",
+          "Duration": 79300000,
+          "DurationInSeconds": 7.93,
+          "Id": "c993eb9206624d619a3b098afe76a0c6",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8288113,
+              "Display": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختلفة؟ ودافون؟ أوكي؟",
+              "ITN": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية ولا أرقام مختلفة ودافون أوكي",
+              "Lexical": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية ولا أرقام مختلفة ودافون أوكي",
+              "MaskedITN": "يعني حضرتك كنت بتكلمي أرقام عادية يعني إتصالات أو أي شبكة تانية؟ ولا أرقام مختلفة؟ ودافون؟ أوكي؟",
+              "Words": [
+                {
+                  "Duration": 4700000,
+                  "DurationInSeconds": 0.47,
+                  "Offset": 375000000,
+                  "OffsetInSeconds": 37.5,
+                  "Word": "يعني"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 379800000,
+                  "OffsetInSeconds": 37.98,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1100000,
+                  "DurationInSeconds": 0.11,
+                  "Offset": 382000000,
+                  "OffsetInSeconds": 38.2,
+                  "Word": "كنت"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 383200000,
+                  "OffsetInSeconds": 38.32,
+                  "Word": "بتكلمي"
+                },
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 387600000,
+                  "OffsetInSeconds": 38.76,
+                  "Word": "أرقام"
+                },
+                {
+                  "Duration": 3800000,
+                  "DurationInSeconds": 0.38,
+                  "Offset": 391200000,
+                  "OffsetInSeconds": 39.12,
+                  "Word": "عادية"
+                },
+                {
+                  "Duration": 3200000,
+                  "DurationInSeconds": 0.32,
+                  "Offset": 395100000,
+                  "OffsetInSeconds": 39.51,
+                  "Word": "يعني"
+                },
+                {
+                  "Duration": 4700000,
+                  "DurationInSeconds": 0.47,
+                  "Offset": 398400000,
+                  "OffsetInSeconds": 39.84,
+                  "Word": "إتصالات"
+                },
+                {
+                  "Duration": 2700000,
+                  "DurationInSeconds": 0.27,
+                  "Offset": 403200000,
+                  "OffsetInSeconds": 40.32,
+                  "Word": "أو"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 406000000,
+                  "OffsetInSeconds": 40.6,
+                  "Word": "أي"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 408200000,
+                  "OffsetInSeconds": 40.82,
+                  "Word": "شبكة"
+                },
+                {
+                  "Duration": 2900000,
+                  "DurationInSeconds": 0.29,
+                  "Offset": 411600000,
+                  "OffsetInSeconds": 41.16,
+                  "Word": "تانية"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 414600000,
+                  "OffsetInSeconds": 41.46,
+                  "Word": "ولا"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 416600000,
+                  "OffsetInSeconds": 41.66,
+                  "Word": "أرقام"
+                },
+                {
+                  "Duration": 5600000,
+                  "DurationInSeconds": 0.56,
+                  "Offset": 419700000,
+                  "OffsetInSeconds": 41.97,
+                  "Word": "مختلفة"
+                },
+                {
+                  "Duration": 7100000,
+                  "DurationInSeconds": 0.71,
+                  "Offset": 433600000,
+                  "OffsetInSeconds": 43.36,
+                  "Word": "ودافون"
+                },
+                {
+                  "Duration": 6000000,
+                  "DurationInSeconds": 0.6,
+                  "Offset": 444600000,
+                  "OffsetInSeconds": 44.46,
+                  "Word": "أوكي"
+                }
+              ]
+            }
+          ],
+          "Offset": 371300000,
+          "OffsetInSeconds": 37.13,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "لحظة واحدة؟",
+          "Duration": 8700000,
+          "DurationInSeconds": 0.87,
+          "Id": "3024a480306b46239bf762d2e5978562",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.88394403,
+              "Display": "لحظة واحدة؟",
+              "ITN": "لحظة واحدة",
+              "Lexical": "لحظة واحدة",
+              "MaskedITN": "لحظة واحدة؟",
+              "Words": [
+                {
+                  "Duration": 4000000,
+                  "DurationInSeconds": 0.4,
+                  "Offset": 500700000,
+                  "OffsetInSeconds": 50.07,
+                  "Word": "لحظة"
+                },
+                {
+                  "Duration": 4600000,
+                  "DurationInSeconds": 0.46,
+                  "Offset": 504800000,
+                  "OffsetInSeconds": 50.48,
+                  "Word": "واحدة"
+                }
+              ]
+            }
+          ],
+          "Offset": 500700000,
+          "OffsetInSeconds": 50.07,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "المشكلة دي مع حضرتك من امتى؟",
+          "Duration": 15500000,
+          "DurationInSeconds": 1.55,
+          "Id": "f60f7c399fc8483bbe3207d1473d1f5e",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.89204824,
+              "Display": "المشكلة دي مع حضرتك من امتى؟",
+              "ITN": "المشكلة دي مع حضرتك من امتى",
+              "Lexical": "المشكلة دي مع حضرتك من امتى",
+              "MaskedITN": "المشكلة دي مع حضرتك من امتى؟",
+              "Words": [
+                {
+                  "Duration": 3600000,
+                  "DurationInSeconds": 0.36,
+                  "Offset": 548700000,
+                  "OffsetInSeconds": 54.87,
+                  "Word": "المشكلة"
+                },
+                {
+                  "Duration": 900000,
+                  "DurationInSeconds": 0.09,
+                  "Offset": 552400000,
+                  "OffsetInSeconds": 55.24,
+                  "Word": "دي"
+                },
+                {
+                  "Duration": 1300000,
+                  "DurationInSeconds": 0.13,
+                  "Offset": 553400000,
+                  "OffsetInSeconds": 55.34,
+                  "Word": "مع"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 554800000,
+                  "OffsetInSeconds": 55.48,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1500000,
+                  "DurationInSeconds": 0.15,
+                  "Offset": 559200000,
+                  "OffsetInSeconds": 55.92,
+                  "Word": "من"
+                },
+                {
+                  "Duration": 3400000,
+                  "DurationInSeconds": 0.34,
+                  "Offset": 560800000,
+                  "OffsetInSeconds": 56.08,
+                  "Word": "امتى"
+                }
+              ]
+            }
+          ],
+          "Offset": 548700000,
+          "OffsetInSeconds": 54.87,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "دلوقتي كده؟ مينفعش فعلا 1/4 ساعة؟",
+          "Duration": 24400000,
+          "DurationInSeconds": 2.44,
+          "Id": "530558f425084b508c3c8b8fa7cd59bc",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.85445374,
+              "Display": "دلوقتي كده؟ مينفعش فعلا 1/4 ساعة؟",
+              "ITN": "دلوقتي كده مينفعش فعلا 1/4 ساعة",
+              "Lexical": "دلوقتي كده مينفعش فعلا ربع ساعة",
+              "MaskedITN": "دلوقتي كده؟ مينفعش فعلا 1/4 ساعة؟",
+              "Words": [
+                {
+                  "Duration": 5100000,
+                  "DurationInSeconds": 0.51,
+                  "Offset": 574700000,
+                  "OffsetInSeconds": 57.47,
+                  "Word": "دلوقتي"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 579900000,
+                  "OffsetInSeconds": 57.99,
+                  "Word": "كده"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 581900000,
+                  "OffsetInSeconds": 58.19,
+                  "Word": "مينفعش"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 586300000,
+                  "OffsetInSeconds": 58.63,
+                  "Word": "فعلا"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 593300000,
+                  "OffsetInSeconds": 59.33,
+                  "Word": "ربع"
+                },
+                {
+                  "Duration": 2600000,
+                  "DurationInSeconds": 0.26,
+                  "Offset": 596500000,
+                  "OffsetInSeconds": 59.65,
+                  "Word": "ساعة"
+                }
+              ]
+            }
+          ],
+          "Offset": 574700000,
+          "OffsetInSeconds": 57.47,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أوكي؟",
+          "Duration": 7400000,
+          "DurationInSeconds": 0.74,
+          "Id": "d33c759b6a6b4e7cb547b3b53553a888",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8238158,
+              "Display": "أوكي؟",
+              "ITN": "أوكي",
+              "Lexical": "أوكي",
+              "MaskedITN": "أوكي؟",
+              "Words": [
+                {
+                  "Duration": 7400000,
+                  "DurationInSeconds": 0.74,
+                  "Offset": 615900000,
+                  "OffsetInSeconds": 61.59,
+                  "Word": "أوكي"
+                }
+              ]
+            }
+          ],
+          "Offset": 615900000,
+          "OffsetInSeconds": 61.59,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "أنا واضح عندي إن حضرتك معاكي دقايق، مفيش أي مشكلة خالص.",
+          "Duration": 31900000,
+          "DurationInSeconds": 3.19,
+          "Id": "4c4f15f6633f42eb9f48d41f3460e191",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8879053,
+              "Display": "أنا واضح عندي إن حضرتك معاكي دقايق، مفيش أي مشكلة خالص.",
+              "ITN": "أنا واضح عندي إن حضرتك معاكي دقايق مفيش أي مشكلة خالص",
+              "Lexical": "أنا واضح عندي إن حضرتك معاكي دقايق مفيش أي مشكلة خالص",
+              "MaskedITN": "أنا واضح عندي إن حضرتك معاكي دقايق، مفيش أي مشكلة خالص",
+              "Words": [
+                {
+                  "Duration": 2800000,
+                  "DurationInSeconds": 0.28,
+                  "Offset": 695900000,
+                  "OffsetInSeconds": 69.59,
+                  "Word": "أنا"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 698800000,
+                  "OffsetInSeconds": 69.88,
+                  "Word": "واضح"
+                },
+                {
+                  "Duration": 1800000,
+                  "DurationInSeconds": 0.18,
+                  "Offset": 701400000,
+                  "OffsetInSeconds": 70.14,
+                  "Word": "عندي"
+                },
+                {
+                  "Duration": 1300000,
+                  "DurationInSeconds": 0.13,
+                  "Offset": 703300000,
+                  "OffsetInSeconds": 70.33,
+                  "Word": "إن"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 704700000,
+                  "OffsetInSeconds": 70.47,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 3200000,
+                  "DurationInSeconds": 0.32,
+                  "Offset": 708900000,
+                  "OffsetInSeconds": 70.89,
+                  "Word": "معاكي"
+                },
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 712200000,
+                  "OffsetInSeconds": 71.22,
+                  "Word": "دقايق"
+                },
+                {
+                  "Duration": 2600000,
+                  "DurationInSeconds": 0.26,
+                  "Offset": 715800000,
+                  "OffsetInSeconds": 71.58,
+                  "Word": "مفيش"
+                },
+                {
+                  "Duration": 1300000,
+                  "DurationInSeconds": 0.13,
+                  "Offset": 718500000,
+                  "OffsetInSeconds": 71.85,
+                  "Word": "أي"
+                },
+                {
+                  "Duration": 3700000,
+                  "DurationInSeconds": 0.37,
+                  "Offset": 719900000,
+                  "OffsetInSeconds": 71.99,
+                  "Word": "مشكلة"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 723700000,
+                  "OffsetInSeconds": 72.37,
+                  "Word": "خالص"
+                }
+              ]
+            }
+          ],
+          "Offset": 695900000,
+          "OffsetInSeconds": 69.59,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "تمام، أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي، وهرجع أكلم حضرتك تاني، تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة، بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة، تمام؟",
+          "Duration": 142800000,
+          "DurationInSeconds": 14.28,
+          "Id": "41a1348f3a1b477dbd5cdcf5ca72559b",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8403289,
+              "Display": "تمام، أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي، وهرجع أكلم حضرتك تاني، تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة، بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة، تمام؟",
+              "ITN": "تمام أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي وهرجع أكلم حضرتك تاني تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام",
+              "Lexical": "تمام أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي وهرجع أكلم حضرتك تاني تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة تمام",
+              "MaskedITN": "تمام، أنا بس هعمل لحضرتك خطوة تنشيطية من خلالي، وهرجع أكلم حضرتك تاني، تأكد بس إن الخدمة اشتغلت مع حضرتك ولا في مشكلة، بس هستأذن حضرتك بس تعملي وضع الطيران بعد إنهاء المكالمة لمدة دقيقة، تمام؟",
+              "Words": [
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 734200000,
+                  "OffsetInSeconds": 73.42,
+                  "Word": "تمام"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 741400000,
+                  "OffsetInSeconds": 74.14,
+                  "Word": "أنا"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 744800000,
+                  "OffsetInSeconds": 74.48,
+                  "Word": "بس"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 746800000,
+                  "OffsetInSeconds": 74.68,
+                  "Word": "هعمل"
+                },
+                {
+                  "Duration": 7200000,
+                  "DurationInSeconds": 0.72,
+                  "Offset": 749400000,
+                  "OffsetInSeconds": 74.94,
+                  "Word": "لحضرتك"
+                },
+                {
+                  "Duration": 4200000,
+                  "DurationInSeconds": 0.42,
+                  "Offset": 756900000,
+                  "OffsetInSeconds": 75.69,
+                  "Word": "خطوة"
+                },
+                {
+                  "Duration": 3800000,
+                  "DurationInSeconds": 0.38,
+                  "Offset": 761200000,
+                  "OffsetInSeconds": 76.12,
+                  "Word": "تنشيطية"
+                },
+                {
+                  "Duration": 1600000,
+                  "DurationInSeconds": 0.16,
+                  "Offset": 765100000,
+                  "OffsetInSeconds": 76.51,
+                  "Word": "من"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 766800000,
+                  "OffsetInSeconds": 76.68,
+                  "Word": "خلالي"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 771200000,
+                  "OffsetInSeconds": 77.12,
+                  "Word": "وهرجع"
+                },
+                {
+                  "Duration": 3200000,
+                  "DurationInSeconds": 0.32,
+                  "Offset": 774300000,
+                  "OffsetInSeconds": 77.43,
+                  "Word": "أكلم"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 777600000,
+                  "OffsetInSeconds": 77.76,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 781800000,
+                  "OffsetInSeconds": 78.18,
+                  "Word": "تاني"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 784000000,
+                  "OffsetInSeconds": 78.4,
+                  "Word": "تأكد"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 787200000,
+                  "OffsetInSeconds": 78.72,
+                  "Word": "بس"
+                },
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 789200000,
+                  "OffsetInSeconds": 78.92,
+                  "Word": "إن"
+                },
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 798400000,
+                  "OffsetInSeconds": 79.84,
+                  "Word": "الخدمة"
+                },
+                {
+                  "Duration": 3800000,
+                  "DurationInSeconds": 0.38,
+                  "Offset": 802900000,
+                  "OffsetInSeconds": 80.29,
+                  "Word": "اشتغلت"
+                },
+                {
+                  "Duration": 1100000,
+                  "DurationInSeconds": 0.11,
+                  "Offset": 806800000,
+                  "OffsetInSeconds": 80.68,
+                  "Word": "مع"
+                },
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 808000000,
+                  "OffsetInSeconds": 80.8,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1900000,
+                  "DurationInSeconds": 0.19,
+                  "Offset": 811600000,
+                  "OffsetInSeconds": 81.16,
+                  "Word": "ولا"
+                },
+                {
+                  "Duration": 1100000,
+                  "DurationInSeconds": 0.11,
+                  "Offset": 813600000,
+                  "OffsetInSeconds": 81.36,
+                  "Word": "في"
+                },
+                {
+                  "Duration": 5200000,
+                  "DurationInSeconds": 0.52,
+                  "Offset": 814800000,
+                  "OffsetInSeconds": 81.48,
+                  "Word": "مشكلة"
+                },
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 823800000,
+                  "OffsetInSeconds": 82.38,
+                  "Word": "بس"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 827400000,
+                  "OffsetInSeconds": 82.74,
+                  "Word": "هستأذن"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 831600000,
+                  "OffsetInSeconds": 83.16,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 1500000,
+                  "DurationInSeconds": 0.15,
+                  "Offset": 836000000,
+                  "OffsetInSeconds": 83.6,
+                  "Word": "بس"
+                },
+                {
+                  "Duration": 3700000,
+                  "DurationInSeconds": 0.37,
+                  "Offset": 837600000,
+                  "OffsetInSeconds": 83.76,
+                  "Word": "تعملي"
+                },
+                {
+                  "Duration": 2000000,
+                  "DurationInSeconds": 0.2,
+                  "Offset": 841400000,
+                  "OffsetInSeconds": 84.14,
+                  "Word": "وضع"
+                },
+                {
+                  "Duration": 4000000,
+                  "DurationInSeconds": 0.4,
+                  "Offset": 843500000,
+                  "OffsetInSeconds": 84.35,
+                  "Word": "الطيران"
+                },
+                {
+                  "Duration": 1700000,
+                  "DurationInSeconds": 0.17,
+                  "Offset": 847600000,
+                  "OffsetInSeconds": 84.76,
+                  "Word": "بعد"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 849400000,
+                  "OffsetInSeconds": 84.94,
+                  "Word": "إنهاء"
+                },
+                {
+                  "Duration": 5200000,
+                  "DurationInSeconds": 0.52,
+                  "Offset": 852600000,
+                  "OffsetInSeconds": 85.26,
+                  "Word": "المكالمة"
+                },
+                {
+                  "Duration": 2800000,
+                  "DurationInSeconds": 0.28,
+                  "Offset": 857900000,
+                  "OffsetInSeconds": 85.79,
+                  "Word": "لمدة"
+                },
+                {
+                  "Duration": 4800000,
+                  "DurationInSeconds": 0.48,
+                  "Offset": 860800000,
+                  "OffsetInSeconds": 86.08,
+                  "Word": "دقيقة"
+                },
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 872600000,
+                  "OffsetInSeconds": 87.26,
+                  "Word": "تمام"
+                }
+              ]
+            }
+          ],
+          "Offset": 734200000,
+          "OffsetInSeconds": 73.42,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال.",
+          "Duration": 42400000,
+          "DurationInSeconds": 4.24,
+          "Id": "a2cbf39aed4b42ffb4fbff27a1330ee6",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.8509642,
+              "Display": "وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال.",
+              "ITN": "وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال",
+              "Lexical": "وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال",
+              "MaskedITN": "وأنا هرجع أكلم حضرتك تاني بعد ما أعمل لحضرتك الخطوة التنشيطية من خلال",
+              "Words": [
+                {
+                  "Duration": 5700000,
+                  "DurationInSeconds": 0.57,
+                  "Offset": 884000000,
+                  "OffsetInSeconds": 88.4,
+                  "Word": "وأنا"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 889800000,
+                  "OffsetInSeconds": 88.98,
+                  "Word": "هرجع"
+                },
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 893000000,
+                  "OffsetInSeconds": 89.3,
+                  "Word": "أكلم"
+                },
+                {
+                  "Duration": 4300000,
+                  "DurationInSeconds": 0.43,
+                  "Offset": 896600000,
+                  "OffsetInSeconds": 89.66,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 3100000,
+                  "DurationInSeconds": 0.31,
+                  "Offset": 901000000,
+                  "OffsetInSeconds": 90.1,
+                  "Word": "تاني"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 904200000,
+                  "OffsetInSeconds": 90.42,
+                  "Word": "بعد"
+                },
+                {
+                  "Duration": 800000,
+                  "DurationInSeconds": 0.08,
+                  "Offset": 906400000,
+                  "OffsetInSeconds": 90.64,
+                  "Word": "ما"
+                },
+                {
+                  "Duration": 2100000,
+                  "DurationInSeconds": 0.21,
+                  "Offset": 907300000,
+                  "OffsetInSeconds": 90.73,
+                  "Word": "أعمل"
+                },
+                {
+                  "Duration": 4000000,
+                  "DurationInSeconds": 0.4,
+                  "Offset": 909500000,
+                  "OffsetInSeconds": 90.95,
+                  "Word": "لحضرتك"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 913600000,
+                  "OffsetInSeconds": 91.36,
+                  "Word": "الخطوة"
+                },
+                {
+                  "Duration": 4700000,
+                  "DurationInSeconds": 0.47,
+                  "Offset": 917000000,
+                  "OffsetInSeconds": 91.7,
+                  "Word": "التنشيطية"
+                },
+                {
+                  "Duration": 1500000,
+                  "DurationInSeconds": 0.15,
+                  "Offset": 921800000,
+                  "OffsetInSeconds": 92.18,
+                  "Word": "من"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 923400000,
+                  "OffsetInSeconds": 92.34,
+                  "Word": "خلال"
+                }
+              ]
+            }
+          ],
+          "Offset": 884000000,
+          "OffsetInSeconds": 88.4,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "حاضر.",
+          "Duration": 3500000,
+          "DurationInSeconds": 0.35,
+          "Id": "a426c127c2fa4533a891c0afe11abb27",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.7279041,
+              "Display": "حاضر.",
+              "ITN": "حاضر",
+              "Lexical": "حاضر",
+              "MaskedITN": "حاضر",
+              "Words": [
+                {
+                  "Duration": 3500000,
+                  "DurationInSeconds": 0.35,
+                  "Offset": 936800000,
+                  "OffsetInSeconds": 93.68,
+                  "Word": "حاضر"
+                }
+              ]
+            }
+          ],
+          "Offset": 936800000,
+          "OffsetInSeconds": 93.68,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "حابه أوضح لحضرتك أي استفسار تاني.",
+          "Duration": 19800000,
+          "DurationInSeconds": 1.98,
+          "Id": "5fcac7a473204ed191ecb14ce79173a9",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.86550057,
+              "Display": "حابه أوضح لحضرتك أي استفسار تاني.",
+              "ITN": "حابه أوضح لحضرتك أي استفسار تاني",
+              "Lexical": "حابه أوضح لحضرتك أي استفسار تاني",
+              "MaskedITN": "حابه أوضح لحضرتك أي استفسار تاني",
+              "Words": [
+                {
+                  "Duration": 3900000,
+                  "DurationInSeconds": 0.39,
+                  "Offset": 945800000,
+                  "OffsetInSeconds": 94.58,
+                  "Word": "حابه"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 949800000,
+                  "OffsetInSeconds": 94.98,
+                  "Word": "أوضح"
+                },
+                {
+                  "Duration": 4500000,
+                  "DurationInSeconds": 0.45,
+                  "Offset": 952400000,
+                  "OffsetInSeconds": 95.24,
+                  "Word": "لحضرتك"
+                },
+                {
+                  "Duration": 1000000,
+                  "DurationInSeconds": 0.1,
+                  "Offset": 957000000,
+                  "OffsetInSeconds": 95.7,
+                  "Word": "أي"
+                },
+                {
+                  "Duration": 3800000,
+                  "DurationInSeconds": 0.38,
+                  "Offset": 958100000,
+                  "OffsetInSeconds": 95.81,
+                  "Word": "استفسار"
+                },
+                {
+                  "Duration": 3600000,
+                  "DurationInSeconds": 0.36,
+                  "Offset": 962000000,
+                  "OffsetInSeconds": 96.2,
+                  "Word": "تاني"
+                }
+              ]
+            }
+          ],
+          "Offset": 945800000,
+          "OffsetInSeconds": 94.58,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "لا، يا حبيبتي.",
+          "Duration": 6700000,
+          "DurationInSeconds": 0.67,
+          "Id": "d0f0a35129654a04879c41eaf5e141e7",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.84109926,
+              "Display": "لا، يا حبيبتي.",
+              "ITN": "لا يا حبيبتي",
+              "Lexical": "لا يا حبيبتي",
+              "MaskedITN": "لا، يا حبيبتي",
+              "Words": [
+                {
+                  "Duration": 2600000,
+                  "DurationInSeconds": 0.26,
+                  "Offset": 975800000,
+                  "OffsetInSeconds": 97.58,
+                  "Word": "لا"
+                },
+                {
+                  "Duration": 1200000,
+                  "DurationInSeconds": 0.12,
+                  "Offset": 978500000,
+                  "OffsetInSeconds": 97.85,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 2700000,
+                  "DurationInSeconds": 0.27,
+                  "Offset": 979800000,
+                  "OffsetInSeconds": 97.98,
+                  "Word": "حبيبتي"
+                }
+              ]
+            }
+          ],
+          "Offset": 975800000,
+          "OffsetInSeconds": 97.58,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-2",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "شكرا شرفتيني يا فندم. سعداء بخدمة حضرتك إتصالات، أتمنى لك يوم جميل.",
+          "Duration": 41400000,
+          "DurationInSeconds": 4.14,
+          "Id": "608d07e62d1e4c4187fa4e897734cc9c",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.82979167,
+              "Display": "شكرا شرفتيني يا فندم. سعداء بخدمة حضرتك إتصالات، أتمنى لك يوم جميل.",
+              "ITN": "شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات أتمنى لك يوم جميل",
+              "Lexical": "شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات أتمنى لك يوم جميل",
+              "MaskedITN": "شكرا شرفتيني يا فندم سعداء بخدمة حضرتك إتصالات، أتمنى لك يوم جميل",
+              "Words": [
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 982600000,
+                  "OffsetInSeconds": 98.26,
+                  "Word": "شكرا"
+                },
+                {
+                  "Duration": 6900000,
+                  "DurationInSeconds": 0.69,
+                  "Offset": 987400000,
+                  "OffsetInSeconds": 98.74,
+                  "Word": "شرفتيني"
+                },
+                {
+                  "Duration": 800000,
+                  "DurationInSeconds": 0.08,
+                  "Offset": 994400000,
+                  "OffsetInSeconds": 99.44,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 4600000,
+                  "DurationInSeconds": 0.46,
+                  "Offset": 995300000,
+                  "OffsetInSeconds": 99.53,
+                  "Word": "فندم"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 1000200000,
+                  "OffsetInSeconds": 100.02,
+                  "Word": "سعداء"
+                },
+                {
+                  "Duration": 3300000,
+                  "DurationInSeconds": 0.33,
+                  "Offset": 1003600000,
+                  "OffsetInSeconds": 100.36,
+                  "Word": "بخدمة"
+                },
+                {
+                  "Duration": 2500000,
+                  "DurationInSeconds": 0.25,
+                  "Offset": 1007000000,
+                  "OffsetInSeconds": 100.7,
+                  "Word": "حضرتك"
+                },
+                {
+                  "Duration": 4400000,
+                  "DurationInSeconds": 0.44,
+                  "Offset": 1009600000,
+                  "OffsetInSeconds": 100.96,
+                  "Word": "إتصالات"
+                },
+                {
+                  "Duration": 3000000,
+                  "DurationInSeconds": 0.3,
+                  "Offset": 1014100000,
+                  "OffsetInSeconds": 101.41,
+                  "Word": "أتمنى"
+                },
+                {
+                  "Duration": 1700000,
+                  "DurationInSeconds": 0.17,
+                  "Offset": 1017200000,
+                  "OffsetInSeconds": 101.72,
+                  "Word": "لك"
+                },
+                {
+                  "Duration": 1100000,
+                  "DurationInSeconds": 0.11,
+                  "Offset": 1019000000,
+                  "OffsetInSeconds": 101.9,
+                  "Word": "يوم"
+                },
+                {
+                  "Duration": 3700000,
+                  "DurationInSeconds": 0.37,
+                  "Offset": 1020200000,
+                  "OffsetInSeconds": 102.02,
+                  "Word": "جميل"
+                }
+              ]
+            }
+          ],
+          "Offset": 982500000,
+          "OffsetInSeconds": 98.25,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "مع السلامة يا حبي، ميرسي، مع السلامة.",
+          "Duration": 21000000,
+          "DurationInSeconds": 2.1,
+          "Id": "59877e2809c44e6eaefc4fdf12ff8c87",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.828527,
+              "Display": "مع السلامة يا حبي، ميرسي، مع السلامة.",
+              "ITN": "مع السلامة يا حبي ميرسي مع السلامة",
+              "Lexical": "مع السلامة يا حبي ميرسي مع السلامة",
+              "MaskedITN": "مع السلامة يا حبي، ميرسي، مع السلامة",
+              "Words": [
+                {
+                  "Duration": 1600000,
+                  "DurationInSeconds": 0.16,
+                  "Offset": 1033400000,
+                  "OffsetInSeconds": 103.34,
+                  "Word": "مع"
+                },
+                {
+                  "Duration": 4200000,
+                  "DurationInSeconds": 0.42,
+                  "Offset": 1035100000,
+                  "OffsetInSeconds": 103.51,
+                  "Word": "السلامة"
+                },
+                {
+                  "Duration": 1500000,
+                  "DurationInSeconds": 0.15,
+                  "Offset": 1039400000,
+                  "OffsetInSeconds": 103.94,
+                  "Word": "يا"
+                },
+                {
+                  "Duration": 1400000,
+                  "DurationInSeconds": 0.14,
+                  "Offset": 1041000000,
+                  "OffsetInSeconds": 104.1,
+                  "Word": "حبي"
+                },
+                {
+                  "Duration": 4100000,
+                  "DurationInSeconds": 0.41,
+                  "Offset": 1043400000,
+                  "OffsetInSeconds": 104.34,
+                  "Word": "ميرسي"
+                },
+                {
+                  "Duration": 1500000,
+                  "DurationInSeconds": 0.15,
+                  "Offset": 1047600000,
+                  "OffsetInSeconds": 104.76,
+                  "Word": "مع"
+                },
+                {
+                  "Duration": 5200000,
+                  "DurationInSeconds": 0.52,
+                  "Offset": 1049200000,
+                  "OffsetInSeconds": 104.92,
+                  "Word": "السلامة"
+                }
+              ]
+            }
+          ],
+          "Offset": 1033400000,
+          "OffsetInSeconds": 103.34,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Guest-1",
+          "Type": "ConversationTranscription"
+        },
+        {
+          "Channel": 1,
+          "ChannelNumber": null,
+          "DisplayText": "آه.",
+          "Duration": 1000000,
+          "DurationInSeconds": 0.1,
+          "Id": "168d67d8de5840ec97fffa1e8a846287",
+          "Language": "ar-EG",
+          "NBest": [
+            {
+              "Confidence": 0.85541487,
+              "Display": "آه.",
+              "ITN": "آه",
+              "Lexical": "آه",
+              "MaskedITN": "آه",
+              "Words": [
+                {
+                  "Duration": 1000000,
+                  "DurationInSeconds": 0.1,
+                  "Offset": 1069900000,
+                  "OffsetInSeconds": 106.99,
+                  "Word": "آه"
+                }
+              ]
+            }
+          ],
+          "Offset": 1069900000,
+          "OffsetInSeconds": 106.99,
+          "RecognitionStatus": "Success",
+          "SpeakerId": "Unknown",
+          "Type": "ConversationTranscription"
+        }
+      ],
+      "TranscriptionStatus": "Succeeded"
+    }
+  ]
+}

@@ -1,3 +1,127 @@
-{"asctime": "2024-06-11 T11:24:33+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
-{"asctime": "2024-06-11 T11:24:33+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
-{"asctime": "2024-06-11 T11:24:33+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
+{"asctime": "2024-06-19 T15:21:35+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:21:35+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:21:35+0530", "message": "Log Deleted", "location": "logger.py - remove_old_logs_from_top"}
+{"asctime": "2024-06-19 T15:24:12+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:24:12+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:26:57+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:26:57+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:27:54+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:27:54+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:29:51+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:29:51+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:29:54+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:29:54+0530", "message": "attributes added sucesfully to mapping.json for  '159385897_mono_wav.json'", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:35:57+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:35:57+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:36:00+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:39:40+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:39:40+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:39:43+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:43:33+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:43:33+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:43:35+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:47:08+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:47:08+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:47:11+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:50:38+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:50:38+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:50:40+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:55:56+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T15:55:56+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T15:55:59+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T15:55:59+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-06-19 T15:55:59+0530", "message": "Starting to Iterate over the dialogue to translate of 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T15:55:59+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T15:57:16+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T15:57:16+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T15:58:34+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T15:58:34+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:07:37+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T16:07:37+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T16:07:41+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T16:07:41+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-06-19 T16:07:41+0530", "message": "Starting to Iterate over the dialogue to translate of 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:07:41+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:07:56+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:07:56+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:11+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:11+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:25+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:25+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:39+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:39+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:54+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:08:54+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:09+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:09+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:24+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:24+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:38+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:09:38+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:07+0530", "message": "Called the route '/readallaudios' and activated the function 'read_all_audios'", "location": "app.py - read_all_audios"}
+{"asctime": "2024-06-19 T16:10:07+0530", "message": "Checking for the Old Logs", "location": "App.py - Process_Audio_files"}
+{"asctime": "2024-06-19 T16:10:10+0530", "message": "Started function add_to_mapping to create mapping.json data", "location": "main.py - add_to_mapping"}
+{"asctime": "2024-06-19 T16:10:10+0530", "message": "Calling get_translated_transcriptions for 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-06-19 T16:10:10+0530", "message": "Starting to Iterate over the dialogue to translate of 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:10+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:11+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:11+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:11+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:11+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:12+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:12+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:12+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:12+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:13+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:13+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:14+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:14+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:14+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:14+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:15+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:16+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:16+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:16+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:16+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:17+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:17+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:17+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:17+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:18+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:18+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:18+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:18+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:19+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:20+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:20+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:20+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:20+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:21+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:21+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:21+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:21+0530", "message": "calling get_translation for the dialogues in'ar-EG'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:22+0530", "message": "got the translated value, now appending it to transcription list", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:22+0530", "message": "saved translated output list to transcript_output_english.json at locaton 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output_english.json'", "location": "translator.py - get_translated_transcriptions"}
+{"asctime": "2024-06-19 T16:10:22+0530", "message": "Calling get_kpis for 'C:\\Celebal data\\Clients\\Telecom Egypt\\Extract summary\\summary_pipeline/data/audio_analytics/159385897/transcript_output_english.json'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-06-19 T16:10:22+0530", "message": "getting Conversational Summarization", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "getting sentiments for the dialogue", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Saving kpi_output.json at location 'data/audio_analytics/159385897/'", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "getting Conversational Summarization", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "getting sentiments for the dialogue", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Saving arabic_kpi_output.json at location 'data/audio_analytics/159385897/'", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Saved arabic_kpi_output.json at location 'data/audio_analytics/159385897/'", "location": "main.py - get_kpis"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Started function add_summarization_to_mapping to update mapping.json data for summarization", "location": "main.py - add_summarization_to_mapping"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Started function add_summarization_to_mapping to update mapping.json data for summarization", "location": "main.py - add_summarization_to_mapping"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Saved power_bi_merged_output.json as path 'data/audio_analytics/159385897/'", "location": "main.py - pipeline_after_transcription"}
+{"asctime": "2024-06-19 T16:10:30+0530", "message": "Starts Creating the excel for", "location": "main.py-audios_main"}
+{"asctime": "2024-06-19 T16:10:31+0530", "message": " ################## Successfully: Done with the Processing of audio files ################## ", "location": "main.py-audios_main"}

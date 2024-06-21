@@ -6,28 +6,32 @@ from src.adapters.summarisation import Summarization
 from src.adapters.translator import AzureTranslator
 from src.adapters.transcription import recognize_from_file
 from src.audio.audio import audio_processing, get_audio_attrs_for_report
-from src.starter_pipeline import starter_class
+from fetch_data import fetch_data_class
 from src.utils import convert_to_minutes, is_file_present, get_text_count_from_keyphrases, utilization_precentage, get_total_silence
 from logs.logger import get_Error_Logger, get_Info_Logger
-from config.config import LocalConfig
+from config.config import LocalConfig, AzureConfig
 
 
 class Main:
     info_logger = get_Info_Logger()
     error_logger = get_Error_Logger()
+    
+    def __init__(self):
+        self.path = LocalConfig()
+        self.cred = AzureConfig()
 
 ###################################################################################################################
 ##################################### Pre Processing and transcription ############################################
 ###################################################################################################################
 
-    def add_to_mapping(self,int_filename, audio_file_path, call_category, agent_id, agent_name, call_date, comment):
+    def add_to_mapping(self,int_filename, audio_file_path, call_category, agent_id, agent_name, call_date, casetrigger, calltype, call_length):
         try:
             self.info_logger.info(
                 msg=f"Started function add_to_mapping to create mapping.json data",
                 extra={"location": "main.py - add_to_mapping"},
             )
 
-            path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+            path = self.path.DATA_FOLDER + "/" + "audios_info/mappings.json"
 
             with open(path, "r", encoding="utf-8") as fp:
                 call_dict = json.load(fp)
@@ -35,25 +39,34 @@ class Main:
             next_call_number = len(call_dict) + 1
 
             audio_file = audio_file_path.split("/")[-1]
-            audio_atrs = get_audio_attrs_for_report(audio_path=audio_file_path)
-            minutes = convert_to_minutes(audio_atrs["audio_duration"])
-            raw_audio_path = audio_file_path
-            print("raw_audio_path: ", raw_audio_path, "audio_atrs: ", audio_atrs, "minutes: ", minutes)
-            #hold_time = get_total_silence(raw_audio_path)
-            #print("hold time", hold_time)
+            minutes = convert_to_minutes(call_length)
+
+            # audio_atrs = get_audio_attrs_for_report(audio_path=audio_file_path)
+            #print("raw_audio_path: ", raw_audio_path, "audio_atrs: ", audio_atrs, "minutes: ", minutes)
             
+            raw_audio_path = audio_file_path
+            audio_file = audio_file.split('_')[0]
+            print("audio file for mapping json: ", audio_file)
+
+            # Getting audio duraion (get from transcriptions_output.json)
+            minutes = ""
+            #to be changed or fetched from transcriptons 
+            sort_duration = minutes * 60
+
             call_dict[audio_file] = {"id": int_filename}
             call_dict[audio_file]["recordingID"] = next_call_number            
             call_dict[audio_file]["CallDuration"] = minutes
-            call_dict[audio_file]["Audio_Size"] = int(audio_atrs["audio_file_size"])
+            call_dict[audio_file]["sort_duration"] = call_length
+            #call_dict[audio_file]["Audio_Size"] = int(audio_atrs["audio_file_size"])
             call_dict[audio_file]["Call Category"] = call_category
             call_dict[audio_file]["AgentID"] = int(agent_id)
             call_dict[audio_file]["Agent Name"] = agent_name
             call_dict[audio_file]["Call Date"] = str(call_date)
-            #call_dict[audio_file]["HoldTime"] = int(hold_time)
-            call_dict[audio_file]["Comment"] = comment
+            call_dict[audio_file]["Case Trigger"] = str(casetrigger)
+            call_dict[audio_file]["Call Type"] = str(calltype)
+        
             
-            print("call_dict picked: ", call_dict)
+            print("_____call_dict picked:_______ ", call_dict)
             with open(path, mode="w") as json_file:
                 json.dump(call_dict, json_file, indent=4)
 
@@ -77,137 +90,198 @@ class Main:
                 msg="Sterted Processing from audios_main",
                 extra={"location": "main.py-audios_main"},
             )
-            source_data_obj = starter_class()
+            source_data_obj = fetch_data_class()
             print(f"got the source file {source_calls_path}")
-            sheet1_res, sheet2_res, sheet3_res = source_data_obj.read_data_csv()
-            
-            source_calls_path = LocalConfig().SOURCE_DATA
-            for dir in os.listdir(source_calls_path):
-                print(f"________________________________________executing audio from directory: {dir} ______________________________________")
-                
-                audio_path = source_calls_path + "/" + dir
-                for audio_file in os.listdir(audio_path):
-                    print(f"got the audio path as : {audio_path}/{audio_file}")
-                    file_to_check = audio_file
+            sheet1_res, sheet2_res, sheet3_res, sheet4_res, sheet5_res, combined_data = source_data_obj.read_data_csv()
+            self.combined_data = combined_data
 
-                    if audio_file.endswith(".mp3"):
-                        file_to_check = audio_file.replace(".mp3", ".wav")
-                    if is_file_present(
-                        folder_path=LocalConfig().PROCESSED_DATA_FOLDER,
-                        filename=file_to_check,
-                    ):
-                        self.info_logger.info(
-                            msg=f"file {file_to_check} already found",
-                            extra={"location": "main.py-audios_main"},
-                        )
-                        continue
-                    print(f"audio file: {audio_file}")
-                    try:                 
-                        extension = audio_file.split(".")[-1]
-                        filename = audio_file.split(".")[:-1][0]
-                    except:
+            skipped_calls = []
+            for audiojson in os.listdir(source_calls_path):
+                print(f"________________________________________executing transcript JSON for audio file: {audiojson} ______________________________________")
+                
+                # In case of audio calls to check already processed files 
+                # if audio_file.endswith(".mp3"):
+                #     file_to_check = audio_file.replace(".mp3", ".wav")
+                # if is_file_present(folder_path=self.path.PROCESSED_DATA_FOLDER, filename=file_to_check,):
+                #     self.info_logger.info(
+                #         msg=f"file {file_to_check} already found",extra={"location": "main.py-audios_main"},)
+                #     continue
+
+                print(f"audio file Json: {audiojson}")
+                try:                 
+                    extension = audiojson.split(".")[-1]
+                    filename = audiojson.split('_')[0]
+                    print("extension: ", extension," filename: ", filename)
+                except:
+                    print(f"Error at line 100: {e}")
+                int_filename = int(filename)
+                print(f"filename {int_filename}")
+
+                #fetch dir from combined data
+                dir = self.find_sheetname_by_callid(int_filename)
+                print("dir: ", dir)
+
+                #If the call doesn't matches with any data from the excel it gets skipped 
+                if dir == None or dir == "":
+                    skipped_calls.append(audiojson)
+                    continue
+
+                
+                # Strip whitespace and convert to lowercase for comparison
+                dir = dir.strip().lower()
+                sheet1_name_stripped = sheet1_res["sheetname"].strip().lower()
+                sheet2_name_stripped = sheet2_res["sheetname"].strip().lower()
+                sheet3_name_stripped = sheet3_res["sheetname"].strip().lower()
+                sheet4_name_stripped = sheet4_res["sheetname"].strip().lower()
+                sheet5_name_stripped = sheet5_res["sheetname"].strip().lower()
+
+                print("dir stripped: ", dir, "sheet1_name_stripped: ", sheet1_name_stripped, "sheet2_name_stripped", sheet2_name_stripped, "sheet3_name_stripped", sheet3_name_stripped)
+                #getting the data of agent_name and call_id for an index i
+                if dir == sheet1_name_stripped:
+                    try:
+                        print("dir1 matched")
+                        index = sheet1_res["callids"].index(int_filename)
+                        agent_id = sheet1_res["agentids"][index]
+                        agent_name = sheet1_res["agentnames"][index]
+                        call_date = sheet1_res["calldates"][index]
+                        casetrigger = sheet1_res["casetrigger"][index]
+                        calltype = sheet1_res["calltype"][index]
+                    except Exception as e:
                         self.error_logger.error(
-                            msg=f"getting error while retrivieing filename by spliting audio: {e}",
+                            msg=f"list index couldn't be found or error: {e}",
                             extra={"location": "main.py-audios_main"},
                         )
-                    int_filename = int(filename)
-                    print(f"filename {int_filename}")
-                    # Strip whitespace and convert to lowercase for comparison
-                    dir = dir.strip().lower()
-                    sheet1_name_stripped = sheet1_res["sheetname"].strip().lower()
-                    sheet2_name_stripped = sheet2_res["sheetname"].strip().lower()
-                    sheet3_name_stripped = sheet3_res["sheetname"].strip().lower()
+                elif dir == sheet2_name_stripped:
+                    try:
+                        print("dir2 matched")
+                        index = sheet2_res["callids"].index(int_filename)
+                        agent_id = sheet2_res["agentids"][index]
+                        agent_name = sheet2_res["agentnames"][index]
+                        call_date = sheet2_res["calldates"][index]
+                        casetrigger = sheet2_res["casetrigger"][index]
+                        calltype = sheet2_res["calltype"][index]
+                    except Exception as e:
+                        self.error_logger.error(
+                            msg=f"list index couldn't be found or list index out of range with error: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                elif dir == sheet3_name_stripped:
+                    try:
+                        print("dir3 matched")
+                        index = sheet3_res["callids"].index(int_filename)
+                        agent_id = sheet3_res["agentids"][index]
+                        agent_name = sheet3_res["agentnames"][index]
+                        call_date = sheet3_res["calldates"][index]
+                        casetrigger = sheet3_res["casetrigger"][index]
+                        calltype = sheet3_res["calltype"][index]
+                    except Exception as e:
+                        self.error_logger.error(
+                            msg=f"list index couldn't be found or list index out of range with error: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                elif dir == sheet4_name_stripped:
+                    try:
+                        print("dir4 matched")
+                        index = sheet4_res["callids"].index(int_filename)
+                        agent_id = sheet4_res["agentids"][index]
+                        agent_name = sheet4_res["agentnames"][index]
+                        call_date = sheet4_res["calldates"][index]
+                        casetrigger = sheet4_res["casetrigger"][index]
+                        calltype = sheet4_res["calltype"][index]
+                    except Exception as e:
+                        self.error_logger.error(
+                            msg=f"list index couldn't be found or list index out of range with error: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                elif dir == sheet5_name_stripped:
+                    try:
+                        print("dir5 matched")
+                        index = sheet5_res["callids"].index(int_filename)
+                        agent_id = sheet5_res["agentids"][index]
+                        agent_name = sheet5_res["agentnames"][index]
+                        call_date = sheet5_res["calldates"][index]
+                        casetrigger = sheet5_res["casetrigger"][index]
+                        calltype = sheet5_res["calltype"][index]
+                    except Exception as e:
+                        self.error_logger.error(
+                            msg=f"list index couldn't be found or list index out of range with error: {e}",
+                            extra={"location": "main.py-audios_main"},
+                        )
+                print(f"got the data for audio: {filename}", index, agent_id, agent_name, call_date, dir, casetrigger, calltype)
 
-                    print("dir stripped: ", dir, "sheet1_name_stripped: ", sheet1_name_stripped, "sheet2_name_stripped", sheet2_name_stripped, "sheet3_name_stripped", sheet3_name_stripped)
-                    #getting the data of agent_name and call_id for an index i
-                    if dir == sheet1_name_stripped:
-                        try:
-                            print("dir1 matched")
 
-                            index = sheet1_res["callids"].index(int_filename)
-                            print("got the index:", index)
-                            agent_id = sheet1_res["agentids"][index]
-                            agent_name = sheet1_res["agentnames"][index]
-                            call_date = sheet1_res["calldates"][index]
-                            comment = sheet1_res["comments"][index]
-                            print("sheet1_name_stripped, index, agent_id, agent_name, call_date, comment", sheet1_name_stripped, agent_id, agent_name, call_date, comment)
-                        except Exception as e:
-                            self.error_logger.error(
-                                msg=f"list index couldn't be found or error: {e}",
-                                extra={"location": "main.py-audios_main"},
-                            )
-                    elif dir == sheet2_name_stripped:
-                        try:
-                            print("dir2 matched")
-                            index = sheet2_res["callids"].index(int_filename)
-                            agent_id = sheet2_res["agentids"][index]
-                            agent_name = sheet2_res["agentnames"][index]
-                            call_date = sheet2_res["calldates"][index]
-                            comment = sheet2_res["comments"][index]
-                            print("sheet2_name_stripped, agent_id, agent_name, call_date, comment", sheet2_name_stripped, agent_id, agent_name, call_date, comment)
+                ######################### Data fetch and Match Done #########################################
 
-                        except Exception as e:
-                            self.error_logger.error(
-                                msg=f"list index couldn't be found or list index out of range with error: {e}",
-                                extra={"location": "main.py-audios_main"},
-                            )
-                    elif dir == sheet3_name_stripped:
-                        try:
-                            print("dir3 matched")
-                            index = sheet3_res["callids"].index(int_filename)
-                            agent_id = sheet3_res["agentids"][index]
-                            agent_name = sheet3_res["agentnames"][index]
-                            call_date = sheet3_res["calldates"][index]
-                            comment = sheet3_res["comments"][index]
-                            print("sheet3_name_stripped, agent_id, agent_name, call_date, comment", sheet3_name_stripped, index, agent_id, agent_name, call_date, comment)
 
-                        except Exception as e:
-                            self.error_logger.error(
-                                msg=f"list index couldn't be found or list index out of range with error: {e}",
-                                extra={"location": "main.py-audios_main"},
-                            )
-                    print(f"got the data for audio: {filename}", index, agent_id, agent_name, call_date, comment)
-                    path1 = source_calls_path + "/" + dir +"/" + filename  + "." +extension
-                    self.info_logger.info(
-                        msg=f"Calling get_audio_attributes",
-                        extra={"location": "main.py-audios_main"},
-                    )
-                
+                path1 = source_calls_path + "/" + audiojson
+                print("paths are: ", path1)
 
-                    path2 = LocalConfig().PROCESSED_DATA_FOLDER + "/" + filename + ".wav"
+                # processing to enhance the sound volume by 20
+                # audio_processing(input_path=path1, output_path=path2)
+                # self.info_logger.info(
+                #     msg=f"Calling get_audio_attributes",
+                #     extra={"location": "main.py-audios_main"},
+                # )
 
-                    # processing to enhance the sound volume by 20
-                    audio_processing(input_path=path1, output_path=path2)
-                    print("paths are: ", path1, path2)
 
-                    # get & store informations
-                    self.add_to_mapping(int_filename, path2, dir, agent_id, agent_name, call_date, comment)
-
-                    # make folders for the audios where corresponding analytics will get stored
-                    folder = LocalConfig().DATA_FOLDER + "/audio_analytics/" + filename
-                    os.makedirs(folder, exist_ok=True)
-                    self.info_logger.info(
-                        msg=f"Created folder for audio to save transcriptions at'{folder}'",
-                        extra={"location": "main.py-audios_main"},
-                    )
-
-                    # Creating the first audio transcription in Arabic(native language)
-                    recognize_from_file(audio_file_path=path2, folder=folder)
-                    transcripted_json_file_path = folder + "/transcript_output.json"
-                    self.info_logger.info(
-                        msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
-                        extra={"location": "main.py-audios_main"},
-                    )
-
-                    self.pipeline_after_transcription(
-                        audio_name=filename,
-                        transcription_jsonPath=transcripted_json_file_path,
-                    )
+                # make folders for the audios where corresponding analytics will get stored
+                folder = self.path.DATA_FOLDER + "/audio_analytics/" + filename
+                os.makedirs(folder, exist_ok=True)
                 self.info_logger.info(
-                        msg=f"Starts Creating the excel for",
-                        extra={"location": "main.py-audios_main"},
-                    )
-                ###Adding a method to create an excel at last with the data from mapping.json
+                    msg=f"Created folder for audio to save transcriptions at'{folder}'",
+                    extra={"location": "main.py-audios_main"},
+                )
+
+                # Creating the first audio transcription in Arabic(native language)
+                #recognize_from_file(audio_file_path=path2, folder=folder)
+
+                with open(path1, mode = "r", encoding="utf-8") as fp:
+                    source_transcription = json.load(fp)
+
+                print(" source_transcription loaded:  ", source_transcription)
+
+                # Extract the necessary information and create the desired structure
+                processed_transcription = {
+                    "transcript": [],
+                    "AudioLengthInSeconds": source_transcription['AudioFileResults'][0]['AudioLengthInSeconds'],
+                    "AudioFileName": source_transcription['AudioFileResults'][0]['AudioFileName']
+                }
+                print("processed_transcription 1st stage done ")
+
+                for segment in source_transcription['AudioFileResults'][0]['SegmentResults']:
+                    processed_transcription["transcript"].append({
+                        "dialogue": segment['DisplayText'],
+                        "speaker": segment['SpeakerId'],
+                        "duration_to_play": segment['OffsetInSeconds'],
+                        "duration_in_seconds": segment['DurationInSeconds'],
+                        "locale": segment['Language']
+                    })
+                print("processed_transcription 2nd stage done ")
+
+                # get & store informations
+                call_length = source_transcription['AudioFileResults'][0]['AudioLengthInSeconds']
+                self.add_to_mapping(int_filename, path1, dir, agent_id, agent_name, call_date, casetrigger, calltype, call_length)
+
+
+                transcripted_json_file_path = folder + "/transcript_output.json"
+                self.info_logger.info(
+                    msg=f"Calling Post Transcription for audio '{filename}' and file '{transcripted_json_file_path}'",
+                    extra={"location": "main.py-audios_main"},
+                )
+                with open(transcripted_json_file_path, "w", encoding="utf-8") as file:
+                    json.dump(processed_transcription, file, indent=4 , ensure_ascii=False)
+                    
+
+                self.pipeline_after_transcription(
+                    audio_name=filename,
+                    transcription_jsonPath=transcripted_json_file_path,
+                )
+            self.info_logger.info(
+                    msg=f"Starts Creating the excel for",
+                    extra={"location": "main.py-audios_main"},
+                )
+            
+            ###Adding a method to create an excel at last with the data from mapping.json
             self.create_excel_for_powerbi()
             self.info_logger.info(
                     msg=f" ################## Successfully: Done with the Processing of audio files ################## ",
@@ -271,7 +345,7 @@ class Main:
             else:
                 result["keyPhrases_ls"] = None
 
-            self.file_path = f"data/audio_analytics/{audio_name}/"
+            self.file_path = self.cred.DATA_FOLDER + f"/audio_analytics/{audio_name}/"
             self.info_logger.info(
                 msg=f"Saving kpi_output.json at location '{self.file_path}'",
                 extra={"location": "main.py - get_kpis"},
@@ -336,16 +410,16 @@ class Main:
             else:
                 arabic_result["keyPhrases_ls"] = None
 
-            self.file_path = f"data/audio_analytics/{audio_name}/"
+            arabic_file_path = self.cred.DATA_FOLDER + f"/audio_analytics/{audio_name}/"
             self.info_logger.info(
-                msg=f"Saving arabic_kpi_output.json at location '{self.file_path}'",
+                msg=f"Saving arabic_kpi_output.json at location '{arabic_file_path}'",
                 extra={"location": "main.py - get_kpis"},
             )
-            arabic_json_path = self.file_path + "arabic_kpi_output.json"
+            arabic_json_path = arabic_file_path + "arabic_kpi_output.json"
             with open(file=arabic_json_path, mode="w", encoding = "utf-8") as fh:
                 json.dump(arabic_result, fh, ensure_ascii=False, indent=4)
             self.info_logger.info(
-                msg=f"Saved arabic_kpi_output.json at location '{self.file_path}'",
+                msg=f"Saved arabic_kpi_output.json at location '{arabic_file_path}'",
                 extra={"location": "main.py - get_kpis"},
             )
             return arabic_result
@@ -594,6 +668,7 @@ class Main:
 
                         sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
                         arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=str(sentiment_mapping[dialouge["sentiment"]]), from_lang=native_lang, to_lang=output_lang))
+
                 else:
                     self.info_logger.info(
                         msg=f"no keyword found for dialoge '{dialouge['dialogue']}'",
@@ -618,22 +693,23 @@ class Main:
                     sort_sentiment_ls.append(sentiment_mapping[dialouge["sentiment"]])
                     arabic_sort_sentiment_ls.append(translator_obj.get_translations(text=str(sentiment_mapping[dialouge["sentiment"]]), from_lang=native_lang, to_lang=output_lang))
 
+
             dic_pandas = {
                 "audio_filename": audio_file_ls,
-                "duration_1": duration_ls,
-                "keywords_1": keywords_ls,
-                "sentiment_1": sentiment_ls,
-                "dialouge_1": dialouges_ls,
-                "sort sentiment_1": sort_sentiment_ls
+                "duration": duration_ls,
+                "keywords": keywords_ls,
+                "sentiment": sentiment_ls,
+                "dialouge": dialouges_ls,
+                "sort sentiment": sort_sentiment_ls
             }
 
             arabic_dic_pandas = {
                 "audio_filename": arabic_audio_file_ls,
-                "duration_1": arabic_duration_ls,
-                "keywords_1": arabic_keywords_ls,
-                "sentiment_1": arabic_sentiment_ls,
-                "dialouge_1": arabic_dialouges_ls,
-                "sort sentiment_1": arabic_sort_sentiment_ls
+                "duration": arabic_duration_ls,
+                "keywords": arabic_keywords_ls,
+                "sentiment": arabic_sentiment_ls,
+                "dialouge": arabic_dialouges_ls,
+                "sort sentiment": arabic_sort_sentiment_ls
             }
 
 
@@ -728,7 +804,7 @@ class Main:
                 self.info_logger.info(msg=f"Loading the mappings.json",
                             extra={"location": "main.py - power_bi_report_main_helper"},)
 
-                mapping_path = LocalConfig().DATA_FOLDER + "/" + "audios_info/mappings.json"
+                mapping_path = self.path.DATA_FOLDER + "/" + "audios_info/mappings.json"
                 with open(mapping_path) as fh:
                     call_dict = json.load(fh)
 
@@ -738,7 +814,7 @@ class Main:
                     overall_sentiment = -1
 
                 # Calculating utilization percentage 
-                transcription_path = LocalConfig().DATA_FOLDER + "/" + "audio_analytics/" + audio_file + "/transcript_output.json"
+                transcription_path = self.path.DATA_FOLDER + "/" + "audio_analytics/" + audio_file + "/transcript_output.json"
                 self.info_logger.info(msg=f"getting the utilization percentage",
                             extra={"location": "main.py - power_bi_report_main_helper"},)
                 agent_percentage, customer_percentage = utilization_precentage(transcription_path)
@@ -751,6 +827,7 @@ class Main:
                 call_dict[audio_file]["CustomerPercentage"] = customer_percentage
                 call_dict[audio_file]["CallOpeningScore"] = call_opening_score
                 call_dict[audio_file]["CallClosingScore"] = call_closing_score
+
 
                 with open(mapping_path, "w") as json_file:
                     json.dump(call_dict, json_file, indent=4)
@@ -815,8 +892,7 @@ class Main:
         
     def create_excel_for_powerbi(self):
         try:
-            path =LocalConfig()
-            path = path.DATA_FOLDER + r"/audio_analytics"
+            anaytics_path = self.path.DATA_FOLDER + "/audio_analytics"
 
             self.info_logger.info(
                     msg=f"starts iterating over audio_analytic for power_bi and merged_output .json",
@@ -825,15 +901,15 @@ class Main:
             
             All_audio_result = pd.DataFrame()
             arabic_All_audio_result = pd.DataFrame()
-            calls_list = os.listdir(path)
+            calls_list = os.listdir(anaytics_path)
             for calls in calls_list:
-                powerbi_merged_path = f"{path}\{calls}\power_bi_merged_output.json"
+                powerbi_merged_path = f"{anaytics_path}\{calls}\power_bi_merged_output.json"
 
-                if ((is_file_present(folder_path= f"{path}\{calls}", filename= "merged_output.json")) and (is_file_present(folder_path= f"{path}\{calls}", filename= "power_bi_merged_output.json"))):
+                if ((is_file_present(folder_path= f"{anaytics_path}\{calls}", filename= "merged_output.json")) and (is_file_present(folder_path= f"{anaytics_path}\{calls}", filename= "power_bi_merged_output.json"))):
                     self.info_logger.info(msg=f"getting dataframe from power_bi_keyword for {calls} and appending it to to all_audio_result dataframe",
                     extra={"location": "main.py-create_excel_for_powerbi"})
-                    
-                    result_for_one_audio, arabic_result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path, audio_file=calls)
+                    audio_file = calls + ".wav"
+                    result_for_one_audio, arabic_result_for_one_audio = self.powerbi_report_keyword(powerbi_merged_jsonPath=powerbi_merged_path, audio_file=audio_file)
                     All_audio_result = All_audio_result._append(result_for_one_audio, ignore_index=True)
                     arabic_All_audio_result = arabic_All_audio_result._append(arabic_result_for_one_audio, ignore_index=True)
 
@@ -849,7 +925,7 @@ class Main:
                     msg=f"creating power_bi_main report using the mapping.json",
                     extra={"location": "main.py-create_excel_for_powerbi"},
                 )
-            self.power_bi_main_report(mapping_json_path=LocalConfig().DATA_FOLDER + "/audios_info\mappings.json")
+            self.power_bi_main_report(mapping_json_path=self.path.DATA_FOLDER + "/audios_info\mappings.json")
             
         except Exception as e:
             self.error_logger.error(

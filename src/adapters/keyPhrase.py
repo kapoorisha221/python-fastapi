@@ -10,7 +10,9 @@ class keyPhrase():
         self.transcriptions = self.transcripts["transcript"]
         self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
         self.LANGUAGE_KEY = self.cred.LANGUAGE_KEY
-        
+        #self.KEYPHRASE_URL = self.cred.STT_HOST_URL + f"{self.cred.KEYPHRASE_PORT}"
+
+
     info_logger = get_Info_Logger()
     error_logger = get_Error_Logger()
 
@@ -19,7 +21,7 @@ class keyPhrase():
 
             headers = {
                         "Content-Type": "application/json",
-                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY
+                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY #remove when connnecting containers
                     }
             data = {
                 "kind": "KeyPhraseExtraction",
@@ -36,12 +38,13 @@ class keyPhrase():
                     ]
                 }
             }
+            #url = f"{self.KEYPHRASE_URL}/language/:analyze-text?api-version=2022-05-01"
             url = f"{self.LANGUAGE_ENDPOINT}/language/:analyze-text?api-version=2022-05-01"
             self.info_logger.info(msg=F"Sending Post request to the API for keyPhrase",extra={"location":"KeyPhrase.py - send_request"})
             response = requests.post(url= url, json= data, headers= headers)
             return response
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"KeyPhrase.py - send_request"})
 
     
@@ -63,12 +66,11 @@ class keyPhrase():
                 # print("___________________________________ no error result ________________________",result["results"]["documents"])
                 # if len(result["results"]["documents"][0]["keyPhrases"]) != 0:
                 self.info_logger.info(msg=F"creating output format with the fetched keyphrases",extra={"location":"KeyPhrase.py - keyPhrase_helper"})
-                output = {"status": "success", 
-                            "keyPhrases": result["results"]["documents"][0]["keyPhrases"]}
+                output = {"status": "success", "keyPhrases": result["results"]["documents"][0]["keyPhrases"]}
 
             return output
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"KeyPhrase.py - keyPhrase_helper"})
 
     def keyPhrase_pipeline(self):

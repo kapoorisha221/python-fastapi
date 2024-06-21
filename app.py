@@ -1,4 +1,4 @@
-import os, uvicorn, time, json
+import os, uvicorn, json
 from fastapi import FastAPI, UploadFile,BackgroundTasks, File, HTTPException, Form
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List
@@ -25,7 +25,7 @@ path = LocalConfig()
 def Process_Audio_files(source_calls_path):
     try:
         info_logger.info(msg="Checking for the Old Logs",extra={"location":"App.py - Process_Audio_files"})
-        log_Garbage_Collector()
+        #log_Garbage_Collector()
         obj = Main()
         print("object instance created")
         obj.audios_main(source_calls_path)
@@ -52,7 +52,7 @@ async def create_upload_file(
             )
         #Process files
         for file in files:
-            with open(os.path.join(LocalConfig().RAW_DATA_FOLDER, file.filename), "wb") as f:
+            with open(os.path.join(path.RAW_DATA_FOLDER, file.filename), "wb") as f:
                 contents = await file.read()
                 f.write(contents)
 
@@ -76,7 +76,7 @@ async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
         elif file_lang =="en":
             file_name = "power_bi_merged_output.json"
 
-        folder_path = LocalConfig().DATA_FOLDER + "/" +"audio_analytics" +"/"+ folder_name 
+        folder_path = path.DATA_FOLDER + "/" +"audio_analytics" +"/"+ folder_name 
         file_path = os.path.join(folder_path, file_name)
         file_path = folder_path + "/" + file_name
         
@@ -88,7 +88,7 @@ async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
             raise HTTPException(status_code=404, detail="File not found")
 
         try:
-            info_logger.info(msg=f"Aopeneing the Accessed the file  '{file_path}'", extra={"location": "app.py - get_file"})
+            info_logger.info(msg=f"Openeing the Accessed the file  '{file_path}'", extra={"location": "app.py - get_file"})
 
             with open(file=file_path , mode="r", encoding="utf-8") as fh:
                 json_data = json.load(fh)
@@ -104,7 +104,7 @@ async def get_file(file_lang: str= Form(...),folder_name: str = Form(...)):
 @app.get("/getaudiolist")
 async def get_audio_list():
     info_logger.info(msg="Called the route '/getaudiolist' and activated the function 'get_audio_list'", extra={"location": "app.py - get_audio_list"})
-    audio_data_path = "data/audios_info/mappings.json"
+    audio_data_path = path.DATA_FOLDER + "/audios_info/mappings.json"
     try:
         info_logger.info(msg="Reading the mapping.json and loading data as json", extra={"location": "app.py - get_audio_list"})
 
@@ -124,11 +124,12 @@ async def get_audio_list():
 def read_all_audios():
     try:
         info_logger.info(msg="Called the route '/readallaudios' and activated the function 'read_all_audios'", extra={"location": "app.py - read_all_audios"})
-        source_calls_path = path.SOURCE_DATA
+        source_calls_path = path.TRANSCRIPT_DATA
         print("file path ____", source_calls_path)
         Process_Audio_files(source_calls_path)
         print("\n\nProcessing Completed")
     except Exception as e:
+        print("Error in the API: ", e)
         error_logger.error(msg="An Error Occurred at post request..", exc_info=e, extra={"location": "app.py - read_all_audios"})
         raise HTTPException(status_code=500, detail="An error occurred while processing the request.")
         

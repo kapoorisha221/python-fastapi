@@ -13,6 +13,8 @@ class Sentiment():
         self.transcriptions = self.transcripts["transcript"]
         self.LANGUAGE_ENDPOINT = self.cred.LANGUAGE_ENDPOINT
         self.LANGUAGE_KEY = self.cred.LANGUAGE_KEY
+        #self.SENTIMENT_URL = self.cred.STT_HOST_URL + f"{self.cred.SENTIMENT_PORT}"
+
 
         self.words_sentiment_mapping_flag = False
         
@@ -37,10 +39,11 @@ class Sentiment():
                     }
 
             url = f"{self.LANGUAGE_ENDPOINT}/language/:analyze-text?api-version=2023-04-15-preview"
+            #url = f"{self.SENTIMENT_URL}/language/:analyze-text?api-version=2023-04-15-preview"
 
             headers = {
                         "Content-Type": "application/json",
-                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY
+                        "Ocp-Apim-Subscription-Key": self.LANGUAGE_KEY #remove in containers
                     }
 
             self.info_logger.info(msg=F"Sending request to the API for Sentiment Analysis",extra={"location":"sentiment_analysis.py - send_request"})
@@ -54,7 +57,7 @@ class Sentiment():
     def get_sentiment(self,sentiment_result):
         try:
             overall_sentiment = sentiment_result["results"]["documents"][0]["sentiment"]
-            # print(f"overall sentiment : ", overall_sentiment)
+            print(f"overall sentiment : ", overall_sentiment)
             dic1 = sentiment_result["results"]["documents"][0]["confidenceScores"]
             max_sentiment = max(dic1, key=dic1.get)
             # print(f"sentiment : {max_sentiment}")
@@ -98,7 +101,7 @@ class Sentiment():
             
             return result
         except Exception as e:
-            # print(e)
+            print(e)
             self.error_logger.error(msg="An Error Occured ..",exc_info=e,extra={"location":"sentiment_analysis.py - get_sentiment_analysis"})
     
     def sentiment_helper(self, dialouge):
@@ -158,4 +161,4 @@ if __name__ == "__main__":
     # print(result)
     if result["status"] == "success":
         r = result["sentiment"]
-        # print(f"sentiment : {r}")
+        print(f"sentiment : {r}")

@@ -2,17 +2,7 @@ import os
 
 class AzureConfig():
     def __init__(self) -> None:
-
-        ####### CREDENTIALS #######
-        # self.LANGUAGE_KEY = "42c994ec9e43430aacf6312a78f6c320"
-        # self.LANGUAGE_ENDPOINT = "https://demo-langservice-mij.cognitiveservices.azure.com/"
-        # self.SPEECH_KEY = "103578cd1b1842c1bf0f10531fc13cfb"
-        # self.SPEECH_ENDPOINT = "https://eastus.api.cognitive.microsoft.com/"
-        # self.SPEECH_REGION = "eastus"
-        # self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        # self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
         
-
         ########### Container Credentials #######################
         self.LANGUAGE_KEY = "49ea02bc7cc644c49ec309ca849a3810"
         self.LANGUAGE_ENDPOINT = "https://tanzu.cognitiveservices.azure.com/"
@@ -23,35 +13,21 @@ class AzureConfig():
 
         self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
         self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
-        self.TRANSLATOR_KEY = "faeb05b5cbe2494297f3225efc3d3a71"
-        self.TRANSLATOR_ENDPOINT = "https://api.cognitive.microsofttranslator.com/"
-
 
         #Audio File location
         self.audio_source = "source/calls"
-
-        #Excel file location
-        self.audio_data = "source/records/Accent Validation Data (1).xlsx"
-        self.sheet1 = "Complaint"
-        self.sheet2 = "Normal Calls"
-        self.sheet3 = "Hitting the company"
         
         # STT
-        self.STT_HOST_URL = "ws://127.0.0.1:<port>"
-        # enter the port values
-        # self.EN_US_PORT = "5000"  # original
-        # self.AR_AE_PORT = "5001"   # original
-        #####
-        self.EN_US_PORT = "5070"
-        self.EN_US_PORT = "5071" # testing acoustic
-        self.AR_AE_PORT = "5060"
-        
-        #####
-      
-        # Host urls for using stt services in disconnected environment
-        self.EN_US_HOST_URL = self.STT_HOST_URL.replace("<port>",self.EN_US_PORT)
-        self.AR_AE_HOST_URL = self.STT_HOST_URL.replace("<port>",self.AR_AE_PORT)
-        
+        self.STT_HOST_URL = "http://10.20.20.126:"
+        self.SUMMARIZATION_URL = "http://10.20.20.125:"
+
+
+        ##Connected Container Ports
+        self.SUMMARIZATION_PORT = "5000"
+        self.SPEECH_PORT = "5001"
+        self.KEYPHRASE_PORT = "5002"
+        self.SENTIMENT_PORT = "5003"
+        self.TRANSLATOR_PORT = "5004"
         
         
         
@@ -73,11 +49,27 @@ class FileConfig():
 class LocalConfig():
     def __init__(self) -> None:
         self.PROJECT_PATH = os.path.abspath('.')
+        self.TRANSCRIPT_DATA = f"{self.PROJECT_PATH}/source/source_transcription"
         self.SOURCE_DATA = f"{self.PROJECT_PATH}/source/calls"
         self.DATA_FOLDER = f"{self.PROJECT_PATH}/data"
         self.RAW_DATA_FOLDER = f"{self.DATA_FOLDER}/raw_data"
         self.PROCESSED_DATA_FOLDER = f"{self.DATA_FOLDER}/processed_data"
        
         self.INFERENCE_FOLDER =  f"{self.DATA_FOLDER}/inference_data"
+
+        #Excel file location
+        #Excel file location
+        self.audio_data = f"{self.PROJECT_PATH}/source/records/Accent Validation Data Updated.xlsx"
+        self.sheet1 = "Normal Calls without escalation"
+        self.sheet2 = "Escalated Calls"
+        self.sheet3 = "Outages"
+        self.sheet4 = "Hard Calls"
+        self.sheet5 = "Hitting Calls"
+        
+
+
+        
+        
+
     
 

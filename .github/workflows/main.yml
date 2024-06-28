@@ -84,7 +84,7 @@ jobs:
           name: python-app
           path: .
       - name: unzip artifact for deployment
-        run: unzip release.zip
+        run: unzip -o release.zip -d ${{ github.workspace }}
       - name: Install Az PowerShell module
         run: if('${{ inputs.skipAzModuleInstallation }}' -ne 'true') { Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force }
         shell: pwsh

@@ -65,7 +65,7 @@ jobs:
           name: python-app
           path: |
             .
-            !venv/
+            !antenv/
             
 
   deploy:
@@ -84,7 +84,8 @@ jobs:
         with:
           name: python-app
           path: .
-      
+      - name: check artifact 
+        run: ls -l
       - name: Install Az PowerShell module
         run: if('${{ inputs.skipAzModuleInstallation }}' -ne 'true') { Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force }
         shell: pwsh
@@ -102,7 +103,8 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: .
+          package: python-app
           startup-command: uvicorn app:app --host=0.0.0.0 --port 8000  --reload  
+        
           resource-group-name: testrg
           

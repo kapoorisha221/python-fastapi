@@ -82,7 +82,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: python-app
-          path: release.zip
+          path: .
       - name: unzip artifact for deployment
         run: unzip release.zip
       - name: Install Az PowerShell module

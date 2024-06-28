@@ -103,7 +103,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: python-app
+          package: release.zip
           startup-command: uvicorn app:app --host=0.0.0.0 --port 8000  --reload  
         
           resource-group-name: testrg
